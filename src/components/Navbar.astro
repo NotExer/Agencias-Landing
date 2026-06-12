@@ -1,0 +1,435 @@
+---
+import logo from "../img/Logo.avif";
+import p1 from "../img/Producto 1.avif";
+import p2 from "../img/Producto 2.avif";
+import p3 from "../img/Producto 3.avif";
+import p4 from "../img/Producto 4.avif";
+import p5 from "../img/Producto 5.avif";
+
+const links = [
+  { label: "Nosotros", href: "#nosotros" },
+  { label: "Contacto", href: "#contacto" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "#blog" },
+  { label: "Política ambiental", href: "#politica-ambiental" },
+];
+
+const categories = [
+  {
+    label: "Calzado de Trabajo",
+    href: "#calzado",
+    featured: [
+      { image: p1.src, name: "Bota Soldador Inyectada" },
+      { image: p2.src, name: "Bota Inyectada Ref: Hibrida" },
+      { image: p3.src, name: "Bota Inyectada Ref: Gazella" },
+    ],
+    products: [
+      "Bota Soldador Inyectada",
+      "Bota Workman Food Industry Blanca",
+      "Bota Plastica Caña Alta (Agricola)",
+      "RIÑONERA REF-805-01",
+      "Bota Inyectada p/p Ref: Gazella / 100% Libre de Metal",
+    ],
+  },
+  {
+    label: "Uniformes de Trabajo",
+    href: "#uniformes",
+    featured: [
+      { image: p2.src, name: "Pantalon Dril Clasico Hombre Caqui" },
+      { image: p3.src, name: "Blue Jean Clasico Dama" },
+      { image: p5.src, name: "Pantalon Dril Clasico Azul Osc" },
+    ],
+    products: [
+      "Pantalon Dril Clasico Hombre Caqui",
+      "Blue Jean Clasico Dama-Pret. Anat.",
+      "Pantalon Dril Clasico Hombre Azul Osc",
+      "Camisa Dril Manga Larga",
+      "Overol Industrial Antifluido",
+    ],
+  },
+  {
+    label: "EPP",
+    href: "#epp",
+    featured: [
+      { image: p3.src, name: "Casco de Seguridad" },
+      { image: p4.src, name: "Guantes de Nitrilo" },
+      { image: p5.src, name: "Gafas de Protección" },
+    ],
+    products: [
+      "Casco de Seguridad Industrial",
+      "Guantes de Nitrilo",
+      "Gafas de Protección",
+      "Protectores Auditivos",
+      "Mascarilla N95",
+    ],
+  },
+  {
+    label: "Hospitalaria",
+    href: "#hospitalaria",
+    featured: [
+      { image: p4.src, name: "Conjunto Antifluido" },
+      { image: p5.src, name: "Bata Quirurgica" },
+      { image: p1.src, name: "Zueco Antideslizante" },
+    ],
+    products: [
+      "Conjunto Antifluido",
+      "Bata Quirurgica Desechable",
+      "Zueco Antideslizante",
+      "Gorro Quirurgico",
+      "Polaina Impermeable",
+    ],
+  },
+  {
+    label: "Gorros y Redecillas",
+    href: "#gorros",
+    featured: [
+      { image: p1.src, name: "Gorro Desechable TNT" },
+      { image: p2.src, name: "Redecilla de Nylon" },
+      { image: p3.src, name: "Gorro Quirúrgico" },
+    ],
+    products: [
+      "Gorro Desechable TNT",
+      "Redecilla de Nylon",
+      "Gorro Quirúrgico",
+      "Gorro con Elástico",
+      "Redecilla con Barba",
+    ],
+  },
+  {
+    label: "Promocionales",
+    href: "#promocionales",
+    featured: [
+      { image: p4.src, name: "Camiseta Corporativa" },
+      { image: p5.src, name: "Bolsa Ecológica" },
+      { image: p2.src, name: "Maletín Ejecutivo" },
+    ],
+    products: [
+      "Camiseta Corporativa",
+      "Bolsa Ecológica",
+      "Maletín Ejecutivo",
+      "Esferos Personalizados",
+      "Chaqueta Corporativa",
+    ],
+  },
+];
+---
+
+<header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur">
+  <nav class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+    <a href="#inicio" class="flex shrink-0 items-center">
+      <img src={logo.src} alt="Agencias Nacionales S.A.S" class="h-16 w-auto" />
+    </a>
+
+    <ul class="hidden items-center gap-8 lg:flex">
+      {
+        links.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class="rounded-full px-5 py-3 text-base font-bold text-gray-900 transition-all hover:bg-gray-200"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="relative hidden lg:block">
+      <svg
+        class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+      </svg>
+      <input
+        type="search"
+        placeholder="Buscar"
+        class="w-56 rounded-full border border-gray-200 bg-gray-200 py-2.5 pl-11 pr-4 text-sm text-gray-700 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100"
+      />
+    </div>
+
+    <button
+      type="button"
+      id="menu-toggle"
+      class="inline-flex items-center justify-center rounded-md p-2 text-gray-600 lg:hidden"
+      aria-label="Abrir menú"
+    >
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <div id="categories-nav" class="hidden border-t border-gray-100 lg:block">
+    <nav class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <ul class="flex items-center justify-between">
+        {
+          categories.map((category) => (
+            <li class="mega-item static">
+              <a
+                href={category.href}
+                class="flex items-center gap-1.5 py-3.5 text-m font-semibold text-black transition-colors"
+              >
+                {category.label}
+                {category.featured && (
+                  <svg
+                    class="mega-chevron h-4 w-4 text-black transition-transform duration-200"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                )}
+              </a>
+
+              {category.featured && (
+                <div class="mega-drop absolute left-1/2 top-full z-40 w-screen pt-px">
+                  <div class="mega-drop-inner border-y border-gray-100 bg-white p-6 shadow-2xl shadow-gray-200/60">
+                    <div class="mx-auto grid max-w-7xl grid-cols-4 gap-6 px-4 sm:px-6 lg:px-8">
+                      {category.featured.map((item) => (
+                        <a href={category.href} class="group/item flex flex-col">
+                          <div class="flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-gray-50">
+                            <img
+                              src={item.image}
+                              alt={item.name}
+                              class="h-full w-full object-contain p-4 transition-transform duration-300 group-hover/item:scale-105"
+                            />
+                          </div>
+                          <p class="mt-3 text-sm font-medium text-gray-700 group-hover/item:text-blue-600">
+                            {item.name}
+                          </p>
+                        </a>
+                      ))}
+
+                      <div class="border-l border-gray-100 pl-6">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">
+                          Productos
+                        </p>
+                        <ul class="mt-4 space-y-3">
+                          {category.products.map((product) => (
+                            <li>
+                              <a
+                                href={category.href}
+                                class="block text-sm text-gray-600 transition-colors hover:text-blue-600"
+                              >
+                                {product}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                        <a
+                          href={category.href}
+                          class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gray-900 transition-colors hover:text-blue-600"
+                        >
+                          Ver más
+                          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu hidden border-t border-gray-100 bg-white lg:hidden">
+    <div class="mobile-menu-inner">
+      <div class="px-4 py-3">
+        <div class="relative">
+          <svg
+            class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+          </svg>
+          <input
+            type="search"
+            placeholder="Buscar"
+            class="w-full rounded-full border border-gray-200 bg-gray-50 py-2.5 pl-11 pr-4 text-sm text-gray-700 outline-none focus:border-blue-500 focus:bg-white"
+          />
+        </div>
+      </div>
+
+      <ul class="space-y-1 px-4 pb-3">
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-blue-600"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <ul class="space-y-1 border-t border-gray-100 px-4 py-3">
+        {
+          categories.map((category) => (
+            <li>
+              <a
+                href={category.href}
+                class="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-50 hover:text-blue-600"
+              >
+                {category.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</header>
+
+<style>
+  .mega-item:hover .mega-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Mega menú (hover en escritorio): despliegue tipo cortina, overlay sin empujar el body */
+  .mega-drop {
+    display: grid;
+    grid-template-rows: 0fr;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      grid-template-rows 520ms cubic-bezier(0.32, 0.72, 0, 1),
+      opacity 360ms cubic-bezier(0.32, 0.72, 0, 1);
+    will-change: grid-template-rows, opacity;
+  }
+
+  .mega-drop.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mega-drop-inner {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mega-drop {
+      transition: opacity 150ms ease;
+    }
+  }
+
+  /* Menú móvil: despliegue tipo cortina, estilo Apple minimalista */
+  .mobile-menu {
+    grid-template-rows: 0fr;
+    transition:
+      grid-template-rows 520ms cubic-bezier(0.32, 0.72, 0, 1),
+      opacity 360ms cubic-bezier(0.32, 0.72, 0, 1);
+    opacity: 0;
+    will-change: grid-template-rows, opacity;
+  }
+
+  .mobile-menu.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .mobile-menu-inner {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-menu {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+
+  if (toggle && menu) {
+    let menuOpen = false;
+
+    const openMenu = () => {
+      menuOpen = true;
+      menu.classList.remove("hidden");
+      menu.style.display = "grid";
+      menu.getBoundingClientRect(); // forzar reflow (estado colapsado)
+      menu.classList.add("is-open"); // dispara el despliegue tipo cortina
+    };
+
+    const closeMenu = () => {
+      menuOpen = false;
+      menu.classList.remove("is-open"); // recoge la cortina
+    };
+
+    // Al terminar de recogerse, lo ocultamos del flujo
+    menu.addEventListener("transitionend", (e) => {
+      if (e.propertyName === "grid-template-rows" && !menuOpen) {
+        menu.style.display = "";
+        menu.classList.add("hidden");
+      }
+    });
+
+    toggle.addEventListener("click", () => {
+      if (menuOpen) closeMenu();
+      else openMenu();
+    });
+  }
+
+  const catNav = document.getElementById("categories-nav");
+
+  if (catNav) {
+    const items = catNav.querySelectorAll(".mega-item");
+    let openDrop: HTMLElement | null = null;
+
+    const showDrop = (drop: HTMLElement) => {
+      drop.classList.add("is-open"); // despliega la cortina
+      drop.style.zIndex = "50";
+    };
+
+    const hideDrop = (drop: HTMLElement) => {
+      drop.classList.remove("is-open"); // recoge la cortina
+      drop.style.zIndex = "40";
+    };
+
+    items.forEach(function (item) {
+      item.addEventListener("mouseenter", function () {
+        const drop = item.querySelector(".mega-drop") as HTMLElement | null;
+
+        if (drop) {
+          if (openDrop && openDrop !== drop) hideDrop(openDrop);
+          showDrop(drop);
+          openDrop = drop;
+        } else if (openDrop) {
+          hideDrop(openDrop);
+          openDrop = null;
+        }
+      });
+    });
+
+    catNav.addEventListener("mouseleave", function () {
+      if (openDrop) {
+        hideDrop(openDrop);
+        openDrop = null;
+      }
+    });
+  }
+</script>

@@ -1,0 +1,271 @@
+---
+import comentario1 from "../img/Comentario 1.avif";
+import comentario2 from "../img/Comentario 2.avif";
+import comentario3 from "../img/Comentario 3.avif";
+import comentario4 from "../img/Comentario 4.avif";
+import comentario5 from "../img/Comentario 5.avif";
+import comentario6 from "../img/Comentario 6.avif";
+import comentario7 from "../img/Comentario 7.avif";
+import comentario8 from "../img/Comentario 8.avif";
+
+const reviews = [
+  { title: "Muy organizado", name: "El Fx", stars: 5, img: comentario1 },
+  { title: "Buen servicio", name: "Leandro Gallo", stars: 4, img: comentario2 },
+  {
+    title: "Facil de llegar, y muy buen servicio al cliente",
+    name: "john edison porras",
+    stars: 5,
+    img: comentario3,
+  },
+  {
+    title: "Empresa dedicada y laboral",
+    name: "Juan",
+    stars: 1,
+    img: comentario4,
+    featured: true,
+  },
+  {
+    title:
+      "Ubicacion, amplio lugar de parqueo, disponibilidad de productos, son muy amables.",
+    name: "Byron Ramiro Gil Garcia",
+    stars: 5,
+    featured: true,
+    img: comentario5,
+  },
+  {
+    title: "Excelente atención",
+    name: "John La Guanteria",
+    stars: 5,
+    img: comentario6,
+  },
+  {
+    title: "Uniformes Antifluidos de excelente calidad y buenos precios",
+    name: "Juan Palacios",
+    stars: 5,
+    img: comentario7,
+  },
+  {
+    title: "Excelente servicio",
+    name: "Luis carlos Cordero",
+    stars: 4,
+    img: comentario8,
+  },
+];
+
+const googleColors = ["#4285F4", "#EA4335", "#FBBC05", "#34A853"];
+
+const topRow = reviews.slice(0, 4);
+const bottomRow = reviews.slice(4, 8);
+---
+
+<section id="resenas" class="w-full overflow-hidden px-10 py-16 sm:px-6 lg:px-40">
+  <p class="text-sm font-semibold text-blue-600">Nuestras reseñas</p>
+  <div class="mt-1 flex flex-wrap items-end justify-between gap-2">
+    <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
+      Lo que dicen nuestros clientes
+    </h2>
+    <div class="text-right">
+      <div class="flex items-center justify-end gap-1 text-amber-400">
+        {
+          Array.from({ length: 5 }).map(() => (
+            <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+              <path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.42 4.36a1 1 0 00.95.69h4.58c.97 0 1.37 1.24.59 1.81l-3.71 2.7a1 1 0 00-.36 1.12l1.42 4.36c.3.92-.76 1.69-1.54 1.12l-3.71-2.7a1 1 0 00-1.18 0l-3.71 2.7c-.78.57-1.84-.2-1.54-1.12l1.42-4.36a1 1 0 00-.36-1.12l-3.71-2.7c-.78-.57-.38-1.81.59-1.81h4.58a1 1 0 00.95-.69L9.05 2.93z" />
+            </svg>
+          ))
+        }
+      </div>
+      <p class="mt-1 text-xs text-gray-500">4.5 de 25 reseñas</p>
+    </div>
+  </div>
+
+  <div class="reviews-carousel mt-8 space-y-5">
+    <div class="reviews-marquee">
+      <div class="reviews-track reviews-track--right py-10">
+        {
+          [...topRow, ...topRow].map((review) => (
+            <div class:list={["reviews-card flex flex-col rounded-2xl border border-gray-100 bg-white py-10 px-5 w-<10>", review.featured && "reviews-card--featured"]}>
+              <h3 class="text-sm font-semibold text-gray-800">
+                {review.title}
+              </h3>
+              <div class="mt-auto flex items-center gap-3 pt-4">
+                <img
+                  src={review.img.src}
+                  alt={review.name}
+                  loading="lazy"
+                  class="h-10 w-10 shrink-0 object-cover"
+                />
+                <div class="min-w-0 flex-1">
+                  <p class="truncate text-sm font-medium text-gray-700">
+                    {review.name}
+                  </p>
+                  <div class="mt-0.5 flex items-center gap-1">
+                    <div class="flex text-amber-400">
+                      {Array.from({ length: review.stars }).map(() => (
+                        <svg
+                          class="h-3.5 w-3.5 fill-current"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.42 4.36a1 1 0 00.95.69h4.58c.97 0 1.37 1.24.59 1.81l-3.71 2.7a1 1 0 00-.36 1.12l1.42 4.36c.3.92-.76 1.69-1.54 1.12l-3.71-2.7a1 1 0 00-1.18 0l-3.71 2.7c-.78.57-1.84-.2-1.54-1.12l1.42-4.36a1 1 0 00-.36-1.12l-3.71-2.7c-.78-.57-.38-1.81.59-1.81h4.58a1 1 0 00.95-.69L9.05 2.93z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <svg class="h-3.5 w-3.5" viewBox="0 0 24 24">
+                      <path
+                        fill={googleColors[0]}
+                        d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h6.47a5.53 5.53 0 01-2.4 3.63v3h3.86c2.26-2.09 3.57-5.17 3.57-8.87z"
+                      />
+                      <path
+                        fill={googleColors[3]}
+                        d="M12 24c3.24 0 5.96-1.08 7.95-2.9l-3.86-3c-1.08.72-2.45 1.16-4.09 1.16-3.13 0-5.78-2.11-6.73-4.96H1.3v3.09A12 12 0 0012 24z"
+                      />
+                      <path
+                        fill={googleColors[2]}
+                        d="M5.27 14.3a7.18 7.18 0 010-4.6V6.61H1.3a12 12 0 000 10.78l3.97-3.09z"
+                      />
+                      <path
+                        fill={googleColors[1]}
+                        d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42A11.99 11.99 0 0012 0 12 12 0 001.3 6.61l3.97 3.09C6.22 6.85 8.87 4.75 12 4.75z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="reviews-marquee">
+      <div class="reviews-track reviews-track--left py-10">
+        {
+          [...bottomRow, ...bottomRow].map((review) => (
+            <div class:list={["reviews-card flex flex-col rounded-2xl border border-gray-100 bg-white py-10 px-5 w-<10>", review.featured && "reviews-card--featured"]}>
+              <h3 class="text-sm font-semibold text-gray-800">
+                {review.title}
+              </h3>
+              <div class="mt-auto flex items-center gap-3 pt-4">
+                <img
+                  src={review.img.src}
+                  alt={review.name}
+                  loading="lazy"
+                  class="h-10 w-10 shrink-0 object-cover"
+                />
+                <div class="min-w-0 flex-1">
+                  <p class="truncate text-sm font-medium text-gray-700">
+                    {review.name}
+                  </p>
+                  <div class="mt-0.5 flex items-center gap-1">
+                    <div class="flex text-amber-400">
+                      {Array.from({ length: review.stars }).map(() => (
+                        <svg
+                          class="h-3.5 w-3.5 fill-current"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M9.05 2.93c.3-.92 1.6-.92 1.9 0l1.42 4.36a1 1 0 00.95.69h4.58c.97 0 1.37 1.24.59 1.81l-3.71 2.7a1 1 0 00-.36 1.12l1.42 4.36c.3.92-.76 1.69-1.54 1.12l-3.71-2.7a1 1 0 00-1.18 0l-3.71 2.7c-.78.57-1.84-.2-1.54-1.12l1.42-4.36a1 1 0 00-.36-1.12l-3.71-2.7c-.78-.57-.38-1.81.59-1.81h4.58a1 1 0 00.95-.69L9.05 2.93z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <svg class="h-3.5 w-3.5" viewBox="0 0 24 24">
+                      <path
+                        fill={googleColors[0]}
+                        d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h6.47a5.53 5.53 0 01-2.4 3.63v3h3.86c2.26-2.09 3.57-5.17 3.57-8.87z"
+                      />
+                      <path
+                        fill={googleColors[3]}
+                        d="M12 24c3.24 0 5.96-1.08 7.95-2.9l-3.86-3c-1.08.72-2.45 1.16-4.09 1.16-3.13 0-5.78-2.11-6.73-4.96H1.3v3.09A12 12 0 0012 24z"
+                      />
+                      <path
+                        fill={googleColors[2]}
+                        d="M5.27 14.3a7.18 7.18 0 010-4.6V6.61H1.3a12 12 0 000 10.78l3.97-3.09z"
+                      />
+                      <path
+                        fill={googleColors[1]}
+                        d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42A11.99 11.99 0 0012 0 12 12 0 001.3 6.61l3.97 3.09C6.22 6.85 8.87 4.75 12 4.75z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .reviews-marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+  }
+
+  .reviews-track {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    width: max-content;
+  }
+
+  .reviews-card {
+    width: clamp(280px, calc((100vw - 6rem) / 3.5), 480px);
+    flex-shrink: 0;
+    box-shadow:
+      0 10px 25px -5px rgba(0, 0, 0, 0.08),
+      0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  }
+
+  .reviews-card--featured {
+    width: 400px;
+    box-shadow:
+      0 20px 40px -8px rgba(0, 0, 0, 0.14),
+      0 12px 16px -8px rgba(0, 0, 0, 0.08);
+  }
+
+  .reviews-track--right {
+    animation: reviews-scroll-right 40s linear infinite;
+  }
+
+  .reviews-track--left {
+    animation: reviews-scroll-left 40s linear infinite;
+  }
+
+  /* La fila duplica su contenido, por eso el desplazamiento es del 50% */
+  @keyframes reviews-scroll-right {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes reviews-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reviews-track {
+      animation: none;
+    }
+  }
+</style>

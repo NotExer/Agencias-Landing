@@ -1,0 +1,87 @@
+---
+import blog1 from '../img/Blog 1.avif';
+import blog2 from '../img/Blog 2.avif';
+
+const posts = [
+  {
+    image: blog1.src,
+    tag: "Tips",
+    title: "Cómo cotizar dotaciones empresariales sin errores: guía para compras y SST",
+    href: "#"
+  },
+  {
+    image: blog2.src,
+    tag: "Noticias",
+    title: "Agencias Nacionales SAS reconocida por el Banco de Bogotá como finalista en el premio Gacela misiónpyme 2024.",
+    href: "#"
+  },
+  {
+    image: blog1.src,
+    tag: "Noticias",
+    title: "Más que uniformes: Vestimos el trabajo con calidad y compromiso",
+    href: "#"
+  },
+  {
+    image: blog1.src,
+    tag: "Noticias",
+    title: "Cada cuánto renovar uniformes, calzado de trabajo y EPP en una empresa: guía para compras y SST",
+    href: "#"
+  }
+];
+---
+
+<section id="blog" class="w-full px-8 py-16 sm:px-6 lg:px-20 xl:px-40 bg-white overflow-hidden">
+  <div class="text-center mb-10">
+    <p class="text-[15px] font-semibold text-blue-500 mb-3">Blog</p>
+    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-[34px] tracking-tight">
+      Nuestras últimas publicaciones y noticias
+    </h2>
+  </div>
+
+  <div class="relative w-full max-w-7xl mx-auto">
+    <!-- Contenedor del Carrusel -->
+    <div class="flex overflow-x-auto gap-5 pb-8 snap-x snap-mandatory hide-scrollbar">
+      {posts.map((post) => (
+        <a 
+          href={post.href} 
+          class="relative flex-none w-[85vw] sm:w-[45vw] md:w-[30vw] lg:w-[280px] xl:w-[23%] aspect-[3/4] min-h-[380px] rounded-[24px] overflow-hidden group snap-start bg-gray-100"
+        >
+          <!-- Imagen de fondo -->
+          <img 
+            src={post.image} 
+            alt={post.title} 
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+          />
+          <!-- Gradiente oscuro inferior -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#111625] via-[#111625]/60 to-transparent opacity-90"></div>
+          
+          <!-- Contenido de texto -->
+          <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+            <span class="text-white/90 text-[14px] font-normal mb-2">{post.tag}</span>
+            <h3 class="text-white text-[17px] font-bold leading-[1.3]">{post.title}</h3>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- Botón flotante derecho (Decorativo / Scroll) -->
+    <div class="hidden lg:flex absolute top-[45%] right-2 xl:-right-6 -translate-y-1/2 z-20 pointer-events-none">
+      <button class="bg-[#2B303B]/90 backdrop-blur-sm text-white p-3 rounded-full shadow-lg pointer-events-auto hover:bg-[#2B303B] transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Ocultar barra de scroll pero mantener funcionalidad */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>

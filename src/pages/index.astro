@@ -1,17 +1,34 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import FeaturedProducts from "../components/FeaturedProducts.astro";
+import Categories from "../components/Categories.astro";
+import TestimonialBanner from "../components/TestimonialBanner.astro";
+import About from "../components/About.astro";
+import Policies from "../components/Policies.astro";
+import Reviews from "../components/Reviews.astro";
+import Benefits from "../components/Benefits.astro";
+import FAQ from "../components/FAQ.astro";
+import Blog from "../components/Blog.astro";
+import BannerFooter from "../components/BannerFooter.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <Navbar />
+  <main class="w-full">
+    <Hero />
+    <FeaturedProducts />
+    <Categories />
+    <TestimonialBanner />
+    <About />
+    <Policies />
+    <Reviews />
+    <Benefits />
+    <FAQ />
+    <Blog />
+    <BannerFooter />
+  </main>
+  <Footer />
+</Layout>
