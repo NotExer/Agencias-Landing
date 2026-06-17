@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import ProductDetail from "../components/ProductDetail.astro";
+
+import producto1 from "../img/Producto 1.avif";
+import producto2 from "../img/Producto 2.avif";
+
+// 👇 Edita aquí: datos del producto
+const product = {
+  name: "Bota Soldador Inyectada",
+  images: [
+    producto1.src, // imagen principal (primera)
+    producto2.src, // miniatura
+    // agrega más imágenes aquí...
+  ],
+highlights: [
+  { icon: "durabilidad" as const, label: "Durabilidad Garantizada" },
+  { icon: "comodidad" as const, label: "Máxima Comodidad" },
+  { icon: "personalizable" as const, label: "Personalizable" },
+],
+  description: [
+    "La Bota Soldador Inyectada está diseñada para brindar protección, confort y resistencia en trabajos de soldadura y operaciones industriales. Cuenta con puntera de policarbonato no metálica, corte en cuero mocasín y cuero semigraso, plantilla transpirable en EVA, forro acolchado en poliéster y suela bicolor en poliuretano resistente a hidrocarburos, abrasión y flexión.",
+    "Gracias a su construcción inyectada y a sus propiedades dieléctricas, esta bota de seguridad ofrece excelente desempeño en ambientes exigentes donde se requiere calzado confiable, durable y 100% libre de metal. Es una opción ideal para empresas que priorizan protección técnica sin sacrificar comodidad en jornadas prolongadas.",
+  ],
+  inStock: true,
+  contactHref: "/contacto",
+  info: {
+    title: "Información",
+    content: "Aquí puedes agregar información adicional del producto, especificaciones técnicas, tallas disponibles, etc.",
+  },
+};
+---
+
+<Layout title={`${product.name} | Agencias Nacionales S.A.S`}>
+  <Navbar />
+  <main class="w-full bg-white">
+    <ProductDetail
+      name={product.name}
+      images={product.images}
+      highlights={product.highlights}
+      description={product.description}
+      inStock={product.inStock}
+      contactHref={product.contactHref}
+      info={product.info}
+    />
+  </main>
+  <Footer />
+</Layout>

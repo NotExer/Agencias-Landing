@@ -1,0 +1,45 @@
+---
+
+const paragraphs = [
+    "Agencias Nacionales S.A.S, como empresa dedicada a la producción de uniformes y calzado de trabajo, considera como una prioridad proteger el medio ambiente, por lo cual integra en cada una de sus acciones el manejo de prácticas ambientales sanas.",
+    "La política de Gestión Ambiental se basa en procedimientos administrativos que implican los más bajos impactos ambientales posibles en el desarrollo de la empresa, siendo su propósito la mejora constante y el cumplimiento de las normas ambientales.",
+    "Para llevar a cabo la política ambiental, Agencias Nacionales S.A.S se compromete a evaluar los impactos ambientales de la operación de sus actividades con el fin de reducirlos hasta donde sea posible mediante el establecimiento de metas y objetivos ambientales apropiados.",
+];
+
+const listIntro = "Concretamente, la empresa se propone alcanzar los siguientes compromisos mediante la ejecución continua del Sistema de Gestión Ambiental:";
+
+const commitments = [
+    "Implementar normas de protección ambiental en todas las áreas de la Planta.",
+    "Asegurar que todos los empleados sean conscientes de sus responsabilidades individuales de acuerdo a esta política.",
+    "Cumplir con los requisitos legales y otros requerimientos, respetando las regulaciones ambientales vigentes.",
+    "Prevenir la contaminación con químicos que puedan afectar tanto la salud de nuestros empleados como el impacto desfavorable al medio ambiente.",
+    "Identificar los requisitos ambientales más relevantes que se cumplen con consistencia.",
+    "Avanzar en el cumplimiento de las metas ambientales y objetivos establecidos a través de evaluaciones y revisiones internas y externas.",
+    "Gestionar correctamente los residuos generados en la operación de las actividades, con el fin de reducir el impacto negativo al medio ambiente.",
+    "Responder a las inquietudes de la comunidad, autoridades legales o cualquier otra organización interesada en nuestro desempeño ambiental.",
+];
+
+const closing = "Agencias Nacionales S.A.S se compromete a un desarrollo continuo sostenible que proteja el medio ambiente y que tenga el potencial de una mejora continua y el fortalecimiento del Sistema de Gestión Ambiental. Agencias Nacionales S.A.S hace esta política accesible y la pone a disposición de las partes interesadas que así lo soliciten.";
+---
+
+<div class="w-full px-8 py-8 sm:px-6 lg:px-100">
+
+    <div class="space-y-4 text-gray-800 text-[15px] leading-[1.7]">
+
+        {paragraphs.map((p) => (
+            <p>{p}</p>
+        ))}
+
+        <p>{listIntro}</p>
+
+        <ul class="list-disc pl-6 space-y-2">
+            {commitments.map((item) => (
+                <li>{item}</li>
+            ))}
+        </ul>
+
+        <p>{closing}</p>
+
+    </div>
+
+</div>

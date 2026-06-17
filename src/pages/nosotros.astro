@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import bannerNosotros from "../img/Banner Nosotros.avif";
+import confianza1 from "../img/Confianza 1.avif";
+import confianza2 from "../img/Confianza 2.avif";
+import confianza3 from "../img/Confianza 3.avif";
+import ambiental from "../img/Ambiental.webp";
+import material from "../img/Material.avif";
+---
+
+<Layout title="Sobre Nosotros | Agencias Nacionales S.A.S">
+  <Navbar />
+  <main class="w-full">
+    <!-- Hero Section -->
+    <section class="h-full w-full sm:px-4 lg:px-6 mt-4">
+      <div class=" relative w-full h-[450px] overflow-hidden bg-stone-800 sm:rounded-3xl md:h-[500px]">
+        <img src={bannerNosotros.src} alt="Sede Agencias Nacionales" class="absolute inset-0 h-full w-full object-cover" />
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute inset-0 z-10 flex h-full items-center justify-center px-6">
+          <div class="w-full max-w-[90%] text-center sm:mx-auto sm:max-w-4xl lg:max-w-6xl">
+            <h1 class="mt-3 text-xl font-extrabold leading-tight text-white drop-shadow-lg sm:mt-5 sm:text-4xl lg:text-5xl">
+              Sobre Nosotros
+            </h1>
+            <p class="mt-3 max-w-2xl text-base leading-relaxed text-white/90 drop-shadow sm:mx-auto sm:mt-4 sm:text-lg font-medium">
+              Más de 55 años impulsando la seguridad y el bienestar de las empresas con productos de calidad, personalizados y sostenibles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestra historia -->
+    <section class="py-20 px-4 max-w-5xl mx-auto text-center">
+      <p class="text-blue-500 font-medium mb-3 text-sm tracking-wide">Nuestra historia</p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 leading-tight">Tu socio de confianza para soluciones integrales de seguridad y uniformes corporativos</h2>
+      <p class="text-gray-700 text-sm md:text-base mb-12 max-w-3xl mx-auto">Brindamos calidad, personalización y compromiso ambiental, adaptándonos a las necesidades de tu empresa.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 items-center">
+        <img src={confianza1.src} alt="Atención al cliente" class="rounded-3xl w-full object-cover h-[350px] shadow-lg" />
+        <img src={confianza2.src} alt="Equipo de trabajo" class="rounded-3xl w-full object-cover h-[450px] shadow-lg" />
+        <img src={confianza3.src} alt="Atención en oficina" class="rounded-3xl w-full object-cover h-[350px] shadow-lg" />
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="mx-auto w-full px-4 py-8 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-blue-950 px-6 py-12 text-white sm:px-12 shadow-xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
+          <div class="px-2">
+            <p class="text-4xl md:text-5xl font-bold mb-2">+55</p>
+            <p class="text-xs md:text-sm text-white/90 font-medium">Años de experiencia</p>
+          </div>
+          <div class="px-2">
+            <p class="text-4xl md:text-5xl font-bold mb-2">+700</p>
+            <p class="text-xs md:text-sm text-white/90 font-medium">Empresas Confían en Nosotros</p>
+          </div>
+          <div class="px-2">
+            <p class="text-4xl md:text-5xl font-bold mb-2">3</p>
+            <p class="text-xs md:text-sm text-white/90 font-medium">Centros de Distribución</p>
+          </div>
+          <div class="px-2">
+            <p class="text-4xl md:text-5xl font-bold mb-2">+50</p>
+            <p class="text-xs md:text-sm text-white/90 font-medium">Aliados Estratégicos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que elegirnos -->
+    <section class="py-20 px-4 max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+      <div class="lg:w-1/2">
+        <p class="text-blue-500 font-medium mb-3 text-sm tracking-wide">¿Por qué elegirnos?</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-gray-900 leading-tight">Tu socio de confianza para equipamiento de calidad</h2>
+        
+        <div class="space-y-8">
+          <div>
+            <h3 class="font-bold text-gray-900 text-lg mb-2">Calidad garantizada</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Nos enfocamos en la satisfacción del cliente, asegurando productos duraderos y de alta resistencia que cumplen con estrictas normas de calidad y se adaptan a las necesidades de cada empresa.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-900 text-lg mb-2">Compromiso Ambiental</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Adoptamos prácticas sostenibles en todas nuestras operaciones, gestionando residuos, reduciendo impactos ambientales y cumpliendo con regulaciones ambientales vigentes para proteger nuestro entorno.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-900 text-lg mb-2">Cumplimiento Legal y Normativo</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Cumplimos con las normativas nacionales e internacionales en seguridad y salud laboral, garantizando protección, confianza y un entorno de trabajo seguro para todos los colaboradores.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 w-full">
+        <img src={ambiental.src} alt="Máquina inyectora - Compromiso Ambiental" class="rounded-3xl w-full h-auto object-cover shadow-xl max-h-[600px]" />
+      </div>
+    </section>
+
+    <!-- Más de 55 años -->
+    <section class="py-20 px-4 max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Más de 55 años de experiencia</h2>
+      <p class="text-gray-600 mb-12 text-sm md:text-base leading-relaxed max-w-4xl mx-auto font-medium">
+        Somos líderes en la industria de equipamiento de seguridad, uniformes corporativos y soluciones integrales, con más de 55 años de experiencia. Ofrecemos calzado de trabajo, uniformes especializados, elementos de protección personal (EPP), indumentaria hospitalaria, gorros, redecillas y productos promocionales, garantizando calidad, personalización y cumplimiento con las normativas más exigentes. Nuestro compromiso es proteger, vestir y fortalecer la identidad de empresas en múltiples sectores.
+      </p>
+      <img src={material.src} alt="Material reciclado" class="rounded-3xl w-full h-auto object-cover max-h-[500px] shadow-lg" />
+    </section>
+  </main>
+  <Footer />
+</Layout>

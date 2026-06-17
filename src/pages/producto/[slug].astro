@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import ProductDetail from "../../components/ProductDetail.astro";
+import { products } from "../../data/catalog";
+
+export function getStaticPaths() {
+  return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
+}
+
+const { product } = Astro.props;
+---
+
+<Layout title={`${product.name} | Agencias Nacionales S.A.S`}>
+  <Navbar />
+  <main class="w-full bg-white">
+    <ProductDetail
+      name={product.name}
+      images={product.images}
+      highlights={product.highlights}
+      description={product.description}
+      inStock={product.inStock}
+      contactHref="/contacto"
+      info={product.info}
+    />
+  </main>
+  <Footer />
+</Layout>
