@@ -77,10 +77,6 @@ const CATALOG: CatalogEntry[] = [
   },
 
 
-
-
-
-
   {
     name:     "Bota Plástica Caña Alta (Agrícola)",
     category: "Calzado de Trabajo",
