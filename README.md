@@ -37,7 +37,7 @@ Sitio web desarrollado con Astro para la gestión y presentación de contenido r
 Clonar el repositorio:
 
 ```bash
-git clone <https://github.com/NotExer/Agencias-Landing>
+git clone https://github.com/NotExer/Agencias-Landing
 ```
 
 Instalar las dependencias:
