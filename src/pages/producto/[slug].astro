@@ -3,8 +3,10 @@ import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
 import ProductDetail from "../../components/ProductDetail.astro";
+import RelatedCategory from "../../components/RelatedCategory.astro";
+import MoreProducts from "../../components/MoreProducts.astro";
+import Benefits from "../../components/Benefits.astro";
 import { products } from "../../data/catalog";
-
 
 export function getStaticPaths() {
   return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
@@ -26,6 +28,9 @@ const { product } = Astro.props;
       contactHref="/contacto"
       info={product.info}
     />
+    <RelatedCategory currentSlug={product.slug} category={product.category} />
+    <MoreProducts currentSlug={product.slug} category={product.category} />
   </main>
+  <Benefits />
   <Footer />
-</Layout>
+</Layout>

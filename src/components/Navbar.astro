@@ -18,8 +18,8 @@ const links = [
 
 ---
 
-<header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur">
-  <nav class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+<header class="fixed top-0 z-50 w-full border-b border-gray-100 bg-white backdrop-blur">
+  <nav class="mx-auto flex  h-18 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
     <a href="../" class="flex shrink-0 items-center">
       <img
         src={logo.src}
@@ -191,6 +191,7 @@ const links = [
     </nav>
   </div>
 
+  <!-- Menú móvil: posición absoluta para flotar sobre el contenido -->
   <div id="mobile-menu" class="mobile-menu hidden border-t border-gray-100 bg-white lg:hidden">
     <div class="mobile-menu-inner">
       <div class="px-4 py-3">
@@ -280,14 +281,20 @@ const links = [
     }
   }
 
-  /* Menú móvil: despliegue tipo cortina, estilo Apple minimalista */
+  /* Menú móvil: posición absoluta para no desplazar el contenido de la página */
   .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 49;
     grid-template-rows: 0fr;
     transition:
       grid-template-rows 520ms cubic-bezier(0.32, 0.72, 0, 1),
       opacity 360ms cubic-bezier(0.32, 0.72, 0, 1);
     opacity: 0;
     will-change: grid-template-rows, opacity;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
   .mobile-menu.is-open {

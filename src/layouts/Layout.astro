@@ -40,5 +40,23 @@ const {
   </head>
   <body class="w-full bg-white text-gray-800 antialiased">
     <slot />
+    <!-- Compensa la altura del header fijo de forma exacta -->
+    <script is:inline>
+      (function () {
+        function adjust() {
+          var header = document.querySelector("header");
+          if (header) {
+            document.body.style.paddingTop = header.offsetHeight + "px";
+          }
+        }
+        adjust();
+        window.addEventListener("resize", adjust);
+        // Re-ajustar después de que las fuentes carguen (pueden cambiar la altura)
+        if (document.fonts) {
+          document.fonts.ready.then(adjust);
+        }
+      })();
+    </script>
   </body>
 </html>
+

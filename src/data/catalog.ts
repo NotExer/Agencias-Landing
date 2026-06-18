@@ -78,7 +78,7 @@ const CATALOG: CatalogEntry[] = [
   {
     name:     "Bota Plástica Caña Alta (Agrícola)",
     category: "Calzado de Trabajo",
-    images:   ["Producto 3.avif"],
+    images:   ["Bota Plastica Caña Alta.avif"],
     price:    189000, 
     description: [
       "Bota de caña alta fabricada en PVC para uso agrícola y trabajos en campo. Protege contra humedad, barro y contacto con productos químicos del campo.",
@@ -86,6 +86,18 @@ const CATALOG: CatalogEntry[] = [
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
   },
 
+  {
+    name:     "Bota Workman Food Industry Blanca",
+    category: "Calzado de Trabajo",
+    images:   ["Bota Workman Food Industry Blanca.avif"],
+    price:    189000, 
+    description: [
+      "Bota inyectada en P.V.C 100% impermeable, resistente a ácidos grasos, ideales para industrias de alimentos.",
+    ],
+    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+  },
+
+  
   
   {
     name:     "Pantalón Dril Clásico Hombre Caqui",
@@ -100,7 +112,7 @@ const CATALOG: CatalogEntry[] = [
   },
 
   {
-    name:     "Blue Jean Clásico Dama - Pret. Anat.",
+    name:     "Blue Jean Clásico Dama Pretina Anatómica",
     category: "Uniformes de Trabajo",
     images:   ["Producto 3.avif"],
     price:    189000, 
@@ -110,21 +122,10 @@ const CATALOG: CatalogEntry[] = [
     specs: "Tela: Jean 100% algodón · Corte anatómico · Tallas 6–18",
   },
 
-  {
-    name:     "Casco de Seguridad Industrial",
+    {
+    name:     "Casco de Seguridad",
     category: "EPP",
-    images:   ["Producto 3.avif"],
-    price:    189000, 
-    description: [
-      "Casco de seguridad industrial certificado, diseñado para proteger la cabeza de impactos y objetos en caída en entornos de construcción e industria.",
-    ],
-    specs: "Certificación: NTC 1523 · Material: polietileno de alta densidad · Suspensión de 4 puntos · Ranura para accesorios",
-  },
-
-  {
-    name:     "Casco de Seguridad Industrial 2",
-    category: "EPP",
-    images:   ["Producto 3.avif"],
+    images:   ["Casco blanco.avif"],
     price:    99000, 
     description: [
       "Casco de seguridad industrial certificado, diseñado para proteger la cabeza de impactos y objetos en caída en entornos de construcción e industria.",
@@ -184,13 +185,23 @@ export interface Category {
   products: string[];
 }
 
+/** Convierte un label de categoría al slug usado en ?categoria= */
+export function categorySlug(label: string): string {
+  return label
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 const CATEGORY_CONFIG: { label: CategoryName; href: string }[] = [
-  { label: "Calzado de Trabajo",   href: "/#calzado"       },
-  { label: "Uniformes de Trabajo", href: "/#uniformes"     },
-  { label: "EPP",                  href: "/#epp"           },
-  { label: "Hospitalaria",         href: "/#hospitalaria"  },
-  { label: "Gorros y Redecillas",  href: "/#gorros"        },
-  { label: "Promocionales",        href: "/#promocionales" },
+  { label: "Calzado de Trabajo",   href: `/producto?categoria=${categorySlug("Calzado de Trabajo")}`   },
+  { label: "Uniformes de Trabajo", href: `/producto?categoria=${categorySlug("Uniformes de Trabajo")}` },
+  { label: "EPP",                  href: `/producto?categoria=${categorySlug("EPP")}`                  },
+  { label: "Hospitalaria",         href: `/producto?categoria=${categorySlug("Hospitalaria")}`         },
+  { label: "Gorros y Redecillas",  href: `/producto?categoria=${categorySlug("Gorros y Redecillas")}`  },
+  { label: "Promocionales",        href: `/producto?categoria=${categorySlug("Promocionales")}`        },
 ];
 
 export const categories: Category[] = CATEGORY_CONFIG.map(({ label, href }) => {

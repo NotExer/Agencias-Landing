@@ -1,0 +1,144 @@
+---
+import { products, productHref } from "../data/catalog";
+
+interface Props {
+  currentSlug: string;
+  category: string;
+}
+
+const { currentSlug, category } = Astro.props;
+
+// Productos de otras categorías (excluye el actual y los de la misma categoría)
+const others = products.filter(
+  (p) => p.slug !== currentSlug && p.category !== category
+);
+
+// Barajar aleatoriamente (determinista en SSG: orden por slug)
+// Para variedad real usamos un shuffle basado en el slug del producto actual
+function seededShuffle<T>(arr: T[], seed: string): T[] {
+  const copy = [...arr];
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = (Math.imul(31, h) + seed.charCodeAt(i)) | 0;
+  for (let i = copy.length - 1; i > 0; i--) {
+    h = (Math.imul(h, 1664525) + 1013904223) | 0;
+    const j = Math.abs(h) % (i + 1);
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+const shuffled = seededShuffle(others, currentSlug).slice(0, 8);
+
+function formatPrice(n: number) {
+  return new Intl.NumberFormat("es-CO", {
+    style: "currency",
+    currency: "COP",
+    maximumFractionDigits: 0,
+  }).format(n);
+}
+---
+
+{shuffled.length > 0 && (
+  <section class="w-full px-4 py-10 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
+      <!-- Encabezado -->
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
+          Más productos
+        </h2>
+        <a
+          href="/producto"
+          class="flex items-center gap-1 text-sm font-medium text-gray-500 transition-colors hover:text-blue-600"
+        >
+          Ver todos
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Carrusel con scroll horizontal en móvil, grid en desktop -->
+      <div class="relative">
+        <div
+          id="more-products-track"
+          class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 sm:grid sm:grid-cols-3 sm:overflow-visible lg:grid-cols-4"
+          style="scrollbar-width: none;"
+        >
+          {shuffled.map((product) => (
+            <a
+              href={productHref(product.name)}
+              class="group flex w-56 shrink-0 snap-start flex-col sm:w-auto sm:shrink"
+            >
+              <div class="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl bg-gray-50 p-4">
+                <img
+                  src={product.images[0]}
+                  alt={product.name}
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div class="mt-3">
+                <p class="text-xs text-gray-400 mb-0.5">{product.category}</p>
+                <h3 class="text-sm font-medium text-gray-800 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                  {product.name}
+                </h3>
+                <p class="mt-1 text-sm font-bold text-gray-900">
+                  {formatPrice(product.price)}
+                </p>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <!-- Botón siguiente (solo visible en desktop) -->
+        <button
+          id="more-products-next"
+          type="button"
+          aria-label="Siguiente"
+          class="absolute -right-4 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-gray-500 shadow-lg ring-1 ring-gray-100 transition hover:text-blue-600 lg:flex"
+        >
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <button
+          id="more-products-prev"
+          type="button"
+          aria-label="Anterior"
+          class="absolute -left-4 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-gray-500 shadow-lg ring-1 ring-gray-100 transition hover:text-blue-600 lg:flex"
+        >
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+)}
+
+<script>
+  const track = document.getElementById("more-products-track") as HTMLElement | null;
+  const next  = document.getElementById("more-products-next");
+  const prev  = document.getElementById("more-products-prev");
+
+  if (track && next && prev) {
+    const scrollAmount = () => track.clientWidth * 0.8;
+
+    next.addEventListener("click", () => {
+      track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+
+    prev.addEventListener("click", () => {
+      track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+
+    const update = () => {
+      prev.style.opacity = track.scrollLeft > 10 ? "1" : "0";
+      prev.style.pointerEvents = track.scrollLeft > 10 ? "auto" : "none";
+    };
+
+    track.addEventListener("scroll", update, { passive: true });
+    update();
+  }
+</script>
