@@ -1,43 +1,97 @@
-# Astro Starter Kit: Minimal
+# Agencias
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Sitio web desarrollado con Astro para la gestión y presentación de contenido relacionado con Agencias. El proyecto está organizado utilizando componentes reutilizables, layouts, estilos personalizados y scripts para facilitar el mantenimiento y la escalabilidad.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tecnologías utilizadas
 
-## 🚀 Project Structure
+- Astro
+- TypeScript
+- HTML
+- CSS
+- JavaScript
 
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura del proyecto
 
 ```text
 /
-├── public/
+├── public/               # Archivos estáticos accesibles públicamente
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/       # Componentes reutilizables
+│   ├── data/             # Datos y configuraciones del proyecto
+│   ├── img/              # Imágenes utilizadas por la aplicación
+│   ├── layouts/          # Plantillas base de las páginas
+│   ├── pages/            # Rutas y páginas del sitio
+│   ├── scripts/          # Scripts personalizados
+│   └── styles/           # Archivos de estilos globales y específicos
+│
+├── .astro/               # Archivos generados por Astro
+├── dist/                 # Compilación para producción
+├── astro.config.mjs      # Configuración de Astro
+├── package.json          # Dependencias y scripts del proyecto
+├── tsconfig.json         # Configuración de TypeScript
+└── README.md
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Instalación
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Clonar el repositorio:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+git clone <url-del-repositorio>
+```
 
-## 🧞 Commands
+Instalar las dependencias:
 
-All commands are run from the root of the project, from a terminal:
+```bash
+npm install
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Ejecución en desarrollo
 
-## 👀 Want to learn more?
+Iniciar el servidor local:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+npm run dev
+```
+
+La aplicación estará disponible en:
+
+```text
+http://localhost:4321
+```
+
+## Compilación para producción
+
+Generar la versión optimizada del proyecto:
+
+```bash
+npm run build
+```
+
+Los archivos generados se almacenarán en la carpeta:
+
+```text
+dist/
+```
+
+## Vista previa de producción
+
+Para probar localmente la compilación generada:
+
+```bash
+npm run preview
+```
+
+## Scripts disponibles
+
+| Comando | Descripción |
+|----------|------------|
+| `npm install` | Instala las dependencias del proyecto |
+| `npm run dev` | Inicia el entorno de desarrollo |
+| `npm run build` | Genera la versión de producción |
+| `npm run preview` | Muestra una vista previa de la compilación |
+| `npm run astro` | Ejecuta comandos de Astro CLI |
+
+## Mantenimiento
+
+Se recomienda mantener la lógica de negocio separada en las carpetas `data` y `scripts`, utilizar componentes reutilizables dentro de `components` y centralizar los estilos en `styles` para facilitar futuras modificaciones.

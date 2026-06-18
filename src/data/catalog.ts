@@ -41,8 +41,6 @@ interface CatalogEntry {
 
 
 const CATALOG: CatalogEntry[] = [
-
-
   {
     name:"Bota Inyectada p/p Ref: Hibrida / 100% Libre de Metal",
     category: "Calzado de Trabajo",
@@ -123,6 +121,17 @@ const CATALOG: CatalogEntry[] = [
     specs: "Certificación: NTC 1523 · Material: polietileno de alta densidad · Suspensión de 4 puntos · Ranura para accesorios",
   },
 
+  {
+    name:     "Casco de Seguridad Industrial 2",
+    category: "EPP",
+    images:   ["Producto 3.avif"],
+    price:    99000, 
+    description: [
+      "Casco de seguridad industrial certificado, diseñado para proteger la cabeza de impactos y objetos en caída en entornos de construcción e industria.",
+    ],
+    specs: "Certificación: NTC 1523 · Material: polietileno de alta densidad · Suspensión de 4 puntos · Ranura para accesorios",
+  },
+  
 ];
 
 
