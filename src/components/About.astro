@@ -1,5 +1,5 @@
 ---
-import aboutImg from "../img/Familia.avif";
+import aboutImg from "../img/Familia.about.avif";
 
 const features = [
   {
@@ -56,6 +56,10 @@ const features = [
       <img
         src={aboutImg.src}
         alt="Equipo de Agencias Nacionales"
+        width={aboutImg.width}
+        height={aboutImg.height}
+        loading="lazy"
+        decoding="async"
         class="h-full w-full object-cover"
       />
     </div>

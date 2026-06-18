@@ -91,7 +91,10 @@ const bottomRow = reviews.slice(4, 8);
                 <img
                   src={review.img.src}
                   alt={review.name}
+                  width={review.img.width}
+                  height={review.img.height}
                   loading="lazy"
+                  decoding="async"
                   class="h-10 w-10 shrink-0 object-cover"
                 />
                 <div class="min-w-0 flex-1">
@@ -148,7 +151,10 @@ const bottomRow = reviews.slice(4, 8);
                 <img
                   src={review.img.src}
                   alt={review.name}
+                  width={review.img.width}
+                  height={review.img.height}
                   loading="lazy"
+                  decoding="async"
                   class="h-10 w-10 shrink-0 object-cover"
                 />
                 <div class="min-w-0 flex-1">

@@ -1,13 +1,17 @@
 ---
-import bannerImg from '../img/banner-footer.jpg';
+import bannerImg from '../img/banner-footer.optimized.avif';
 ---
 
 <section class="w-full px-4 py-5 sm:px-6 lg:px-10 xl:px-10 bg-white">
-  <div class="relative w-full h-[450px] md:h-[500px] rounded-[32px] overflow-hidden shadow-xl mx-auto max-w-[1400px]">
+  <div class="relative w-full h-[450px] md:h-[500px] rounded-[32px] overflow-hidden shadow-xl mx-auto ">
     <!-- Fondo de imagen -->
     <img 
       src={bannerImg.src} 
       alt="Instalaciones industriales" 
+      width={bannerImg.width}
+      height={bannerImg.height}
+      loading="lazy"
+      decoding="async"
       class="absolute inset-0 w-full h-full object-cover"
     />
     

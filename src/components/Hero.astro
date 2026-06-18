@@ -1,14 +1,14 @@
 ---
-import banner1 from "../img/banner1.png";
+import banner1 from "../img/banner1.optimized.avif";
 import banner2 from "../img/banner2.png";
-import banner3 from "../img/banner3.png";
-import people1 from "../img/people 1.avif";
-import people2 from "../img/people 2.avif";
-import people3 from "../img/people 3.avif";
+import banner3 from "../img/banner3.optimized.avif";
+import people1 from "../img/people-1.avatar.avif";
+import people2 from "../img/people-2.avatar.avif";
+import people3 from "../img/people-3.avatar.avif";
 
 const slides = [
   {
-    image: banner1.src,
+    image: banner1,
     align: "right",
     badge: true,
     title: "Protección y Confianza en Cada Paso",
@@ -17,7 +17,7 @@ const slides = [
     overlay: "bg-gradient-to-r from-black/70 via-black/40 to-transparent",
   },
   {
-    image: banner2.src,
+    image: banner2,
     align: "left",
     badge: false,
     title: "Un equipo que trabaja para ti",
@@ -26,7 +26,7 @@ const slides = [
     overlay: "bg-gradient-to-r from-black/75 via-black/45 to-transparent",
   },
   {
-    image: banner3.src,
+    image: banner3,
     align: "left",
     badge: false,
     title: "¡Envío Gratis en Compras en el Área Metropolitana!",
@@ -37,6 +37,8 @@ const slides = [
 ];
 
 const content = slides[0];
+const cloneSets = 1;
+const realBase = cloneSets * slides.length;
 
 const stats = [
   { value: "+56", label: "Años de experiencia" },
@@ -55,17 +57,21 @@ const stats = [
     <div
       id="carousel-track"
       class="flex h-full w-full transition-transform duration-500 ease-in-out"
-      style="transform: translateX(-3000%);"
+      style={`transform: translateX(-${realBase * 100}%);`}
     >
       {/* Clones para scroll súper rápido hacia atrás (10 sets) */}
       {
-        Array.from({ length: 10 })
+        Array.from({ length: cloneSets })
           .flatMap(() => slides)
           .map((slide) => (
             <div class="relative h-full w-full shrink-0" aria-hidden="true">
               <img
-                src={slide.image}
+                src={slide.image.src}
                 alt=""
+                width={slide.image.width}
+                height={slide.image.height}
+                loading="lazy"
+                decoding="async"
                 class="absolute inset-0 h-full w-full object-cover"
               />
               <div class={`absolute inset-0 ${slide.overlay}`} />
@@ -85,16 +91,28 @@ const stats = [
                         <img
                           src={people1.src}
                           alt=""
+                          width={people1.width}
+                          height={people1.height}
+                          loading="lazy"
+                          decoding="async"
                           class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                         />
                         <img
                           src={people2.src}
                           alt=""
+                          width={people2.width}
+                          height={people2.height}
+                          loading="lazy"
+                          decoding="async"
                           class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                         />
                         <img
                           src={people3.src}
                           alt=""
+                          width={people3.width}
+                          height={people3.height}
+                          loading="lazy"
+                          decoding="async"
                           class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                         />
                       </div>
@@ -130,8 +148,13 @@ const stats = [
         slides.map((slide, index) => (
           <div class="relative h-full w-full shrink-0" data-slide={index}>
             <img
-              src={slide.image}
+              src={slide.image.src}
               alt=""
+              width={slide.image.width}
+              height={slide.image.height}
+              loading={index === 0 ? "eager" : "lazy"}
+              fetchpriority={index === 0 ? "high" : "auto"}
+              decoding={index === 0 ? "sync" : "async"}
               class="absolute inset-0 h-full w-full object-cover"
             />
             <div class={`absolute inset-0 ${slide.overlay}`} />
@@ -151,16 +174,28 @@ const stats = [
                       <img
                         src={people1.src}
                         alt=""
+                        width={people1.width}
+                        height={people1.height}
+                        loading="lazy"
+                        decoding="async"
                         class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                       />
                       <img
                         src={people2.src}
                         alt=""
+                        width={people2.width}
+                        height={people2.height}
+                        loading="lazy"
+                        decoding="async"
                         class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                       />
                       <img
                         src={people3.src}
                         alt=""
+                        width={people3.width}
+                        height={people3.height}
+                        loading="lazy"
+                        decoding="async"
                         class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                       />
                     </div>
@@ -191,13 +226,17 @@ const stats = [
 
       {/* Clones para scroll súper rápido hacia adelante (10 sets) */}
       {
-        Array.from({ length: 10 })
+        Array.from({ length: cloneSets })
           .flatMap(() => slides)
           .map((slide) => (
             <div class="relative h-full w-full shrink-0" aria-hidden="true">
               <img
-                src={slide.image}
+                src={slide.image.src}
                 alt=""
+                width={slide.image.width}
+                height={slide.image.height}
+                loading="lazy"
+                decoding="async"
                 class="absolute inset-0 h-full w-full object-cover"
               />
               <div class={`absolute inset-0 ${slide.overlay}`} />
@@ -217,16 +256,28 @@ const stats = [
                         <img
                           src={people1.src}
                           alt=""
+                          width={people1.width}
+                          height={people1.height}
+                          loading="lazy"
+                          decoding="async"
                           class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                         />
                         <img
                           src={people2.src}
                           alt=""
+                          width={people2.width}
+                          height={people2.height}
+                          loading="lazy"
+                          decoding="async"
                           class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                         />
                         <img
                           src={people3.src}
                           alt=""
+                          width={people3.width}
+                          height={people3.height}
+                          loading="lazy"
+                          decoding="async"
                           class="h-8 w-8 rounded-full border-2 border-white/40 object-cover"
                         />
                       </div>
@@ -348,7 +399,7 @@ const stats = [
     const next = carousel.querySelector<HTMLElement>("[data-carousel-next]");
 
     const N = dots.length;
-    const cloneSets = 10; // 10 sets a la izquierda y 10 a la derecha
+    const cloneSets = 1; // un set a la izquierda y otro a la derecha
     const realBase = cloneSets * N; // El índice base donde empiezan los slides reales
     const totalSlides = N + cloneSets * 2 * N;
 

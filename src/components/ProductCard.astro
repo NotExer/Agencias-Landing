@@ -1,12 +1,14 @@
 ---
 interface Props {
   image: string;
+  imageWidth?: number;
+  imageHeight?: number;
   name: string;
   price: string;
   rating: string;
 }
 
-const { image, name, price, rating } = Astro.props;
+const { image, imageWidth, imageHeight, name, price, rating } = Astro.props;
 ---
 
 <article class="group flex w-full flex-col">
@@ -14,6 +16,10 @@ const { image, name, price, rating } = Astro.props;
     <img
       src={image}
       alt={name}
+      width={imageWidth}
+      height={imageHeight}
+      loading="lazy"
+      decoding="async"
       class="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
     />
   </div>

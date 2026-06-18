@@ -9,6 +9,7 @@
 <aside
   id="cart-drawer"
   class="fixed top-0 right-0 h-full w-full max-w-sm bg-white z-[70] shadow-2xl translate-x-full transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] flex flex-col"
+  style="display:none"
 >
   <!-- Header -->
   <div class="flex items-center justify-between px-5 py-4 border-b border-gray-100">
@@ -53,7 +54,7 @@
     </div>
 
     <!-- CTA: Solicitar cotización por WhatsApp -->
-    
+    <a
       id="cart-cta"
       href="/contacto"
       class="flex items-center justify-center gap-2 w-full bg-[#2B395E] hover:bg-[#1E2843] text-white font-medium text-sm rounded-full py-3.5 transition"
@@ -171,17 +172,31 @@
   const drawer  = document.getElementById('cart-drawer')!;
   const overlay = document.getElementById('cart-overlay')!;
 
+  let isOpen = false;
+
   function open()  {
+    isOpen = true;
     render();
-    drawer.classList.remove('translate-x-full');
+    drawer.style.display = 'flex';        // entra al layout
+    drawer.getBoundingClientRect();       // fuerza reflow (estado fuera de pantalla)
+    drawer.classList.remove('translate-x-full'); // desliza hacia adentro
     overlay.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
   }
   function close() {
-    drawer.classList.add('translate-x-full');
+    isOpen = false;
+    drawer.classList.add('translate-x-full'); // desliza hacia afuera
     overlay.classList.add('hidden');
     document.body.style.overflow = '';
   }
+
+  // Al terminar de salir, lo sacamos del layout para que no genere
+  // scroll horizontal ni quede visible en mÃ³vil.
+  drawer.addEventListener('transitionend', (e) => {
+    if ((e.propertyName === 'translate' || e.propertyName === 'transform') && !isOpen) {
+      drawer.style.display = 'none';
+    }
+  });
 
   document.getElementById('cart-close')?.addEventListener('click', close);
   overlay.addEventListener('click', close);

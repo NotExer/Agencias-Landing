@@ -4,25 +4,25 @@ import blog2 from '../img/Blog 2.avif';
 
 const posts = [
   {
-    image: blog1.src,
+    image: blog1,
     tag: "Tips",
     title: "Cómo cotizar dotaciones empresariales sin errores: guía para compras y SST",
     href: "#"
   },
   {
-    image: blog2.src,
+    image: blog2,
     tag: "Noticias",
     title: "Agencias Nacionales SAS reconocida por el Banco de Bogotá como finalista en el premio Gacela misiónpyme 2024.",
     href: "#"
   },
   {
-    image: blog1.src,
+    image: blog1,
     tag: "Noticias",
     title: "Más que uniformes: Vestimos el trabajo con calidad y compromiso",
     href: "#"
   },
   {
-    image: blog1.src,
+    image: blog1,
     tag: "Noticias",
     title: "Cada cuánto renovar uniformes, calzado de trabajo y EPP en una empresa: guía para compras y SST",
     href: "#"
@@ -48,8 +48,12 @@ const posts = [
         >
           <!-- Imagen de fondo -->
           <img 
-            src={post.image} 
+            src={post.image.src}
             alt={post.title} 
+            width={post.image.width}
+            height={post.image.height}
+            loading="lazy"
+            decoding="async"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
           />
           <!-- Gradiente oscuro inferior -->

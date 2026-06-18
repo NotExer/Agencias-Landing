@@ -5,6 +5,8 @@ const testimonials = [
   "Los precios son competitivos, considerando la calidad de los productos. Hubo un pequeño inconveniente con una talla, pero lo resolvieron rápidamente.",
   "El equipo fue muy atento y respondió rápidamente a todas nuestras inquietudes. Los uniformes llegaron antes del plazo estimado y en perfectas condiciones. Definitivamente trabajaremos con ellos de nuevo."
 ];
+
+const cloneSets = 1;
 ---
 
 <section class="mx-auto w-full px-4 py-8 sm:px-6 lg:px-8">
@@ -46,7 +48,7 @@ const testimonials = [
         <div class="min-w-0 flex-1 min-h-[100px] overflow-hidden flex items-center">
           <div id="testimonial-track" class="flex w-full transition-transform duration-500 ease-in-out">
             {
-              Array.from({ length: 5 }).flatMap(() => testimonials).map((text) => (
+              Array.from({ length: cloneSets * 2 + 1 }).flatMap(() => testimonials).map((text) => (
                 <div class="w-full shrink-0 flex items-center justify-center">
                   <p class="text-center text-sm leading-relaxed text-white/90 max-w-sm mx-auto px-4 sm:px-0">
                     {text}
@@ -79,7 +81,7 @@ const testimonials = [
 
   if (track && prevBtn && nextBtn) {
     const N = 4; // Cantidad original de testimonios
-    const cloneSets = 2; // Sets de clones a cada lado
+    const cloneSets = 1; // Sets de clones a cada lado
     const realBase = cloneSets * N; // Índice inicial (empezamos en el set real del medio)
     
     let current = realBase;

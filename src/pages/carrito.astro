@@ -1,0 +1,152 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Carrito | Agencias Nacionales S.A.S">
+  <Navbar />
+  <main class="min-h-screen w-full bg-white">
+    <section class="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-2 border-b border-gray-100 pb-6 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="text-sm font-semibold text-blue-600">Carrito</p>
+          <h1 class="mt-1 text-2xl font-extrabold text-gray-900 sm:text-3xl">
+            Tus productos seleccionados
+          </h1>
+        </div>
+        <p id="cart-page-count" class="text-sm font-medium text-gray-500">0 productos</p>
+      </div>
+
+      <div id="cart-page-empty" class="py-20 text-center">
+        <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-100">
+          <svg class="h-8 w-8 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.962-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+        </div>
+        <p class="text-sm font-semibold text-gray-700">Tu carrito esta vacio</p>
+        <p class="mt-1 text-sm text-gray-400">Agrega productos para ver el total antes de pagar.</p>
+        <a href="/producto" class="mt-5 inline-flex rounded-full bg-[#2B395E] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#1E2843]">
+          Ver productos
+        </a>
+      </div>
+
+      <div id="cart-page-content" class="hidden grid-cols-1 gap-8 py-8 lg:grid lg:grid-cols-[1fr_360px]">
+        <ul id="cart-page-list" class="divide-y divide-gray-100 rounded-2xl border border-gray-100 bg-white"></ul>
+
+        <aside class="h-fit rounded-2xl border border-gray-100 bg-gray-50 p-5">
+          <h2 class="text-lg font-bold text-gray-900">Resumen</h2>
+          <div class="mt-5 space-y-3 border-b border-gray-200 pb-5">
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">Subtotal</span>
+              <span id="cart-page-subtotal" class="font-semibold text-gray-900"></span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">Items</span>
+              <span id="cart-page-items" class="font-semibold text-gray-900"></span>
+            </div>
+          </div>
+          <div class="mt-5 flex items-center justify-between">
+            <span class="text-base font-bold text-gray-900">Total</span>
+            <span id="cart-page-total" class="text-2xl font-extrabold text-gray-900"></span>
+          </div>
+          <a
+            id="cart-page-pay"
+            href="#cart-page-list"
+            class="mt-6 flex w-full items-center justify-center rounded-full bg-[#2B395E] px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1E2843]"
+          >
+            Ir a pagar
+          </a>
+          <button id="cart-page-clear" class="mt-3 w-full py-2 text-xs text-gray-400 transition hover:text-red-400">
+            Vaciar carrito
+          </button>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  import {
+    getCart,
+    removeFromCart,
+    setQuantity,
+    getTotal,
+    getCount,
+    formatCOP,
+  } from "../scripts/cart.ts";
+
+  function renderCartPage() {
+    const items = getCart();
+    const total = getTotal();
+    const count = getCount();
+
+    const empty = document.getElementById("cart-page-empty")!;
+    const content = document.getElementById("cart-page-content")!;
+    const list = document.getElementById("cart-page-list")!;
+    const countLabel = document.getElementById("cart-page-count")!;
+    const subtotal = document.getElementById("cart-page-subtotal")!;
+    const itemCount = document.getElementById("cart-page-items")!;
+    const totalLabel = document.getElementById("cart-page-total")!;
+    const badge = document.getElementById("cart-badge");
+
+    const hasItems = items.length > 0;
+    empty.classList.toggle("hidden", hasItems);
+    content.classList.toggle("hidden", !hasItems);
+    content.classList.toggle("grid", hasItems);
+
+    countLabel.textContent = `${count} ${count === 1 ? "producto" : "productos"}`;
+    subtotal.textContent = formatCOP(total);
+    itemCount.textContent = String(count);
+    totalLabel.textContent = formatCOP(total);
+
+    if (badge) {
+      badge.textContent = String(count);
+      badge.classList.toggle("hidden", count === 0);
+    }
+
+    list.innerHTML = items
+      .map(
+        (item) => `
+          <li class="flex flex-col gap-4 p-4 sm:flex-row sm:items-center">
+            <img src="${item.image}" alt="${item.name}" class="h-24 w-24 rounded-xl bg-gray-50 object-contain p-2" loading="lazy" decoding="async" />
+            <div class="min-w-0 flex-1">
+              <p class="text-sm font-bold leading-snug text-gray-900">${item.name}</p>
+              <p class="mt-1 text-sm text-gray-400">${formatCOP(item.price)} / unidad</p>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="cart-page-qty h-8 w-8 rounded-lg bg-gray-100 text-base font-bold transition hover:bg-gray-200" data-action="dec" data-slug="${item.slug}">-</button>
+                <span class="w-8 text-center text-sm font-semibold tabular-nums">${item.quantity}</span>
+                <button class="cart-page-qty h-8 w-8 rounded-lg bg-gray-100 text-base font-bold transition hover:bg-gray-200" data-action="inc" data-slug="${item.slug}">+</button>
+                <button class="cart-page-remove ml-2 text-xs font-medium text-gray-400 transition hover:text-red-400" data-slug="${item.slug}">Eliminar</button>
+              </div>
+            </div>
+            <p class="text-base font-extrabold text-gray-900 sm:text-right">${formatCOP(item.price * item.quantity)}</p>
+          </li>
+        `,
+      )
+      .join("");
+  }
+
+  document.getElementById("cart-page-list")?.addEventListener("click", (event) => {
+    const target = event.target as HTMLElement;
+    const qtyButton = target.closest(".cart-page-qty") as HTMLElement | null;
+    if (qtyButton) {
+      const slug = qtyButton.dataset.slug!;
+      const item = getCart().find((cartItem) => cartItem.slug === slug);
+      if (item) setQuantity(slug, item.quantity + (qtyButton.dataset.action === "inc" ? 1 : -1));
+      return;
+    }
+
+    const removeButton = target.closest(".cart-page-remove") as HTMLElement | null;
+    if (removeButton) removeFromCart(removeButton.dataset.slug!);
+  });
+
+  document.getElementById("cart-page-clear")?.addEventListener("click", () => {
+    localStorage.removeItem("an_cart");
+    window.dispatchEvent(new CustomEvent("cart:updated", { detail: [] }));
+  });
+
+  window.addEventListener("cart:updated", renderCartPage);
+  renderCartPage();
+</script>
