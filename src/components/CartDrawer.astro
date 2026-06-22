@@ -12,44 +12,89 @@
   style="display:none"
 >
   <!-- Header -->
-  <div class="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+  <div
+    class="flex items-center justify-between px-5 py-4 border-b border-gray-100"
+  >
     <div class="flex items-center gap-2.5">
       <h2 class="font-bold text-gray-900">Mi cotización</h2>
-      <span id="drawer-count" class="text-xs bg-gray-100 text-gray-500 rounded-full px-2 py-0.5 font-medium">0</span>
+      <span
+        id="drawer-count"
+        class="text-xs bg-gray-100 text-gray-500 rounded-full px-2 py-0.5 font-medium"
+        >0</span
+      >
     </div>
-    <button id="cart-close" class="p-2 rounded-full hover:bg-gray-100 transition text-gray-500">
-      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+    <button
+      id="cart-close"
+      class="p-2 rounded-full hover:bg-gray-100 transition text-gray-500"
+    >
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
   </div>
 
   <!-- Empty state -->
-  <div id="cart-empty" class="flex-1 flex flex-col items-center justify-center p-8 text-center">
-    <div class="w-16 h-16 rounded-2xl bg-gray-100 flex items-center justify-center mb-4">
-      <svg class="w-8 h-8 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.962-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/>
+  <div
+    id="cart-empty"
+    class="flex-1 flex flex-col items-center justify-center p-8 text-center"
+  >
+    <div
+      class="w-16 h-16 rounded-2xl bg-gray-100 flex items-center justify-center mb-4"
+    >
+      <svg
+        class="w-8 h-8 text-gray-300"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.5"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.962-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+        ></path>
       </svg>
     </div>
-    <p class="text-gray-500 text-sm font-medium">Tu cotización está vacía</p>
-    <p class="text-gray-400 text-xs mt-1">Agrega productos para solicitar una oferta.</p>
+    <p class="text-gray-500 text-m font-medium">Tu cotización está vacía</p>
+    <p class="text-gray-400 text-xs mt-1">
+      Agrega productos para solicitar una oferta.
+    </p>
   </div>
 
   <!-- Items list -->
-  <ul id="cart-list" class="flex-1 overflow-y-auto divide-y divide-gray-50 px-4 hidden"></ul>
+  <ul
+    id="cart-list"
+    class="flex-1 overflow-y-auto divide-y divide-gray-50 px-4 hidden"
+  >
+  </ul>
 
   <!-- Footer -->
   <div id="cart-footer" class="border-t border-gray-100 p-5 space-y-3 hidden">
     <div class="flex justify-between items-center">
-      <span class="text-sm text-gray-500">Total estimado</span>
+      <span class="text-m text-gray-500">Total estimado</span>
       <span id="drawer-total" class="text-xl font-bold text-gray-900"></span>
     </div>
 
     <!-- Oferta especial (se muestra al superar $1.000.000) -->
-    <div id="offer-banner" class="hidden rounded-2xl bg-blue-50 border border-blue-100 p-4">
-      <p class="text-sm font-bold text-blue-900">🎉 ¡Tu pedido supera $1.000.000!</p>
+    <div
+      id="offer-banner"
+      class="hidden rounded-2xl bg-blue-50 border border-blue-100 p-4"
+    >
+      <p class="text-m font-bold text-blue-900">
+        🎉 ¡Tu pedido supera $1.000.000!
+      </p>
       <p class="text-xs text-blue-600 mt-1 leading-relaxed">
-        Contáctanos y te hacemos una oferta especial con descuento por volumen para tu empresa.
+        Contáctanos y te hacemos una oferta especial con descuento por volumen
+        para tu empresa.
       </p>
     </div>
 
@@ -57,12 +102,15 @@
     <a
       id="cart-cta"
       href="/contacto"
-      class="flex items-center justify-center gap-2 w-full bg-[#2B395E] hover:bg-[#1E2843] text-white font-medium text-sm rounded-full py-3.5 transition"
+      class="flex items-center justify-center gap-2 w-full bg-[#2B395E] hover:bg-[#1E2843] text-white font-medium text-m rounded-full py-3.5 transition"
     >
       Solicitar cotización
     </a>
 
-    <button id="cart-clear" class="w-full text-xs text-gray-400 hover:text-red-400 transition py-1">
+    <button
+      id="cart-clear"
+      class="w-full text-xs text-gray-400 hover:text-red-400 transition py-1"
+    >
       Vaciar lista
     </button>
   </div>
@@ -70,63 +118,74 @@
 
 <script>
   import {
-    getCart, removeFromCart, setQuantity,
-    getTotal, getCount, formatCOP
-  } from '../scripts/cart.ts';
+    getCart,
+    removeFromCart,
+    setQuantity,
+    getTotal,
+    getCount,
+    formatCOP,
+  } from "../scripts/cart.ts";
 
   const OFFER_THRESHOLD = 1_000_000;
-  const WA_NUMBER = '573042351036'; // ← cambia si es necesario
+  const WA_NUMBER = "573042351036"; // ← cambia si es necesario
 
   function render() {
-    const items  = getCart();
-    const total  = getTotal();
-    const count  = getCount();
+    const items = getCart();
+    const total = getTotal();
+    const count = getCount();
 
-    const list        = document.getElementById('cart-list')!;
-    const empty       = document.getElementById('cart-empty')!;
-    const footer      = document.getElementById('cart-footer')!;
-    const drawerTotal = document.getElementById('drawer-total')!;
-    const drawerCount = document.getElementById('drawer-count')!;
-    const offerBanner = document.getElementById('offer-banner')!;
-    const cta         = document.getElementById('cart-cta') as HTMLAnchorElement;
+    const list = document.getElementById("cart-list")!;
+    const empty = document.getElementById("cart-empty")!;
+    const footer = document.getElementById("cart-footer")!;
+    const drawerTotal = document.getElementById("drawer-total")!;
+    const drawerCount = document.getElementById("drawer-count")!;
+    const offerBanner = document.getElementById("offer-banner")!;
+    const cta = document.getElementById("cart-cta") as HTMLAnchorElement;
 
-    drawerCount.textContent = `${count} ${count === 1 ? 'producto' : 'productos'}`;
+    drawerCount.textContent = `${count} ${count === 1 ? "producto" : "productos"}`;
     drawerTotal.textContent = formatCOP(total);
 
     const hasItems = items.length > 0;
-    empty.classList.toggle('hidden', hasItems);
-    list.classList.toggle('hidden', !hasItems);
-    footer.classList.toggle('hidden', !hasItems);
-    offerBanner.classList.toggle('hidden', total < OFFER_THRESHOLD);
+    empty.classList.toggle("hidden", hasItems);
+    list.classList.toggle("hidden", !hasItems);
+    footer.classList.toggle("hidden", !hasItems);
+    offerBanner.classList.toggle("hidden", total < OFFER_THRESHOLD);
 
     // CTA: si supera el millón → link directo a WhatsApp con el resumen
     if (total >= OFFER_THRESHOLD) {
       const msg = encodeURIComponent(
         `Hola, me interesa una cotización especial por ${formatCOP(total)}:\n\n` +
-        items.map(i => `• ${i.name} ×${i.quantity} = ${formatCOP(i.price * i.quantity)}`).join('\n') +
-        `\n\nTotal: ${formatCOP(total)}`
+          items
+            .map(
+              (i) =>
+                `• ${i.name} ×${i.quantity} = ${formatCOP(i.price * i.quantity)}`,
+            )
+            .join("\n") +
+          `\n\nTotal: ${formatCOP(total)}`,
       );
       cta.href = `https://wa.me/${WA_NUMBER}?text=${msg}`;
-      cta.textContent = '💬 Pedir oferta especial por WhatsApp';
+      cta.textContent = "💬 Pedir oferta especial por WhatsApp";
     } else {
-      cta.href = '/contacto';
-      cta.textContent = 'Solicitar cotización';
+      cta.href = "/contacto";
+      cta.textContent = "Solicitar cotización";
     }
 
-    list.innerHTML = items.map(item => `
+    list.innerHTML = items
+      .map(
+        (item) => `
       <li class="py-4 flex gap-3">
         <img src="${item.image}" alt="${item.name}"
              class="w-16 h-16 rounded-xl object-contain bg-gray-50 p-1.5 flex-shrink-0"/>
         <div class="flex-1 min-w-0">
-          <p class="text-sm font-semibold text-gray-900 leading-tight line-clamp-2">${item.name}</p>
+          <p class="text-m font-semibold text-gray-900 leading-tight line-clamp-2">${item.name}</p>
           <p class="text-xs text-gray-400 mt-0.5">${formatCOP(item.price)} / unidad</p>
           <div class="flex items-center gap-2 mt-2">
             <button class="qty-btn w-7 h-7 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold text-base transition"
                     data-action="dec" data-slug="${item.slug}">−</button>
-            <span class="text-sm font-medium w-5 text-center tabular-nums">${item.quantity}</span>
+            <span class="text-m font-medium w-5 text-center tabular-nums">${item.quantity}</span>
             <button class="qty-btn w-7 h-7 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold text-base transition"
                     data-action="inc" data-slug="${item.slug}">+</button>
-            <span class="ml-auto text-sm font-semibold text-gray-800">${formatCOP(item.price * item.quantity)}</span>
+            <span class="ml-auto text-m font-semibold text-gray-800">${formatCOP(item.price * item.quantity)}</span>
           </div>
         </div>
         <button class="remove-btn self-start mt-0.5 p-1.5 text-gray-300 hover:text-red-400 transition"
@@ -137,71 +196,80 @@
           </svg>
         </button>
       </li>
-    `).join('');
+    `,
+      )
+      .join("");
 
     // Badge del Navbar
-    const badge = document.getElementById('cart-badge');
+    const badge = document.getElementById("cart-badge");
     if (badge) {
       badge.textContent = String(count);
-      badge.classList.toggle('hidden', count === 0);
+      badge.classList.toggle("hidden", count === 0);
     }
   }
 
   // Delegación de eventos en la lista
-  document.getElementById('cart-list')?.addEventListener('click', (e) => {
+  document.getElementById("cart-list")?.addEventListener("click", (e) => {
     const target = e.target as HTMLElement;
 
-    const qtyBtn = target.closest('.qty-btn') as HTMLElement | null;
+    const qtyBtn = target.closest(".qty-btn") as HTMLElement | null;
     if (qtyBtn) {
       const slug = qtyBtn.dataset.slug!;
-      const item = getCart().find(i => i.slug === slug);
-      if (item) setQuantity(slug, item.quantity + (qtyBtn.dataset.action === 'inc' ? 1 : -1));
+      const item = getCart().find((i) => i.slug === slug);
+      if (item)
+        setQuantity(
+          slug,
+          item.quantity + (qtyBtn.dataset.action === "inc" ? 1 : -1),
+        );
       return;
     }
 
-    const removeBtn = target.closest('.remove-btn') as HTMLElement | null;
+    const removeBtn = target.closest(".remove-btn") as HTMLElement | null;
     if (removeBtn) removeFromCart(removeBtn.dataset.slug!);
   });
 
-  document.getElementById('cart-clear')?.addEventListener('click', () => {
-    localStorage.removeItem('an_cart');
-    window.dispatchEvent(new CustomEvent('cart:updated', { detail: [] }));
+  document.getElementById("cart-clear")?.addEventListener("click", () => {
+    localStorage.removeItem("an_cart");
+    window.dispatchEvent(new CustomEvent("cart:updated", { detail: [] }));
   });
 
   // Abrir / cerrar drawer
-  const drawer  = document.getElementById('cart-drawer')!;
-  const overlay = document.getElementById('cart-overlay')!;
+  const drawer = document.getElementById("cart-drawer")!;
+  const overlay = document.getElementById("cart-overlay")!;
 
   let isOpen = false;
 
-  function open()  {
+  function open() {
     isOpen = true;
     render();
-    drawer.style.display = 'flex';        // entra al layout
-    drawer.getBoundingClientRect();       // fuerza reflow (estado fuera de pantalla)
-    drawer.classList.remove('translate-x-full'); // desliza hacia adentro
-    overlay.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
+    drawer.style.display = "flex"; // entra al layout
+    drawer.getBoundingClientRect(); // fuerza reflow (estado fuera de pantalla)
+    drawer.classList.remove("translate-x-full"); // desliza hacia adentro
+    overlay.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
   }
   function close() {
     isOpen = false;
-    drawer.classList.add('translate-x-full'); // desliza hacia afuera
-    overlay.classList.add('hidden');
-    document.body.style.overflow = '';
+    drawer.classList.add("translate-x-full"); // desliza hacia afuera
+    overlay.classList.add("hidden");
+    document.body.style.overflow = "";
   }
 
   // Al terminar de salir, lo sacamos del layout para que no genere
   // scroll horizontal ni quede visible en mÃ³vil.
-  drawer.addEventListener('transitionend', (e) => {
-    if ((e.propertyName === 'translate' || e.propertyName === 'transform') && !isOpen) {
-      drawer.style.display = 'none';
+  drawer.addEventListener("transitionend", (e) => {
+    if (
+      (e.propertyName === "translate" || e.propertyName === "transform") &&
+      !isOpen
+    ) {
+      drawer.style.display = "none";
     }
   });
 
-  document.getElementById('cart-close')?.addEventListener('click', close);
-  overlay.addEventListener('click', close);
-  window.addEventListener('cart:open', open);
-  window.addEventListener('cart:updated', render);
+  document.getElementById("cart-close")?.addEventListener("click", close);
+  overlay.addEventListener("click", close);
+  window.addEventListener("cart:open", open);
+  window.addEventListener("cart:updated", render);
 
   render(); // inicializar badge al cargar
 </script>

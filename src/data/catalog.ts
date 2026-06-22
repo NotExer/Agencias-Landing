@@ -51,6 +51,7 @@ const CATALOG: CatalogEntry[] = [
     ],
     specs: "Puntera de policarbonato no metálica · Corte en cuero · Suela bicolor PU resistente a hidrocarburos, abrasión y flexión · Dieléctrica",
   },
+  
 
   {
     name:     "Bota Inyectada p/p Ref: Gazella / 100% Libre de Metal",
@@ -98,6 +99,63 @@ const CATALOG: CatalogEntry[] = [
   },
 
   
+  {
+    name:     "Bota Macha Alta Negra",
+    category: "Calzado de Trabajo",
+    images:   ["Bota Macha Alta Negra.jpg"],
+    price:    189000, 
+    description: [
+      "Botas La Macha Alta Negra, con doble inyección en PVC, caña negra y suela crepé, diseñadas para brindar mayor confort al caminar y un excelente agarre. Ideales para condiciones donde se requiere resistencia a hidrocarburos y propiedades dieléctricas.",
+    ],
+    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+  },
+
+  {
+    name:     "Zapaton Plastico Machita Dama",
+    category: "Calzado de Trabajo",
+    images:   ["Zapaton Plastico Machita Dama.jpg"],
+    price:    189000, 
+    description: [
+      "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
+    ],
+    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+  },
+
+
+
+    {
+    name:     "Bota Workman Super Safety P/Seg + Plantilla en Acero",
+    category: "Calzado de Trabajo",
+    images:   ["Bota Workman Super Safety.avif"],
+    price:    189000, 
+    description: [
+      "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
+    ],
+    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+  },
+
+    {
+    name:     "Bota Workman Safety Food Industry Blanca",
+    category: "Calzado de Trabajo",
+    images:   ["Bota Workman Safety Food Industry Blanca.avif"],
+    price:    189000, 
+    description: [
+      "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
+    ],
+    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+  },
+
+  
+    {
+    name:     "Bota Workman Safety Waterproof P/Seg Negra",
+    category: "Calzado de Trabajo",
+    images:   ["Bota Workman Safety Waterproof.avif"],
+    price:    189000, 
+    description: [
+      "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
+    ],
+    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+  },
   
   {
     name:     "Pantalón Dril Clásico Hombre Caqui",
