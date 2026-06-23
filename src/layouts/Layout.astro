@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title?: string;
@@ -37,6 +38,7 @@ const {
       />
     </noscript>
     <title>{title}</title>
+    <ClientRouter />
   </head>
   <body class="w-full bg-white text-gray-800 antialiased">
     <slot />
@@ -55,6 +57,10 @@ const {
         if (document.fonts) {
           document.fonts.ready.then(adjust);
         }
+        // Con View Transitions el <body> se reemplaza y pierde el padding:
+        // recalcular tras cada navegacion (antes de pintar para evitar saltos).
+        document.addEventListener("astro:after-swap", adjust);
+        document.addEventListener("astro:page-load", adjust);
       })();
     </script>
   </body>

@@ -4,21 +4,21 @@ import logo from "../img/Icono footer.png";
 
 <footer class="w-full px-1 sm:px-5 lg:px-10 xl:px-10 bg-white pb-5">
   <div
-    class="relative w-full rounded-[32px] bg-[#1a1c1d] mx-auto px-8 md:px-16 py-16"
+    class="relative w-full rounded-[32px] bg-[#1a1c1d] mx-auto px-8 md:px-16 py-10"
   >
     <!-- Top Section: Newsletter -->
     <div
-      class="flex flex-col lg:flex-row justify-between items-center gap-10 mb-20"
+      class="flex flex-col lg:flex-row justify-between items-center gap-6 mb-10"
     >
       <div class="w-full lg:w-1/2">
         <h2
-          class="text-3xl md:text-[34px] font-semibold text-white leading-tight max-w-[500px]"
+          class="text-xl md:text-[24px] font-semibold text-white leading-tight max-w-[500px]"
         >
           Recibe las mejores ofertas y novedades antes que nadie
         </h2>
       </div>
       <div class="w-full lg:w-1/2 max-w-[550px]">
-        <p class="text-m text-white mb-4 leading-relaxed">
+        <p class="text-sm text-white mb-4 leading-relaxed">
           Suscríbete a nuestro boletín y mantente al día con promociones
           exclusivas, nuevos lanzamientos y contenido útil para tu negocio.
         </p>
@@ -28,12 +28,12 @@ import logo from "../img/Icono footer.png";
           <input
             type="email"
             placeholder="nombre@gmail.com"
-            class="w-full min-w-0 flex-1 bg-transparent px-3 sm:px-4 py-2 outline-none text-gray-800 text-m sm:text-m"
+            class="w-full min-w-0 flex-1 bg-transparent px-3 sm:px-4 py-2 outline-none text-gray-800 text-sm sm:text-sm"
             required
           />
           <button
             type="submit"
-            class="shrink-0 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-colors text-m sm:text-m"
+            class="shrink-0 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-colors text-sm sm:text-sm"
           >
             Suscribirme
           </button>
@@ -42,7 +42,7 @@ import logo from "../img/Icono footer.png";
     </div>
 
     <!-- Middle Section: Links -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
       <!-- Logo & Description (takes 2 columns on lg) -->
       <div class="lg:col-span-2">
         <!-- Logo en escala de grises con brillo para parecer blanco (si el original es oscuro) o normal -->
@@ -53,9 +53,9 @@ import logo from "../img/Icono footer.png";
           height={logo.height}
           loading="lazy"
           decoding="async"
-          class="h-20 w-auto mb-6 backdrop-blur-sm"
+          class="h-14 w-auto mb-4 backdrop-blur-sm"
         />
-        <p class="text-m leading-relaxed text-gray-400 max-w-[300px]">
+        <p class="text-sm leading-relaxed text-gray-400 max-w-[300px]">
           Fabricamos uniformes y calzado de trabajo con calidad, seguridad y
           sostenibilidad, adaptados a las necesidades de cada cliente.
         </p>
@@ -63,8 +63,8 @@ import logo from "../img/Icono footer.png";
 
       <!-- Navegación -->
       <div>
-        <h3 class="text-m font-bold text-white mb-5">Navegación</h3>
-        <ul class="space-y-3">
+        <h3 class="text-sm font-bold text-white mb-4">Navegación</h3>
+        <ul class="space-y-2">
           {
             [
               { label: "Nosotros", href: "/nosotros" },
@@ -78,7 +78,7 @@ import logo from "../img/Icono footer.png";
               <li>
                 <a
                   href={link.href}
-                  class="text-gray-400 hover:text-white text-m transition-colors"
+                  class="text-gray-400 hover:text-white text-sm transition-colors"
                 >
                   {link.label}
                 </a>
@@ -90,8 +90,8 @@ import logo from "../img/Icono footer.png";
 
       <!-- Comprar -->
       <div>
-        <h3 class="text-m font-bold text-white mb-5">Comprar</h3>
-        <ul class="space-y-3">
+        <h3 class="text-sm font-bold text-white mb-4">Comprar</h3>
+        <ul class="space-y-2">
           {
             [
               "Tulas",
@@ -108,7 +108,7 @@ import logo from "../img/Icono footer.png";
               <li>
                 <a
                   href="#"
-                  class="text-gray-400 hover:text-white text-m transition-colors"
+                  class="text-gray-400 hover:text-white text-sm transition-colors"
                 >
                   {link}
                 </a>
@@ -120,33 +120,33 @@ import logo from "../img/Icono footer.png";
 
       <!-- Contacto -->
       <div>
-        <h3 class="text-m font-bold text-white mb-5">Contacto</h3>
-        <ul class="space-y-3">
+        <h3 class="text-sm font-bold text-white mb-4">Contacto</h3>
+        <ul class="space-y-2">
           <li>
             <a
               href="#"
-              class="text-gray-400 hover:text-white text-m transition-colors"
+              class="text-gray-400 hover:text-white text-sm transition-colors"
               >Contáctanos</a
             >
           </li>
           <li>
             <a
               href="mailto:contactanos@agenciasnacionales.com"
-              class="text-gray-400 hover:text-white text-m transition-colors"
+              class="text-gray-400 hover:text-white text-sm transition-colors"
               >contactanos@agenciasnacionales.com</a
             >
           </li>
           <li>
             <a
               href="tel:3042351036"
-              class="text-gray-400 hover:text-white text-m transition-colors"
+              class="text-gray-400 hover:text-white text-sm transition-colors"
               >304 2351036</a
             >
           </li>
-          <li><span class="text-gray-400 text-m">(604) 322 2292</span></li>
+          <li><span class="text-gray-400 text-sm">(604) 322 2292</span></li>
           <li>
             <span
-              class="text-gray-400 hover:text-white text-m transition-colors"
+              class="text-gray-400 hover:text-white text-sm transition-colors"
               >Agencias Nacionales SAS. Carrera, 47 20 Sur Zona 2, Envigado,
               Antioquia</span
             >
@@ -154,7 +154,7 @@ import logo from "../img/Icono footer.png";
         </ul>
 
         <!-- Social Icons -->
-        <div class="mt-6 flex gap-3">
+        <div class="mt-4 flex gap-3">
           <a href="#" class="text-white hover:text-white-500 transition-colors">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"
               ><path
@@ -182,7 +182,7 @@ import logo from "../img/Icono footer.png";
 
     <!-- Bottom Section -->
     <div
-      class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-800 text-[13px]"
+      class="flex flex-col md:flex-row justify-between items-center gap-4 pt-5 border-t border-gray-800 text-xs"
     >
       <p class="text-[#3b82f6]">
         © Agencias Nacionales 2026. Todos los derechos reservados.

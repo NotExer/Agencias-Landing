@@ -69,9 +69,20 @@ const inactiveBtn =
                   <img
                     src={product.images[0]}
                     alt={product.name}
-                    class="h-full w-full object-contain p-4 transition-transform duration-300 group-hover:scale-105"
+                    class:list={[
+                      "h-full w-full object-contain p-4 transition-opacity duration-200",
+                      product.images[1] && "group-hover:opacity-0",
+                    ]}
                     loading="lazy"
                   />
+                  {product.images[1] && (
+                    <img
+                      src={product.images[1]}
+                      alt={product.name}
+                      class="absolute inset-0 h-full w-full object-contain p-4 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                      loading="lazy"
+                    />
+                  )}
                   {!product.inStock && (
                     <span class="absolute top-3 left-3 rounded-full bg-gray-800/70 px-2.5 py-1 text-[11px] font-medium text-white">
                       Agotado
@@ -97,38 +108,46 @@ const inactiveBtn =
   <Footer />
 
   <script is:inline>
-    // Clases de estilos
-    const ACTIVE =
-      "px-4 py-1.5 rounded-full text-m font-medium transition border bg-[#2B395E] text-white border-transparent";
-    const INACTIVE =
-      "px-4 py-1.5 rounded-full text-m font-medium transition border bg-white text-gray-600 border-gray-200 hover:border-gray-400";
+    function initFilters() {
+      // Solo ejecutar en la página de productos
+      const productList = document.getElementById("product-list");
+      if (!productList) return;
 
-    const catParam =
-      new URLSearchParams(window.location.search).get("categoria") || "";
-    const items = document.querySelectorAll(".product-item");
-    const catBtns = document.querySelectorAll(".cat-btn");
-    const btnAll = document.getElementById("btn-all");
-    const countEl = document.getElementById("product-count");
-    const noProducts = document.getElementById("no-products");
-    const productList = document.getElementById("product-list");
+      // Clases de estilos
+      const ACTIVE =
+        "px-4 py-1.5 rounded-full text-m font-medium transition border bg-[#2B395E] text-white border-transparent";
+      const INACTIVE =
+        "px-4 py-1.5 rounded-full text-m font-medium transition border bg-white text-gray-600 border-gray-200 hover:border-gray-400";
 
-    // Aplicar filtro
-    let visible = 0;
-    items.forEach(function (item) {
-      var show = !catParam || item.dataset.category === catParam;
-      item.style.display = show ? "" : "none";
-      if (show) visible++;
-    });
+      const catParam =
+        new URLSearchParams(window.location.search).get("categoria") || "";
+      const items = document.querySelectorAll(".product-item");
+      const catBtns = document.querySelectorAll(".cat-btn");
+      const btnAll = document.getElementById("btn-all");
+      const countEl = document.getElementById("product-count");
+      const noProducts = document.getElementById("no-products");
 
-    // Resaltar botón activo
-    btnAll.className = catParam ? INACTIVE : ACTIVE;
-    catBtns.forEach(function (btn) {
-      btn.className = btn.dataset.slug === catParam ? ACTIVE : INACTIVE;
-    });
+      // Aplicar filtro
+      let visible = 0;
+      items.forEach(function (item) {
+        var show = !catParam || item.dataset.category === catParam;
+        item.style.display = show ? "" : "none";
+        if (show) visible++;
+      });
 
-    // Contador y mensaje vacío
-    if (countEl) countEl.textContent = visible + " productos disponibles";
-    if (noProducts) noProducts.style.display = visible === 0 ? "block" : "none";
-    if (productList) productList.style.display = visible === 0 ? "none" : "";
+      // Resaltar botón activo
+      if (btnAll) btnAll.className = catParam ? INACTIVE : ACTIVE;
+      catBtns.forEach(function (btn) {
+        btn.className = btn.dataset.slug === catParam ? ACTIVE : INACTIVE;
+      });
+
+      // Contador y mensaje vacío
+      if (countEl) countEl.textContent = visible + " productos disponibles";
+      if (noProducts) noProducts.style.display = visible === 0 ? "block" : "none";
+      if (productList) productList.style.display = visible === 0 ? "none" : "";
+    }
+
+    // Ejecutar al cargar la página (con o sin View Transitions)
+    document.addEventListener("astro:page-load", initFilters);
   </script>
 </Layout>

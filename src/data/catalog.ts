@@ -235,7 +235,7 @@ export const products: Product[] = CATALOG.map((entry) => ({
 }));
 
 // Auto-construye las categorías del megamenú desde el catálogo
-export interface CategoryItem { image: string; name: string }
+export interface CategoryItem { image: string; image2?: string; name: string }
 export interface Category {
   label:    string;
   href:     string;
@@ -267,7 +267,7 @@ export const categories: Category[] = CATEGORY_CONFIG.map(({ label, href }) => {
   return {
     label,
     href,
-    featured:  catProducts.slice(0, 3).map((p) => ({ image: p.images[0], name: p.name })),
+    featured:  catProducts.slice(0, 3).map((p) => ({ image: p.images[0], image2: p.images[1], name: p.name })),
     products:  catProducts.map((p) => p.name),
   };
 });

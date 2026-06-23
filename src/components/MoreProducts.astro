@@ -69,14 +69,23 @@ function formatPrice(n: number) {
               href={productHref(product.name)}
               class="group flex w-56 shrink-0 snap-start flex-col sm:w-auto sm:shrink"
             >
-              <div class="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl bg-gray-50 p-4">
+              <div class="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl bg-gray-50 p-4">
                 <img
                   src={product.images[0]}
                   alt={product.name}
                   loading="lazy"
                   decoding="async"
-                  class="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  class:list={["h-full w-full object-contain transition-opacity duration-200", product.images[1] && "group-hover:opacity-0"]}
                 />
+                {product.images[1] && (
+                  <img
+                    src={product.images[1]}
+                    alt={product.name}
+                    loading="lazy"
+                    decoding="async"
+                    class="absolute inset-0 h-full w-full object-contain p-4 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  />
+                )}
               </div>
               <div class="mt-3">
                 <p class="text-xs text-gray-400 mb-0.5">{product.category}</p>
