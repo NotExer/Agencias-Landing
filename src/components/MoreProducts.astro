@@ -57,17 +57,16 @@ function formatPrice(n: number) {
         </a>
       </div>
 
-      <!-- Carrusel con scroll horizontal en móvil, grid en desktop -->
       <div class="relative">
         <div
           id="more-products-track"
-          class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 sm:grid sm:grid-cols-3 sm:overflow-visible lg:grid-cols-4"
+          class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2"
           style="scrollbar-width: none;"
         >
           {shuffled.map((product) => (
             <a
               href={productHref(product.name)}
-              class="group flex w-56 shrink-0 snap-start flex-col sm:w-auto sm:shrink"
+              class="group flex w-56 shrink-0 snap-start flex-col sm:w-[calc(33.333%-11px)] lg:w-[calc(25%-12px)]"
             >
               <div class="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl bg-gray-50 p-4">
                 <img
@@ -127,27 +126,42 @@ function formatPrice(n: number) {
 )}
 
 <script>
-  const track = document.getElementById("more-products-track") as HTMLElement | null;
-  const next  = document.getElementById("more-products-next");
-  const prev  = document.getElementById("more-products-prev");
+  function initMoreProducts() {
+    const track = document.getElementById("more-products-track") as HTMLElement | null;
+    const next  = document.getElementById("more-products-next");
+    const prev  = document.getElementById("more-products-prev");
 
-  if (track && next && prev) {
-    const scrollAmount = () => track.clientWidth * 0.8;
+    if (track && next && prev) {
+      // Remove old event listeners to avoid duplication during view transitions
+      const nextClone = next.cloneNode(true);
+      const prevClone = prev.cloneNode(true);
+      next.parentNode?.replaceChild(nextClone, next);
+      prev.parentNode?.replaceChild(prevClone, prev);
+      
+      const newNext = document.getElementById("more-products-next");
+      const newPrev = document.getElementById("more-products-prev");
 
-    next.addEventListener("click", () => {
-      track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
-    });
+      const scrollAmount = () => track.clientWidth * 0.8;
 
-    prev.addEventListener("click", () => {
-      track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
-    });
+      newNext?.addEventListener("click", () => {
+        track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+      });
 
-    const update = () => {
-      prev.style.opacity = track.scrollLeft > 10 ? "1" : "0";
-      prev.style.pointerEvents = track.scrollLeft > 10 ? "auto" : "none";
-    };
+      newPrev?.addEventListener("click", () => {
+        track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+      });
 
-    track.addEventListener("scroll", update, { passive: true });
-    update();
+      const update = () => {
+        if(newPrev) {
+          newPrev.style.opacity = track.scrollLeft > 10 ? "1" : "0";
+          newPrev.style.pointerEvents = track.scrollLeft > 10 ? "auto" : "none";
+        }
+      };
+
+      track.addEventListener("scroll", update, { passive: true });
+      update();
+    }
   }
+
+  document.addEventListener("astro:page-load", initMoreProducts);
 </script>

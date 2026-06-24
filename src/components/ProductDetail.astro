@@ -271,36 +271,49 @@ const thumbs = images;
 </section>
 
 <script>
-  // Galería: cambiar imagen principal al hacer clic en miniatura
-  const mainImg = document.getElementById(
-    "product-main-image",
-  ) as HTMLImageElement | null;
-  const thumbs = document.querySelectorAll<HTMLButtonElement>(".product-thumb");
+  function initProductDetail() {
+    // Galería: cambiar imagen principal al hacer clic en miniatura
+    const mainImg = document.getElementById(
+      "product-main-image",
+    ) as HTMLImageElement | null;
+    const thumbs = document.querySelectorAll<HTMLButtonElement>(".product-thumb");
 
-  thumbs.forEach((thumb) => {
-    thumb.addEventListener("click", () => {
-      const src = thumb.dataset.thumb;
-      if (mainImg && src) mainImg.src = src;
-      thumbs.forEach((t) => {
-        t.classList.toggle("border-blue-600", t === thumb);
-        t.classList.toggle("border-transparent", t !== thumb);
-      });
+    thumbs.forEach((thumb) => {
+      // Remove previous listener if any to avoid duplicates
+      thumb.removeEventListener("click", thumbClickHandler);
+      thumb.addEventListener("click", thumbClickHandler);
+      
+      function thumbClickHandler() {
+        const src = thumb.dataset.thumb;
+        if (mainImg && src) mainImg.src = src;
+        thumbs.forEach((t) => {
+          t.classList.toggle("border-blue-600", t === thumb);
+          t.classList.toggle("border-transparent", t !== thumb);
+        });
+      }
     });
-  });
 
-  // Acordeón "Información"
-  const infoBtn = document.getElementById("product-info-button");
-  const infoContent = document.getElementById("product-info-content");
-  const infoIcon = document.getElementById("product-info-icon");
+    // Acordeón "Información"
+    const infoBtn = document.getElementById("product-info-button");
+    const infoContent = document.getElementById("product-info-content");
+    const infoIcon = document.getElementById("product-info-icon");
 
-  infoBtn?.addEventListener("click", () => {
-    const isOpen = infoContent?.classList.contains("grid-rows-[1fr]");
-    if (isOpen) {
-      infoContent?.classList.replace("grid-rows-[1fr]", "grid-rows-[0fr]");
-      infoIcon?.classList.add("rotate-180");
-    } else {
-      infoContent?.classList.replace("grid-rows-[0fr]", "grid-rows-[1fr]");
-      infoIcon?.classList.remove("rotate-180");
+    if (infoBtn) {
+      infoBtn.removeEventListener("click", toggleInfo);
+      infoBtn.addEventListener("click", toggleInfo);
     }
-  });
+
+    function toggleInfo() {
+      const isOpen = infoContent?.classList.contains("grid-rows-[1fr]");
+      if (isOpen) {
+        infoContent?.classList.replace("grid-rows-[1fr]", "grid-rows-[0fr]");
+        infoIcon?.classList.add("rotate-180");
+      } else {
+        infoContent?.classList.replace("grid-rows-[0fr]", "grid-rows-[1fr]");
+        infoIcon?.classList.remove("rotate-180");
+      }
+    }
+  }
+
+  document.addEventListener("astro:page-load", initProductDetail);
 </script>

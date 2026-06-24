@@ -45,7 +45,7 @@ const CATALOG: CatalogEntry[] = [
     name:"Bota Inyectada p/p Ref: Hibrida / 100% Libre de Metal",
     category: "Calzado de Trabajo",
     images:   ["Hibrida 1.avif", "Hibrida 2.avif"],
-    price:    189000, 
+    price:    96500, 
     description: [
       "Botas en cuero y lona de 6 pulgadas de altura, con suelas de poliuretano bicolor, diseñadas para ofrecer ligereza y seguridad. Ideales para condiciones donde se requiere resistencia a hidrocarburos y propiedades dieléctricas",
     ],
@@ -57,25 +57,26 @@ const CATALOG: CatalogEntry[] = [
     name:     "Bota Inyectada p/p Ref: Gazella / 100% Libre de Metal",
     category: "Calzado de Trabajo",
     images:   ["Gazella 1.avif", "Gazella 2.avif"],
-    price:    189000, 
+    price:    99500, 
     description: [
       "Botas Gazella en cuero de 6.0” de altura, con suelas de poliuretano bicolor, diseñadas para ofrecer ligereza y seguridad. Ideales para condiciones donde se requiere resistencia a hidrocarburos y propiedades dieléctricas"
-    ],
+    ],  
     specs: "Color blanco · Resistente a agua y aceites · Suela antideslizante · Cumple normas higiene alimentaria",
-  },
+    },
+
     {
-    name:"Bota Soldador Inyectada",
+    name:"Bota Soldador Inyectada",  
     category: "Calzado de Trabajo",
     images:   ["Soldador 1.avif", "Soldador 2.avif"],
     price:    189000, 
     description: [
       "La Bota Soldador Inyectada está diseñada para brindar protección, confort y resistencia en trabajos de soldadura y operaciones industriales. Cuenta con puntera de policarbonato no metálica, corte en cuero mocasín, plantilla transpirable en EVA y suela bicolor en poliuretano.",
       "100% libre de metal y con propiedades dieléctricas, es la opción ideal para empresas que priorizan la protección técnica sin sacrificar comodidad en jornadas prolongadas.",
-    ],
+    ],  
     specs: "Puntera de policarbonato no metálica · Corte en cuero mocasín · Plantilla EVA transpirable · Suela bicolor PU resistente a hidrocarburos, abrasión y flexión · Dieléctrica",
-  },
-
-
+  },  
+  
+  
   {
     name:     "Bota Plástica Caña Alta (Agrícola)",
     category: "Calzado de Trabajo",
@@ -83,10 +84,10 @@ const CATALOG: CatalogEntry[] = [
     price:    189000, 
     description: [
       "Bota de caña alta fabricada en PVC para uso agrícola y trabajos en campo. Protege contra humedad, barro y contacto con productos químicos del campo.",
-    ],
+    ],  
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
-  },
-
+  },  
+  
   {
     name:     "Bota Workman Food Industry Blanca",
     category: "Calzado de Trabajo",
@@ -94,9 +95,36 @@ const CATALOG: CatalogEntry[] = [
     price:    189000, 
     description: [
       "Bota inyectada en P.V.C 100% impermeable, resistente a ácidos grasos, ideales para industrias de alimentos.",
-    ],
+    ],  
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
-  },
+  },  
+
+  
+    {
+      name:     "Bota Lisa Vulcanizada",
+      category: "Calzado de Trabajo",
+      images:   ["Bota Lisa Vulcanizada.avif"],
+      price:    189000, 
+      description: [
+        "Bota Lisa Vulcanizada, diseñada para brindar protección, confort y resistencia en trabajos de soldadura y operaciones industriales. Cuenta con puntera de policarbonato no metálica, corte en cuero mocasín, plantilla transpirable en EVA y suela bicolor en poliuretano.",
+        "100% libre de metal y con propiedades dieléctricas, es la opción ideal para empresas que priorizan la protección técnica sin sacrificar comodidad en jornadas prolongadas.",
+      ],
+      specs: "Tela: Dril 100% algodón · Corte clásico · Tallas S–3XL · Personalizable con bordado",
+    },
+  
+  
+    {
+      name:     "Bota Lisa Nobuck Vulcanizada",
+      category: "Calzado de Trabajo",
+      images:   ["Bota Lisa Nobuck Vulcanizada.avif"],
+      price:    189000, 
+      description: [
+        "Bota Lisa Nobuck Vulcanizada, diseñada para brindar protección, confort y resistencia en trabajos de soldadura y operaciones industriales. Cuenta con puntera de policarbonato no metálica, corte en cuero mocasín, plantilla transpirable en EVA y suela bicolor en poliuretano.",
+        "100% libre de metal y con propiedades dieléctricas, es la opción ideal para empresas que priorizan la protección técnica sin sacrificar comodidad en jornadas prolongadas.",
+      ],
+      specs: "Tela: Dril 100% algodón · Corte clásico · Tallas S–3XL · Personalizable con bordado",
+    },
+
 
   
   {
@@ -106,9 +134,9 @@ const CATALOG: CatalogEntry[] = [
     price:    189000, 
     description: [
       "Botas La Macha Alta Negra, con doble inyección en PVC, caña negra y suela crepé, diseñadas para brindar mayor confort al caminar y un excelente agarre. Ideales para condiciones donde se requiere resistencia a hidrocarburos y propiedades dieléctricas.",
-    ],
+    ],  
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
-  },
+  },  
 
   {
     name:     "Zapaton Plastico Machita Dama",
@@ -117,22 +145,24 @@ const CATALOG: CatalogEntry[] = [
     price:    189000, 
     description: [
       "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
-    ],
+    ],  
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
-  },
+  },  
 
 
 
     {
-    name:     "Bota Workman Super Safety P/Seg + Plantilla en Acero",
+    name:     "Bota Workman Super Safety P/Seg + Plantilla en Acero",  
     category: "Calzado de Trabajo",
     images:   ["Bota Workman Super Safety.avif"],
     price:    189000, 
     description: [
       "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
-    ],
+    ],  
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
-  },
+  },  
+
+  
 
     {
     name:     "Bota Workman Safety Food Industry Blanca",
@@ -160,7 +190,7 @@ const CATALOG: CatalogEntry[] = [
   {
     name:     "Pantalón Dril Clásico Hombre Caqui",
     category: "Uniformes de Trabajo",
-    images:   ["Producto 2.avif", "Producto 4.avif"],
+    images:   ["Producto 2.avif"],
     price:    189000, 
     description: [
       "Pantalón en dril de alta resistencia, corte clásico en color caqui. Ideal para empresas que buscan uniformes duraderos y con presencia profesional.",
@@ -169,10 +199,12 @@ const CATALOG: CatalogEntry[] = [
     specs: "Tela: Dril 100% algodón · Corte clásico · Tallas S–3XL · Personalizable con bordado",
   },
 
+
+
   {
     name:     "Blue Jean Clásico Dama Pretina Anatómica",
     category: "Uniformes de Trabajo",
-    images:   ["Producto 3.avif"],
+    images:   ["Producto 3.avif", "Blue jean dama2.avif"],
     price:    189000, 
     description: [
       "Blue jean de corte anatómico para dama, diseñado para brindar comodidad y libertad de movimiento durante la jornada laboral.",
