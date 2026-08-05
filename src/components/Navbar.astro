@@ -1,11 +1,6 @@
 ---
 import logo from "../img/Logo.nav.avif";
-import { categories, productHref } from "../data/catalog";
-import p1 from "../img/Producto 1.avif";
-import p2 from "../img/Producto 2.avif";
-import p3 from "../img/Producto 3.avif";
-import p4 from "../img/Producto 4.avif";
-import p5 from "../img/Producto 5.avif";
+import { categories, productHref, products } from "../data/catalog";
 
 const links = [
   { label: "Nosotros", href: "/nosotros" },
@@ -14,6 +9,13 @@ const links = [
   { label: "Blog", href: "/articulos" },
   { label: "Política ambiental", href: "/politica_ambiental" },
 ];
+
+const searchIndex = products.map((p) => ({
+  name: p.name,
+  href: productHref(p.name),
+  category: p.category,
+  image: p.images[0] ?? "",
+}));
 ---
 
 <header
@@ -48,9 +50,9 @@ const links = [
         ))
       }
     </ul>
-    <div class="relative hidden lg:block">
+    <div class="relative hidden lg:block" data-search>
       <svg
-        class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+        class="pointer-events-none absolute left-4 top-1/2 z-10 h-5 w-5 -translate-y-1/2 text-gray-400"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -64,8 +66,16 @@ const links = [
       <input
         type="search"
         placeholder="Buscar"
+        autocomplete="off"
+        data-search-input
         class="w-56 rounded-full border border-gray-200 bg-gray-200 py-2.5 pl-11 pr-4 text-m text-gray-700 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100"
       />
+      <div
+        data-search-results
+        class="absolute right-0 top-full z-50 mt-2 hidden w-80 overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-xl"
+        role="listbox"
+      >
+      </div>
     </div>
 
     <!-- menu-toggle -->
@@ -213,9 +223,9 @@ const links = [
   >
     <div class="mobile-menu-inner">
       <div class="px-4 py-3">
-        <div class="relative">
+        <div class="relative" data-search>
           <svg
-            class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+            class="pointer-events-none absolute left-4 top-1/2 z-10 h-5 w-5 -translate-y-1/2 text-gray-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -229,8 +239,16 @@ const links = [
           <input
             type="search"
             placeholder="Buscar"
+            autocomplete="off"
+            data-search-input
             class="w-full rounded-full border border-gray-200 bg-gray-50 py-2.5 pl-11 pr-4 text-m text-gray-700 outline-none focus:border-blue-500 focus:bg-white"
           />
+          <div
+            data-search-results
+            class="absolute left-0 right-0 top-full z-50 mt-2 hidden max-h-80 overflow-y-auto rounded-2xl border border-gray-100 bg-white shadow-xl"
+            role="listbox"
+          >
+          </div>
         </div>
       </div>
 
@@ -362,7 +380,108 @@ const links = [
   }
 </style>
 
+<script
+  type="application/json"
+  id="nav-search-index"
+  set:html={JSON.stringify(searchIndex)}
+/>
+
 <script>
+  type SearchItem = {
+    name: string;
+    href: string;
+    category: string;
+    image: string;
+  };
+
+  const normalize = (s: string) =>
+    s
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+
+  const escapeHtml = (s: string) =>
+    s
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+
+  const searchIndex: SearchItem[] = JSON.parse(
+    document.getElementById("nav-search-index")?.textContent || "[]",
+  );
+
+  const wireSearch = (root: Element) => {
+    const input = root.querySelector<HTMLInputElement>("[data-search-input]");
+    const panel = root.querySelector<HTMLElement>("[data-search-results]");
+    if (!input || !panel || input.dataset.searchReady) return;
+    input.dataset.searchReady = "1";
+
+    const hide = () => panel.classList.add("hidden");
+
+    const render = (q: string) => {
+      const query = normalize(q.trim());
+      if (query.length < 2) {
+        hide();
+        panel.innerHTML = "";
+        return;
+      }
+
+      const hits = searchIndex
+        .filter(
+          (p) =>
+            normalize(p.name).includes(query) ||
+            normalize(p.category).includes(query),
+        )
+        .slice(0, 8);
+
+      if (!hits.length) {
+        panel.innerHTML =
+          '<p class="px-4 py-3 text-sm text-gray-500">Sin resultados</p>';
+        panel.classList.remove("hidden");
+        return;
+      }
+
+      panel.innerHTML = hits
+        .map(
+          (p) => `
+          <a href="${escapeHtml(p.href)}" role="option" class="flex items-center gap-3 px-3 py-2.5 transition-colors hover:bg-gray-50">
+            <img src="${escapeHtml(p.image)}" alt="" width="40" height="40" class="h-10 w-10 shrink-0 rounded-lg bg-gray-50 object-contain" loading="lazy" />
+            <span class="min-w-0">
+              <span class="block truncate text-sm font-medium text-gray-900">${escapeHtml(p.name)}</span>
+              <span class="block truncate text-xs text-gray-500">${escapeHtml(p.category)}</span>
+            </span>
+          </a>`,
+        )
+        .join("");
+      panel.classList.remove("hidden");
+    };
+
+    input.addEventListener("input", () => render(input.value));
+    input.addEventListener("focus", () => render(input.value));
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        hide();
+        input.blur();
+      }
+    });
+  };
+
+  const initSearch = () => {
+    document.querySelectorAll("[data-search]").forEach(wireSearch);
+  };
+
+  initSearch();
+  document.addEventListener("astro:page-load", initSearch);
+
+  document.addEventListener("pointerdown", (e) => {
+    document.querySelectorAll("[data-search]").forEach((root) => {
+      if (!root.contains(e.target as Node)) {
+        root.querySelector("[data-search-results]")?.classList.add("hidden");
+      }
+    });
+  });
+
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("mobile-menu");
 
