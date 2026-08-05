@@ -275,7 +275,7 @@ export interface Category {
   products: string[];
 }
 
-/** Convierte un label de categoría al slug usado en ?categoria= */
+/** Convierte un label de categoría al slug usado en /categoria/[slug] y en ?categoria= */
 export function categorySlug(label: string): string {
   return label
     .toLowerCase()
@@ -286,12 +286,12 @@ export function categorySlug(label: string): string {
 }
 
 const CATEGORY_CONFIG: { label: CategoryName; href: string }[] = [
-  { label: "Calzado de Trabajo",   href: `/producto?categoria=${categorySlug("Calzado de Trabajo")}`   },
-  { label: "Uniformes de Trabajo", href: `/producto?categoria=${categorySlug("Uniformes de Trabajo")}` },
-  { label: "EPP",                  href: `/producto?categoria=${categorySlug("EPP")}`                  },
-  { label: "Hospitalaria",         href: `/producto?categoria=${categorySlug("Hospitalaria")}`         },
-  { label: "Gorros y Redecillas",  href: `/producto?categoria=${categorySlug("Gorros y Redecillas")}`  },
-  { label: "Promocionales",        href: `/producto?categoria=${categorySlug("Promocionales")}`        },
+  { label: "Calzado de Trabajo",   href: `/categoria/${categorySlug("Calzado de Trabajo")}`   },
+  { label: "Uniformes de Trabajo", href: `/categoria/${categorySlug("Uniformes de Trabajo")}` },
+  { label: "EPP",                  href: `/categoria/${categorySlug("EPP")}`                  },
+  { label: "Hospitalaria",         href: `/categoria/${categorySlug("Hospitalaria")}`         },
+  { label: "Gorros y Redecillas",  href: `/categoria/${categorySlug("Gorros y Redecillas")}`  },
+  { label: "Promocionales",        href: `/categoria/${categorySlug("Promocionales")}`        },
 ];
 
 export const categories: Category[] = CATEGORY_CONFIG.map(({ label, href }) => {

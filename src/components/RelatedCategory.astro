@@ -20,7 +20,7 @@ function formatPrice(n: number) {
   }).format(n);
 }
 
-const verTodosHref = `/producto?categoria=${categorySlug(category)}`;
+const verTodosHref = `/categoria/${categorySlug(category)}`;
 ---
 
 {related.length > 0 && (

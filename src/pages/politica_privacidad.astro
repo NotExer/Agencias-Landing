@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
@@ -6,15 +7,22 @@ import bannerCalidad from "../img/Banner privacidad.webp";
 import PoliticaPrivacidadContent from "../components/PoliticaPrivacidadContent.astro";
 ---
 
-<Layout title="Politica de privacidad | Agencias Nacionales S.A.S">
+<Layout
+  title="Política de Privacidad y Tratamiento de Datos | Agencias Nacionales S.A.S"
+  description="Cómo Agencias Nacionales S.A.S recolecta, usa y protege tus datos personales conforme a la normativa colombiana de protección de datos."
+>
   <Navbar />
   <main class="w-full bg-white">
     <!-- Hero Section -->
     <section class="w-full sm:px-4 lg:px-6 mt-4">
       <div class="relative w-full h-[450px] overflow-hidden bg-stone-800 sm:rounded-3xl md:h-[500px]">
-        <img
-          src={bannerCalidad.src}
-          alt="Banner Política de Calidad"
+        <Image
+          src={bannerCalidad}
+          alt="Política de privacidad y tratamiento de datos de Agencias Nacionales"
+          widths={[640, 1024, 1600]}
+          sizes="100vw"
+          loading="eager"
+          fetchpriority="high"
           class="absolute inset-0 h-full w-full object-cover"
         />
         <div class="absolute inset-0 bg-black/50"></div>

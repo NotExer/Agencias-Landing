@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
@@ -6,15 +7,22 @@ import bannerBlog from "../img/Banner uso.jpg";
 import PoliticaUsoContent from "../components/PoliticaUso.astro";
 ---
 
-<Layout title="Politica uso| Agencias Nacionales S.A.S">
+<Layout
+  title="Política de Uso | Agencias Nacionales S.A.S"
+  description="Directrices para el uso seguro y responsable de los equipos, herramientas y elementos de protección personal en el entorno laboral."
+>
   <Navbar />
   <main class="w-full bg-white">
     <!-- Hero Section -->
     <section class="w-full sm:px-4 lg:px-6 mt-4">
       <div class="relative w-full h-[450px] overflow-hidden bg-stone-800 sm:rounded-3xl md:h-[500px]">
-        <img
-          src={bannerBlog.src}
-          alt="Blog Agencias Nacionales"
+        <Image
+          src={bannerBlog}
+          alt="Política de uso de equipos y elementos de protección"
+          widths={[640, 1024, 1600]}
+          sizes="100vw"
+          loading="eager"
+          fetchpriority="high"
           class="absolute inset-0 h-full w-full object-cover"
         />
         <div class="absolute inset-0 bg-black/50"></div>

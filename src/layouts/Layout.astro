@@ -1,47 +1,80 @@
 ---
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import ogDefault from "../img/Logo.avif";
+import WhatsAppFloat from "../components/WhatsAppFloat.astro";
 
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  noindex?: boolean;
 }
 
 const {
   title = "Agencias Nacionales S.A.S | Uniformes y Calzado Industrial",
   description = "Uniformes y calzado industrial diseñados para la seguridad, comodidad y durabilidad que tu equipo necesita.",
+  image = ogDefault.src,
+  noindex = false,
 } = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image, Astro.site);
+
+const organization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Agencias Nacionales S.A.S",
+  url: Astro.site?.href,
+  logo: new URL(ogDefault.src, Astro.site).href,
+  email: "contactanos@agenciasnacionales.com",
+  telephone: "+573042351036",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "CO",
+  },
+};
 ---
 
 <!doctype html>
 <html lang="es" class="w-full">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <slot name="head" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      onload="this.onload=null;this.rel='stylesheet'"
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Agencias Nacionales S.A.S" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(organization)}
     />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
+    <slot name="head" />
     <title>{title}</title>
     <ClientRouter />
   </head>
   <body class="w-full bg-white text-gray-800 antialiased">
     <slot />
+    <WhatsAppFloat />
     <!-- Compensa la altura del header fijo de forma exacta -->
     <script is:inline>
       (function () {

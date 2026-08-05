@@ -13,13 +13,11 @@ import FAQ from "../components/FAQ.astro";
 import Blog from "../components/Blog.astro";
 import BannerFooter from "../components/BannerFooter.astro";
 import Footer from "../components/Footer.astro";
-import heroBanner from "../img/banner1.optimized.avif";
 ---
 
-<Layout>
-  <Fragment slot="head">
-    <link rel="preload" as="image" href={heroBanner.src} fetchpriority="high" />
-  </Fragment>
+<Layout
+  description="Fabricamos uniformes de trabajo, calzado de seguridad, EPP y ropa hospitalaria para empresas en Colombia. Más de 55 años protegiendo equipos de trabajo."
+>
   <Navbar />
   <main class="w-full">
     <Hero />

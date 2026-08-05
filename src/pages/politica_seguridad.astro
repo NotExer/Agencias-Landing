@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
@@ -6,15 +7,22 @@ import bannerBlog from "../img/Banner politica seguridad.jpg";
 import PoliticaSeguridadContent from "../components/PoliticaSeguridad.astro";
 ---
 
-<Layout title="Politica seguridad| Agencias Nacionales S.A.S">
+<Layout
+  title="Política de Seguridad y Salud en el Trabajo | Agencias Nacionales S.A.S"
+  description="Nuestra política de seguridad y salud en el trabajo: un ambiente laboral seguro y saludable que prioriza el bienestar de nuestros colaboradores."
+>
   <Navbar />
   <main class="w-full bg-white">
     <!-- Hero Section -->
     <section class="w-full sm:px-4 lg:px-6 mt-4">
       <div class="relative w-full h-[450px] overflow-hidden bg-stone-800 sm:rounded-3xl md:h-[500px]">
-        <img
-          src={bannerBlog.src}
-          alt="Blog Agencias Nacionales"
+        <Image
+          src={bannerBlog}
+          alt="Política de seguridad y salud en el trabajo de Agencias Nacionales"
+          widths={[640, 1024, 1600]}
+          sizes="100vw"
+          loading="eager"
+          fetchpriority="high"
           class="absolute inset-0 h-full w-full object-cover"
         />
         <div class="absolute inset-0 bg-black/50"></div>
