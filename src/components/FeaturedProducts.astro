@@ -1,16 +1,7 @@
 ---
 import { products, productHref } from "../data/catalog";
 
-// Muestra los primeros 4 productos del catálogo
 const featured = products.slice(0, 4);
-
-function formatPrice(n: number) {
-  return new Intl.NumberFormat("es-CO", {
-    style: "currency",
-    currency: "COP",
-    maximumFractionDigits: 0,
-  }).format(n);
-}
 ---
 
 <section id="productos" class="w-full px-4 py-8 sm:px-6 lg:px-8">
@@ -38,7 +29,6 @@ function formatPrice(n: number) {
     </div>
 
     <div class="relative">
-      <!-- Track con scroll horizontal en móvil, grid en desktop -->
       <div
         id="featured-track"
         class="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 sm:grid sm:grid-cols-3 sm:overflow-visible lg:grid-cols-4"
@@ -76,18 +66,12 @@ function formatPrice(n: number) {
                 <h3 class="text-m text-gray-700 line-clamp-2 group-hover:text-blue-600 transition-colors">
                   {product.name}
                 </h3>
-                <div class="mt-1">
-                  <p class="text-m font-bold text-gray-900">
-                    {formatPrice(product.price)}
-                  </p>
-                </div>
               </div>
             </a>
           ))
         }
       </div>
 
-      <!-- Botón siguiente (visible solo en móvil/tablet donde hay scroll) -->
       <button
         id="featured-next"
         type="button"
@@ -119,7 +103,6 @@ function formatPrice(n: number) {
       track.scrollBy({ left: cardWidth + 20, behavior: "smooth" });
     });
 
-    // Ocultar botón al llegar al final
     track.addEventListener(
       "scroll",
       () => {

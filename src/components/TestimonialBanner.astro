@@ -2,7 +2,7 @@
 const testimonials = [
   "Contratamos a Agencias Nacionales para dotar a nuestra empresa con uniformes personalizados, y superaron nuestras expectativas. Los materiales son cómodos y duraderos, y la personalización quedó perfecta. Muy recomendados.",
   "Desde que comenzamos a trabajar con Agencias Nacionales, nuestros empleados están encantados con sus nuevos uniformes. Además, el enfoque ambiental de la empresa es un gran plus para nosotros.",
-  "Los precios son competitivos, considerando la calidad de los productos. Hubo un pequeño inconveniente con una talla, pero lo resolvieron rápidamente.",
+  "Las condiciones comerciales son competitivas, considerando la calidad de los productos. Hubo un pequeño inconveniente con una talla, pero lo resolvieron rápidamente.",
   "El equipo fue muy atento y respondió rápidamente a todas nuestras inquietudes. Los uniformes llegaron antes del plazo estimado y en perfectas condiciones. Definitivamente trabajaremos con ellos de nuevo.",
 ];
 
@@ -114,24 +114,24 @@ const cloneSets = 1;
 </section>
 
 <script>
-  const track = document.getElementById("testimonial-track");
-  const prevBtn = document.getElementById("testim-prev");
-  const nextBtn = document.getElementById("testim-next");
+  let testimonialsCleanup = () => {};
 
-  if (track && prevBtn && nextBtn) {
-    const N = 4; // Cantidad original de testimonios
-    const cloneSets = 1; // Sets de clones a cada lado
-    const realBase = cloneSets * N; // Índice inicial (empezamos en el set real del medio)
+  function initTestimonials() {
+    testimonialsCleanup();
+
+    const track = document.getElementById("testimonial-track");
+    const prevBtn = document.getElementById("testim-prev");
+    const nextBtn = document.getElementById("testim-next");
+
+    if (!track || !prevBtn || !nextBtn) return;
+
+    const N = 4;
+    const cloneSets = 1;
+    const realBase = cloneSets * N;
 
     let current = realBase;
     let transitionTimeout: ReturnType<typeof setTimeout> | undefined;
 
-    // Posicionamiento inicial sin animación
-    track.style.transition = "none";
-    track.style.transform = `translateX(-${current * 100}%)`;
-    track.getBoundingClientRect(); // Forzar reflow
-
-    // Función para reposicionar silenciosamente cuando nos alejamos del centro
     const jumpIfNeeded = () => {
       if (current >= realBase + N || current < realBase) {
         const offset = ((current % N) + N) % N;
@@ -139,7 +139,7 @@ const cloneSets = 1;
 
         track.style.transition = "none";
         track.style.transform = `translateX(-${current * 100}%)`;
-        track.getBoundingClientRect(); // Forzar reflow
+        track.getBoundingClientRect();
       }
     };
 
@@ -148,19 +148,34 @@ const cloneSets = 1;
       track.style.transform = `translateX(-${current * 100}%)`;
 
       clearTimeout(transitionTimeout);
-      transitionTimeout = setTimeout(() => {
-        jumpIfNeeded();
-      }, 500); // 500ms debe coincidir con el tiempo de la transición CSS
+      transitionTimeout = setTimeout(jumpIfNeeded, 500);
     };
 
-    prevBtn.addEventListener("click", () => {
+    const onPrev = () => {
       current--;
       updateSlide();
-    });
+    };
 
-    nextBtn.addEventListener("click", () => {
+    const onNext = () => {
       current++;
       updateSlide();
-    });
+    };
+
+    track.style.transition = "none";
+    track.style.transform = `translateX(-${current * 100}%)`;
+    track.getBoundingClientRect();
+
+    prevBtn.addEventListener("click", onPrev);
+    nextBtn.addEventListener("click", onNext);
+
+    testimonialsCleanup = () => {
+      clearTimeout(transitionTimeout);
+      prevBtn.removeEventListener("click", onPrev);
+      nextBtn.removeEventListener("click", onNext);
+    };
   }
+
+  document.addEventListener("astro:page-load", initTestimonials);
+  document.addEventListener("astro:before-swap", () => testimonialsCleanup());
 </script>
+

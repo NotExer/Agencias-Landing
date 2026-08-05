@@ -9,14 +9,6 @@ import {
   categorySlug,
 } from "../data/catalog";
 
-function formatPrice(n: number) {
-  return new Intl.NumberFormat("es-CO", {
-    style: "currency",
-    currency: "COP",
-    maximumFractionDigits: 0,
-  }).format(n);
-}
-
 const baseBtn = "px-4 py-1.5 rounded-full text-m font-medium transition border";
 const activeBtn = baseBtn + " bg-[#2B395E] text-white border-transparent";
 const inactiveBtn =
@@ -94,9 +86,6 @@ const inactiveBtn =
                   <p class="text-m font-medium text-gray-900 leading-snug line-clamp-2 group-hover:text-blue-600 transition-colors">
                     {product.name}
                   </p>
-                  <p class="mt-1.5 text-base font-bold text-gray-900">
-                    {formatPrice(product.price)}
-                  </p>
                 </div>
               </a>
             </li>
@@ -113,7 +102,6 @@ const inactiveBtn =
       const productList = document.getElementById("product-list");
       if (!productList) return;
 
-      // Clases de estilos
       const ACTIVE =
         "px-4 py-1.5 rounded-full text-m font-medium transition border bg-[#2B395E] text-white border-transparent";
       const INACTIVE =
@@ -127,7 +115,6 @@ const inactiveBtn =
       const countEl = document.getElementById("product-count");
       const noProducts = document.getElementById("no-products");
 
-      // Aplicar filtro
       let visible = 0;
       items.forEach(function (item) {
         var show = !catParam || item.dataset.category === catParam;
@@ -135,19 +122,16 @@ const inactiveBtn =
         if (show) visible++;
       });
 
-      // Resaltar botón activo
       if (btnAll) btnAll.className = catParam ? INACTIVE : ACTIVE;
       catBtns.forEach(function (btn) {
         btn.className = btn.dataset.slug === catParam ? ACTIVE : INACTIVE;
       });
 
-      // Contador y mensaje vacío
       if (countEl) countEl.textContent = visible + " productos disponibles";
       if (noProducts) noProducts.style.display = visible === 0 ? "block" : "none";
       if (productList) productList.style.display = visible === 0 ? "none" : "";
     }
 
-    // Ejecutar al cargar la página (con o sin View Transitions)
     document.addEventListener("astro:page-load", initFilters);
   </script>
 </Layout>

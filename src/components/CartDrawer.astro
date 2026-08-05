@@ -11,7 +11,6 @@
   class="fixed top-0 right-0 h-full w-full max-w-sm bg-white z-[70] shadow-2xl translate-x-full transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] flex flex-col"
   style="display:none"
 >
-  <!-- Header -->
   <div
     class="flex items-center justify-between px-5 py-4 border-b border-gray-100"
   >
@@ -42,7 +41,6 @@
     </button>
   </div>
 
-  <!-- Empty state -->
   <div
     id="cart-empty"
     class="flex-1 flex flex-col items-center justify-center p-8 text-center"
@@ -66,45 +64,23 @@
     </div>
     <p class="text-gray-500 text-m font-medium">Tu cotización está vacía</p>
     <p class="text-gray-400 text-xs mt-1">
-      Agrega productos para solicitar una oferta.
+      Agrega productos para solicitar una cotización.
     </p>
   </div>
 
-  <!-- Items list -->
   <ul
     id="cart-list"
     class="flex-1 overflow-y-auto divide-y divide-gray-50 px-4 hidden"
   >
   </ul>
 
-  <!-- Footer -->
   <div id="cart-footer" class="border-t border-gray-100 p-5 space-y-3 hidden">
-    <div class="flex justify-between items-center">
-      <span class="text-m text-gray-500">Total estimado</span>
-      <span id="drawer-total" class="text-xl font-bold text-gray-900"></span>
-    </div>
-
-    <!-- Oferta especial (se muestra al superar $1.000.000) -->
-    <div
-      id="offer-banner"
-      class="hidden rounded-2xl bg-blue-50 border border-blue-100 p-4"
-    >
-      <p class="text-m font-bold text-blue-900">
-        🎉 ¡Tu pedido supera $1.000.000!
-      </p>
-      <p class="text-xs text-blue-600 mt-1 leading-relaxed">
-        Contáctanos y te hacemos una oferta especial con descuento por volumen
-        para tu empresa.
-      </p>
-    </div>
-
-    <!-- CTA: Solicitar cotización por WhatsApp -->
     <a
       id="cart-cta"
       href="/contacto"
       class="flex items-center justify-center gap-2 w-full bg-[#2B395E] hover:bg-[#1E2843] text-white font-medium text-m rounded-full py-3.5 transition"
     >
-      Solicitar cotización
+      Solicitar cotización por WhatsApp
     </a>
 
     <button
@@ -117,58 +93,33 @@
 </aside>
 
 <script>
-  import {
-    getCart,
-    removeFromCart,
-    setQuantity,
-    getTotal,
-    getCount,
-    formatCOP,
-  } from "../scripts/cart.ts";
-
-  const OFFER_THRESHOLD = 1_000_000;
-  const WA_NUMBER = "573042351036"; // ← cambia si es necesario
+  import { getCart, removeFromCart, setQuantity, getCount } from "../scripts/cart.ts";
+  import { waHref } from "../data/contact";
 
   function render() {
     const items = getCart();
-    const total = getTotal();
     const count = getCount();
 
     const list = document.getElementById("cart-list")!;
     const empty = document.getElementById("cart-empty")!;
     const footer = document.getElementById("cart-footer")!;
-    const drawerTotal = document.getElementById("drawer-total")!;
     const drawerCount = document.getElementById("drawer-count")!;
-    const offerBanner = document.getElementById("offer-banner")!;
     const cta = document.getElementById("cart-cta") as HTMLAnchorElement;
 
     drawerCount.textContent = `${count} ${count === 1 ? "producto" : "productos"}`;
-    drawerTotal.textContent = formatCOP(total);
 
     const hasItems = items.length > 0;
     empty.classList.toggle("hidden", hasItems);
     list.classList.toggle("hidden", !hasItems);
     footer.classList.toggle("hidden", !hasItems);
-    offerBanner.classList.toggle("hidden", total < OFFER_THRESHOLD);
 
-    // CTA: si supera el millón → link directo a WhatsApp con el resumen
-    if (total >= OFFER_THRESHOLD) {
-      const msg = encodeURIComponent(
-        `Hola, me interesa una cotización especial por ${formatCOP(total)}:\n\n` +
-          items
-            .map(
-              (i) =>
-                `• ${i.name} ×${i.quantity} = ${formatCOP(i.price * i.quantity)}`,
-            )
-            .join("\n") +
-          `\n\nTotal: ${formatCOP(total)}`,
-      );
-      cta.href = `https://wa.me/${WA_NUMBER}?text=${msg}`;
-      cta.textContent = "💬 Pedir oferta especial por WhatsApp";
-    } else {
-      cta.href = "/contacto";
-      cta.textContent = "Solicitar cotización";
-    }
+    cta.href = waHref(
+      items.length
+        ? `Hola, me interesa cotizar estos productos:\n${items
+            .map((i) => `- ${i.name} x${i.quantity}`)
+            .join("\n")}`
+        : "Hola, quisiera recibir una cotización.",
+    );
 
     list.innerHTML = items
       .map(
@@ -178,14 +129,12 @@
              class="w-16 h-16 rounded-xl object-contain bg-gray-50 p-1.5 flex-shrink-0"/>
         <div class="flex-1 min-w-0">
           <p class="text-m font-semibold text-gray-900 leading-tight line-clamp-2">${item.name}</p>
-          <p class="text-xs text-gray-400 mt-0.5">${formatCOP(item.price)} / unidad</p>
           <div class="flex items-center gap-2 mt-2">
             <button class="qty-btn w-7 h-7 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold text-base transition"
                     data-action="dec" data-slug="${item.slug}">−</button>
             <span class="text-m font-medium w-5 text-center tabular-nums">${item.quantity}</span>
             <button class="qty-btn w-7 h-7 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold text-base transition"
                     data-action="inc" data-slug="${item.slug}">+</button>
-            <span class="ml-auto text-m font-semibold text-gray-800">${formatCOP(item.price * item.quantity)}</span>
           </div>
         </div>
         <button class="remove-btn self-start mt-0.5 p-1.5 text-gray-300 hover:text-red-400 transition"
@@ -200,7 +149,6 @@
       )
       .join("");
 
-    // Badge del Navbar
     const badge = document.getElementById("cart-badge");
     if (badge) {
       badge.textContent = String(count);
@@ -208,7 +156,6 @@
     }
   }
 
-  // Delegación de eventos en la lista
   document.getElementById("cart-list")?.addEventListener("click", (e) => {
     const target = e.target as HTMLElement;
 
@@ -233,43 +180,6 @@
     window.dispatchEvent(new CustomEvent("cart:updated", { detail: [] }));
   });
 
-  // Abrir / cerrar drawer
-  const drawer = document.getElementById("cart-drawer")!;
-  const overlay = document.getElementById("cart-overlay")!;
-
-  let isOpen = false;
-
-  function open() {
-    isOpen = true;
-    render();
-    drawer.style.display = "flex"; // entra al layout
-    drawer.getBoundingClientRect(); // fuerza reflow (estado fuera de pantalla)
-    drawer.classList.remove("translate-x-full"); // desliza hacia adentro
-    overlay.classList.remove("hidden");
-    document.body.style.overflow = "hidden";
-  }
-  function close() {
-    isOpen = false;
-    drawer.classList.add("translate-x-full"); // desliza hacia afuera
-    overlay.classList.add("hidden");
-    document.body.style.overflow = "";
-  }
-
-  // Al terminar de salir, lo sacamos del layout para que no genere
-  // scroll horizontal ni quede visible en mÃ³vil.
-  drawer.addEventListener("transitionend", (e) => {
-    if (
-      (e.propertyName === "translate" || e.propertyName === "transform") &&
-      !isOpen
-    ) {
-      drawer.style.display = "none";
-    }
-  });
-
-  document.getElementById("cart-close")?.addEventListener("click", close);
-  overlay.addEventListener("click", close);
-  window.addEventListener("cart:open", open);
   window.addEventListener("cart:updated", render);
-
-  render(); // inicializar badge al cargar
+  render();
 </script>

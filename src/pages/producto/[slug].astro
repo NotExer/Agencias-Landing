@@ -13,6 +13,17 @@ export function getStaticPaths() {
 }
 
 const { product } = Astro.props;
+
+function buildWhatsAppHref(productName: string) {
+  const params = new URLSearchParams({
+    phone: "573042351036",
+    text: `Hola, me interesa el producto "${productName}". ¿Me pueden cotizar?`,
+    type: "phone_number",
+    app_absent: "0",
+  });
+
+  return `https://api.whatsapp.com/send/?${params.toString()}`;
+}
 ---
 
 <Layout title={`${product.name} | Agencias Nacionales S.A.S`}>
@@ -21,11 +32,10 @@ const { product } = Astro.props;
     <ProductDetail
       name={product.name}
       images={product.images}
-      price={product.price}
       highlights={product.highlights}
       description={product.description}
       inStock={product.inStock}
-      contactHref="/contacto"
+      contactHref={buildWhatsAppHref(product.name)}
       info={product.info}
     />
     <RelatedCategory currentSlug={product.slug} category={product.category} />
@@ -33,4 +43,4 @@ const { product } = Astro.props;
   </main>
   <Benefits />
   <Footer />
-</Layout>
+</Layout>
