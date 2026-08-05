@@ -1,5 +1,15 @@
 ---
 import logo from "../img/Icono footer.png";
+import { categorySlug } from "../data/catalog";
+
+const shopLinks = [
+  { label: "Calzado de trabajo", href: `/producto?categoria=${categorySlug("Calzado de Trabajo")}` },
+  { label: "Uniformes de trabajo", href: `/producto?categoria=${categorySlug("Uniformes de Trabajo")}` },
+  { label: "EPP", href: `/producto?categoria=${categorySlug("EPP")}` },
+  { label: "Dotación hospitalaria", href: `/producto?categoria=${categorySlug("Hospitalaria")}` },
+  { label: "Gorros y redecillas", href: `/producto?categoria=${categorySlug("Gorros y Redecillas")}` },
+  { label: "Promocionales", href: `/producto?categoria=${categorySlug("Promocionales")}` },
+];
 ---
 
 <footer class="w-full px-1 sm:px-5 lg:px-10 xl:px-10 bg-white pb-5">
@@ -45,7 +55,6 @@ import logo from "../img/Icono footer.png";
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
       <!-- Logo & Description (takes 2 columns on lg) -->
       <div class="lg:col-span-2">
-        <!-- Logo en escala de grises con brillo para parecer blanco (si el original es oscuro) o normal -->
         <img
           src={logo.src}
           alt="Agencias Nacionales S.A.S"
@@ -92,29 +101,16 @@ import logo from "../img/Icono footer.png";
       <div>
         <h3 class="text-sm font-bold text-white mb-4">Comprar</h3>
         <ul class="space-y-2">
-          {
-            [
-              "Tulas",
-              "Prendas de Vestir",
-              "Impermeables",
-              "Habitaciones",
-              "Cirugía",
-              "Accesorios",
-              "Uniformes Operativos",
-              "Seguridad",
-              "Comercial",
-              "Colegio",
-            ].map((link) => (
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white text-sm transition-colors"
-                >
-                  {link}
-                </a>
-              </li>
-            ))
-          }
+          {shopLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
 
