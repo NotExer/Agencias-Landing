@@ -1,5 +1,5 @@
 const imageModules = import.meta.glob<{ default: { src: string } }>(
-  "../img/*.{avif,jpg,jpeg,png,webp}",
+  "../img/*.{avif,jpg,jpeg,jfif,png,webp}",
   { eager: true }
 );
 
@@ -187,32 +187,236 @@ const CATALOG: CatalogEntry[] = [
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
   },
   
-  {
-    name:     "Pantalón Dril Clásico Hombre Caqui",
-    category: "Uniformes de Trabajo",
-    images:   ["Producto 2.avif"],
-    price:    189000, 
-    description: [
-      "Pantalón en dril de alta resistencia, corte clásico en color caqui. Ideal para empresas que buscan uniformes duraderos y con presencia profesional.",
-      "Disponible para personalización con bordados o estampados corporativos.",
-    ],
-    specs: "Tela: Dril 100% algodón · Corte clásico · Tallas S–3XL · Personalizable con bordado",
-  },
-
-
 
   {
-    name:     "Blue Jean Clásico Dama Pretina Anatómica",
+    name:     "Camisa Oxford Hombre",
     category: "Uniformes de Trabajo",
-    images:   ["Producto 3.avif", "Blue jean dama2.avif"],
-    price:    189000, 
+    images:   ["Camisa oxford hombre.jpg"],
+    price:    119000,
     description: [
-      "Blue jean de corte anatómico para dama, diseñado para brindar comodidad y libertad de movimiento durante la jornada laboral.",
+      "Camisa oxford para hombre con una imagen formal y profesional, ideal para dotaciones de oficina y atención al cliente.",
+      "Su estilo clásico la hace perfecta para uniformes corporativos elegantes.",
     ],
-    specs: "Tela: Jean 100% algodón · Corte anatómico · Tallas 6–18",
+    specs: "Oxford masculino · Uso corporativo · Presentación formal · Corte clásico",
   },
 
-    {
+  {
+    name:     "Camisa Índigo",
+    category: "Uniformes de Trabajo",
+    images:   ["Camisa indigo.jpg"],
+    price:    119000,
+    description: [
+      "Camisa en tono índigo para dotaciones con una apariencia moderna y resistente.",
+      "Diseñada para jornadas laborales donde se necesita buena presencia y durabilidad.",
+    ],
+    specs: "Tela índigo · Uso laboral · Resistente · Imagen moderna",
+  },
+
+  {
+    name:     "Camisa EPM",
+    category: "Uniformes de Trabajo",
+    images:   ["Camisa EPM.jpg"],
+    price:    119000,
+    description: [
+      "Camisa institucional para dotaciones empresariales con una presentación limpia y uniforme.",
+      "Pensada para equipos que necesitan identidad corporativa y comodidad en el día a día.",
+    ],
+    specs: "Camisa institucional · Uso corporativo · Presentación uniforme · Cómoda",
+  },
+
+  {
+    name:     "Camisa Dril Caqui Manga Larga",
+    category: "Uniformes de Trabajo",
+    images:   ["Camisa drill caqui manga larga 1.jpg", "Camisa drill caqui manga larga 2.jpg"],
+    price:    129000,
+    description: [
+      "Camisa en dril caqui de manga larga, ideal para dotaciones operativas, empresariales y de campo.",
+      "Su tela resistente y su color sobrio la convierten en una excelente opción para uniformes de trabajo.",
+    ],
+    specs: "Dril caqui · Manga larga · Uso operativo · Alta resistencia",
+  },
+
+  {
+    name:     "Camisa Dril Caqui Manga Corta",
+    category: "Uniformes de Trabajo",
+    images:   ["Camisa drill caqui manga corta 1.jpg", "Camisa drill caqui manga corta 2.jpg"],
+    price:    119000,
+    description: [
+      "Camisa en dril caqui de manga corta para dotaciones más frescas sin perder resistencia ni presentación.",
+      "Una prenda práctica para equipos de trabajo que necesitan comodidad durante la jornada.",
+    ],
+    specs: "Dril caqui · Manga corta · Uso corporativo · Cómoda y resistente",
+  },
+
+  {
+    name:     "Camisa Dril Azul Oscuro Manga Larga",
+    category: "Uniformes de Trabajo",
+    images:   ["Camisa drill azul oscuro manga larga 1.jpg", "Camisa drill azul oscuro manga larga 2.jpg"],
+    price:    129000,
+    description: [
+      "Camisa en dril azul oscuro de manga larga para uniformes de trabajo con una imagen sobria y profesional.",
+      "Su confección está pensada para jornadas exigentes y dotaciones institucionales.",
+    ],
+    specs: "Dril azul oscuro · Manga larga · Uso laboral · Acabado profesional",
+  },
+
+  {
+    name:     "Camisa Dril Azul Oscuro Manga Corta",
+    category: "Uniformes de Trabajo",
+    images:   ["Camisa drill azul oscuro manga corta 1.jpg", "Camisa drill azul oscuro manga corta 2.png"],
+    price:    119000,
+    description: [
+      "Camisa en dril azul oscuro de manga corta, ideal para dotaciones cómodas y resistentes para uso diario.",
+      "Es una prenda funcional para equipos que buscan una presentación uniforme y fresca.",
+    ],
+    specs: "Dril azul oscuro · Manga corta · Uso corporativo · Dotación funcional",
+  },
+
+  {
+    name:     "Camiseta Tipo Polo Manga Corta",
+    category: "Uniformes de Trabajo",
+    images:   ["Camiseta tipo polo manga corta 1.jpg", "Camiseta tipo polo manga corta 2.jpg"],
+    price:    69000,
+    description: [
+      "Camiseta tipo polo de manga corta para dotaciones casuales y corporativas, con una imagen limpia y profesional.",
+      "Perfecta para equipos que requieren comodidad y buena presentación durante toda la jornada.",
+    ],
+    specs: "Polo manga corta · Uso corporativo · Tejido cómodo · Presentación profesional",
+  },
+
+  {
+    name:     "Camiseta Tipo Polo Manga Larga",
+    category: "Uniformes de Trabajo",
+    images:   ["Camiseta tipo polo manga larga 1.jpg", "Camiseta tipo polo manga larga 2.jpg"],
+    price:    79000,
+    description: [
+      "Camiseta tipo polo de manga larga para dotación, ideal cuando se requiere mayor cobertura sin perder una imagen corporativa.",
+      "Es una opción versátil para diferentes áreas operativas y de servicio.",
+    ],
+    specs: "Polo manga larga · Uso corporativo · Cobertura adicional · Confort diario",
+  },
+
+  {
+    name:     "Camiseta T-Shirt Manga Corta",
+    category: "Uniformes de Trabajo",
+    images:   ["Camiseta t-shirt manga corta 1.jpg", "Camiseta t-shirt manga corta 2.jpg"],
+    price:    59000,
+    description: [
+      "Camiseta t-shirt de manga corta para dotaciones ligeras, promociones internas o uso diario de personal.",
+      "Su corte sencillo permite una personalización fácil para empresas y equipos de trabajo.",
+    ],
+    specs: "T-shirt manga corta · Uso diario · Personalizable · Ligera y cómoda",
+  },
+
+  {
+    name:     "Camiseta T-Shirt Manga Larga",
+    category: "Uniformes de Trabajo",
+    images:   ["Camiseta t-shirt manga larga 1.jpg", "Camiseta t-shirt manga larga 2.jpg"],
+    price:    69000,
+    description: [
+      "Camiseta t-shirt de manga larga para quienes buscan una dotación cómoda con mayor cobertura.",
+      "Funciona bien en ambientes de trabajo que requieren una prenda ligera y resistente.",
+    ],
+    specs: "T-shirt manga larga · Uso corporativo · Ligera · Cómoda y resistente",
+  },
+
+  {
+    name:     "Pantalón EPM",
+    category: "Uniformes de Trabajo",
+    images:   ["Pantalon EPM.jpg"],
+    price:    139000,
+    description: [
+      "Pantalón de dotación con acabado profesional, ideal para uniformes institucionales y corporativos.",
+      "Su diseño busca comodidad, resistencia y una silueta limpia para jornadas laborales prolongadas.",
+    ],
+    specs: "Uniforme institucional · Corte clásico · Uso diario · Alta resistencia al desgaste",
+  },
+
+  {
+    name:     "Pantalón Dril Caqui",
+    category: "Uniformes de Trabajo",
+    images:   ["Pantalon Drill caqui 1.png", "Pantalon Drill caqui 2.png"],
+    price:    139000,
+    description: [
+      "Pantalón en dril color caqui, pensado para dotaciones funcionales que necesitan resistencia y una apariencia sobria.",
+      "Es una prenda versátil para empresas que buscan uniformes durables y cómodos para uso diario.",
+    ],
+    specs: "Dril caqui · Corte clásico · Uso corporativo · Resistente y cómodo",
+  },
+
+  {
+    name:     "Pantalón Dril Azul Oscuro",
+    category: "Uniformes de Trabajo",
+    images:   ["Pantalon Drill azul oscuro 1.png", "Pantalon Drill azul oscuro 2.jpg", "Pantalon drill azul oscuro.jpg"],
+    price:    139000,
+    description: [
+      "Pantalón en dril azul oscuro para dotaciones corporativas, con una presentación sobria y un acabado resistente.",
+      "Sus diferentes ángulos permiten apreciar mejor el ajuste y la confección de la prenda.",
+    ],
+    specs: "Dril azul oscuro · Corte clásico · Dotación empresarial · Alta durabilidad",
+  },
+
+  {
+    name:     "Overol Azul Oscuro",
+    category: "Uniformes de Trabajo",
+    images:   ["Overol azul oscuro.jpg"],
+    price:    159000,
+    description: [
+      "Overol en color azul oscuro pensado para labores operativas donde se necesita una prenda integral, resistente y cómoda.",
+      "Ideal para equipos de mantenimiento, industria y operaciones generales.",
+    ],
+    specs: "Overol de dotación · Color azul oscuro · Uso operativo · Diseño funcional",
+  },
+
+  {
+    name:     "Pava EPM",
+    category: "Uniformes de Trabajo",
+    images:   ["Pava EPM 1.avif", "Pava EPM 2.jpg"],
+    price:    99000,
+    description: [
+      "Pava en dril desarrollada para dotaciones institucionales y de operación, con una confección resistente y cómoda para uso diario.",
+      "Su diseño se adapta a labores de campo, mantenimiento y operación donde se requiere protección ligera y buena presentación.",
+    ],
+    specs: "Dril resistente · Uso institucional · Ajuste cómodo · Ideal para labores operativas",
+  },
+
+  {
+    name:     "Pava en Dril con Solapa",
+    category: "Uniformes de Trabajo",
+    images:   ["Pava en drill con solapa.jpg"],
+    price:    99000,
+    description: [
+      "Pava elaborada en dril con solapa, pensada para brindar cobertura y una presentación uniforme para equipos de trabajo.",
+      "Es una prenda práctica para dotaciones empresariales que necesitan comodidad y durabilidad en el uso cotidiano.",
+    ],
+    specs: "Dril de alta resistencia · Solapa frontal · Uso operativo · Confección para dotación",
+  },
+
+  {
+    name:     "Saco Blanco Clásico",
+    category: "Uniformes de Trabajo",
+    images:   ["Saco blanco 1.jpg", "Saco blanco 2.jpg"],
+    price:    129000,
+    description: [
+      "Saco clásico en color blanco, diseñado para presentaciones limpias y uniformes de trabajo que requieren una imagen impecable y profesional.",
+      "Su corte cómodo facilita el movimiento durante la jornada y funciona muy bien para dotaciones corporativas y administrativas.",
+    ],
+    specs: "Tela ligera de uso corporativo · Corte clásico · Presentación formal · Ideal para dotación empresarial",
+  },
+
+  {
+    name:     "Blue Jean Hombre",
+    category: "Uniformes de Trabajo",
+    images:   ["Blue jean hombre.jpg"],
+    price:    149000,
+    description: [
+      "Blue jean para hombre con un corte clásico, pensado para dotaciones versátiles y cómodas.",
+      "Funciona bien como prenda de uniforme para trabajos donde se necesita resistencia y facilidad de movimiento.",
+    ],
+    specs: "Jean masculino · Corte clásico · Uso laboral · Resistente",
+  },
+
+  {
     name:     "Casco de Seguridad",
     category: "EPP",
     images:   ["Casco blanco.avif"],
