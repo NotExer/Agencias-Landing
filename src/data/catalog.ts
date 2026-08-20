@@ -426,6 +426,402 @@ const CATALOG: CatalogEntry[] = [
     ],
     specs: "Certificación: NTC 1523 · Material: polietileno de alta densidad · Suspensión de 4 puntos · Ranura para accesorios",
   },
+
+  {
+    name:     "Casco Ref. 1300E",
+    category: "EPP",
+    images:   ["Casco Ref-1300E.webp"],
+    price:    109000,
+    description: [
+      "Casco de seguridad tipo industrial para labores de alto uso, con una estructura pensada para brindar protección y comodidad.",
+      "Ideal para equipos de construcción, mantenimiento y operación en campo.",
+    ],
+    specs: "Protección craneal · Uso industrial · Ajuste seguro · Diseño resistente",
+  },
+
+  {
+    name:     "Casco ECO",
+    category: "EPP",
+    images:   ["Casco ECO.jpg"],
+    price:    89000,
+    description: [
+      "Casco de seguridad liviano para trabajos generales donde se necesita protección básica con buena comodidad.",
+      "Es una opción práctica para dotaciones de uso diario.",
+    ],
+    specs: "Protección básica · Material liviano · Uso general · Ajuste cómodo",
+  },
+
+  {
+    name:     "Casco Dieléctrico",
+    category: "EPP",
+    images:   ["Casco Dieléctrico.webp"],
+    price:    119000,
+    description: [
+      "Casco dieléctrico diseñado para entornos donde se requiere protección adicional frente a riesgos eléctricos.",
+      "Su construcción ayuda a complementar protocolos de seguridad industrial.",
+    ],
+    specs: "Protección dieléctrica · Uso eléctrico · Material resistente · Seguridad industrial",
+  },
+
+  {
+    name:     "Casco Mountain",
+    category: "EPP",
+    images:   ["Casco Mountain.jpg"],
+    price:    99000,
+    description: [
+      "Casco de seguridad para tareas generales de protección, con una presentación robusta y funcional.",
+      "Adecuado para actividades operativas y de inspección.",
+    ],
+    specs: "Uso general · Diseño funcional · Protección básica · Resistente",
+  },
+
+  {
+    name:     "Careta para Esmeril",
+    category: "EPP",
+    images:   ["Careta para Esmeril.webp"],
+    price:    129000,
+    description: [
+      "Careta de protección facial pensada para trabajos con esmeril y labores donde puedan generarse partículas o chispas.",
+      "Ayuda a resguardar el rostro durante tareas de corte y desbaste.",
+    ],
+    specs: "Protección facial · Uso con esmeril · Cobertura amplia · Material resistente",
+  },
+
+  {
+    name:     "Respirador KN95",
+    category: "EPP",
+    images:   ["Respirador KN95.jpeg"],
+    price:    69000,
+    description: [
+      "Respirador de alta filtración para protección respiratoria en ambientes con exposición a partículas.",
+      "Diseñado para brindar un ajuste cómodo durante la jornada.",
+    ],
+    specs: "Protección respiratoria · Filtración KN95 · Ajuste ergonómico · Uso diario",
+  },
+
+  {
+    name:     "Arnés H",
+    category: "EPP",
+    images:   ["Arnes-H-600x583.png"],
+    price:    189000,
+    description: [
+      "Arnés tipo H para trabajos en altura, desarrollado para brindar sujeción y apoyo durante labores de riesgo.",
+      "Es una pieza clave en sistemas de protección contra caídas.",
+    ],
+    specs: "Trabajo en altura · Tipo H · Sujeción segura · Uso profesional",
+  },
+
+  {
+    name:     "Chaleco Reflectivo",
+    category: "EPP",
+    images:   ["Chaleco Reflectivos.png"],
+    price:    59000,
+    description: [
+      "Chaleco reflectivo para mejorar la visibilidad en zonas de operación, tránsito interno o labores nocturnas.",
+      "Ideal para dotaciones de señalización y seguridad preventiva.",
+    ],
+    specs: "Alta visibilidad · Uso operativo · Tiras reflectivas · Ajuste ligero",
+  },
+
+  {
+    name:     "Delantal PVC",
+    category: "EPP",
+    images:   ["Delantal PVC.webp"],
+    price:    79000,
+    description: [
+      "Delantal en PVC pensado para proteger la ropa en tareas con humedad, salpicaduras o manipulación de materiales.",
+      "Muy útil en labores de limpieza, procesos industriales y manejo de insumos.",
+    ],
+    specs: "Protección frontal · Material PVC · Resistente a salpicaduras · Fácil de limpiar",
+  },
+
+  {
+    name:     "Silla de Suspensión",
+    category: "EPP",
+    images:   ["Silla de Suspención.webp"],
+    price:    229000,
+    description: [
+      "Silla de suspensión para maniobras de trabajo en altura y posicionamiento temporal en tareas específicas.",
+      "Diseñada para aportar soporte y estabilidad en operaciones controladas.",
+    ],
+    specs: "Trabajo en altura · Soporte de suspensión · Uso profesional · Confección resistente",
+  },
+
+  {
+    name:     "Tapón Auditivo Reutilizable",
+    category: "EPP",
+    images:   ["Tapón Auditivo Reutilizable.jpeg"],
+    price:    19000,
+    description: [
+      "Tapón auditivo reutilizable para reducir la exposición al ruido en ambientes de trabajo exigentes.",
+      "Su formato busca comodidad y uso prolongado.",
+    ],
+    specs: "Protección auditiva · Reutilizable · Reducción de ruido · Uso industrial",
+  },
+
+  {
+    name:     "Tapón para Oídos Desechable sin Cordón",
+    category: "EPP",
+    images:   ["Tapon Para Oidos Desechable  sin Cordon.webp"],
+    price:    12000,
+    description: [
+      "Tapón auditivo desechable para una solución práctica en ambientes con ruido constante.",
+      "Es ideal para entregas rápidas y uso puntual.",
+    ],
+    specs: "Protección auditiva · Desechable · Sin cordón · Uso temporal",
+  },
+
+  {
+    name:     "Guantex Multiflex Steelpro",
+    category: "EPP",
+    images:   ["Guantex Multiflex Steelpro.webp"],
+    price:    29000,
+    description: [
+      "Guante de protección para tareas que requieren destreza y agarre durante la manipulación de materiales.",
+      "Pensado para uso operativo y labores generales.",
+    ],
+    specs: "Protección manual · Agarre seguro · Uso operativo · Alta destreza",
+  },
+
+  {
+    name:     "Guantes con Recubrimiento de Caucho",
+    category: "EPP",
+    images:   ["Guantes con Recubrimiento de Caucho.png"],
+    price:    25000,
+    description: [
+      "Guantes con recubrimiento de caucho para labores donde se necesita mayor agarre y protección en el manejo de superficies.",
+      "Una opción versátil para trabajos generales y de mantenimiento.",
+    ],
+    specs: "Agarre reforzado · Recubrimiento de caucho · Uso general · Resistente",
+  },
+
+  {
+    name:     "Guantes en Caucho Calibre 25",
+    category: "EPP",
+    images:   ["Guantes en Caucho Calibre 25.webp"],
+    price:    22000,
+    description: [
+      "Guantes en caucho calibre 25 para tareas de protección frente a humedad y manipulación de materiales.",
+      "Funcionan bien en labores de limpieza y trabajo ligero.",
+    ],
+    specs: "Protección en caucho · Calibre 25 · Uso general · Resistente a humedad",
+  },
+
+  {
+    name:     "Guantes en Cuero Reforzado",
+    category: "EPP",
+    images:   ["Guantes en Cuero Reforzado.webp"],
+    price:    35000,
+    description: [
+      "Guantes en cuero reforzado para trabajos que demandan protección mecánica y durabilidad.",
+      "Son útiles en actividades operativas y de manipulación de carga.",
+    ],
+    specs: "Protección mecánica · Cuero reforzado · Uso industrial · Alta durabilidad",
+  },
+
+  {
+    name:     "Guantes en Cuero Tipo Ingeniero",
+    category: "EPP",
+    images:   ["Guantes en Cuero Tipo Ingeniero.webp"],
+    price:    33000,
+    description: [
+      "Guantes de cuero tipo ingeniero para labores que requieren protección y resistencia al desgaste.",
+      "Ideales para uso técnico y operativo.",
+    ],
+    specs: "Cuero reforzado · Uso técnico · Resistencia al desgaste · Agarre seguro",
+  },
+
+  {
+    name:     "Guante de Tela Tipo Común",
+    category: "EPP",
+    images:   ["Guante Tela Tipo Comunión.webp"],
+    price:    9000,
+    description: [
+      "Guante de tela para tareas livianas donde se necesita una barrera básica y comodidad.",
+      "Es una alternativa práctica para trabajos sencillos o de apoyo.",
+    ],
+    specs: "Uso liviano · Tela cómoda · Protección básica · Económico",
+  },
+
+  {
+    name:     "Guantes Kimberly Ref. G20P",
+    category: "EPP",
+    images:   ["Guantes Kimberly Ref-G20P.webp"],
+    price:    27000,
+    description: [
+      "Guantes de protección para tareas generales con un diseño orientado al trabajo diario.",
+      "Aportan comodidad y apoyo en labores de manipulación.",
+    ],
+    specs: "Protección general · Uso diario · Ajuste cómodo · Resistencia operativa",
+  },
+
+  {
+    name:     "Gorro Tipo Médico Ref. 14",
+    category: "Gorros y Redecillas",
+    images:   ["Gorro Tipo Medico Ref-14.png"],
+    price:    19000,
+    description: [
+      "Gorro tipo médico pensado para mantener el cabello contenido en entornos de higiene y manipulación controlada.",
+      "Es una opción práctica para dotaciones de salud, alimentos y procesos limpios.",
+    ],
+    specs: "Uso sanitario · Cobertura cómoda · Ligero · Ideal para control de cabello",
+  },
+
+  {
+    name:     "Gorro Redondo en Dacrón Ref. 13",
+    category: "Gorros y Redecillas",
+    images:   ["Gorro Redondo en Dacrón Ref-13.png"],
+    price:    21000,
+    description: [
+      "Gorro redondo en dacrón con una confección ligera y funcional para mantener el cabello recogido.",
+      "Adecuado para labores de producción, cocina o áreas de servicio.",
+    ],
+    specs: "Dacrón · Diseño redondo · Ligero · Uso industrial y alimentario",
+  },
+
+  {
+    name:     "Gorro Corto en Dacrón Ref. 11",
+    category: "Gorros y Redecillas",
+    images:   ["Gorro Corto en Dacrón Ref-11.png"],
+    price:    18000,
+    description: [
+      "Gorro corto en dacrón para mantener una presentación limpia y práctica durante la jornada.",
+      "Es útil en ambientes donde se requiere orden e higiene.",
+    ],
+    specs: "Dacrón · Formato corto · Ligero · Uso diario",
+  },
+
+  {
+    name:     "Gorro Largo en Dacrón Ref. 12",
+    category: "Gorros y Redecillas",
+    images:   ["Gorro Largo en Dacrón Ref-12.png"],
+    price:    22000,
+    description: [
+      "Gorro largo en dacrón con mayor cobertura para contener mejor el cabello durante el trabajo.",
+      "Ideal para procesos que requieren mayor control y presentación.",
+    ],
+    specs: "Dacrón · Mayor cobertura · Ligero · Uso sanitario e industrial",
+  },
+
+  {
+    name:     "Redecilla Velillo Cristal Blanca Ref. 03",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Velillo Cristal Blanca Ref-03.png"],
+    price:    12000,
+    description: [
+      "Redecilla de velillo cristal en color blanco para recogido ligero y discreto del cabello.",
+      "Muy usada en procesos de alimentos, salud y áreas limpias.",
+    ],
+    specs: "Velillo cristal · Color blanco · Ligera · Uso sanitario",
+  },
+
+  {
+    name:     "Redecilla Velillo Cristal Negra Ref. 05",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Velillo Cristal Negra Ref-05.png"],
+    price:    12000,
+    description: [
+      "Redecilla de velillo cristal en color negro para una presentación sobria y práctica.",
+      "Ayuda a contener el cabello sin perder comodidad.",
+    ],
+    specs: "Velillo cristal · Color negro · Discreta · Uso diario",
+  },
+
+  {
+    name:     "Redecilla Tull Ref. 04",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Tull Ref-04.png"],
+    price:    11000,
+    description: [
+      "Redecilla en tull para control de cabello en ambientes de trabajo que requieren orden e higiene.",
+      "Es ligera y cómoda para uso prolongado.",
+    ],
+    specs: "Tull · Ligera · Control de cabello · Uso industrial",
+  },
+
+  {
+    name:     "Redecilla Suave Ref. 02",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Suave Ref-02.jfif"],
+    price:    10000,
+    description: [
+      "Redecilla suave para una sujeción cómoda del cabello durante la jornada.",
+      "Pensada para labores donde la ligereza es importante.",
+    ],
+    specs: "Material suave · Ligera · Ajuste cómodo · Uso diario",
+  },
+
+  {
+    name:     "Redecilla Larga en Lycra Ref. 25",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Larga en Lycra Ref-25.png"],
+    price:    13000,
+    description: [
+      "Redecilla larga en lycra con mayor cobertura para mantener el cabello bien contenido.",
+      "Una opción flexible y práctica para uso continuo.",
+    ],
+    specs: "Lycra · Formato largo · Flexible · Mayor cobertura",
+  },
+
+  {
+    name:     "Redecilla Larga 1 Velillo Cristal Ref. 07",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Larga 1 Velillo Cristal Ref-07.png"],
+    price:    13000,
+    description: [
+      "Redecilla larga de velillo cristal para recogido amplio y seguro del cabello.",
+      "Adecuada para entornos que priorizan higiene y presentación.",
+    ],
+    specs: "Velillo cristal · Formato largo · Ligera · Uso sanitario",
+  },
+
+  {
+    name:     "Redecilla Corta Velillo Cristal Ref. 06",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Corta Velillo Cristal Ref-06.png"],
+    price:    11000,
+    description: [
+      "Redecilla corta en velillo cristal para una solución simple y cómoda de control de cabello.",
+      "Ideal para uso operativo diario.",
+    ],
+    specs: "Velillo cristal · Formato corto · Ligera · Uso diario",
+  },
+
+  {
+    name:     "Redecilla Corta Lycra Ref. 06",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Corta Lycra Ref-06.png"],
+    price:    11000,
+    description: [
+      "Redecilla corta en lycra con ajuste cómodo y flexible para mantener el cabello recogido.",
+      "Es una alternativa práctica para diferentes tipos de dotación.",
+    ],
+    specs: "Lycra · Formato corto · Flexible · Ajuste cómodo",
+  },
+
+  {
+    name:     "Redecilla Corta Franela Ref. 06",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Corta Franela Ref-06.png"],
+    price:    11000,
+    description: [
+      "Redecilla corta en franela para un uso sencillo y cómodo durante la jornada.",
+      "Pensada para dotaciones que buscan practicidad y suavidad.",
+    ],
+    specs: "Franela · Formato corto · Suave · Uso diario",
+  },
+
+  {
+    name:     "Redecilla Balaca en Dacrón Ref. 09",
+    category: "Gorros y Redecillas",
+    images:   ["Redecilla Balaca en Dacrón Ref-09.png"],
+    price:    14000,
+    description: [
+      "Redecilla tipo balaca en dacrón para mantener el cabello sujeto con una presentación limpia.",
+      "Útil en ambientes donde se necesita control y comodidad al mismo tiempo.",
+    ],
+    specs: "Dacrón · Tipo balaca · Ligera · Control de cabello",
+  },
   
 ];
 
