@@ -806,6 +806,9 @@ const searchIndex = [
           }, 120);
         };
 
+        categoriesNav.addEventListener("mouseenter", cancelClose, { signal });
+        categoriesNav.addEventListener("mouseleave", scheduleClose, { signal });
+
         items.forEach((item) => {
           const drop = item.querySelector(".mega-drop");
 
@@ -829,11 +832,6 @@ const searchIndex = [
             },
             { signal },
           );
-
-          item.addEventListener("mouseleave", scheduleClose, { signal });
-
-          drop?.addEventListener("mouseenter", cancelClose, { signal });
-          drop?.addEventListener("mouseleave", scheduleClose, { signal });
         });
       }
     };
