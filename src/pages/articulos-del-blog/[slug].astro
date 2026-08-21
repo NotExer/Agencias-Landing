@@ -1,0 +1,181 @@
+---
+import { Image } from "astro:assets";
+import Footer from "../../components/Footer.astro";
+import Navbar from "../../components/Navbar.astro";
+import missionPymeAvatar from "../../img/blog/author-misionpyme.jpg";
+import {
+  articles,
+  getArticleImage,
+  getArticlePath,
+  type Article,
+  type ArticleBlock,
+} from "../../data/articles";
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return articles.map((article) => ({ params: { slug: article.slug }, props: { article } }));
+}
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+const heroImage = getArticleImage(article.slug);
+const canonicalUrl = `https://agenciasnacionales.com${getArticlePath(article.slug)}`;
+const socialImageUrl = heroImage
+  ? new URL(heroImage.src, "https://agenciasnacionales.com").toString()
+  : undefined;
+type ContentGroup = ArticleBlock | { type: "ul"; items: string[] };
+const contentGroups: ContentGroup[] = [];
+
+for (const block of article.blocks) {
+  if (block.type !== "li") {
+    contentGroups.push(block);
+    continue;
+  }
+
+  const previous = contentGroups.at(-1);
+  if (previous?.type === "ul") {
+    previous.items.push(block.text);
+  } else {
+    contentGroups.push({ type: "ul", items: [block.text] });
+  }
+}
+
+const hasMissionPymeAvatar = article.author === "MisiónPyme";
+---
+
+<Layout title={`${article.title} | Agencias Nacionales`} description={article.description}>
+  <Fragment slot="head">
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={article.title} />
+    <meta property="og:description" content={article.description} />
+    {socialImageUrl && <meta property="og:image" content={socialImageUrl} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={article.title} />
+    <meta name="twitter:description" content={article.description} />
+    {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
+    <meta property="article:published_time" content={article.dateISO} />
+  </Fragment>
+  <Navbar />
+
+  <main class="bg-white px-[15px] pb-24 pt-16 sm:px-[30px] lg:pt-20">
+    <header class="mx-auto max-w-[1000px]">
+      <span class="inline-flex rounded-full bg-[#ebebeb] px-[15px] py-2 text-lg font-normal leading-[1.6] text-black">
+        {article.tag}
+      </span>
+      <h1 class="mt-5 text-[34px] font-bold leading-[1.3] text-black sm:text-[40px]">
+        {article.title}
+      </h1>
+      <div class="mt-5 flex items-center justify-between gap-5 text-lg font-normal leading-[1.6] text-black">
+        {
+          article.author ? (
+            <div class="flex items-center gap-3">
+              {hasMissionPymeAvatar ? (
+                <Image
+                  src={missionPymeAvatar}
+                  alt="MisiónPyme"
+                  width={40}
+                  height={40}
+                  class="h-10 w-10 rounded-full border border-blue-500 object-cover"
+                />
+              ) : (
+                <span class="h-10 w-10 rounded-full border border-gray-200 bg-[repeating-linear-gradient(135deg,#f3f4f6_0px,#f3f4f6_5px,#e5e7eb_5px,#e5e7eb_10px)]" />
+              )}
+              <span>{article.author}</span>
+            </div>
+          ) : (
+            <span />
+          )
+        }
+        <time datetime={article.dateISO} class="shrink-0">{article.date}</time>
+      </div>
+    </header>
+
+    <div class="mx-auto mt-[70px] max-w-[1000px]">
+      <div class="aspect-[5/2] overflow-hidden rounded-[20px] bg-gray-100">
+        {
+          heroImage ? (
+            <Image
+              src={heroImage}
+              alt={article.title}
+              widths={[720, 1080, 1440]}
+              sizes="(max-width: 1060px) calc(100vw - 30px), 1000px"
+              class="h-full w-full object-cover"
+              loading="eager"
+            />
+          ) : (
+            <div class="h-full w-full bg-gray-100" />
+          )
+        }
+      </div>
+    </div>
+
+    <article class="article-body mx-auto max-w-[800px] pt-16 lg:pt-20">
+        {
+          contentGroups.map((block) => {
+            if (block.type === "h2") return <h2>{block.text}</h2>;
+            if (block.type === "h3") return <h3>{block.text}</h3>;
+            if (block.type === "ul") {
+              return <ul>{block.items.map((item) => <li>{item}</li>)}</ul>;
+            }
+            return <p>{block.text}</p>;
+          })
+        }
+    </article>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .article-body {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .article-body :global(h2) {
+    margin: 3rem 0 1.25rem;
+    color: #666;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .article-body :global(h3) {
+    margin: 3rem 0 1.25rem;
+    color: #666;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .article-body :global(p) {
+    margin: 0 0 1.5rem;
+  }
+
+  .article-body :global(ul) {
+    margin: 0 0 1.5rem;
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+
+  .article-body :global(li) {
+    margin-bottom: 0.4rem;
+  }
+
+  .article-body :global(h2:first-child),
+  .article-body :global(h3:first-child) {
+    margin-top: 0;
+  }
+
+  @media (max-width: 640px) {
+    .article-body :global(h2),
+    .article-body :global(h3) {
+      font-size: 1.125rem;
+    }
+  }
+</style>
