@@ -1,0 +1,160 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import Benefits from "../../components/Benefits.astro";
+import ProductGrid from "../../components/ProductGrid.astro";
+import { products, categories, categorySlug } from "../../data/catalog";
+import { waHref } from "../../data/contact";
+
+/** Copy editorial por categoría: title, meta description e intro visible. */
+const COPY: Record<
+  string,
+  { title: string; description: string; intro: string }
+> = {
+  "Calzado de Trabajo": {
+    title: "Calzado de Seguridad Industrial",
+    description:
+      "Botas de seguridad, calzado dieléctrico y antideslizante para trabajo pesado. Puntera de policarbonato, suela PU y resistencia a hidrocarburos.",
+    intro:
+      "Nuestro calzado de trabajo está fabricado para jornadas largas y entornos exigentes: punteras no metálicas, suelas resistentes a hidrocarburos y construcción dieléctrica. Encuentra referencias para construcción, industria de alimentos, agro y trabajo eléctrico, con tallas y volúmenes disponibles para empresas.",
+  },
+  "Uniformes de Trabajo": {
+    title: "Uniformes de Trabajo Industriales",
+    description:
+      "Uniformes de trabajo en dril y jean, personalizables con bordado o serigrafía. Fabricación propia para empresas en Colombia, con precios por volumen.",
+    intro:
+      "Diseñamos y confeccionamos uniformes de trabajo pensados para durar: telas resistentes, cortes anatómicos y marcación con bordado, serigrafía o vinilo textil. Trabajamos pedidos por volumen con tallajes completos y adaptación al manual de marca de tu empresa.",
+  },
+  EPP: {
+    title: "Elementos de Protección Personal (EPP)",
+    description:
+      "Cascos, protección visual y auditiva y demás elementos de protección personal certificados para reducir el riesgo laboral en tu operación.",
+    intro:
+      "Complementa la dotación de tu equipo con elementos de protección personal seleccionados por nivel de riesgo. Te asesoramos en la matriz de EPP según la actividad y el sector, para que cada puesto de trabajo cuente con la protección adecuada.",
+  },
+  Hospitalaria: {
+    title: "Ropa y Dotación Hospitalaria",
+    description:
+      "Uniformes antifluidos, batas y ropa hospitalaria cómoda y resistente a lavados frecuentes para clínicas, laboratorios y consultorios.",
+    intro:
+      "Nuestra línea hospitalaria combina telas antifluidos, comodidad para turnos largos y resistencia al lavado industrial. Ideal para clínicas, laboratorios, odontología y servicios de salud que necesitan una imagen uniforme y prendas que aguanten el uso diario.",
+  },
+  "Gorros y Redecillas": {
+    title: "Gorros y Redecillas de Protección",
+    description:
+      "Gorros, cofias y redecillas para industria de alimentos y áreas limpias. Cumplen con los requisitos de higiene y manipulación de alimentos.",
+    intro:
+      "Gorros, cofias y redecillas para plantas de alimentos, cocinas industriales y áreas limpias, donde el control de partículas y cabello es parte del protocolo sanitario. Disponibles en distintos materiales y presentaciones según la frecuencia de recambio.",
+  },
+  Promocionales: {
+    title: "Productos Promocionales Corporativos",
+    description:
+      "Artículos promocionales y merchandising corporativo personalizado con el logo de tu empresa para campañas, eventos y dotación de personal.",
+    intro:
+      "Artículos promocionales personalizados con la identidad de tu marca, pensados para eventos, campañas internas y obsequios corporativos. Manejamos distintas técnicas de marcación y cantidades mínimas flexibles.",
+  },
+};
+
+export function getStaticPaths() {
+  return categories.map((c) => ({
+    params: { slug: categorySlug(c.label) },
+    props: { label: c.label },
+  }));
+}
+
+const { label } = Astro.props;
+const copy = COPY[label];
+const catProducts = products.filter((p) => p.category === label);
+
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Productos", item: new URL("/producto", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: label },
+  ],
+};
+---
+
+<Layout
+  title={`${copy.title} | Agencias Nacionales S.A.S`}
+  description={copy.description}
+  image={catProducts[0]?.images[0]}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+  </Fragment>
+  <Navbar />
+  <main class="w-full bg-white min-h-screen">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-4">
+      <nav aria-label="Ruta de navegación" class="text-xs text-gray-400">
+        <a href="/" class="hover:text-gray-600">Inicio</a>
+        <span class="mx-1">/</span>
+        <a href="/producto" class="hover:text-gray-600">Productos</a>
+        <span class="mx-1">/</span>
+        <span class="text-gray-600">{label}</span>
+      </nav>
+      <h1 class="mt-3 text-2xl font-bold text-gray-900 sm:text-3xl">
+        {copy.title}
+      </h1>
+      <p class="mt-3 max-w-3xl text-m leading-relaxed text-gray-600">
+        {copy.intro}
+      </p>
+      <p class="mt-3 text-m text-gray-500">
+        {catProducts.length}
+        {catProducts.length === 1 ? " producto disponible" : " productos disponibles"}
+      </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">
+      <div class="flex flex-wrap gap-2">
+        <a
+          href="/producto"
+          class="px-4 py-1.5 rounded-full text-m font-medium transition border bg-white text-gray-600 border-gray-200 hover:border-gray-400"
+          >Todos</a
+        >
+        {
+          categories.map((cat) => (
+            <a
+              href={`/categoria/${categorySlug(cat.label)}`}
+              class={`px-4 py-1.5 rounded-full text-m font-medium transition border ${
+                cat.label === label
+                  ? "bg-[#2B395E] text-white border-transparent"
+                  : "bg-white text-gray-600 border-gray-200 hover:border-gray-400"
+              }`}
+            >
+              {cat.label}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      {
+        catProducts.length === 0 ? (
+          <div class="flex flex-col items-center gap-4 py-20 text-center">
+            <p class="text-gray-400">
+              Estamos preparando esta categoría. Escríbenos y te cotizamos lo
+              que necesitas.
+            </p>
+            <a
+              href={waHref(`Hola, quisiera cotizar productos de la categoría "${label}".`)}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block rounded-full bg-green-600 px-6 py-3 text-m font-medium text-white transition hover:bg-green-700"
+            >
+              Cotizar por WhatsApp
+            </a>
+          </div>
+        ) : (
+          <ProductGrid products={catProducts} />
+        )
+      }
+    </section>
+  </main>
+  <Benefits />
+  <Footer />
+</Layout>

@@ -1,11 +1,14 @@
-const imageModules = import.meta.glob<{ default: { src: string } }>(
+const imageModules = import.meta.glob<{
+  default: { src: string } | string;
+}>(
   "../img/*.{avif,jpg,jpeg,jfif,png,webp}",
   { eager: true }
 );
 
 /** Uso: img("bota-soldador.avif") → URL lista para usar en <img src> */
 function img(filename: string): string {
-  return imageModules[`../img/${filename}`]?.default?.src ?? "";
+  const image = imageModules[`../img/${filename}`]?.default;
+  return typeof image === "string" ? image : image?.src ?? "";
 }
 
 // ── TIPOS (no tocar) ─────────────────────────────────────────
@@ -176,7 +179,7 @@ const CATALOG: CatalogEntry[] = [
   },
 
   
-    {
+  {
     name:     "Bota Workman Safety Waterproof P/Seg Negra",
     category: "Calzado de Trabajo",
     images:   ["Bota Workman Safety Waterproof.avif"],
@@ -185,6 +188,186 @@ const CATALOG: CatalogEntry[] = [
       "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
     ],
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+  },
+
+  {
+    name:     "Tenis Deportivo Bajo",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Deportivo Bajo.webp"],
+    price:    189000,
+    description: [
+      "Tenis deportivo bajo en lona negra con cordones, diseñado para brindar comodidad y una presentación versátil durante la jornada.",
+      "Su construcción ligera y su suela de caucho lo convierten en una opción práctica para dotaciones de uso cotidiano.",
+    ],
+    specs: "Lona textil negra · Diseño bajo · Cierre con cordones · Suela de caucho · Uso cotidiano",
+  },
+
+  {
+    name:     "Tenis Deportivo Alto",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Deportivo Alto.webp"],
+    price:    189000,
+    description: [
+      "Tenis deportivo alto en lona blanca con cordones, diseñado para brindar comodidad y mayor cobertura durante la jornada.",
+      "Su construcción ligera y su suela de caucho ofrecen una opción versátil para dotaciones de uso cotidiano.",
+    ],
+    specs: "Lona textil blanca · Diseño alto · Cierre con cordones · Suela de caucho · Uso cotidiano",
+  },
+
+  {
+    name:     "Tenis Royal Cut Bajo",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Royal Cut Bajo.webp"],
+    price:    189000,
+    description: [
+      "Tenis Royal Cut de diseño bajo en lona negra con cordones blancos, pensado para ofrecer comodidad y una presentación moderna durante la jornada.",
+      "Su suela de caucho incorpora detalles de color que complementan una construcción ligera y versátil para uso cotidiano.",
+    ],
+    specs: "Lona textil negra · Diseño bajo · Cierre con cordones · Suela de caucho · Detalles de color",
+  },
+
+  {
+    name:     "Tenis Royal Cut Alto",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Royal Cut Alto.webp"],
+    price:    189000,
+    description: [
+      "Tenis Royal Cut de diseño alto en lona negra con cordones blancos, pensado para ofrecer comodidad y mayor cobertura durante la jornada.",
+      "Su suela de caucho con detalles de color complementa una construcción ligera y versátil para uso cotidiano.",
+    ],
+    specs: "Lona textil negra · Diseño alto · Cierre con cordones · Suela de caucho · Detalles de color",
+  },
+
+  {
+    name:     "Tenis Clásico Zeus Alto (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Clasico Zeus Alto Lona.webp"],
+    price:    189000,
+    description: [
+      "Tenis clásico Zeus de diseño alto en lona negra con cordones, pensado para ofrecer comodidad y mayor cobertura durante la jornada.",
+      "Su construcción monocromática y su suela de caucho brindan una presentación sobria y versátil para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño alto · Cierre con cordones · Suela de caucho · Acabado monocromático",
+  },
+
+  {
+    name:     "Tenis Clásico Zeus Bajo (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Clasico Zeus Bajo Lona.webp"],
+    price:    189000,
+    description: [
+      "Tenis clásico Zeus de diseño bajo en lona negra con cordones, pensado para brindar comodidad y libertad de movimiento durante la jornada.",
+      "Su construcción monocromática y su suela de caucho ofrecen una presentación sobria y versátil para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño bajo · Cierre con cordones · Suela de caucho · Acabado monocromático",
+  },
+
+  {
+    name:     "Tenis Clásico Ares Alto (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Clasico Ares Alto Lona.webp"],
+    price:    189000,
+    description: [
+      "Tenis clásico Ares de diseño alto en lona negra con cordones blancos, pensado para brindar comodidad y mayor cobertura durante la jornada.",
+      "Sus costuras en contraste y su suela de caucho blanca con detalles negros ofrecen una apariencia versátil para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño alto · Cordones blancos · Suela de caucho · Costuras en contraste",
+  },
+
+  {
+    name:     "Tenis Clásico Ares Bajo (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Clasico Ares Bajo Lona.webp"],
+    price:    189000,
+    description: [
+      "Tenis clásico Ares de diseño bajo en lona negra con cordones blancos, pensado para brindar comodidad y libertad de movimiento durante la jornada.",
+      "Sus costuras en contraste y su suela de caucho blanca con detalles negros ofrecen una apariencia versátil para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño bajo · Cordones blancos · Suela de caucho · Costuras en contraste",
+  },
+
+  {
+    name:     "Tenis Nix Hombre",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Nix Hombre.webp"],
+    price:    189000,
+    description: [
+      "Tenis Nix para hombre de diseño bajo en color negro, pensado para brindar comodidad y una presentación sobria durante la jornada.",
+      "Su cierre con cordones, paneles con perforaciones y suela blanca ofrecen una combinación versátil para uso cotidiano.",
+    ],
+    specs: "Diseño masculino · Corte bajo · Cierre con cordones · Suela blanca · Paneles perforados",
+  },
+
+  {
+    name:     "Tenis Terra Dama",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Terra Dama.webp"],
+    price:    189000,
+    description: [
+      "Tenis Terra para dama de diseño bajo en color blanco, pensado para brindar comodidad y una presentación limpia durante la jornada.",
+      "Su cierre con cordones, paneles con perforaciones y suela blanca ofrecen una combinación ligera y versátil para uso cotidiano.",
+    ],
+    specs: "Diseño femenino · Corte bajo · Cierre con cordones · Suela blanca · Paneles perforados",
+  },
+
+  {
+    name:     "Tenis Clásico Tipo Reebok Prin",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Clasico Tipo Reebok Prin.webp"],
+    price:    189000,
+    description: [
+      "Tenis clásico tipo Reebok Prin de diseño bajo en color negro, pensado para brindar comodidad y una presentación sobria durante la jornada.",
+      "Su capellada sintética, cierre con cordones y suela moldeada ofrecen una combinación resistente y versátil para uso cotidiano.",
+    ],
+    specs: "Capellada sintética · Corte bajo · Cierre con cordones · Suela moldeada · Acabado negro",
+  },
+
+  {
+    name:     "Mocasín Ámbar Cordón (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Mocasin Ambar Cordon Lona.webp"],
+    price:    189000,
+    description: [
+      "Mocasín Ámbar de diseño bajo en lona negra con cordones blancos, pensado para brindar comodidad y ligereza durante la jornada.",
+      "Su construcción flexible y su suela blanca ofrecen una apariencia casual y versátil para uso cotidiano.",
+    ],
+    specs: "Lona negra · Corte bajo · Cordones blancos · Tres ojales · Suela blanca",
+  },
+
+  {
+    name:     "Ámbar Mocasín (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Ambar Mocasin Lona.webp"],
+    price:    189000,
+    description: [
+      "Mocasín Ámbar tipo slip-on en lona negra, pensado para brindar comodidad y facilidad al calzar durante la jornada.",
+      "Sus elásticos laterales, construcción flexible y suela blanca ofrecen una apariencia casual y versátil para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño slip-on · Elásticos laterales · Corte bajo · Suela blanca",
+  },
+
+  {
+    name:     "Rex Cordón Tipo Vans (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Rex Cordon Tipo Vans Lona.webp"],
+    price:    189000,
+    description: [
+      "Tenis Rex tipo Vans de diseño bajo en lona negra con cordones, pensado para brindar comodidad y resistencia durante la jornada.",
+      "Su construcción monocromática y su suela de caucho texturizada ofrecen una apariencia casual y versátil para uso cotidiano.",
+    ],
+    specs: "Lona negra · Corte bajo · Cordones negros · Tres ojales · Suela de caucho negra",
+  },
+
+  {
+    name:     "Rex Mocasín Tipo Vans (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Rex Mocasin Tipo Vans Lona.webp"],
+    price:    189000,
+    description: [
+      "Mocasín Rex tipo Vans en lona negra, pensado para brindar comodidad y facilidad al calzar durante la jornada.",
+      "Sus elásticos laterales y su suela de caucho negra texturizada ofrecen una apariencia casual y resistente para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño slip-on · Elásticos laterales · Corte bajo · Suela de caucho negra",
   },
   
   {
@@ -211,7 +394,7 @@ const CATALOG: CatalogEntry[] = [
     specs: "Jean femenino · Corte clásico · Uso laboral · Resistente",
   },
 
-  
+
   {
     name:     "Camisa Oxford Hombre",
     category: "Uniformes de Trabajo",
@@ -1236,7 +1419,7 @@ export interface Category {
   products: string[];
 }
 
-/** Convierte un label de categoría al slug usado en ?categoria= */
+/** Convierte un label de categoría al slug usado en /categoria/[slug] y en ?categoria= */
 export function categorySlug(label: string): string {
   return label
     .toLowerCase()
@@ -1247,12 +1430,12 @@ export function categorySlug(label: string): string {
 }
 
 const CATEGORY_CONFIG: { label: CategoryName; href: string }[] = [
-  { label: "Calzado de Trabajo",   href: `/producto?categoria=${categorySlug("Calzado de Trabajo")}`   },
-  { label: "Uniformes de Trabajo", href: `/producto?categoria=${categorySlug("Uniformes de Trabajo")}` },
-  { label: "EPP",                  href: `/producto?categoria=${categorySlug("EPP")}`                  },
-  { label: "Hospitalaria",         href: `/producto?categoria=${categorySlug("Hospitalaria")}`         },
-  { label: "Gorros y Redecillas",  href: `/producto?categoria=${categorySlug("Gorros y Redecillas")}`  },
-  { label: "Promocionales",        href: `/producto?categoria=${categorySlug("Promocionales")}`        },
+  { label: "Calzado de Trabajo",   href: `/categoria/${categorySlug("Calzado de Trabajo")}`   },
+  { label: "Uniformes de Trabajo", href: `/categoria/${categorySlug("Uniformes de Trabajo")}` },
+  { label: "EPP",                  href: `/categoria/${categorySlug("EPP")}`                  },
+  { label: "Hospitalaria",         href: `/categoria/${categorySlug("Hospitalaria")}`         },
+  { label: "Gorros y Redecillas",  href: `/categoria/${categorySlug("Gorros y Redecillas")}`  },
+  { label: "Promocionales",        href: `/categoria/${categorySlug("Promocionales")}`        },
 ];
 
 export const categories: Category[] = CATEGORY_CONFIG.map(({ label, href }) => {

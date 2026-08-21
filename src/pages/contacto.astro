@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
@@ -7,9 +8,13 @@ import Reviews from "../components/Reviews.astro";
 // Import banner
 // Vite resolverá la extensión automáticamente, o asumirá si no hay.
 import bannerContacto from "../img/Banner contacto.jpg";
+import { waHref } from "../data/contact";
 ---
 
-<Layout title="Contacto | Agencias Nacionales S.A.S">
+<Layout
+  title="Contacto y Cotizaciones | Agencias Nacionales S.A.S"
+  description="Contáctanos para cotizar uniformes de trabajo, calzado de seguridad y EPP para tu empresa. Atención personalizada y precios por volumen en Colombia."
+>
   <Navbar />
   <main class="w-full bg-white">
     <!-- Hero Section -->
@@ -17,9 +22,13 @@ import bannerContacto from "../img/Banner contacto.jpg";
       <div
         class="relative w-full h-[450px] overflow-hidden bg-stone-800 sm:rounded-3xl md:h-[500px]"
       >
-        <img
-          src={bannerContacto.src}
+        <Image
+          src={bannerContacto}
           alt="Contacto Agencias Nacionales"
+          widths={[640, 1024, 1600]}
+          sizes="100vw"
+          loading="eager"
+          fetchpriority="high"
           class="absolute inset-0 h-full w-full object-cover"
         />
         <div class="absolute inset-0 bg-black/40"></div>
@@ -47,7 +56,30 @@ import bannerContacto from "../img/Banner contacto.jpg";
 
     <!-- Cards Section -->
     <section class="max-w-[1200px] mx-auto px-4 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- WhatsApp Card -->
+        <a
+          href={waHref("Hola, quisiera más información sobre sus productos.")}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-white rounded-[1.5rem] shadow-[0_4px_24px_rgb(0,0,0,0.06)] p-8 text-center flex flex-col items-center border border-gray-50 transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)]"
+        >
+          <div
+            class="w-16 h-16 rounded-[1rem] bg-blue-50 text-blue-600 flex items-center justify-center mb-5"
+          >
+            <svg
+              class="w-7 h-7 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.34 5.02L2 22l5.13-1.35A9.96 9.96 0 0012.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm5.84 14.19c-.24.68-1.4 1.3-1.94 1.36-.5.06-1.11.08-1.79-.11-.41-.12-.94-.3-1.62-.58-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.31.31-.13.6.18.29.79 1.3 1.7 2.11 1.17 1.04 2.16 1.37 2.44 1.52.28.15.45.13.62-.08.17-.21.71-.83.9-1.11.19-.28.38-.24.64-.14.26.1 1.66.78 1.94.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-[17px] font-bold text-gray-900 mb-1">WhatsApp</h3>
+          <p class="text-blue-500 text-[13px]">Escríbenos ahora</p>
+        </a>
         <!-- Location Card -->
         <div
           class="bg-white rounded-[1.5rem] shadow-[0_4px_24px_rgb(0,0,0,0.06)] p-8 text-center flex flex-col items-center border border-gray-50 transition-shadow hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)]"

@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import banner1 from "../img/banner1.optimized.avif";
 import banner2 from "../img/banner2.png";
 import banner3 from "../img/banner3.optimized.avif";
@@ -11,6 +12,7 @@ const slides = [
     image: banner1,
     align: "right",
     badge: true,
+    alt: "Trabajador con uniforme y calzado de seguridad industrial Agencias Nacionales",
     title: "Protección y Confianza en Cada Paso",
     text: "Uniformes y calzado industrial diseñados para la seguridad, comodidad y durabilidad que tu equipo necesita. Innovamos para proteger a los que mueven el mundo.",
     cta: "VER MÁS",
@@ -20,6 +22,7 @@ const slides = [
     image: banner2,
     align: "left",
     badge: false,
+    alt: "Equipo de Agencias Nacionales fabricando uniformes y dotación industrial",
     title: "Un equipo que trabaja para ti",
     text: "Más de 55 años de experiencia ofreciendo soluciones en calzado, uniformes, EPP e indumentaria hospitalaria, con calidad, seguridad y confianza para tu negocio.",
     cta: "VER MÁS",
@@ -29,6 +32,7 @@ const slides = [
     image: banner3,
     align: "left",
     badge: false,
+    alt: "Entrega de pedidos de dotación industrial en el Área Metropolitana",
     title: "¡Envío Gratis en Compras en el Área Metropolitana!",
     text: "Aprovecha esta oferta y recibe tus productos de manera rápida y segura sin costo adicional. ¡Protege a tu equipo sin preocuparte por el envío! Para otras ciudades validar cobertura.",
     cta: "VER MÁS",
@@ -65,11 +69,11 @@ const stats = [
           .flatMap(() => slides)
           .map((slide) => (
             <div class="relative h-full w-full shrink-0" aria-hidden="true">
-              <img
-                src={slide.image.src}
+              <Image
+                src={slide.image}
                 alt=""
-                width={slide.image.width}
-                height={slide.image.height}
+                widths={[640, 1024, 1600, 1920]}
+                sizes="100vw"
                 loading="lazy"
                 decoding="async"
                 class="absolute inset-0 h-full w-full object-cover"
@@ -124,7 +128,7 @@ const stats = [
                       </div>
                     </div>
                   </div>
-                  <h1
+                  <div
                     class="mt-3 text-xl font-extrabold leading-tight text-white drop-shadow-lg sm:mt-5 sm:text-4xl lg:text-4xl"
                     set:html={slide.title}
                   />
@@ -147,11 +151,11 @@ const stats = [
       {
         slides.map((slide, index) => (
           <div class="relative h-full w-full shrink-0" data-slide={index}>
-            <img
-              src={slide.image.src}
-              alt=""
-              width={slide.image.width}
-              height={slide.image.height}
+            <Image
+              src={slide.image}
+              alt={slide.alt}
+              widths={[640, 1024, 1600, 1920]}
+              sizes="100vw"
               loading={index === 0 ? "eager" : "lazy"}
               fetchpriority={index === 0 ? "high" : "auto"}
               decoding={index === 0 ? "sync" : "async"}
@@ -205,10 +209,19 @@ const stats = [
                     </div>
                   </div>
                 </div>
-                <h1
-                  class="mt-3 text-xl font-extrabold leading-tight text-white drop-shadow-lg sm:mt-5 sm:text-4xl lg:text-4xl"
-                  set:html={slide.title}
-                />
+                <Fragment>
+                  {index === 0 ? (
+                    <h1
+                      class="mt-3 text-xl font-extrabold leading-tight text-white drop-shadow-lg sm:mt-5 sm:text-4xl lg:text-4xl"
+                      set:html={slide.title}
+                    />
+                  ) : (
+                    <h2
+                      class="mt-3 text-xl font-extrabold leading-tight text-white drop-shadow-lg sm:mt-5 sm:text-4xl lg:text-4xl"
+                      set:html={slide.title}
+                    />
+                  )}
+                </Fragment>
                 <p class="mt-3 max-w-md text-l leading-relaxed text-white/85 drop-shadow sm:mx-auto sm:mt-4 sm:text-sm">
                   {slide.text}
                 </p>
@@ -230,11 +243,11 @@ const stats = [
           .flatMap(() => slides)
           .map((slide) => (
             <div class="relative h-full w-full shrink-0" aria-hidden="true">
-              <img
-                src={slide.image.src}
+              <Image
+                src={slide.image}
                 alt=""
-                width={slide.image.width}
-                height={slide.image.height}
+                widths={[640, 1024, 1600, 1920]}
+                sizes="100vw"
                 loading="lazy"
                 decoding="async"
                 class="absolute inset-0 h-full w-full object-cover"
@@ -289,7 +302,7 @@ const stats = [
                       </div>
                     </div>
                   </div>
-                  <h1
+                  <div
                     class="mt-3 text-xl font-extrabold leading-tight text-white drop-shadow-lg sm:mt-5 sm:text-4xl lg:text-4xl"
                     set:html={slide.title}
                   />

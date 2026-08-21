@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
@@ -6,15 +7,22 @@ import bannerBlog from "../img/Banner ambiental.webp";
 import PoliticaAmbientalContent from "../components/PoliticaAmbiental.astro";
 ---
 
-<Layout title="Politica ambiental| Agencias Nacionales S.A.S">
+<Layout
+  title="Política Ambiental | Agencias Nacionales S.A.S"
+  description="Nuestra política ambiental: producción responsable de dotación industrial, uso eficiente de recursos y reducción del impacto en el entorno."
+>
   <Navbar />
   <main class="w-full bg-white">
     <!-- Hero Section -->
     <section class="w-full sm:px-4 lg:px-6 mt-4">
       <div class="relative w-full h-[450px] overflow-hidden bg-stone-800 sm:rounded-3xl md:h-[500px]">
-        <img
-          src={bannerBlog.src}
-          alt="Blog Agencias Nacionales"
+        <Image
+          src={bannerBlog}
+          alt="Política ambiental de Agencias Nacionales"
+          widths={[640, 1024, 1600]}
+          sizes="100vw"
+          loading="eager"
+          fetchpriority="high"
           class="absolute inset-0 h-full w-full object-cover"
         />
         <div class="absolute inset-0 bg-black/50"></div>
