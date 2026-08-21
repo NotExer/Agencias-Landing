@@ -39,6 +39,25 @@ const organization = {
 <!doctype html>
 <html lang="es" class="w-full">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CL9SSCWWDM"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      // Snippet tal cual lo entrega Google. No hace falta enviar page_view a
+      // mano en astro:page-load aunque usemos <ClientRouter />: la medicion
+      // mejorada de GA4 ya cuenta las navegaciones por History API, con el
+      // title correcto. Hacerlo a mano duplica cada vista (medido: 7 en vez
+      // de 4). Si alguna vez se apaga "cambios de pagina basados en eventos
+      // del historial" en el stream de GA4, ahi si haria falta.
+      gtag("config", "G-CL9SSCWWDM");
+    </script>
+
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
