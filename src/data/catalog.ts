@@ -393,6 +393,246 @@ const CATALOG: CatalogEntry[] = [
   },
 
   {
+    name:     "Valeta Lona Katty REF: 205",
+    category: "Calzado de Trabajo",
+    images:   ["Valeta Lona Katty Ref 205.webp"],
+    price:    189000,
+    description: [
+      "Valeta en lona azul oscuro con diseño plano y corte bajo, pensada para brindar comodidad y practicidad durante la jornada.",
+      "Su suela de caucho negra con acabado dentado ofrece una pisada estable y una presentación sobria para uso cotidiano.",
+    ],
+    specs: "Lona azul oscuro · Diseño plano · Corte bajo · Suela de caucho dentada · Interior liviano",
+  },
+
+  {
+    name:     "Mocasín Lona REF: 206",
+    category: "Calzado de Trabajo",
+    images:   ["Mocasin Lona Ref 206.webp"],
+    price:    189000,
+    description: [
+      "Mocasín en lona negra con diseño slip-on y elásticos laterales, pensado para un calce práctico y cómodo durante la jornada.",
+      "Su suela de caucho negra con acabado dentado ofrece estabilidad y una presentación sobria para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño slip-on · Elásticos laterales · Suela de caucho dentada · Corte bajo",
+  },
+
+  {
+    name:     "Mocasín Lona Medio Tacón REF: 248",
+    category: "Calzado de Trabajo",
+    images:   ["Mocasin Lona Medio Tacon Ref 248.webp"],
+    price:    189000,
+    description: [
+      "Mocasín en lona negra con diseño slip-on y elásticos laterales, pensado para un calce práctico y cómodo durante la jornada.",
+      "Su suela negra de medio tacón con acabado dentado brinda una pisada estable y una presentación más elevada para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño slip-on · Elásticos laterales · Medio tacón · Suela de caucho dentada",
+  },
+
+  {
+    name:     "Mocasín Lona Gala, Medio Tacón REF: 292",
+    category: "Calzado de Trabajo",
+    images:   ["Mocasin Lona Gala Medio Tacon Ref 292.webp"],
+    price:    189000,
+    description: [
+      "Mocasín Gala en lona negra con diseño slip-on y elásticos laterales, pensado para ofrecer un calce práctico y cómodo durante la jornada.",
+      "Su tacón medio tipo cuña brinda estabilidad y una presentación más elevada sin perder comodidad para el uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño Gala slip-on · Elásticos laterales · Medio tacón tipo cuña · Corte bajo",
+  },
+
+  {
+    name:     "Mocasín Lona Tacón 3½ REF: 217",
+    category: "Calzado de Trabajo",
+    images:   ["Mocasin Lona Tacon 3 5 Ref 217.webp"],
+    price:    189000,
+    description: [
+      "Mocasín en lona azul oscuro con diseño slip-on, elásticos laterales y costura tipo moc-toe para un calce práctico y cómodo.",
+      "Su tacón negro de 3½ cm ofrece una pisada estable y una presentación elevada para la jornada laboral o el uso cotidiano.",
+    ],
+    specs: "Lona azul oscuro · Diseño slip-on · Elásticos laterales · Tacón de 3½ cm · Suela negra",
+  },
+
+  {
+    name:     "Mocasín Dama Cementado REF: Juanita",
+    category: "Calzado de Trabajo",
+    images:   ["Mocasin Dama Cementado Juanita.webp"],
+    price:    189000,
+    description: [
+      "Mocasín para dama en material negro texturizado, con diseño slip-on y elásticos laterales para un calce cómodo y práctico.",
+      "Su construcción cementada y suela baja de caucho ofrecen estabilidad y una presentación sobria para uso laboral o cotidiano.",
+    ],
+    specs: "Material negro texturizado · Diseño slip-on · Elásticos laterales · Construcción cementada · Suela baja",
+  },
+
+  {
+    name:     "Mocasín Dama Cementado REF: 5050",
+    category: "Calzado de Trabajo",
+    images:   ["Mocasin Dama Cementado Ref 5050.webp"],
+    price:    189000,
+    description: [
+      "Mocasín para dama en material negro liso, con diseño slip-on y elásticos laterales para un calce cómodo y práctico.",
+      "Su construcción cementada y suela baja tipo cuña ofrecen estabilidad y una presentación sobria para uso laboral o cotidiano.",
+    ],
+    specs: "Material negro liso · Diseño slip-on · Elásticos laterales · Construcción cementada · Suela baja tipo cuña",
+  },
+
+  {
+    name:     "Zapatilla Caballero Mocasín Negra REF: 5829",
+    category: "Calzado de Trabajo",
+    images:   ["Zapatilla Caballero Mocasin Negra Ref 5829.webp"],
+    price:    189000,
+    description: [
+      "Zapatilla para caballero en material negro liso, con diseño slip-on, elásticos laterales y costura discreta tipo mocasín.",
+      "Su suela negra de perfil bajo y tacón corto ofrece una presentación formal y cómoda para uso laboral o cotidiano.",
+    ],
+    specs: "Material negro liso · Diseño slip-on · Elásticos laterales · Costura tipo mocasín · Tacón corto",
+  },
+
+  {
+    name:     "Zapato Tipo Crocs REF: 175",
+    category: "Calzado de Trabajo",
+    images:   ["Zapato Tipo Crocs Ref 175.webp"],
+    price:    189000,
+    description: [
+      "Zapato blanco de material liviano con diseño cerrado tipo slip-on, pensado para un calce práctico y fácil limpieza.",
+      "Su construcción moldeada y suela texturizada brindan comodidad y estabilidad para jornadas en ambientes laborales.",
+    ],
+    specs: "Material blanco moldeado · Diseño slip-on cerrado · Fácil limpieza · Suela texturizada · Perfil bajo",
+  },
+
+  {
+    name:     "Zapato Tipo Crocs REF: 224",
+    category: "Calzado de Trabajo",
+    images:   ["Zapato Tipo Crocs Ref 224.webp"],
+    price:    189000,
+    description: [
+      "Zapato negro de material moldeado con diseño cerrado, correa posterior ajustable y perfil robusto para un calce práctico.",
+      "Su suela texturizada brinda estabilidad y facilidad de limpieza para jornadas en ambientes laborales.",
+    ],
+    specs: "Material negro moldeado · Diseño cerrado · Correa posterior ajustable · Fácil limpieza · Suela texturizada",
+  },
+
+  {
+    name:     "Zapato Tipo Crocs REF: 201",
+    category: "Calzado de Trabajo",
+    images:   ["Zapato Tipo Crocs Ref 201.webp"],
+    price:    189000,
+    description: [
+      "Zapato azul oscuro de material moldeado con diseño slip-on cerrado y elásticos laterales para un calce práctico.",
+      "Su suela robusta con ranuras de flexión brinda estabilidad y comodidad durante jornadas en ambientes laborales.",
+    ],
+    specs: "Material azul oscuro moldeado · Diseño slip-on cerrado · Elásticos laterales · Suela con ranuras · Fácil limpieza",
+  },
+
+  {
+    name:     "Zapato Tipo Crocs REF: 080",
+    category: "Calzado de Trabajo",
+    images:   ["Zapato Tipo Crocs Ref 080.webp"],
+    price:    189000,
+    description: [
+      "Zapato blanco de material moldeado con diseño slip-on cerrado, paneles laterales esculpidos y punta protectora en azul oscuro.",
+      "Su suela robusta y de fácil limpieza brinda comodidad y estabilidad para jornadas en ambientes laborales.",
+    ],
+    specs: "Material blanco moldeado · Diseño slip-on cerrado · Punta protectora azul oscuro · Suela robusta · Fácil limpieza",
+  },
+
+  {
+    name:     "Zapato Tipo Crocs Kroky REF: 242",
+    category: "Calzado de Trabajo",
+    images:   ["Zapato Tipo Crocs Kroky Ref 242.webp"],
+    price:    189000,
+    description: [
+      "Zapato negro de material moldeado con diseño slip-on cerrado, detalle de ranuras decorativas y perfil robusto.",
+      "Su suela ligeramente elevada brinda estabilidad y comodidad para jornadas en ambientes laborales de fácil limpieza.",
+    ],
+    specs: "Material negro moldeado · Diseño slip-on cerrado · Detalle de ranuras · Suela robusta elevada · Fácil limpieza",
+  },
+
+  {
+    name:     "Zapato Tipo Crocs Eva REF: 080",
+    category: "Calzado de Trabajo",
+    images:   ["Zapato Tipo Crocs Eva Ref 080.webp"],
+    price:    189000,
+    description: [
+      "Zapato azul de EVA con diseño slip-on cerrado, detalle de ranuras decorativas y perfil robusto para un calce práctico.",
+      "Su material liviano y suela ligeramente elevada brindan comodidad y facilidad de limpieza para jornadas laborales.",
+    ],
+    specs: "EVA azul · Diseño slip-on cerrado · Detalle de ranuras · Suela elevada · Fácil limpieza",
+  },
+
+  {
+    name:     "Zapato Tipo Crocs REF: 196",
+    category: "Calzado de Trabajo",
+    images:   ["Zapato Tipo Crocs Ref 196.webp"],
+    price:    189000,
+    description: [
+      "Zapato azul oscuro de material moldeado con diseño slip-on cerrado, puntera reforzada y panel lateral texturizado.",
+      "Su suela de tracción con tacos profundos brinda estabilidad y comodidad en jornadas laborales exigentes.",
+    ],
+    specs: "Material azul oscuro moldeado · Diseño slip-on cerrado · Puntera reforzada · Suela de tracción · Fácil limpieza",
+  },
+
+  {
+    name:     "Zapato Tipo Crocs REF: 219",
+    category: "Calzado de Trabajo",
+    images:   ["Zapato Tipo Crocs Ref 219.webp"],
+    price:    189000,
+    description: [
+      "Zapato azul de material moldeado con diseño slip-on cerrado, detalle de ranuras decorativas y perfil robusto.",
+      "Su suela ligeramente elevada brinda estabilidad, comodidad y facilidad de limpieza para jornadas laborales.",
+    ],
+    specs: "Material azul moldeado · Diseño slip-on cerrado · Detalle de ranuras · Suela elevada · Fácil limpieza",
+  },
+
+  {
+    name:     "Bota de EVA P/Seg. REF: 226",
+    category: "Calzado de Trabajo",
+    images:   ["Bota EVA P Seg Ref 226.webp"],
+    price:    189000,
+    description: [
+      "Bota blanca de EVA con caña media, diseño moldeado de una pieza y puntera redondeada para uso en ambientes de trabajo.",
+      "Su suela con tacos profundos aporta tracción y su material de fácil limpieza ofrece practicidad durante la jornada.",
+    ],
+    specs: "EVA blanco · Caña media · Diseño moldeado de una pieza · Suela con tacos · Fácil limpieza",
+  },
+
+  {
+    name:     "Tenis Mocasín Lona REF: 510",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Mocasin Lona Ref 510.webp"],
+    price:    189000,
+    description: [
+      "Tenis mocasín en tejido negro con diseño slip-on, tiradores en talón y lengüeta para un calce práctico.",
+      "Su suela negra esculpida y flexible ofrece comodidad y una presentación deportiva para jornadas de uso cotidiano.",
+    ],
+    specs: "Tejido negro · Diseño slip-on · Tiradores en talón y lengüeta · Suela negra flexible · Perfil deportivo",
+  },
+
+  {
+    name:     "Tenis Mocasín Lona REF: 963",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Mocasin Lona Ref 963.webp"],
+    price:    189000,
+    description: [
+      "Tenis mocasín en tejido negro con diseño slip-on, cuello elástico acanalado y tirador en el talón para un calce práctico.",
+      "Su suela negra de perfil bajo y textura de agarre brinda comodidad y estabilidad durante jornadas de uso cotidiano.",
+    ],
+    specs: "Tejido negro · Diseño slip-on · Cuello elástico acanalado · Tirador trasero · Suela de agarre",
+  },
+
+  {
+    name:     "Deportivo Casual REF: 964",
+    category: "Calzado de Trabajo",
+    images:   ["Deportivo Casual Ref 964.webp"],
+    price:    189000,
+    description: [
+      "Tenis deportivo casual en negro con cordones, paneles sintéticos cosidos y cuello acolchado para un ajuste cómodo.",
+      "Su suela negra texturizada brinda estabilidad y una presentación versátil para jornadas de uso cotidiano.",
+    ],
+    specs: "Sintético negro · Cordones negros · Paneles cosidos · Cuello acolchado · Suela deportiva texturizada",
+  },
+
+  {
     name:     "Tenis Mocasín Suela Flow",
     category: "Calzado de Trabajo",
     images:   ["Tenis Mocasin Suela Flow.webp"],
@@ -414,6 +654,30 @@ const CATALOG: CatalogEntry[] = [
       "Su suela Flow blanca de perfil alto aporta amortiguación y una apariencia moderna para uso cotidiano.",
     ],
     specs: "Tejido negro · Caña tipo calcetín · Ajuste flexible · Suela Flow blanca · Perfil alto",
+  },
+
+  {
+    name:     "Tenis Mocasín Suela Jordan",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Mocasin Suela Jordan.webp"],
+    price:    189000,
+    description: [
+      "Tenis mocasín en tejido negro con diseño slip-on, creado para un calce práctico, flexible y cómodo durante la jornada.",
+      "Su suela Jordan blanca de perfil alto brinda una pisada estable y una presentación deportiva para uso cotidiano.",
+    ],
+    specs: "Tejido negro · Diseño slip-on · Ajuste flexible · Suela Jordan blanca · Perfil alto",
+  },
+
+  {
+    name:     "Tenis Botín Suela Jordan",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Botin Suela Jordan.webp"],
+    price:    189000,
+    description: [
+      "Tenis botín en tejido negro con caña tipo calcetín y diseño slip-on, pensado para brindar comodidad y ajuste flexible durante la jornada.",
+      "Su suela Jordan blanca de perfil alto aporta estabilidad y una presentación deportiva para uso cotidiano.",
+    ],
+    specs: "Tejido negro · Caña tipo calcetín · Diseño slip-on · Suela Jordan blanca · Perfil alto",
   },
   
   {
