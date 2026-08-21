@@ -187,7 +187,31 @@ const CATALOG: CatalogEntry[] = [
     specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
   },
   
+  {
+    name:     "Blue Jean Hombre",
+    category: "Uniformes de Trabajo",
+    images:   ["Blue jean hombre.jpg"],
+    price:    149000,
+    description: [
+      "Blue jean para hombre con un corte clásico, pensado para dotaciones versátiles y cómodas.",
+      "Funciona bien como prenda de uniforme para trabajos donde se necesita resistencia y facilidad de movimiento.",
+    ],
+    specs: "Jean masculino · Corte clásico · Uso laboral · Resistente",
+  },
 
+  {
+    name:     "Blue Jean Dama",
+    category: "Uniformes de Trabajo",
+    images:   ["Blue jean dama 1.jpg", "Blue jean dama 2.jpg"],
+    price:    149000,
+    description: [
+      "Blue jean para dama con un corte clásico y cómodo, pensado para dotaciones versátiles y resistentes.",
+      "Es una prenda funcional para jornadas laborales donde se necesita libertad de movimiento y buena presentación.",
+    ],
+    specs: "Jean femenino · Corte clásico · Uso laboral · Resistente",
+  },
+
+  
   {
     name:     "Camisa Oxford Hombre",
     category: "Uniformes de Trabajo",
@@ -404,16 +428,197 @@ const CATALOG: CatalogEntry[] = [
     specs: "Tela ligera de uso corporativo · Corte clásico · Presentación formal · Ideal para dotación empresarial",
   },
 
+
   {
-    name:     "Blue Jean Hombre",
-    category: "Uniformes de Trabajo",
-    images:   ["Blue jean hombre.jpg"],
-    price:    149000,
+    name:     "Bolso Promocional Ref. 102",
+    category: "Promocionales",
+    images:   ["BOLSO REF 102.png"],
+    price:    65000,
     description: [
-      "Blue jean para hombre con un corte clásico, pensado para dotaciones versátiles y cómodas.",
-      "Funciona bien como prenda de uniforme para trabajos donde se necesita resistencia y facilidad de movimiento.",
+      "Bolso promocional práctico y ligero, ideal para campañas de marca, regalos corporativos y uso diario.",
+      "Su formato funcional permite llevar objetos personales con comodidad durante la jornada.",
     ],
-    specs: "Jean masculino · Corte clásico · Uso laboral · Resistente",
+    specs: "Bolso promocional · Correa ajustable · Uso diario · Ligero y resistente",
+  },
+
+  {
+    name:     "Bolso Promocional Ref. 122",
+    category: "Promocionales",
+    images:   ["BOLSO REF 122.png"],
+    price:    65000,
+    description: [
+      "Bolso promocional con diseño funcional para activaciones de marca, dotaciones y obsequios empresariales.",
+      "Es una opción versátil para uso casual y material promocional.",
+    ],
+    specs: "Bolso promocional · Diseño práctico · Uso casual · Material resistente",
+  },
+
+  {
+    name:     "Bolso Promocional Ref. 602",
+    category: "Promocionales",
+    images:   ["BOLSO REF 602.png"],
+    price:    65000,
+    description: [
+      "Bolso promocional de formato compacto, pensado para campañas, eventos y distribución corporativa.",
+      "Ofrece una solución cómoda para transportar elementos de uso personal.",
+    ],
+    specs: "Bolso promocional · Formato compacto · Uso diario · Ligero",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 029",
+    category: "Promocionales",
+    images:   ["MORRAL REF 029.png"],
+    price:    72000,
+    description: [
+      "Morral promocional con diseño funcional para campañas de marca, uso estudiantil o dotaciones corporativas.",
+      "Su formato permite transportar objetos con comodidad y buena presencia.",
+    ],
+    specs: "Morral promocional · Uso diario · Correas ajustables · Resistente",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 035",
+    category: "Promocionales",
+    images:   ["MORRAL REF 035.png"],
+    price:    72000,
+    description: [
+      "Morral promocional ideal para obsequios empresariales, actividades de marca y uso cotidiano.",
+      "Combina practicidad con una presentación sencilla y funcional.",
+    ],
+    specs: "Morral promocional · Bolsillos funcionales · Uso casual · Ligero",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 062",
+    category: "Promocionales",
+    images:   ["MORRAL REF 062.png"],
+    price:    72000,
+    description: [
+      "Morral promocional pensado para campañas de marca y uso diario, con una estructura cómoda y resistente.",
+      "Es una excelente opción para entregas corporativas y eventos.",
+    ],
+    specs: "Morral promocional · Estructura funcional · Uso diario · Resistente",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 080",
+    category: "Promocionales",
+    images:   ["MORRAL REF 080.png"],
+    price:    72000,
+    description: [
+      "Morral promocional con formato versátil para dotaciones, activaciones y regalos empresariales.",
+      "Su diseño permite un uso cómodo en el día a día.",
+    ],
+    specs: "Morral promocional · Uso corporativo · Correas ajustables · Cómodo",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 100",
+    category: "Promocionales",
+    images:   ["MORRAL REF 100.png"],
+    price:    72000,
+    description: [
+      "Morral promocional de uso práctico para campañas, ferias y material de marca.",
+      "Pensado para ofrecer funcionalidad y buena presentación en un solo producto.",
+    ],
+    specs: "Morral promocional · Uso promocional · Diseño funcional · Ligero",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 101",
+    category: "Promocionales",
+    images:   ["MORRAL REF 101.png"],
+    price:    72000,
+    description: [
+      "Morral promocional con estilo funcional para actividades corporativas y uso diario.",
+      "Una alternativa útil para obsequios empresariales y campañas de fidelización.",
+    ],
+    specs: "Morral promocional · Uso diario · Formato cómodo · Resistente",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 111",
+    category: "Promocionales",
+    images:   ["MORRAL REF 111.png"],
+    price:    72000,
+    description: [
+      "Morral promocional pensado para acompañar actividades de marca y dotaciones casuales.",
+      "Su formato práctico lo hace útil para diferentes necesidades.",
+    ],
+    specs: "Morral promocional · Versátil · Uso casual · Fácil de transportar",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 113",
+    category: "Promocionales",
+    images:   ["MORRAL REF 113.png"],
+    price:    72000,
+    description: [
+      "Morral promocional con enfoque funcional para campañas publicitarias y uso cotidiano.",
+      "Ideal para empresas que buscan una opción práctica y presentable.",
+    ],
+    specs: "Morral promocional · Presentación limpia · Uso diario · Resistente",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 116",
+    category: "Promocionales",
+    images:   ["MORRAL REF 116.png"],
+    price:    72000,
+    description: [
+      "Morral promocional de alta utilidad para eventos, regalos empresariales y actividades de marca.",
+      "Ofrece un equilibrio entre comodidad y capacidad de uso diario.",
+    ],
+    specs: "Morral promocional · Uso corporativo · Capacidad práctica · Ligero",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 121",
+    category: "Promocionales",
+    images:   ["MORRAL REF 121.png"],
+    price:    72000,
+    description: [
+      "Morral promocional ideal para campañas de posicionamiento, obsequios y dotación casual.",
+      "Es una pieza práctica para transportar artículos personales con comodidad.",
+    ],
+    specs: "Morral promocional · Uso promocional · Comodidad diaria · Resistente",
+  },
+
+  {
+    name:     "Morral Promocional Ref. 804",
+    category: "Promocionales",
+    images:   ["MORRAL REF 804.png"],
+    price:    72000,
+    description: [
+      "Morral promocional con un diseño útil para campañas de marca y uso regular.",
+      "Pensado para ofrecer practicidad en ambientes empresariales y cotidianos.",
+    ],
+    specs: "Morral promocional · Uso diario · Diseño funcional · Correas ajustables",
+  },
+
+  {
+    name:     "Riñonera Promocional Ref. 801",
+    category: "Promocionales",
+    images:   ["RIÑONERA REF 801.png"],
+    price:    42000,
+    description: [
+      "Riñonera promocional práctica y cómoda para eventos, campañas publicitarias y uso diario.",
+      "Su formato compacto la convierte en una opción funcional para llevar lo esencial.",
+    ],
+    specs: "Riñonera promocional · Formato compacto · Correa ajustable · Ligera",
+  },
+
+  {
+    name:     "Riñonera Promocional Ref. 802",
+    category: "Promocionales",
+    images:   ["RIÑONERA REF 802.png"],
+    price:    42000,
+    description: [
+      "Riñonera promocional de uso versátil para campañas de marca, obsequios y actividades al aire libre.",
+      "Ofrece comodidad y practicidad en un formato liviano y fácil de llevar.",
+    ],
+    specs: "Riñonera promocional · Uso casual · Correa ajustable · Compacta",
   },
 
   {
@@ -821,6 +1026,162 @@ const CATALOG: CatalogEntry[] = [
       "Útil en ambientes donde se necesita control y comodidad al mismo tiempo.",
     ],
     specs: "Dacrón · Tipo balaca · Ligera · Control de cabello",
+  },
+
+  {
+    name:     "Bata de Laboratorio Hospitalaria Manga Larga",
+    category: "Hospitalaria",
+    images:   ["Bata laboratorio hospitalaria manga larga 1.png", "Bata laboratorio hospitalaria manga larga 2.png"],
+    price:    129000,
+    description: [
+      "Bata hospitalaria de manga larga pensada para entornos de laboratorio, consulta y atención clínica.",
+      "Ofrece una presentación limpia y profesional para uso diario en instituciones de salud.",
+    ],
+    specs: "Manga larga · Uso hospitalario · Presentación profesional · Cómoda y funcional",
+  },
+
+  {
+    name:     "Bata de Laboratorio Hospitalaria Manga Corta",
+    category: "Hospitalaria",
+    images:   ["Bata laboratorio hospitalaria manga corta 1.png", "Bata laboratorio hospitalaria manga corta 2.png"],
+    price:    119000,
+    description: [
+      "Bata hospitalaria de manga corta para jornadas más frescas sin perder la imagen institucional.",
+      "Ideal para laboratorios, clínicas y áreas de atención donde se necesita comodidad.",
+    ],
+    specs: "Manga corta · Uso hospitalario · Ligera · Presentación institucional",
+  },
+
+  {
+    name:     "Gorro Quirúrgico",
+    category: "Hospitalaria",
+    images:   ["Gorro quirurgico.png"],
+    price:    19000,
+    description: [
+      "Gorro quirúrgico diseñado para mantener el cabello contenido en ambientes clínicos y de procedimiento.",
+      "Es una prenda práctica para garantizar orden e higiene en áreas hospitalarias.",
+    ],
+    specs: "Uso clínico · Control de cabello · Ligero · Ideal para procedimientos",
+  },
+
+  {
+    name:     "Polainas Hospitalarias",
+    category: "Hospitalaria",
+    images:   ["Polainas Hospitalarias.jpg"],
+    price:    25000,
+    description: [
+      "Polainas hospitalarias para apoyo en el control de ingreso de partículas y preservación de la higiene en áreas limpias.",
+      "Ideales para uso en clínicas, laboratorios y zonas de atención médica.",
+    ],
+    specs: "Uso hospitalario · Protección ligera · Higiene · Ajuste cómodo",
+  },
+
+  {
+    name:     "Conjunto Antifluido Cierre Lateral Cindy Dama",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido cierre lateral cindy dama 1.png", "Conjunto antifluido cierre lateral cindy dama 2.png"],
+    price:    149000,
+    description: [
+      "Conjunto antifluido para dama con cierre lateral, pensado para ambientes hospitalarios y de atención clínica.",
+      "Ofrece una presentación limpia y protección ligera para la jornada diaria.",
+    ],
+    specs: "Antifluido · Cierre lateral · Uso hospitalario · Confort y presentación",
+  },
+
+  {
+    name:     "Conjunto Antifluido Cierre Frontal Dama",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido cierre frontal dama 1.png", "Conjunto antifluido cierre frontal dama 2.png"],
+    price:    149000,
+    description: [
+      "Conjunto antifluido para dama con cierre frontal, ideal para clínicas, consultorios y áreas de cuidado.",
+      "Su diseño busca facilidad de uso y una imagen institucional adecuada.",
+    ],
+    specs: "Antifluido · Cierre frontal · Uso hospitalario · Práctico y cómodo",
+  },
+
+  {
+    name:     "Conjunto Antifluido Licrado Dalia Dama",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido licrado dalia dama 1.png", "Conjunto antifluido licrado dalia dama 2.png"],
+    price:    159000,
+    description: [
+      "Conjunto antifluido licrado para dama con una confección flexible y cómoda para uso hospitalario.",
+      "Pensado para jornadas prolongadas donde se necesita movilidad y buena presentación.",
+    ],
+    specs: "Licrado · Uso hospitalario · Ajuste cómodo · Alta movilidad",
+  },
+
+  {
+    name:     "Conjunto Antifluido Licrado Celeste Dama",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido licrado celeste dama 1.png", "Conjunto antifluido licrado celeste dama 2.png"],
+    price:    159000,
+    description: [
+      "Conjunto antifluido licrado en color celeste para una presentación limpia y profesional.",
+      "Adecuado para entornos clínicos y de atención al paciente.",
+    ],
+    specs: "Licrado · Color celeste · Uso hospitalario · Presentación institucional",
+  },
+
+  {
+    name:     "Conjunto Antifluido Licrado Cuello En V Larry Hombre",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido licrado cuello en v larry hombre 1.png", "Conjunto antifluido licrado cuello en v larry hombre 2.png"],
+    price:    159000,
+    description: [
+      "Conjunto antifluido licrado para hombre con cuello en V, orientado a dotación hospitalaria cómoda y funcional.",
+      "Muy útil en áreas de atención, consulta y apoyo clínico.",
+    ],
+    specs: "Licrado · Cuello en V · Uso hospitalario · Funcional y cómodo",
+  },
+
+  {
+    name:     "Conjunto Antifluido Licrado Cuello Redondo con Bolsillo Violet Dama",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido licrado cuello redondo con bolsillo violet dama 1.png", "Conjunto antifluido licrado cuello redondo con bolsillo violet dama 2.png"],
+    price:    159000,
+    description: [
+      "Conjunto antifluido licrado para dama con cuello redondo y bolsillo, pensado para uso hospitalario diario.",
+      "Ofrece practicidad sin perder una presentación pulida.",
+    ],
+    specs: "Licrado · Cuello redondo · Bolsillo frontal · Uso clínico",
+  },
+
+  {
+    name:     "Conjunto Antifluido Licrado Cuello V",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido licrado cuello v 1.png", "Conjunto antifluido licrado cuello v 2.png"],
+    price:    149000,
+    description: [
+      "Conjunto antifluido licrado con cuello en V para dotación hospitalaria y atención al público.",
+      "Su confección busca comodidad y una imagen profesional.",
+    ],
+    specs: "Licrado · Cuello en V · Uso hospitalario · Cómodo y ligero",
+  },
+
+  {
+    name:     "Conjunto Antifluido Cuello V CX Dama",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido cuello v cx dama 1.png", "Conjunto antifluido cuello v cx dama 2.png"],
+    price:    149000,
+    description: [
+      "Conjunto antifluido para dama con cuello en V CX, creado para entornos de salud y apoyo clínico.",
+      "Es una opción funcional para jornadas de trabajo continuas.",
+    ],
+    specs: "Antifluido · Cuello V CX · Uso hospitalario · Confort diario",
+  },
+
+  {
+    name:     "Conjunto Antifluido Cuello V CX Hombre",
+    category: "Hospitalaria",
+    images:   ["Conjunto antifluido cuello v cx hombre 1.png", "Conjunto antifluido cuello v cx hombre 2.png"],
+    price:    149000,
+    description: [
+      "Conjunto antifluido para hombre con cuello V CX, diseñado para dotación hospitalaria y clínica.",
+      "Aporta una presentación sobria y comodidad durante el uso continuo.",
+    ],
+    specs: "Antifluido · Cuello V CX · Uso hospitalario · Presentación profesional",
   },
   
 ];
