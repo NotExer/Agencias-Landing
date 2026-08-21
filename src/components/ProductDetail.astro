@@ -13,7 +13,6 @@ import type { ImageMetadata } from "astro";
 
 interface Props {
   name: string;
-  price: number;
   images: ImageMetadata[]; // [0] = imagen principal, el resto = miniaturas
   highlights?: Highlight[]; // 3 destacados con ícono
   description: string[]; // un string por párrafo
@@ -24,7 +23,6 @@ interface Props {
 
 const {
   name,
-  price,
   images = [],
   highlights = [],
   description = [],
@@ -167,16 +165,6 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
           ))
         }
       </div>
-
-      <p class="text-2xl font-bold text-gray-900">
-        {
-          new Intl.NumberFormat("es-CO", {
-            style: "currency",
-            currency: "COP",
-            maximumFractionDigits: 0,
-          }).format(price)
-        }
-      </p>
 
       <!-- Stock -->
       <div class="flex items-center gap-2 mb-6">

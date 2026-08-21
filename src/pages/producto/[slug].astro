@@ -25,15 +25,6 @@ const productLd = {
   image: product.images.map((i) => new URL(i.src, Astro.site).href),
   category: product.category,
   brand: { "@type": "Brand", name: "Agencias Nacionales S.A.S" },
-  offers: {
-    "@type": "Offer",
-    price: product.price,
-    priceCurrency: "COP",
-    availability: product.inStock
-      ? "https://schema.org/InStock"
-      : "https://schema.org/OutOfStock",
-    url: new URL(Astro.url.pathname, Astro.site).href,
-  },
 };
 
 const breadcrumbLd = {
@@ -67,7 +58,6 @@ const breadcrumbLd = {
     <ProductDetail
       name={product.name}
       images={product.images}
-      price={product.price}
       highlights={product.highlights}
       description={product.description}
       inStock={product.inStock}

@@ -1,80 +1,56 @@
 ---
-import blog1 from '../img/Blog 1.avif';
-import blog2 from '../img/Blog 2.avif';
-
-const posts = [
-  {
-    image: blog1,
-    tag: "Tips",
-    title: "Cómo cotizar dotaciones empresariales sin errores: guía para compras y SST",
-    href: "#"
-  },
-  {
-    image: blog2,
-    tag: "Noticias",
-    title: "Agencias Nacionales SAS reconocida por el Banco de Bogotá como finalista en el premio Gacela misiónpyme 2024.",
-    href: "#"
-  },
-  {
-    image: blog1,
-    tag: "Noticias",
-    title: "Más que uniformes: Vestimos el trabajo con calidad y compromiso",
-    href: "#"
-  },
-  {
-    image: blog1,
-    tag: "Noticias",
-    title: "Cada cuánto renovar uniformes, calzado de trabajo y EPP en una empresa: guía para compras y SST",
-    href: "#"
-  }
-];
+import { Image } from "astro:assets";
+import { featuredArticles, getArticleImage, getArticlePath } from "../data/articles";
 ---
 
-<section id="blog" class="w-full px-8 py-16 sm:px-6 lg:px-20 xl:px-40 bg-white overflow-hidden">
-  <div class="text-center mb-10">
-    <p class="text-m  font-semibold text-blue-600 mb-3">Blog</p>
-    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-[34px] tracking-tight">
-      Nuestras últimas publicaciones y noticias
-    </h2>
-  </div>
+<section id="blog" class="w-full overflow-hidden bg-white px-8 py-16 sm:px-6 lg:px-20 xl:px-40">
+  <div class="mx-auto w-full max-w-7xl">
+    <div class="mb-[60px] text-center">
+      <h2 class="text-[29px] font-bold leading-[1.6] text-black">
+        Artículos destacados
+      </h2>
+    </div>
 
-  <div class="relative w-full max-w-7xl mx-auto">
-    <!-- Contenedor del Carrusel -->
-    <div class="flex overflow-x-auto gap-5 pb-8 snap-x snap-mandatory hide-scrollbar">
-      {posts.map((post) => (
-        <a 
-          href={post.href} 
-          class="relative flex-none w-[85vw] sm:w-[45vw] md:w-[30vw] lg:w-[280px] xl:w-[23%] aspect-[3/4] min-h-[380px] rounded-[24px] overflow-hidden group snap-start bg-gray-100"
-        >
-          <!-- Imagen de fondo -->
-          <img 
-            src={post.image.src}
-            alt={post.title} 
-            width={post.image.width}
-            height={post.image.height}
-            loading="lazy"
-            decoding="async"
-            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-          />
-          <!-- Gradiente oscuro inferior -->
-          <div class="absolute inset-0 bg-gradient-to-t from-[#111625] via-[#111625]/60 to-transparent opacity-90"></div>
-          
-          <!-- Contenido de texto -->
-          <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
-            <span class="text-white/90 text-m font-normal mb-2">{post.tag}</span>
-            <h3 class="text-white text-[17px] font-bold leading-[1.3]">{post.title}</h3>
-          </div>
-        </a>
-      ))}
+    <div class="hide-scrollbar flex snap-x snap-mandatory gap-5 overflow-x-auto pb-8">
+      {
+        featuredArticles.map((post) => {
+          const image = getArticleImage(post.slug);
+
+          return (
+            <a
+              href={getArticlePath(post.slug)}
+              class="relative aspect-[305/362] w-[85vw] flex-none snap-start overflow-hidden rounded-[20px] bg-gray-100 sm:w-[45vw] md:w-[30vw] lg:w-[23.828125%]"
+            >
+              {image ? (
+                <Image
+                  src={image}
+                  alt={post.title}
+                  widths={[480, 720]}
+                  sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 23vw"
+                  loading="lazy"
+                  class="absolute inset-0 h-full w-full object-cover"
+                />
+              ) : (
+                <div class="absolute inset-0 bg-gray-100" />
+              )}
+              <div class="absolute inset-0 bg-gradient-to-t from-[#111625] via-[#111625]/60 to-transparent opacity-90" />
+              <div class="absolute inset-0 z-10 flex flex-col justify-end p-5 pb-[30px]">
+                <span class="mb-[5px] text-base font-medium leading-[1.6] text-white">Tips</span>
+                <h3 class="text-base font-bold leading-[1.6] text-white">{post.title}</h3>
+              </div>
+            </a>
+          );
+        })
+      }
     </div>
   </div>
 </section>
 
 <style>
-  /* Ocultar barra de scroll pero mantener funcionalidad */
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
   .hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;

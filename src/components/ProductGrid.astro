@@ -8,14 +8,6 @@ interface Props {
 }
 
 const { products, id } = Astro.props;
-
-function formatPrice(n: number) {
-  return new Intl.NumberFormat("es-CO", {
-    style: "currency",
-    currency: "COP",
-    maximumFractionDigits: 0,
-  }).format(n);
-}
 ---
 
 <ul
@@ -60,9 +52,6 @@ function formatPrice(n: number) {
             <p class="text-xs text-gray-500 mb-0.5">{product.category}</p>
             <p class="text-m font-medium text-gray-900 leading-snug line-clamp-2 group-hover:text-blue-600 transition-colors">
               {product.name}
-            </p>
-            <p class="mt-1.5 text-base font-bold text-gray-900">
-              {formatPrice(product.price)}
             </p>
           </div>
         </a>

@@ -30,7 +30,7 @@ const inactiveBtn =
         {
           categories.map((cat) => (
             <a
-              href={`/producto?categoria=${categorySlug(cat.label)}`}
+              href={cat.href}
               class={`cat-btn ${inactiveBtn}`}
               data-slug={categorySlug(cat.label)}
             >

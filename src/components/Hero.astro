@@ -404,8 +404,14 @@ const stats = [
 </section>
 
 <script>
-  const carousel = document.getElementById("hero-carousel");
-  if (carousel) {
+  let heroCleanup = () => {};
+
+  function initHeroCarousel() {
+    heroCleanup();
+
+    const carousel = document.getElementById("hero-carousel");
+    if (!carousel) return;
+
     const track = document.getElementById("carousel-track");
     const dots = Array.from(
       carousel.querySelectorAll<HTMLElement>("[data-carousel-dot]"),
@@ -413,14 +419,16 @@ const stats = [
     const prev = carousel.querySelector<HTMLElement>("[data-carousel-prev]");
     const next = carousel.querySelector<HTMLElement>("[data-carousel-next]");
 
+    if (!track || !prev || !next || dots.length === 0) return;
+
     const N = dots.length;
-    const cloneSets = 1; // un set a la izquierda y otro a la derecha
-    const realBase = cloneSets * N; // El índice base donde empiezan los slides reales
+    const cloneSets = 1;
+    const realBase = cloneSets * N;
     const totalSlides = N + cloneSets * 2 * N;
 
     let current = realBase;
-    let timer: ReturnType<typeof setInterval>;
-    let transitionTimeout: ReturnType<typeof setTimeout>;
+    let timer: ReturnType<typeof setInterval> | undefined;
+    let transitionTimeout: ReturnType<typeof setTimeout> | undefined;
     let lastClickTime = 0;
 
     const updateDots = () => {
@@ -435,21 +443,17 @@ const stats = [
     };
 
     const jumpIfNeeded = () => {
-      if (!track) return;
       if (current >= realBase + N || current < realBase) {
         const offset = ((current % N) + N) % N;
         current = realBase + offset;
 
         track.style.transition = "none";
         track.style.transform = `translateX(-${current * 100}%)`;
-        track.getBoundingClientRect(); // forzar reflow
+        track.getBoundingClientRect();
       }
     };
 
     const show = (newIndex: number) => {
-      if (!track) return;
-
-      // Límite físico extremo (solo se alcanzaría tras decenas de clicks por segundo)
       if (newIndex >= totalSlides) newIndex = totalSlides - 1;
       if (newIndex < 0) newIndex = 0;
 
@@ -460,9 +464,12 @@ const stats = [
       updateDots();
 
       clearTimeout(transitionTimeout);
-      transitionTimeout = setTimeout(() => {
-        jumpIfNeeded();
-      }, 500);
+      transitionTimeout = setTimeout(jumpIfNeeded, 500);
+    };
+
+    const restart = () => {
+      clearInterval(timer);
+      timer = setInterval(() => go(1), 6000);
     };
 
     const go = (delta: number) => {
@@ -482,21 +489,33 @@ const stats = [
       }
       lastClickTime = now;
       const currentMod = ((current % N) + N) % N;
-      const delta = dotIndex - currentMod;
-      show(current + delta);
+      show(current + (dotIndex - currentMod));
       restart();
     };
 
-    const restart = () => {
-      clearInterval(timer);
-      timer = setInterval(() => go(1), 6000);
-    };
+    const onPrev = () => go(-1);
+    const onNext = () => go(1);
+    const dotHandlers = dots.map((dot, i) => {
+      const handler = () => goToDot(i);
+      dot.addEventListener("click", handler);
+      return { dot, handler };
+    });
 
-    prev?.addEventListener("click", () => go(-1));
-    next?.addEventListener("click", () => go(1));
-    dots.forEach((dot, i) => dot.addEventListener("click", () => goToDot(i)));
+    prev.addEventListener("click", onPrev);
+    next.addEventListener("click", onNext);
 
     updateDots();
     restart();
+
+    heroCleanup = () => {
+      clearInterval(timer);
+      clearTimeout(transitionTimeout);
+      prev.removeEventListener("click", onPrev);
+      next.removeEventListener("click", onNext);
+      dotHandlers.forEach(({ dot, handler }) => dot.removeEventListener("click", handler));
+    };
   }
+
+  document.addEventListener("astro:page-load", initHeroCarousel);
+  document.addEventListener("astro:before-swap", () => heroCleanup());
 </script>

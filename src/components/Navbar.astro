@@ -1,7 +1,12 @@
 ---
-import { Image, getImage } from "astro:assets";
+import { Image } from "astro:assets";
 import logo from "../img/Logo.nav.avif";
-import { categories, productHref, products } from "../data/catalog";
+import { categories, products, productHref } from "../data/catalog";
+import p1 from "../img/Producto 1.avif";
+import p2 from "../img/Producto 2.avif";
+import p3 from "../img/Producto 3.avif";
+import p4 from "../img/Producto 4.avif";
+import p5 from "../img/Producto 5.avif";
 
 const links = [
   { label: "Nosotros", href: "/nosotros" },
@@ -11,18 +16,75 @@ const links = [
   { label: "Política ambiental", href: "/politica_ambiental" },
 ];
 
-// El buscador pinta estas miniaturas desde JS del cliente, asi que necesita
-// una URL ya resuelta: getImage genera la variante de 80px (40 css @2x).
-const searchIndex = await Promise.all(
-  products.map(async (p) => ({
-    name: p.name,
-    href: productHref(p.name),
-    category: p.category,
-    image: p.images[0]
-      ? (await getImage({ src: p.images[0], width: 80, height: 80, format: "avif" })).src
-      : "",
+const searchSections = [
+  {
+    type: "Sección",
+    title: "Productos",
+    subtitle: "Catálogo completo",
+    href: "/producto",
+    keywords: ["productos", "catalogo", "catálogo", "todos"],
+  },
+  {
+    type: "Sección",
+    title: "Categorías",
+    subtitle: "Explora las categorías",
+    href: "/#categorias",
+    keywords: ["categorias", "categoría", "categoria"],
+  },
+  {
+    type: "Sección",
+    title: "Nosotros",
+    subtitle: "Conoce la empresa",
+    href: "/nosotros",
+    keywords: ["nosotros", "empresa", "quienes somos"],
+  },
+  {
+    type: "Sección",
+    title: "Contacto",
+    subtitle: "Escríbenos para cotizar",
+    href: "/contacto",
+    keywords: ["contacto", "whatsapp", "cotizar"],
+  },
+  {
+    type: "Sección",
+    title: "FAQ",
+    subtitle: "Preguntas frecuentes",
+    href: "/faq",
+    keywords: ["faq", "preguntas", "frecuentes"],
+  },
+  {
+    type: "Sección",
+    title: "Blog",
+    subtitle: "Artículos y noticias",
+    href: "/articulos",
+    keywords: ["blog", "articulos", "noticias"],
+  },
+  {
+    type: "Sección",
+    title: "Política ambiental",
+    subtitle: "Compromiso sostenible",
+    href: "/politica_ambiental",
+    keywords: ["ambiental", "sostenibilidad", "politica"],
+  },
+];
+
+const searchIndex = [
+  ...searchSections,
+  ...categories.map((category) => ({
+    type: "Categoría",
+    title: category.label,
+    subtitle: `${category.products.length} productos`,
+    href: category.href,
+    keywords: [category.label, ...category.products.slice(0, 6)],
   })),
-);
+  ...products.map((product) => ({
+    type: "Producto",
+    title: product.name,
+    subtitle: product.category,
+    href: productHref(product.name),
+    keywords: [product.name, product.category],
+  })),
+];
 ---
 
 <header
@@ -32,7 +94,7 @@ const searchIndex = await Promise.all(
   <nav
     class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8"
   >
-    <a href="/" class="flex shrink-0 items-center">
+    <a href="../" class="flex shrink-0 items-center">
       <Image
         src={logo}
         alt="Agencias Nacionales S.A.S"
@@ -41,7 +103,7 @@ const searchIndex = await Promise.all(
         format="avif"
         loading="eager"
         decoding="async"
-        class="h-10 w-auto"
+        class="h-16 w-auto"
       />
     </a>
 
@@ -59,36 +121,50 @@ const searchIndex = await Promise.all(
         ))
       }
     </ul>
-    <div class="relative hidden lg:block" data-search>
-      <svg
-        class="pointer-events-none absolute left-4 top-1/2 z-10 h-5 w-5 -translate-y-1/2 text-gray-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
+    <div class="flex items-center gap-2">
+      <button
+        type="button"
+        data-search-open
+        class="hidden items-center gap-2 rounded-full border border-gray-200 bg-gray-200 px-16 py-2.5 text-m text-gray-600 transition hover:border-gray-300 hover:bg-gray-100 lg:inline-flex"
+        aria-label="Abrir búsqueda"
+        aria-haspopup="dialog"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"></path>
-      </svg>
-      <input
-        type="search"
-        placeholder="Buscar"
-        autocomplete="off"
-        data-search-input
-        class="w-56 rounded-full border border-gray-200 bg-gray-200 py-2.5 pl-11 pr-4 text-m text-gray-700 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100"
-      />
-      <div
-        data-search-results
-        class="absolute right-0 top-full z-50 mt-2 hidden w-80 overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-xl"
-        role="listbox"
-      >
-      </div>
-    </div>
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"></path>
+        </svg>
+        <span>Buscar</span>
+      </button>
 
-    <!-- menu-toggle -->
-    <div class="flex items-center gap-1">
+      <button
+        type="button"
+        data-search-open
+        class="inline-flex items-center justify-center rounded-full border border-gray-200 bg-gray-200 p-2.5 text-gray-600 transition hover:border-gray-300 hover:bg-gray-100 lg:hidden"
+        aria-label="Abrir búsqueda"
+        aria-haspopup="dialog"
+      >
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"></path>
+        </svg>
+      </button>
+
       <button
         type="button"
         id="menu-toggle"
@@ -152,20 +228,20 @@ const searchIndex = await Promise.all(
                           {/* 👈 */}
                           <div class="relative flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-gray-50">
                             <Image
-                              widths={[160, 320]}
-                              sizes="160px"
                               src={item.image}
                               alt={item.name}
+                              widths={[160, 320]}
+                              sizes="160px"
                               loading="lazy"
                               decoding="async"
                               class={`h-full w-full object-contain p-4 transition-opacity duration-200 ${item.image2 ? "group-hover/item:opacity-0" : ""}`}
                             />
                             {item.image2 && (
                               <Image
-                                widths={[160, 320]}
-                                sizes="160px"
                                 src={item.image2}
                                 alt={item.name}
+                                widths={[160, 320]}
+                                sizes="160px"
                                 loading="lazy"
                                 decoding="async"
                                 class="absolute inset-0 h-full w-full object-contain p-4 opacity-0 transition-opacity duration-200 group-hover/item:opacity-100"
@@ -179,7 +255,7 @@ const searchIndex = await Promise.all(
                       ))}
 
                       <div class="border-l border-gray-100 pl-6">
-                        <p class="text-xs font-semibold uppercase tracking-widest text-gray-500">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">
                           Productos
                         </p>
                         <ul class="mt-4 space-y-3">
@@ -232,9 +308,13 @@ const searchIndex = await Promise.all(
   >
     <div class="mobile-menu-inner">
       <div class="px-4 py-3">
-        <div class="relative" data-search>
+        <button
+          type="button"
+          data-search-open
+          class="flex w-full items-center gap-3 rounded-full border border-gray-200 bg-gray-50 px-4 py-3 text-left text-m text-gray-500 transition hover:border-gray-300 hover:bg-white"
+        >
           <svg
-            class="pointer-events-none absolute left-4 top-1/2 z-10 h-5 w-5 -translate-y-1/2 text-gray-400"
+            class="h-5 w-5 shrink-0 text-gray-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -245,20 +325,8 @@ const searchIndex = await Promise.all(
               stroke-linejoin="round"
               d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"></path>
           </svg>
-          <input
-            type="search"
-            placeholder="Buscar"
-            autocomplete="off"
-            data-search-input
-            class="w-full rounded-full border border-gray-200 bg-gray-50 py-2.5 pl-11 pr-4 text-m text-gray-700 outline-none focus:border-blue-500 focus:bg-white"
-          />
-          <div
-            data-search-results
-            class="absolute left-0 right-0 top-full z-50 mt-2 hidden max-h-80 overflow-y-auto rounded-2xl border border-gray-100 bg-white shadow-xl"
-            role="listbox"
-          >
-          </div>
-        </div>
+          <span>Buscar productos, categorías o secciones</span>
+        </button>
       </div>
 
       <ul class="space-y-1 px-4 pb-3">
@@ -293,6 +361,62 @@ const searchIndex = await Promise.all(
     </div>
   </div>
 </header>
+
+<div
+  id="search-modal"
+  class="search-modal hidden"
+  aria-hidden="true"
+  inert
+>
+  <button
+    type="button"
+    data-search-backdrop
+    class="fixed inset-0 h-screen w-screen cursor-default bg-black/60 backdrop-blur-[2px]"
+    aria-label="Cerrar búsqueda"
+  ></button>
+
+  <div class="pointer-events-none fixed inset-0 flex items-start justify-center px-4 pt-20 sm:pt-24">
+    <div class="search-panel pointer-events-auto w-full max-w-2xl overflow-hidden rounded-[28px] bg-white shadow-2xl shadow-black/20 ring-1 ring-black/5">
+      <div class="flex items-center gap-3 border-b border-gray-100 px-5 py-4">
+        <svg
+          class="h-5 w-5 shrink-0 text-gray-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"></path>
+        </svg>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Buscar productos, categorías o secciones"
+          autocomplete="off"
+          class="w-full border-0 bg-transparent text-base text-gray-800 outline-none placeholder:text-gray-400"
+        />
+        <button
+          type="button"
+          id="search-clear"
+          class="hidden shrink-0 rounded-full bg-gray-100 px-2.5 py-1.5 text-xs font-semibold text-gray-500 transition hover:bg-gray-200"
+        >
+          Limpiar
+        </button>
+      </div>
+
+      <div class="search-results-scroll max-h-[62vh] overflow-y-auto p-2">
+        <div class="flex items-center justify-between px-3 py-2">
+          <p id="search-hint" class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-400">
+            Sugerencias
+          </p>
+        </div>
+        <div id="search-results" class="space-y-1 pb-2"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
   .mega-item:hover .mega-chevron {
@@ -382,231 +506,352 @@ const searchIndex = await Promise.all(
     overflow: hidden;
   }
 
+  .search-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+  }
+
+  .search-modal.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .search-panel {
+    transform: translateY(12px) scale(0.985);
+    transition:
+      transform 220ms cubic-bezier(0.32, 0.72, 0, 1),
+      box-shadow 220ms ease;
+  }
+
+  .search-modal.is-open .search-panel {
+    transform: translateY(0) scale(1);
+  }
+
+  .search-result-card {
+    transition:
+      background-color 160ms ease,
+      transform 160ms ease;
+  }
+
+  .search-result-card:hover {
+    background: #f8fafc;
+    transform: translateY(-1px);
+  }
+
+  .search-results-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .search-results-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .mobile-menu {
+      transition: none;
+    }
+
+    .search-modal,
+    .search-panel,
+    .search-result-card {
       transition: none;
     }
   }
 </style>
 
-<script
-  type="application/json"
-  id="nav-search-index"
-  set:html={JSON.stringify(searchIndex)}
-/>
+<script is:inline define:vars={{ searchIndex }}>
+  (() => {
+    const searchEmptyState = {
+      title: "No encontramos resultados",
+      subtitle: "Prueba con otro término o busca por categoría.",
+      href: "/producto",
+      type: "Sugerencia",
+    };
 
-<script>
-  type SearchItem = {
-    name: string;
-    href: string;
-    category: string;
-    image: string;
-  };
+    const initNavbar = () => {
+      const normalized = (value) =>
+        value
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .trim();
 
-  const normalize = (s: string) =>
-    s
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
+      const searchModal = document.getElementById("search-modal");
+      const searchInput = document.getElementById("search-input");
+      const searchResults = document.getElementById("search-results");
+      const searchHint = document.getElementById("search-hint");
+      const searchClear = document.getElementById("search-clear");
+      const searchBackdrop = document.querySelector("[data-search-backdrop]");
+      const searchTriggers = document.querySelectorAll("[data-search-open]");
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const categoriesNav = document.getElementById("categories-nav");
 
-  const escapeHtml = (s: string) =>
-    s
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
-
-  const searchIndex: SearchItem[] = JSON.parse(
-    document.getElementById("nav-search-index")?.textContent || "[]",
-  );
-
-  const wireSearch = (root: Element) => {
-    const input = root.querySelector<HTMLInputElement>("[data-search-input]");
-    const panel = root.querySelector<HTMLElement>("[data-search-results]");
-    if (!input || !panel || input.dataset.searchReady) return;
-    input.dataset.searchReady = "1";
-
-    const hide = () => panel.classList.add("hidden");
-
-    const render = (q: string) => {
-      const query = normalize(q.trim());
-      if (query.length < 2) {
-        hide();
-        panel.innerHTML = "";
+      if (!searchModal || !searchInput || !searchResults || !searchHint) {
         return;
       }
 
-      const hits = searchIndex
-        .filter(
-          (p) =>
-            normalize(p.name).includes(query) ||
-            normalize(p.category).includes(query),
-        )
-        .slice(0, 8);
+      window.__agenciasNavbarSearchController?.abort?.();
+      const controller = new AbortController();
+      window.__agenciasNavbarSearchController = controller;
+      const { signal } = controller;
 
-      if (!hits.length) {
-        panel.innerHTML =
-          '<p class="px-4 py-3 text-sm text-gray-500">Sin resultados</p>';
-        panel.classList.remove("hidden");
-        return;
-      }
+      const renderSearchResults = (query) => {
+        const q = normalized(query || "");
+        const ranked = searchIndex
+          .map((item) => {
+            const haystack = normalized(
+              [item.title, item.subtitle, ...(item.keywords || [])].join(" "),
+            );
+            if (q && !haystack.includes(q)) return null;
 
-      panel.innerHTML = hits
-        .map(
-          (p) => `
-          <a href="${escapeHtml(p.href)}" role="option" class="flex items-center gap-3 px-3 py-2.5 transition-colors hover:bg-gray-50">
-            <img src="${escapeHtml(p.image)}" alt="" width="40" height="40" class="h-10 w-10 shrink-0 rounded-lg bg-gray-50 object-contain" loading="lazy" />
-            <span class="min-w-0">
-              <span class="block truncate text-sm font-medium text-gray-900">${escapeHtml(p.name)}</span>
-              <span class="block truncate text-xs text-gray-500">${escapeHtml(p.category)}</span>
-            </span>
-          </a>`,
-        )
-        .join("");
-      panel.classList.remove("hidden");
-    };
+            let score = 0;
+            if (!q) {
+              score = item.type === "Sección" ? 40 : item.type === "Categoría" ? 30 : 20;
+            } else {
+              if (normalized(item.title).startsWith(q)) score += 120;
+              if (normalized(item.title).includes(q)) score += 70;
+              if (normalized(item.subtitle).includes(q)) score += 25;
+              if ((item.keywords || []).some((keyword) => normalized(keyword).includes(q))) {
+                score += 20;
+              }
+              if (item.type === "Sección") score += 8;
+            }
+            return { ...item, score };
+          })
+          .filter(Boolean)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 8);
 
-    input.addEventListener("input", () => render(input.value));
-    input.addEventListener("focus", () => render(input.value));
-    input.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        hide();
-        input.blur();
-      }
-    });
-  };
+        const items = ranked.length > 0 ? ranked : q ? [searchEmptyState] : [];
 
-  const initSearch = () => {
-    document.querySelectorAll("[data-search]").forEach(wireSearch);
-  };
+        searchResults.innerHTML = "";
+        searchHint.textContent = q ? "Resultados" : "Sugerencias";
 
-  initSearch();
-  document.addEventListener("astro:page-load", initSearch);
-
-  document.addEventListener("pointerdown", (e) => {
-    document.querySelectorAll("[data-search]").forEach((root) => {
-      if (!root.contains(e.target as Node)) {
-        root.querySelector("[data-search-results]")?.classList.add("hidden");
-      }
-    });
-  });
-
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("mobile-menu");
-
-  if (toggle && menu) {
-    let menuOpen = false;
-
-    const openMenu = () => {
-      menuOpen = true;
-      menu.classList.remove("hidden");
-      menu.style.display = "grid";
-      menu.getBoundingClientRect(); // forzar reflow (estado colapsado)
-      menu.classList.add("is-open"); // dispara el despliegue tipo cortina
-    };
-
-    const closeMenu = () => {
-      menuOpen = false;
-      menu.classList.remove("is-open"); // recoge la cortina
-    };
-
-    // Al terminar de recogerse, lo ocultamos del flujo
-    menu.addEventListener("transitionend", (e) => {
-      if (e.propertyName === "grid-template-rows" && !menuOpen) {
-        menu.style.display = "";
-        menu.classList.add("hidden");
-      }
-    });
-
-    toggle.addEventListener("click", () => {
-      if (menuOpen) closeMenu();
-      else openMenu();
-    });
-
-    // Cerrar el menÃº mÃ³vil al navegar (click en un link)
-    document.addEventListener("astro:before-swap", () => {
-      if (menuOpen) {
-        menuOpen = false;
-        menu.classList.remove("is-open");
-        menu.style.display = "";
-        menu.classList.add("hidden");
-      }
-    });
-  }
-
-  const catNav = document.getElementById("categories-nav");
-
-  if (catNav) {
-    const items = catNav.querySelectorAll(".mega-item");
-    let openDrop: HTMLElement | null = null;
-
-    // Reinicia y dispara la animación de movimiento de los productos
-    const animateContent = (drop: HTMLElement) => {
-      const inner = drop.querySelector(
-        ".mega-drop-inner > div",
-      ) as HTMLElement | null;
-      if (!inner) return;
-      inner.classList.remove("mega-anim");
-      void inner.offsetWidth; // reflow para reiniciar la animación
-      inner.classList.add("mega-anim");
-    };
-
-    // Abre con la cortina (desde cerrado)
-    const showDrop = (drop: HTMLElement) => {
-      drop.classList.add("is-open");
-      drop.style.zIndex = "50";
-      animateContent(drop);
-    };
-
-    // Cierra con la cortina (al salir del menú)
-    const hideDrop = (drop: HTMLElement) => {
-      drop.classList.remove("is-open");
-      drop.style.zIndex = "40";
-    };
-
-    // Muestra/oculta sin animación de cortina (cambio directo de categoría)
-    const setOpenInstant = (drop: HTMLElement, open: boolean) => {
-      drop.classList.add("no-anim");
-      drop.classList.toggle("is-open", open);
-      drop.style.zIndex = open ? "50" : "40";
-      drop.getBoundingClientRect(); // aplica el cambio sin transición
-      drop.classList.remove("no-anim");
-    };
-
-    items.forEach(function (item) {
-      item.addEventListener("mouseenter", function () {
-        const drop = item.querySelector(".mega-drop") as HTMLElement | null;
-
-        if (drop) {
-          if (openDrop && openDrop !== drop) {
-            // Cambio directo: el panel no sube/baja, solo cambian los productos
-            setOpenInstant(openDrop, false);
-            setOpenInstant(drop, true);
-            animateContent(drop);
-          } else if (!openDrop) {
-            showDrop(drop);
-          }
-          openDrop = drop;
-        } else if (openDrop) {
-          hideDrop(openDrop);
-          openDrop = null;
+        if (q && ranked.length === 0) {
+          const empty = document.createElement("div");
+          empty.className =
+            "mx-2 mb-2 rounded-2xl border border-dashed border-gray-200 bg-gray-50 px-4 py-6 text-center";
+          empty.innerHTML =
+            `<p class="text-sm font-semibold text-gray-900">${searchEmptyState.title}</p>
+           <p class="mt-1 text-sm text-gray-500">${searchEmptyState.subtitle}</p>`;
+          searchResults.appendChild(empty);
+          return;
         }
-      });
-    });
 
-    catNav.addEventListener("mouseleave", function () {
-      if (openDrop) {
-        hideDrop(openDrop);
-        openDrop = null;
-      }
-    });
+        items.forEach((item) => {
+          const link = document.createElement("a");
+          link.href = item.href;
+          link.className =
+            "search-result-card mx-2 flex items-center gap-4 rounded-2xl px-4 py-3 text-left";
+          link.innerHTML = `
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gray-100 text-xs font-semibold uppercase tracking-widest text-gray-500">
+            ${item.type.slice(0, 3)}
+          </div>
+          <div class="min-w-0 flex-1">
+            <p class="truncate text-base font-semibold text-gray-900">${item.title}</p>
+            <p class="mt-0.5 text-sm text-gray-500">${item.subtitle}</p>
+          </div>
+          <svg class="h-4 w-4 shrink-0 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+          </svg>
+        `;
+          link.addEventListener("click", closeSearch, { signal });
+          searchResults.appendChild(link);
+        });
+      };
 
-    // Cerrar el menÃº al navegar (click en un link), para ver el contenido
-    document.addEventListener("astro:before-swap", function () {
-      if (openDrop) {
-        setOpenInstant(openDrop, false);
-        openDrop = null;
+      const openSearch = () => {
+        searchModal.classList.remove("hidden");
+        searchModal.classList.add("is-open");
+        // El modal se marca aria-hidden/inert mientras esta cerrado porque
+        // conserva enlaces enfocables; hay que liberarlo al abrirlo o queda
+        // invisible para lectores de pantalla y fuera del orden de tabulacion.
+        searchModal.removeAttribute("aria-hidden");
+        searchModal.removeAttribute("inert");
+        if (searchClear) {
+          searchClear.classList.toggle(
+            "hidden",
+            searchInput.value.trim().length === 0,
+          );
+        }
+        renderSearchResults(searchInput.value || "");
+        window.setTimeout(() => searchInput.focus(), 30);
+      };
+
+      const closeSearch = () => {
+        searchModal.classList.remove("is-open");
+        searchModal.setAttribute("aria-hidden", "true");
+        searchModal.setAttribute("inert", "");
+        window.setTimeout(() => {
+          if (!searchModal.classList.contains("is-open")) {
+            searchModal.classList.add("hidden");
+          }
+        }, 180);
+      };
+
+      const clearSearch = () => {
+        searchInput.value = "";
+        searchClear?.classList.add("hidden");
+        renderSearchResults("");
+        searchInput.focus();
+      };
+
+      searchTriggers.forEach((trigger) =>
+        trigger.addEventListener("click", openSearch, { signal }),
+      );
+      searchBackdrop?.addEventListener("click", closeSearch, { signal });
+      searchClear?.addEventListener("click", clearSearch, { signal });
+      searchInput.addEventListener(
+        "input",
+        () => {
+          searchClear?.classList.toggle("hidden", searchInput.value.trim().length === 0);
+          renderSearchResults(searchInput.value);
+        },
+        { signal },
+      );
+      searchInput.addEventListener(
+        "keydown",
+        (event) => {
+          if (event.key === "Escape") closeSearch();
+        },
+        { signal },
+      );
+      document.addEventListener(
+        "keydown",
+        (event) => {
+          if (event.key === "Escape") closeSearch();
+        },
+        { signal },
+      );
+
+      if (menuToggle && mobileMenu) {
+        let menuOpen = false;
+
+        const openMenu = () => {
+          menuOpen = true;
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.style.display = "grid";
+          mobileMenu.getBoundingClientRect();
+          mobileMenu.classList.add("is-open");
+        };
+
+        const closeMenu = () => {
+          menuOpen = false;
+          mobileMenu.classList.remove("is-open");
+        };
+
+        mobileMenu.addEventListener(
+          "transitionend",
+          (e) => {
+            if (e.propertyName === "grid-template-rows" && !menuOpen) {
+              mobileMenu.style.display = "";
+              mobileMenu.classList.add("hidden");
+            }
+          },
+          { signal },
+        );
+
+        menuToggle.addEventListener(
+          "click",
+          () => {
+            if (menuOpen) closeMenu();
+            else openMenu();
+          },
+          { signal },
+        );
       }
-    });
-  }
+
+      if (categoriesNav) {
+        const items = categoriesNav.querySelectorAll(".mega-item");
+        let openDrop = null;
+        let closeTimer = null;
+
+        const animateContent = (drop) => {
+          const inner = drop.querySelector(".mega-drop-inner > div");
+          if (!inner) return;
+          inner.classList.remove("mega-anim");
+          void inner.offsetWidth;
+          inner.classList.add("mega-anim");
+        };
+
+        const showDrop = (drop) => {
+          drop.classList.add("is-open");
+          drop.style.zIndex = "50";
+          animateContent(drop);
+        };
+
+        const hideDrop = (drop) => {
+          drop.classList.remove("is-open");
+          drop.style.zIndex = "40";
+        };
+
+        const setOpenInstant = (drop, open) => {
+          drop.classList.add("no-anim");
+          drop.classList.toggle("is-open", open);
+          drop.style.zIndex = open ? "50" : "40";
+          drop.getBoundingClientRect();
+          drop.classList.remove("no-anim");
+        };
+
+        const cancelClose = () => {
+          if (closeTimer) {
+            window.clearTimeout(closeTimer);
+            closeTimer = null;
+          }
+        };
+
+        const scheduleClose = () => {
+          cancelClose();
+          closeTimer = window.setTimeout(() => {
+            if (openDrop) {
+              hideDrop(openDrop);
+              openDrop = null;
+            }
+          }, 120);
+        };
+
+        categoriesNav.addEventListener("mouseenter", cancelClose, { signal });
+        categoriesNav.addEventListener("mouseleave", scheduleClose, { signal });
+
+        items.forEach((item) => {
+          const drop = item.querySelector(".mega-drop");
+
+          item.addEventListener(
+            "mouseenter",
+            () => {
+              if (drop) {
+                cancelClose();
+                if (openDrop && openDrop !== drop) {
+                  setOpenInstant(openDrop, false);
+                  setOpenInstant(drop, true);
+                  animateContent(drop);
+                } else if (!openDrop) {
+                  showDrop(drop);
+                }
+                openDrop = drop;
+              } else if (openDrop) {
+                hideDrop(openDrop);
+                openDrop = null;
+              }
+            },
+            { signal },
+          );
+        });
+      }
+    };
+
+    initNavbar();
+
+    if (!window.__agenciasNavbarSearchPageLoadBound) {
+      window.__agenciasNavbarSearchPageLoadBound = true;
+      document.addEventListener("astro:page-load", initNavbar);
+    }
+  })();
 </script>
