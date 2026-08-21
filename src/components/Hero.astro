@@ -68,7 +68,7 @@ const stats = [
         Array.from({ length: cloneSets })
           .flatMap(() => slides)
           .map((slide) => (
-            <div class="relative h-full w-full shrink-0" aria-hidden="true">
+            <div class="relative h-full w-full shrink-0" aria-hidden="true" inert>
               <Image
                 src={slide.image}
                 alt=""
@@ -242,7 +242,7 @@ const stats = [
         Array.from({ length: cloneSets })
           .flatMap(() => slides)
           .map((slide) => (
-            <div class="relative h-full w-full shrink-0" aria-hidden="true">
+            <div class="relative h-full w-full shrink-0" aria-hidden="true" inert>
               <Image
                 src={slide.image}
                 alt=""
@@ -364,7 +364,7 @@ const stats = [
 
     <!-- Dots -->
     <div
-      class="absolute bottom-[12rem] left-1/2 z-20 flex -translate-x-1/2 gap-2"
+      class="absolute bottom-[12rem] left-1/2 z-20 flex -translate-x-1/2 gap-4"
     >
       {
         slides.map((_, index) => (
@@ -374,6 +374,8 @@ const stats = [
             aria-label={`Ir al banner ${index + 1}`}
             class:list={[
               "h-2 rounded-full bg-white transition-all duration-300",
+              // hit area de 24x24 sin alterar el layout del punto
+              "relative before:absolute before:left-1/2 before:top-1/2 before:h-6 before:w-6 before:-translate-x-1/2 before:-translate-y-1/2 before:content-['']",
               index === 0 ? "w-6 opacity-100" : "w-2 opacity-50",
             ]}
           />

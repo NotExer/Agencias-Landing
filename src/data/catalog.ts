@@ -1,11 +1,20 @@
-const imageModules = import.meta.glob<{ default: { src: string } }>(
+import type { ImageMetadata } from "astro";
+
+const imageModules = import.meta.glob<{ default: ImageMetadata }>(
   "../img/*.{avif,jpg,jpeg,png,webp}",
   { eager: true }
 );
 
-/** Uso: img("bota-soldador.avif") → URL lista para usar en <img src> */
-function img(filename: string): string {
-  return imageModules[`../img/${filename}`]?.default?.src ?? "";
+/**
+ * Uso: img("bota-soldador.avif") → ImageMetadata para <Image src={...} />
+ * Devuelve el metadata (no la URL) para que astro:assets pueda generar
+ * variantes responsive; pasar `.src` a un <img> crudo salta el optimizador
+ * y sirve el archivo original a tamaño completo.
+ */
+function img(filename: string): ImageMetadata {
+  const found = imageModules[`../img/${filename}`]?.default;
+  if (!found) throw new Error(`Imagen no encontrada en src/img: ${filename}`);
+  return found;
 }
 
 // ── TIPOS (no tocar) ─────────────────────────────────────────
@@ -244,7 +253,7 @@ export interface Product {
   name:        string;
   category:    string;
   price:       number; 
-  images:      string[];
+  images:      ImageMetadata[];
   highlights:  typeof DEFAULT_HIGHLIGHTS;
   description: string[];
   inStock:     boolean;
@@ -267,7 +276,7 @@ export const products: Product[] = CATALOG.map((entry) => ({
 }));
 
 // Auto-construye las categorías del megamenú desde el catálogo
-export interface CategoryItem { image: string; image2?: string; name: string }
+export interface CategoryItem { image: ImageMetadata; image2?: ImageMetadata; name: string }
 export interface Category {
   label:    string;
   href:     string;

@@ -72,30 +72,13 @@ const organization = {
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class="w-full bg-white text-gray-800 antialiased">
+  <body class="w-full bg-white pt-[73px] text-gray-800 antialiased">
     <slot />
     <WhatsAppFloat />
-    <!-- Compensa la altura del header fijo de forma exacta -->
-    <script is:inline>
-      (function () {
-        function adjust() {
-          var header = document.querySelector("header");
-          if (header) {
-            document.body.style.paddingTop = header.offsetHeight + "px";
-          }
-        }
-        adjust();
-        window.addEventListener("resize", adjust);
-        // Re-ajustar después de que las fuentes carguen (pueden cambiar la altura)
-        if (document.fonts) {
-          document.fonts.ready.then(adjust);
-        }
-        // Con View Transitions el <body> se reemplaza y pierde el padding:
-        // recalcular tras cada navegacion (antes de pintar para evitar saltos).
-        document.addEventListener("astro:after-swap", adjust);
-        document.addEventListener("astro:page-load", adjust);
-      })();
-    </script>
+    <!-- ponytail: el header fijo mide 72px (nav h-18) + 1px de borde = 73px,
+         fijado por clase, asi que el padding es estatico. Antes se calculaba por JS
+         tras cargar las fuentes, lo que desplazaba todo el <main> (CLS 0.089).
+         Si el header pasa a tener altura variable, volver a medirlo. -->
   </body>
 </html>
 

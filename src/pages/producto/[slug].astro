@@ -22,7 +22,7 @@ const productLd = {
   "@type": "Product",
   name: product.name,
   description: raw,
-  image: product.images.map((src) => new URL(src, Astro.site).href),
+  image: product.images.map((i) => new URL(i.src, Astro.site).href),
   category: product.category,
   brand: { "@type": "Brand", name: "Agencias Nacionales S.A.S" },
   offers: {
@@ -56,7 +56,7 @@ const breadcrumbLd = {
 <Layout
   title={`${product.name} | Agencias Nacionales S.A.S`}
   description={description}
-  image={product.images[0]}
+  image={product.images[0]?.src}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(productLd)} />
@@ -79,4 +79,4 @@ const breadcrumbLd = {
   </main>
   <Benefits />
   <Footer />
-</Layout>
+</Layout>

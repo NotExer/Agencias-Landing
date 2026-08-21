@@ -1,4 +1,5 @@
 ---
+import { Image, getImage } from "astro:assets";
 import logo from "../img/Logo.nav.avif";
 import { categories, productHref, products } from "../data/catalog";
 
@@ -10,12 +11,18 @@ const links = [
   { label: "Política ambiental", href: "/politica_ambiental" },
 ];
 
-const searchIndex = products.map((p) => ({
-  name: p.name,
-  href: productHref(p.name),
-  category: p.category,
-  image: p.images[0] ?? "",
-}));
+// El buscador pinta estas miniaturas desde JS del cliente, asi que necesita
+// una URL ya resuelta: getImage genera la variante de 80px (40 css @2x).
+const searchIndex = await Promise.all(
+  products.map(async (p) => ({
+    name: p.name,
+    href: productHref(p.name),
+    category: p.category,
+    image: p.images[0]
+      ? (await getImage({ src: p.images[0], width: 80, height: 80, format: "avif" })).src
+      : "",
+  })),
+);
 ---
 
 <header
@@ -26,11 +33,13 @@ const searchIndex = products.map((p) => ({
     class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8"
   >
     <a href="/" class="flex shrink-0 items-center">
-      <img
-        src={logo.src}
+      <Image
+        src={logo}
         alt="Agencias Nacionales S.A.S"
-        width={logo.width}
-        height={logo.height}
+        widths={[216, 432]}
+        sizes="216px"
+        format="avif"
+        loading="eager"
         decoding="async"
         class="h-10 w-auto"
       />
@@ -142,21 +151,21 @@ const searchIndex = products.map((p) => ({
                           {" "}
                           {/* 👈 */}
                           <div class="relative flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-gray-50">
-                            <img
+                            <Image
+                              widths={[160, 320]}
+                              sizes="160px"
                               src={item.image}
                               alt={item.name}
-                              width="400"
-                              height="400"
                               loading="lazy"
                               decoding="async"
                               class={`h-full w-full object-contain p-4 transition-opacity duration-200 ${item.image2 ? "group-hover/item:opacity-0" : ""}`}
                             />
                             {item.image2 && (
-                              <img
+                              <Image
+                                widths={[160, 320]}
+                                sizes="160px"
                                 src={item.image2}
                                 alt={item.name}
-                                width="400"
-                                height="400"
                                 loading="lazy"
                                 decoding="async"
                                 class="absolute inset-0 h-full w-full object-contain p-4 opacity-0 transition-opacity duration-200 group-hover/item:opacity-100"
@@ -170,7 +179,7 @@ const searchIndex = products.map((p) => ({
                       ))}
 
                       <div class="border-l border-gray-100 pl-6">
-                        <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-gray-500">
                           Productos
                         </p>
                         <ul class="mt-4 space-y-3">
