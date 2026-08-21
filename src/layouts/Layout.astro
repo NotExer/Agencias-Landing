@@ -96,13 +96,23 @@ const organization = {
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class="w-full bg-white pt-[73px] text-gray-800 antialiased">
+  <body class="w-full bg-white text-gray-800 antialiased">
     <slot />
     {!hideWhatsApp && <WhatsAppFloat />}
-    <!-- ponytail: el header fijo mide 72px (nav h-18) + 1px de borde = 73px,
-         fijado por clase, asi que el padding es estatico. Antes se calculaba por JS
-         tras cargar las fuentes, lo que desplazaba todo el <main> (CLS 0.089).
-         Si el header pasa a tener altura variable, volver a medirlo. -->
+    <script is:inline>
+      (() => {
+        const adjustHeaderOffset = () => {
+          const header = document.querySelector("header");
+          document.body.style.paddingTop = header ? `${header.offsetHeight}px` : "";
+        };
+
+        adjustHeaderOffset();
+        window.addEventListener("resize", adjustHeaderOffset);
+        document.addEventListener("astro:page-load", adjustHeaderOffset);
+        document.addEventListener("astro:after-swap", adjustHeaderOffset);
+        document.fonts?.ready.then(adjustHeaderOffset);
+      })();
+    </script>
   </body>
 </html>
 

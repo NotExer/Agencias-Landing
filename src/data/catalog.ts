@@ -379,6 +379,42 @@ const CATALOG: CatalogEntry[] = [
     ],
     specs: "Lona negra · Diseño slip-on · Elásticos laterales · Corte bajo · Suela de caucho negra",
   },
+
+  {
+    name:     "Valeta Gracia Llano (Lona)",
+    category: "Calzado de Trabajo",
+    images:   ["Valeta Gracia Llano Lona.webp"],
+    price:    189000,
+    description: [
+      "Valeta Gracia Llano en lona negra, diseñada para brindar comodidad y facilidad al calzar durante la jornada.",
+      "Su silueta baja, interior liviano y suela de caucho negra ofrecen una presentación sobria y versátil para uso cotidiano.",
+    ],
+    specs: "Lona negra · Diseño plano · Corte bajo · Interior liviano · Suela de caucho negra",
+  },
+
+  {
+    name:     "Tenis Mocasín Suela Flow",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Mocasin Suela Flow.webp"],
+    price:    189000,
+    description: [
+      "Tenis mocasín en tejido negro con diseño slip-on, pensado para brindar comodidad, ajuste flexible y facilidad al calzar.",
+      "Su suela Flow blanca de perfil alto aporta amortiguación y una apariencia moderna para jornadas de uso cotidiano.",
+    ],
+    specs: "Tejido negro · Diseño slip-on · Ajuste flexible · Suela Flow blanca · Perfil alto",
+  },
+
+  {
+    name:     "Tenis Botín Suela Flow",
+    category: "Calzado de Trabajo",
+    images:   ["Tenis Botin Suela Flow.webp"],
+    price:    189000,
+    description: [
+      "Tenis botín en tejido negro con caña tipo calcetín, diseñado para ofrecer un ajuste flexible y cómodo durante la jornada.",
+      "Su suela Flow blanca de perfil alto aporta amortiguación y una apariencia moderna para uso cotidiano.",
+    ],
+    specs: "Tejido negro · Caña tipo calcetín · Ajuste flexible · Suela Flow blanca · Perfil alto",
+  },
   
   {
     name:     "Blue Jean Hombre",
