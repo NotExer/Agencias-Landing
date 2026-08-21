@@ -1,0 +1,2 @@
+Antes de escribir cada post, investiga fuentes web frescas sobre dotaciones empresariales, calzado de trabajo y EPP.
+Elige un tema SEO actual, redacta un artículo humano en español con el formato del blog de Agencias Nacionales, crea una imagen destacada acorde, actualiza `src/data/articles.generated.json` y `src/data/articles.ts` si hace falta, verifica que el slug cargue bien y deja el trabajo listo para `main`.
