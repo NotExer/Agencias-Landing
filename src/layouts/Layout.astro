@@ -11,6 +11,7 @@ interface Props {
   noindex?: boolean;
   ogType?: "website" | "article";
   canonicalUrl?: string;
+  hideWhatsApp?: boolean;
 }
 
 const {
@@ -20,6 +21,7 @@ const {
   noindex = false,
   ogType = "website",
   canonicalUrl,
+  hideWhatsApp = false,
 } = Astro.props;
 
 const siteUrl = Astro.site ?? new URL("https://agenciasnacionales.com");
@@ -77,7 +79,7 @@ const organization = {
   </head>
   <body class="w-full bg-white text-gray-800 antialiased">
     <slot />
-    <WhatsAppFloat />
+    {!hideWhatsApp && <WhatsAppFloat />}
     <!-- Compensa la altura del header fijo de forma exacta -->
     <script is:inline>
       (function () {

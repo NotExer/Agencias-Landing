@@ -25,6 +25,7 @@ export interface Article {
 export const articles = importedArticles as Article[];
 
 const originalArticleSlugs = [
+  "como-elegir-calzado-de-trabajo-comodo-jornadas-largas",
   "como-cotizar-dotaciones-empresariales-sin-errores",
   "best-practices",
   "getting-started",
