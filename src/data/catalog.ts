@@ -1,14 +1,24 @@
-const imageModules = import.meta.glob<{
-  default: { src: string } | string;
-}>(
-  "../img/*.{avif,jpg,jpeg,jfif,png,webp}",
+import type { ImageMetadata } from "astro";
+
+const imageModules = import.meta.glob<{ default: ImageMetadata }>(
+  "../img/*.{avif,jpg,jpeg,png,webp}",
   { eager: true }
 );
 
-/** Uso: img("bota-soldador.avif") → URL lista para usar en <img src> */
-function img(filename: string): string {
-  const image = imageModules[`../img/${filename}`]?.default;
-  return typeof image === "string" ? image : image?.src ?? "";
+/**
+ * Uso: img("bota-soldador.avif") → ImageMetadata para <Image src={...} />
+ * Devuelve el metadata (no la URL) para que astro:assets pueda generar
+ * variantes responsive; pasar `.src` a un <img> crudo salta el optimizador
+ * y sirve el archivo original a tamano completo.
+ *
+ * Los .jfif se renombraron a .jpg (son JPEG identicos byte a byte): Astro
+ * decide por extension y no procesa .jfif, asi que devolvia un string y
+ * rompia el tipo. Con .jpg entran todos por la misma ruta optimizada.
+ */
+function img(filename: string): ImageMetadata {
+  const found = imageModules[`../img/${filename}`]?.default;
+  if (!found) throw new Error(`Imagen no encontrada en src/img: ${filename}`);
+  return found;
 }
 
 // ── TIPOS (no tocar) ─────────────────────────────────────────
@@ -1130,7 +1140,7 @@ const CATALOG: CatalogEntry[] = [
   {
     name:     "Redecilla Suave Ref. 02",
     category: "Gorros y Redecillas",
-    images:   ["Redecilla Suave Ref-02.jfif"],
+    images:   ["Redecilla Suave Ref-02.jpg"],
     price:    10000,
     description: [
       "Redecilla suave para una sujeción cómoda del cabello durante la jornada.",
@@ -1388,7 +1398,7 @@ export interface Product {
   name:        string;
   category:    string;
   price:       number; 
-  images:      string[];
+  images:      ImageMetadata[];
   highlights:  typeof DEFAULT_HIGHLIGHTS;
   description: string[];
   inStock:     boolean;
@@ -1411,7 +1421,7 @@ export const products: Product[] = CATALOG.map((entry) => ({
 }));
 
 // Auto-construye las categorías del megamenú desde el catálogo
-export interface CategoryItem { image: string; image2?: string; name: string }
+export interface CategoryItem { image: ImageMetadata; image2?: ImageMetadata; name: string }
 export interface Category {
   label:    string;
   href:     string;

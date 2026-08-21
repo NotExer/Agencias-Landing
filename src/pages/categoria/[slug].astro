@@ -81,7 +81,7 @@ const breadcrumbLd = {
 <Layout
   title={`${copy.title} | Agencias Nacionales S.A.S`}
   description={copy.description}
-  image={catProducts[0]?.images[0]}
+  image={catProducts[0]?.images[0]?.src}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
@@ -89,7 +89,7 @@ const breadcrumbLd = {
   <Navbar />
   <main class="w-full bg-white min-h-screen">
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-4">
-      <nav aria-label="Ruta de navegación" class="text-xs text-gray-400">
+      <nav aria-label="Ruta de navegación" class="text-xs text-gray-500">
         <a href="/" class="hover:text-gray-600">Inicio</a>
         <span class="mx-1">/</span>
         <a href="/producto" class="hover:text-gray-600">Productos</a>
@@ -136,7 +136,7 @@ const breadcrumbLd = {
       {
         catProducts.length === 0 ? (
           <div class="flex flex-col items-center gap-4 py-20 text-center">
-            <p class="text-gray-400">
+            <p class="text-gray-500">
               Estamos preparando esta categoría. Escríbenos y te cotizamos lo
               que necesitas.
             </p>

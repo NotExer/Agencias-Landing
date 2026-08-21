@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import logo from "../img/Logo.nav.avif";
 import { categories, products, productHref } from "../data/catalog";
 import p1 from "../img/Producto 1.avif";
@@ -94,11 +95,13 @@ const searchIndex = [
     class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8"
   >
     <a href="../" class="flex shrink-0 items-center">
-      <img
-        src={logo.src}
+      <Image
+        src={logo}
         alt="Agencias Nacionales S.A.S"
-        width={logo.width}
-        height={logo.height}
+        widths={[216, 432]}
+        sizes="216px"
+        format="avif"
+        loading="eager"
         decoding="async"
         class="h-16 w-auto"
       />
@@ -224,21 +227,21 @@ const searchIndex = [
                           {" "}
                           {/* 👈 */}
                           <div class="relative flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-gray-50">
-                            <img
+                            <Image
                               src={item.image}
                               alt={item.name}
-                              width="400"
-                              height="400"
+                              widths={[160, 320]}
+                              sizes="160px"
                               loading="lazy"
                               decoding="async"
                               class={`h-full w-full object-contain p-4 transition-opacity duration-200 ${item.image2 ? "group-hover/item:opacity-0" : ""}`}
                             />
                             {item.image2 && (
-                              <img
+                              <Image
                                 src={item.image2}
                                 alt={item.name}
-                                width="400"
-                                height="400"
+                                widths={[160, 320]}
+                                sizes="160px"
                                 loading="lazy"
                                 decoding="async"
                                 class="absolute inset-0 h-full w-full object-contain p-4 opacity-0 transition-opacity duration-200 group-hover/item:opacity-100"
@@ -363,6 +366,7 @@ const searchIndex = [
   id="search-modal"
   class="search-modal hidden"
   aria-hidden="true"
+  inert
 >
   <button
     type="button"
@@ -666,6 +670,11 @@ const searchIndex = [
       const openSearch = () => {
         searchModal.classList.remove("hidden");
         searchModal.classList.add("is-open");
+        // El modal se marca aria-hidden/inert mientras esta cerrado porque
+        // conserva enlaces enfocables; hay que liberarlo al abrirlo o queda
+        // invisible para lectores de pantalla y fuera del orden de tabulacion.
+        searchModal.removeAttribute("aria-hidden");
+        searchModal.removeAttribute("inert");
         if (searchClear) {
           searchClear.classList.toggle(
             "hidden",
@@ -678,6 +687,8 @@ const searchIndex = [
 
       const closeSearch = () => {
         searchModal.classList.remove("is-open");
+        searchModal.setAttribute("aria-hidden", "true");
+        searchModal.setAttribute("inert", "");
         window.setTimeout(() => {
           if (!searchModal.classList.contains("is-open")) {
             searchModal.classList.add("hidden");
