@@ -1,0 +1,65 @@
+# Agencias Nacionales SAS
+
+> Agencias Nacionales SAS es una empresa colombiana con más de 55 años de experiencia en la producción de dotación corporativa, uniformes de trabajo, calzado de seguridad y elementos de protección personal (EPP). / Agencias Nacionales SAS is a Colombian company with over 55 years of experience manufacturing corporate workwear, work uniforms, safety footwear, and personal protective equipment (PPE).
+
+## About This Site
+
+Fabricante colombiano fundado en Medellín, Antioquia. Ofrece personalización mediante bordado, sublimación, DTF y serigrafía, y atiende empresas de todo el país a través de cotización directa por WhatsApp.
+
+Colombian manufacturer founded in Medellín, Antioquia. Offers customization through embroidery, sublimation, DTF, and screen printing, and serves companies nationwide via direct WhatsApp quoting.
+
+## Contenido en Español
+
+### Categorías de Producto
+- [Calzado de Trabajo](https://agenciasnacionales.com/categoria/calzado-de-trabajo): Botas y zapatos de seguridad para entornos industriales, en cuero, PVC y caucho.
+- [Uniformes de Trabajo](https://agenciasnacionales.com/categoria/uniformes-de-trabajo): Uniformes corporativos y operativos personalizables para múltiples sectores.
+- [EPP – Elementos de Protección Personal](https://agenciasnacionales.com/categoria/epp): Equipos de protección individual para industrias de alto riesgo.
+
+Cada producto tiene su propia ficha en `/producto/[nombre]` con descripción, especificaciones técnicas y cotización directa por WhatsApp.
+
+### Catálogo
+- [Catálogo completo](https://agenciasnacionales.com/producto): Todos los productos disponibles, con buscador y filtros por categoría.
+
+### Recursos
+- [Nosotros](https://agenciasnacionales.com/nosotros): Historia, misión y valores de la empresa.
+- [Preguntas Frecuentes](https://agenciasnacionales.com/faq): Uniformes personalizados, proceso de cotización y pedido, EPP y calzado de seguridad.
+- [Blog](https://agenciasnacionales.com/articulos): Artículos sobre dotación y seguridad industrial.
+- [Política de Calidad](https://agenciasnacionales.com/politica_calidad)
+- [Política Ambiental](https://agenciasnacionales.com/politica_ambiental)
+- [Política de Seguridad](https://agenciasnacionales.com/politica_seguridad)
+- [Política de Uso](https://agenciasnacionales.com/politica_uso)
+- [Política de Privacidad](https://agenciasnacionales.com/politica_privacidad)
+
+## English Content
+
+### Product Categories
+- [Work Footwear](https://agenciasnacionales.com/categoria/calzado-de-trabajo): Safety boots and shoes for industrial environments, in leather, PVC, and rubber.
+- [Work Uniforms](https://agenciasnacionales.com/categoria/uniformes-de-trabajo): Customizable corporate and operational uniforms for multiple sectors.
+- [PPE – Personal Protective Equipment](https://agenciasnacionales.com/categoria/epp): Individual protection equipment for high-risk industries.
+
+Every product has its own page at `/producto/[name]` with a description, technical specs, and direct WhatsApp quoting.
+
+### Catalog
+- [Full Catalog](https://agenciasnacionales.com/producto): All available products, with search and category filters.
+
+### Resources
+- [About Us](https://agenciasnacionales.com/nosotros): Company history, mission, and values.
+- [FAQ](https://agenciasnacionales.com/faq): Custom uniforms, quoting and ordering process, PPE, and safety footwear.
+- [Blog](https://agenciasnacionales.com/articulos): Articles on workwear and industrial safety.
+- [Quality Policy](https://agenciasnacionales.com/politica_calidad)
+- [Environmental Policy](https://agenciasnacionales.com/politica_ambiental)
+- [Safety Policy](https://agenciasnacionales.com/politica_seguridad)
+- [Terms of Use](https://agenciasnacionales.com/politica_uso)
+- [Privacy Policy](https://agenciasnacionales.com/politica_privacidad)
+
+## Usage Guidelines
+
+- Please attribute content to "Agencias Nacionales SAS" when referencing it.
+- Pricing and stock are subject to change; direct users to WhatsApp for current quotes.
+
+## Contact / Contacto
+
+- Email: contactanos@agenciasnacionales.com
+- WhatsApp: https://wa.me/573042351036 (+57 304 235 1036)
+- Website: https://agenciasnacionales.com
+- Contact form / Formulario: https://agenciasnacionales.com/contacto
