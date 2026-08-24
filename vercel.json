@@ -3,6 +3,11 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/dotacion-empresarial-medellin",
+      "destination": "/dotaciones-medellin/",
+      "permanent": true
+    },
+    {
       "source": "/categorias/calzado-de-trabajo",
       "destination": "/categoria/calzado-de-trabajo/",
       "permanent": true

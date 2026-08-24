@@ -705,6 +705,54 @@ const CATALOG: CatalogEntry[] = [
   },
 
 
+{
+    name:     "Camiseta Tipo Polo Manga Corta",
+    category: "Uniformes de Trabajo",
+    images:   ["Camiseta tipo polo manga corta 1.jpg", "Camiseta tipo polo manga corta 2.jpg"],
+    price:    69000,
+    description: [
+      "Camiseta tipo polo de manga corta para dotaciones casuales y corporativas, con una imagen limpia y profesional.",
+      "Perfecta para equipos que requieren comodidad y buena presentación durante toda la jornada.",
+    ],
+    specs: "Polo manga corta · Uso corporativo · Tejido cómodo · Presentación profesional",
+  },
+
+  {
+    name:     "Camiseta Tipo Polo Manga Larga",
+    category: "Uniformes de Trabajo",
+    images:   ["Camiseta tipo polo manga larga 1.jpg", "Camiseta tipo polo manga larga 2.jpg"],
+    price:    79000,
+    description: [
+      "Camiseta tipo polo de manga larga para dotación, ideal cuando se requiere mayor cobertura sin perder una imagen corporativa.",
+      "Es una opción versátil para diferentes áreas operativas y de servicio.",
+    ],
+    specs: "Polo manga larga · Uso corporativo · Cobertura adicional · Confort diario",
+  },
+
+  {
+    name:     "Camiseta T-Shirt Manga Corta",
+    category: "Uniformes de Trabajo",
+    images:   ["Camiseta t-shirt manga corta 1.jpg", "Camiseta t-shirt manga corta 2.jpg"],
+    price:    59000,
+    description: [
+      "Camiseta t-shirt de manga corta para dotaciones ligeras, promociones internas o uso diario de personal.",
+      "Su corte sencillo permite una personalización fácil para empresas y equipos de trabajo.",
+    ],
+    specs: "T-shirt manga corta · Uso diario · Personalizable · Ligera y cómoda",
+  },
+
+  {
+    name:     "Camiseta T-Shirt Manga Larga",
+    category: "Uniformes de Trabajo",
+    images:   ["Camiseta t-shirt manga larga 1.jpg", "Camiseta t-shirt manga larga 2.jpg"],
+    price:    69000,
+    description: [
+      "Camiseta t-shirt de manga larga para quienes buscan una dotación cómoda con mayor cobertura.",
+      "Funciona bien en ambientes de trabajo que requieren una prenda ligera y resistente.",
+    ],
+    specs: "T-shirt manga larga · Uso corporativo · Ligera · Cómoda y resistente",
+  },
+
   {
     name:     "Camisa Oxford Hombre",
     category: "Uniformes de Trabajo",
@@ -789,53 +837,7 @@ const CATALOG: CatalogEntry[] = [
     specs: "Dril azul oscuro · Manga corta · Uso corporativo · Dotación funcional",
   },
 
-  {
-    name:     "Camiseta Tipo Polo Manga Corta",
-    category: "Uniformes de Trabajo",
-    images:   ["Camiseta tipo polo manga corta 1.jpg", "Camiseta tipo polo manga corta 2.jpg"],
-    price:    69000,
-    description: [
-      "Camiseta tipo polo de manga corta para dotaciones casuales y corporativas, con una imagen limpia y profesional.",
-      "Perfecta para equipos que requieren comodidad y buena presentación durante toda la jornada.",
-    ],
-    specs: "Polo manga corta · Uso corporativo · Tejido cómodo · Presentación profesional",
-  },
-
-  {
-    name:     "Camiseta Tipo Polo Manga Larga",
-    category: "Uniformes de Trabajo",
-    images:   ["Camiseta tipo polo manga larga 1.jpg", "Camiseta tipo polo manga larga 2.jpg"],
-    price:    79000,
-    description: [
-      "Camiseta tipo polo de manga larga para dotación, ideal cuando se requiere mayor cobertura sin perder una imagen corporativa.",
-      "Es una opción versátil para diferentes áreas operativas y de servicio.",
-    ],
-    specs: "Polo manga larga · Uso corporativo · Cobertura adicional · Confort diario",
-  },
-
-  {
-    name:     "Camiseta T-Shirt Manga Corta",
-    category: "Uniformes de Trabajo",
-    images:   ["Camiseta t-shirt manga corta 1.jpg", "Camiseta t-shirt manga corta 2.jpg"],
-    price:    59000,
-    description: [
-      "Camiseta t-shirt de manga corta para dotaciones ligeras, promociones internas o uso diario de personal.",
-      "Su corte sencillo permite una personalización fácil para empresas y equipos de trabajo.",
-    ],
-    specs: "T-shirt manga corta · Uso diario · Personalizable · Ligera y cómoda",
-  },
-
-  {
-    name:     "Camiseta T-Shirt Manga Larga",
-    category: "Uniformes de Trabajo",
-    images:   ["Camiseta t-shirt manga larga 1.jpg", "Camiseta t-shirt manga larga 2.jpg"],
-    price:    69000,
-    description: [
-      "Camiseta t-shirt de manga larga para quienes buscan una dotación cómoda con mayor cobertura.",
-      "Funciona bien en ambientes de trabajo que requieren una prenda ligera y resistente.",
-    ],
-    specs: "T-shirt manga larga · Uso corporativo · Ligera · Cómoda y resistente",
-  },
+  
 
   {
     name:     "Pantalón EPM",

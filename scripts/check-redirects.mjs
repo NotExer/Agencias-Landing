@@ -17,6 +17,7 @@ if (config.trailingSlash !== true) {
   process.exit(1);
 }
 const required = new Map([
+  ["/dotacion-empresarial-medellin", "/dotaciones-medellin/"],
   ["/categorias/calzado-de-trabajo", "/categoria/calzado-de-trabajo/"],
   ["/categorias/epp", "/categoria/epp/"],
   ["/categorias/uniformes-de-trabajo", "/categoria/uniformes-de-trabajo/"],
