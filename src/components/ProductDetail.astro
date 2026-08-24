@@ -29,7 +29,7 @@ const {
   highlights = [],
   description = [],
   inStock = true,
-  contactHref = "/contacto",
+  contactHref = "/contacto/",
   info,
 } = Astro.props;
 
@@ -170,8 +170,8 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
 
       <!-- Stock -->
       <div class="flex items-center gap-2 mb-6">
-        <span class:list={["h-2.5 w-2.5 rounded-full", inStock ? "bg-green-500" : "bg-gray-400"]}></span>
-        <span class="text-m font-medium text-gray-700">{inStock ? "Disponible" : "Agotado"}</span>
+        <span class:list={["h-2.5 w-2.5 rounded-full", inStock ? "bg-green-500" : "bg-amber-500"]}></span>
+        <span class="text-m font-medium text-gray-700">{inStock ? "Disponible para cotizar" : "Consultar disponibilidad"}</span>
       </div>
 
       <button
@@ -195,7 +195,7 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
         rel="noopener noreferrer"
         class="mt-3 block w-full rounded-full bg-green-600 py-4 text-center text-m font-medium text-white transition hover:bg-green-700"
       >
-        Cotizar por WhatsApp
+        Cotizar este producto
       </a>
       <a
         href={contactHref}
@@ -220,7 +220,7 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
               d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
             ></path>
           </svg>
-          <p class="text-m font-medium text-gray-700">Compra Segura</p>
+          <p class="text-m font-medium text-gray-700">Cotización empresarial</p>
         </div>
         <div class="flex flex-col items-center text-center gap-2 text-blue-600">
           <svg
@@ -236,7 +236,7 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
               d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
             ></path>
           </svg>
-          <p class="text-m font-medium text-gray-700">Entrega en 7-14 días</p>
+          <p class="text-m font-medium text-gray-700">Despachos nacionales</p>
         </div>
         <div class="flex flex-col items-center text-center gap-2 text-blue-600">
           <svg
@@ -252,7 +252,7 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
               d="M2.25 12a8.25 8.25 0 0116.5 0v6.75a2.25 2.25 0 01-2.25 2.25H15a.75.75 0 01-.75-.75v-3.75a.75.75 0 01.75-.75h3v-3a6.75 6.75 0 00-13.5 0v3h3a.75.75 0 01.75.75v3.75a.75.75 0 01-.75.75H4.5a2.25 2.25 0 01-2.25-2.25V12z"
             ></path>
           </svg>
-          <p class="text-m font-medium text-gray-700">Soporte 24/7</p>
+          <p class="text-m font-medium text-gray-700">Asesoría de producto</p>
         </div>
       </div>
 

@@ -1,0 +1,207 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import heroImage from "../img/banner1.optimized.avif";
+import { waHref } from "../data/contact";
+
+const title = "Dotaciones en Medellín | Uniformes, Calzado y EPP";
+const description = "Dotaciones empresariales en Medellín: uniformes de trabajo, calzado de seguridad y EPP para empresas. Fabricación, personalización y atención desde Envigado.";
+const quoteHref = waHref("Hola, quiero cotizar dotaciones para una empresa en Medellín. Necesito información sobre uniformes, calzado o EPP.");
+
+const faqs = [
+  {
+    question: "¿Qué incluye una dotación empresarial?",
+    answer: "La dotación se define según el cargo y el riesgo de la operación. Puede incluir uniformes de trabajo, calzado de seguridad y elementos de protección personal como cascos, guantes, gafas o protección auditiva.",
+  },
+  {
+    question: "¿Atienden empresas en Medellín y el Valle de Aburrá?",
+    answer: "Sí. Nuestra operación está en Envigado y atendemos solicitudes empresariales de Medellín y los municipios del Valle de Aburrá. También realizamos despachos a otras ciudades de Colombia.",
+  },
+  {
+    question: "¿Pueden personalizar los uniformes con el logo de la empresa?",
+    answer: "Sí. Los uniformes pueden personalizarse de acuerdo con la identidad y los requerimientos de cada empresa. La viabilidad depende de la prenda, el diseño y la cantidad solicitada.",
+  },
+  {
+    question: "¿Cómo solicito una cotización?",
+    answer: "Puedes escribirnos por WhatsApp o enviar la solicitud desde la página de contacto. Para preparar una cotización necesitamos saber el producto, la cantidad aproximada, las tallas, la ciudad de entrega y la fecha requerida.",
+  },
+  {
+    question: "¿Venden dotaciones para diferentes sectores?",
+    answer: "Sí. Atendemos empresas de manufactura, construcción, logística, alimentos, salud, mantenimiento y servicios, entre otros sectores. La selección se realiza según las condiciones de trabajo de cada equipo.",
+  },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Dotaciones empresariales en Medellín",
+  serviceType: "Suministro de uniformes de trabajo, calzado de seguridad y EPP para empresas",
+  url: "https://agenciasnacionales.com/dotaciones-medellin/",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "Agencias Nacionales S.A.S",
+    url: "https://agenciasnacionales.com/",
+  },
+  areaServed: {
+    "@type": "City",
+    name: "Medellín",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout title={title} description={description} canonicalUrl="https://agenciasnacionales.com/dotaciones-medellin/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <Navbar />
+  <main>
+    <section class="relative isolate overflow-hidden bg-slate-950 text-white">
+      <Image
+        src={heroImage}
+        alt="Trabajador con dotación industrial y calzado de seguridad"
+        widths={[640, 1024, 1600, 1920]}
+        sizes="100vw"
+        loading="eager"
+        fetchpriority="high"
+        class="absolute inset-0 -z-20 h-full w-full object-cover opacity-45"
+      />
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/90 to-blue-950/55"></div>
+      <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-200">
+          Atención empresarial desde Envigado
+        </p>
+        <h1 class="max-w-4xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+          Dotaciones empresariales en Medellín
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
+          Uniformes de trabajo, calzado de seguridad y EPP para empresas de Medellín y el Valle de Aburrá. Te ayudamos a definir la dotación según el cargo, el entorno de trabajo y la cantidad que necesitas.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a
+            href={quoteHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-full bg-blue-600 px-7 py-3.5 font-bold text-white transition hover:bg-blue-500"
+          >
+            Cotizar dotaciones por WhatsApp
+          </a>
+          <a
+            href="/contacto/"
+            class="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-3.5 font-semibold text-white transition hover:bg-white/10"
+          >
+            Enviar solicitud de cotización
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-6 px-5 py-7 text-sm text-slate-700 sm:grid-cols-3 sm:px-8 lg:px-10">
+        <p><strong class="block text-base text-slate-950">Más de 56 años</strong> fabricando y suministrando dotaciones.</p>
+        <p><strong class="block text-base text-slate-950">Atención local</strong> desde Envigado para el Valle de Aburrá.</p>
+        <p><strong class="block text-base text-slate-950">Solución completa</strong> uniformes, calzado industrial y EPP.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Productos para tu operación</p>
+        <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Una dotación definida por el trabajo, no por un paquete genérico</h2>
+        <p class="mt-5 text-lg leading-8 text-slate-600">
+          Compras, SST y Talento Humano necesitan productos que respondan al cargo, al riesgo y a la identidad de la empresa. Puedes cotizar una línea específica o consolidar varias categorías en una sola solicitud.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        <a href="/categoria/uniformes-de-trabajo/" class="rounded-3xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg">
+          <h3 class="text-xl font-bold text-slate-950">Uniformes de trabajo</h3>
+          <p class="mt-3 leading-7 text-slate-600">Camisas, pantalones, jeans, polos, overoles y prendas personalizables para equipos operativos y administrativos.</p>
+          <span class="mt-5 inline-block font-semibold text-blue-700">Ver uniformes</span>
+        </a>
+        <a href="/categoria/calzado-de-trabajo/" class="rounded-3xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg">
+          <h3 class="text-xl font-bold text-slate-950">Calzado de seguridad</h3>
+          <p class="mt-3 leading-7 text-slate-600">Botas y zapatos para distintos entornos, con opciones dieléctricas, antideslizantes y resistentes a hidrocarburos.</p>
+          <span class="mt-5 inline-block font-semibold text-blue-700">Ver calzado de trabajo</span>
+        </a>
+        <a href="/categoria/epp/" class="rounded-3xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg">
+          <h3 class="text-xl font-bold text-slate-950">Elementos de protección personal</h3>
+          <p class="mt-3 leading-7 text-slate-600">Protección para cabeza, ojos, oídos, manos y cuerpo, seleccionada según las condiciones de cada labor.</p>
+          <span class="mt-5 inline-block font-semibold text-blue-700">Ver elementos de protección</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-slate-950 text-white">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:px-10 lg:py-24">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-300">Información para cotizar</p>
+          <h2 class="mt-3 text-3xl font-black sm:text-4xl">Recibe una propuesta acorde con tu empresa</h2>
+          <p class="mt-5 leading-8 text-slate-300">
+            Una solicitud clara reduce cambios de talla, referencias equivocadas y retrasos. Comparte estos datos con nuestro equipo para orientar mejor la cotización.
+          </p>
+        </div>
+        <ul class="grid gap-3 text-slate-200 sm:grid-cols-2">
+          <li class="rounded-2xl bg-white/7 p-5">Producto o cargo que necesitas dotar</li>
+          <li class="rounded-2xl bg-white/7 p-5">Cantidad aproximada por referencia</li>
+          <li class="rounded-2xl bg-white/7 p-5">Tallas o proceso para consolidarlas</li>
+          <li class="rounded-2xl bg-white/7 p-5">Logo y tipo de personalización</li>
+          <li class="rounded-2xl bg-white/7 p-5">Condiciones de uso y riesgos del cargo</li>
+          <li class="rounded-2xl bg-white/7 p-5">Ciudad y fecha requerida de entrega</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+      <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Preguntas frecuentes</p>
+          <h2 class="mt-3 text-3xl font-black text-slate-950">Antes de pedir una cotización</h2>
+          <p class="mt-5 leading-7 text-slate-600">Estas respuestas cubren las dudas más comunes de empresas que buscan dotaciones en Medellín.</p>
+        </div>
+        <div class="divide-y divide-slate-200 border-y border-slate-200">
+          {faqs.map((faq) => (
+            <details class="group py-5">
+              <summary class="cursor-pointer list-none pr-8 text-lg font-bold text-slate-950">{faq.question}</summary>
+              <p class="mt-3 max-w-3xl leading-7 text-slate-600">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 pb-20 sm:px-8 lg:px-10">
+      <div class="rounded-3xl bg-blue-700 px-7 py-10 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-black">Cuéntanos qué necesita tu equipo</h2>
+          <p class="mt-3 leading-7 text-blue-100">Indica productos, cantidades y ciudad. Nuestro equipo revisará la solicitud y te orientará sobre las opciones disponibles.</p>
+        </div>
+        <a
+          href={quoteHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-7 inline-flex rounded-full bg-white px-7 py-3.5 font-bold text-blue-800 transition hover:bg-blue-50 lg:mt-0"
+        >
+          Solicitar cotización por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/dotacion-empresarial-medellin",
+      "destination": "/dotaciones-medellin/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/calzado-de-trabajo",
+      "destination": "/categoria/calzado-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/epp",
+      "destination": "/categoria/epp/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/seguridad",
+      "destination": "/categoria/epp/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/uniformes-de-trabajo",
+      "destination": "/categoria/uniformes-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/hospitalaria",
+      "destination": "/categoria/hospitalaria/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/cirugia",
+      "destination": "/categoria/hospitalaria/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/habitaciones",
+      "destination": "/categoria/hospitalaria/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/gorros-y-redecillas",
+      "destination": "/categoria/gorros-y-redecillas/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/todas-los-productos",
+      "destination": "/producto/",
+      "permanent": true
+    },
+    {
+      "source": "/zapato-tipo-crocs-ref-219",
+      "destination": "/producto/zapato-tipo-crocs-ref-219/",
+      "permanent": true
+    },
+    {
+      "source": "/bota-soldador-inyectada",
+      "destination": "/producto/bota-soldador-inyectada/",
+      "permanent": true
+    },
+    {
+      "source": "/bota-cana-alta-ref-226",
+      "destination": "/producto/bota-plastica-cana-alta-agricola/",
+      "permanent": true
+    },
+    {
+      "source": "/bota-seguridad-inyectada-gazella",
+      "destination": "/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+      "permanent": true
+    },
+    {
+      "source": "/pantal%C3%B3n-epm",
+      "destination": "/producto/pantalon-epm/",
+      "permanent": true
+    },
+    {
+      "source": "/pava-epm-con-solapa-especiales",
+      "destination": "/producto/pava-epm/",
+      "permanent": true
+    },
+    {
+      "source": "/p1013327",
+      "destination": "/producto/",
+      "permanent": true
+    },
+    {
+      "source": "/pol%C3%ADticas/pol%C3%ADtica-ambiental",
+      "destination": "/politica_ambiental/",
+      "permanent": true
+    }
+  ]
+}

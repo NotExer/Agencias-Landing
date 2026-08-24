@@ -91,6 +91,11 @@ npm run preview
 | `npm run build` | Genera la versión de producción |
 | `npm run preview` | Muestra una vista previa de la compilación |
 | `npm run astro` | Ejecuta comandos de Astro CLI |
+| `npm run check:cart` | Comprueba persistencia, duplicados y limpieza del carrito de cotizaciones |
+| `npm run check:catalog` | Valida las referencias de imágenes del catálogo |
+| `npm run check:redirects` | Verifica las redirecciones permanentes y URLs canónicas |
+| `npm run check:seo` | Comprueba metadatos y páginas comerciales clave |
+| `npm run verify` | Ejecuta todas las comprobaciones y la compilación de producción |
 
 ## Mantenimiento
 

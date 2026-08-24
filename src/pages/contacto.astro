@@ -8,7 +8,7 @@ import Reviews from "../components/Reviews.astro";
 // Import banner
 // Vite resolverá la extensión automáticamente, o asumirá si no hay.
 import bannerContacto from "../img/Banner contacto.jpg";
-import { waHref } from "../data/contact";
+import { waHref, WHATSAPP_NUMBER } from "../data/contact";
 ---
 
 <Layout
@@ -179,38 +179,62 @@ import { waHref } from "../data/contact";
         <h2 class="text-xl font-bold text-gray-900 mb-6">
           Envíanos un mensaje
         </h2>
-        <form class="space-y-4">
+        <form
+          id="quote-form"
+          data-quote-form
+          data-whatsapp={WHATSAPP_NUMBER}
+          class="space-y-4"
+        >
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <label for="quote-name" class="sr-only">Nombre completo</label>
             <input
+              id="quote-name"
               type="text"
+              name="name"
+              autocomplete="name"
               placeholder="Nombre completo"
               class="w-full bg-[#F3F4F6] border-0 rounded-xl px-4 py-3.5 text-m text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
               required
             />
+            <label for="quote-company" class="sr-only">Empresa</label>
             <input
+              id="quote-company"
               type="text"
+              name="company"
+              autocomplete="organization"
               placeholder="Tu empresa"
               class="w-full bg-[#F3F4F6] border-0 rounded-xl px-4 py-3.5 text-m text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
             />
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <label for="quote-email" class="sr-only">Correo electrónico</label>
             <input
+              id="quote-email"
               type="email"
+              name="email"
+              autocomplete="email"
               placeholder="Correo"
               class="w-full bg-[#F3F4F6] border-0 rounded-xl px-4 py-3.5 text-m text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
               required
             />
+            <label for="quote-phone" class="sr-only">Teléfono</label>
             <input
+              id="quote-phone"
               type="tel"
+              name="phone"
+              autocomplete="tel"
               placeholder="Teléfono"
               class="w-full bg-[#F3F4F6] border-0 rounded-xl px-4 py-3.5 text-m text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
               required
             />
           </div>
 
+          <label for="quote-message" class="sr-only">Productos, cantidades y ciudad de entrega</label>
           <textarea
-            placeholder="¿Algo que nos quieras decir?"
+            id="quote-message"
+            name="message"
+            placeholder="Productos, cantidades y ciudad de entrega"
             rows="4"
             class="w-full bg-[#F3F4F6] border-0 rounded-xl px-4 py-4 text-m text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
             required></textarea>
@@ -219,8 +243,11 @@ import { waHref } from "../data/contact";
             type="submit"
             class="w-full bg-[#2B395E] hover:bg-[#1E2843] text-white font-medium text-m rounded-full py-3.5 transition mt-2"
           >
-            Enviar
+            Enviar solicitud por WhatsApp
           </button>
+          <p class="text-center text-xs leading-5 text-gray-500">
+            Al enviar, abriremos WhatsApp con la información de tu solicitud para que puedas revisarla antes de compartirla.
+          </p>
         </form>
       </div>
     </section>
@@ -231,4 +258,37 @@ import { waHref } from "../data/contact";
     </div>
   </main>
   <Footer />
+
+  <script>
+    const initQuoteForm = () => {
+      const form = document.querySelector<HTMLFormElement>("[data-quote-form]");
+      if (!form || form.dataset.ready === "true") return;
+      form.dataset.ready = "true";
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const message = [
+          "Hola, quiero solicitar una cotización.",
+          `Nombre: ${data.get("name")}`,
+          `Empresa: ${data.get("company") || "No indicada"}`,
+          `Correo: ${data.get("email")}`,
+          `Teléfono: ${data.get("phone")}`,
+          `Solicitud: ${data.get("message")}`,
+        ].join("\n");
+
+        window.gtag?.("event", "generate_lead", {
+          method: "contact_form_whatsapp",
+        });
+        window.open(
+          `https://wa.me/${form.dataset.whatsapp}?text=${encodeURIComponent(message)}`,
+          "_blank",
+          "noopener,noreferrer",
+        );
+      });
+    };
+
+    initQuoteForm();
+    document.addEventListener("astro:page-load", initQuoteForm);
+  </script>
 </Layout>

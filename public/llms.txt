@@ -11,20 +11,23 @@ Colombian manufacturer founded in Medellín, Antioquia. Offers customization thr
 ## Contenido en Español
 
 ### Categorías de Producto
-- [Calzado de Trabajo](https://agenciasnacionales.com/categoria/calzado-de-trabajo): Botas y zapatos de seguridad para entornos industriales, en cuero, PVC y caucho.
-- [Uniformes de Trabajo](https://agenciasnacionales.com/categoria/uniformes-de-trabajo): Uniformes corporativos y operativos personalizables para múltiples sectores.
-- [EPP – Elementos de Protección Personal](https://agenciasnacionales.com/categoria/epp): Equipos de protección individual para industrias de alto riesgo.
+- [Dotaciones en Medellín](https://agenciasnacionales.com/dotaciones-medellin/): Uniformes, calzado de seguridad y EPP para empresas de Medellín y el Valle de Aburrá.
+- [Dotaciones empresariales en Colombia](https://agenciasnacionales.com/dotaciones-empresariales-colombia/): Suministro empresarial con despachos nacionales.
+- [EPP en Medellín](https://agenciasnacionales.com/epp-medellin/): Elementos de protección personal para empresas del Valle de Aburrá.
+- [EPP en Colombia](https://agenciasnacionales.com/epp-colombia/): Elementos de protección personal para operaciones nacionales.
+- [Calzado de Trabajo](https://agenciasnacionales.com/categoria/calzado-de-trabajo/): Botas y zapatos de seguridad para entornos industriales, en cuero, PVC y caucho.
+- [Uniformes de Trabajo](https://agenciasnacionales.com/categoria/uniformes-de-trabajo/): Uniformes corporativos y operativos personalizables para múltiples sectores.
+- [EPP – Elementos de Protección Personal](https://agenciasnacionales.com/categoria/epp/): Equipos de protección individual para industrias de alto riesgo.
 
 Cada producto tiene su propia ficha en `/producto/[nombre]` con descripción, especificaciones técnicas y cotización directa por WhatsApp.
 
 ### Catálogo
-- [Catálogo completo](https://agenciasnacionales.com/producto): Todos los productos disponibles, con buscador y filtros por categoría.
-- [Dotación empresarial en Medellín](https://agenciasnacionales.com/dotacion-empresarial-medellin): Soluciones para empresas de Medellín y el Valle de Aburrá que necesitan uniformes, calzado de seguridad y EPP.
+- [Catálogo completo](https://agenciasnacionales.com/producto/): Todos los productos disponibles, con buscador y filtros por categoría.
 
 ### Recursos
-- [Nosotros](https://agenciasnacionales.com/nosotros): Historia, misión y valores de la empresa.
-- [Preguntas Frecuentes](https://agenciasnacionales.com/faq): Uniformes personalizados, proceso de cotización y pedido, EPP y calzado de seguridad.
-- [Blog](https://agenciasnacionales.com/articulos): Artículos sobre dotación y seguridad industrial.
+- [Nosotros](https://agenciasnacionales.com/nosotros/): Historia, misión y valores de la empresa.
+- [Preguntas Frecuentes](https://agenciasnacionales.com/faq/): Uniformes personalizados, proceso de cotización y pedido, EPP y calzado de seguridad.
+- [Blog](https://agenciasnacionales.com/articulos/): Artículos sobre dotación y seguridad industrial.
 - [Política de Calidad](https://agenciasnacionales.com/politica_calidad)
 - [Política Ambiental](https://agenciasnacionales.com/politica_ambiental)
 - [Política de Seguridad](https://agenciasnacionales.com/politica_seguridad)
