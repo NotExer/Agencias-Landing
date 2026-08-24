@@ -12,6 +12,7 @@ import { getImage } from "astro:assets";
 import type { ImageMetadata } from "astro";
 
 interface Props {
+  slug: string;
   name: string;
   images: ImageMetadata[]; // [0] = imagen principal, el resto = miniaturas
   highlights?: Highlight[]; // 3 destacados con ícono
@@ -22,6 +23,7 @@ interface Props {
 }
 
 const {
+  slug,
   name,
   images = [],
   highlights = [],
@@ -168,16 +170,30 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
 
       <!-- Stock -->
       <div class="flex items-center gap-2 mb-6">
-        <span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
-        <span class="text-m font-medium text-gray-700">{"Disponible"}</span>
+        <span class:list={["h-2.5 w-2.5 rounded-full", inStock ? "bg-green-500" : "bg-gray-400"]}></span>
+        <span class="text-m font-medium text-gray-700">{inStock ? "Disponible" : "Agotado"}</span>
       </div>
 
-      <!-- Botón WhatsApp (CTA primario) -->
+      <button
+        type="button"
+        data-add-to-cart
+        data-slug={slug}
+        data-name={name}
+        data-image={mainImage}
+        disabled={!inStock}
+        class="flex w-full items-center justify-center gap-2 rounded-full bg-[#2B395E] py-4 text-m font-semibold text-white transition hover:bg-[#1E2843] disabled:cursor-not-allowed disabled:bg-gray-300"
+      >
+        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.962-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272" />
+        </svg>
+        <span data-cart-button-label>{inStock ? "Agregar a cotización" : "Producto agotado"}</span>
+      </button>
+
       <a
         href={whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
-        class="block w-full rounded-full bg-green-600 py-4 text-center text-m font-medium text-white transition hover:bg-green-700"
+        class="mt-3 block w-full rounded-full bg-green-600 py-4 text-center text-m font-medium text-white transition hover:bg-green-700"
       >
         Cotizar por WhatsApp
       </a>
