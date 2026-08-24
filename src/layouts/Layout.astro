@@ -15,8 +15,8 @@ interface Props {
 }
 
 const {
-  title = "Agencias Nacionales S.A.S | Uniformes y Calzado Industrial",
-  description = "Uniformes y calzado industrial diseñados para la seguridad, comodidad y durabilidad que tu equipo necesita.",
+  title = "Dotación Empresarial en Medellín | Agencias Nacionales",
+  description = "Fabricamos dotación empresarial en Medellín: uniformes de trabajo, calzado de seguridad y EPP personalizados para empresas en Antioquia y Colombia.",
   image = ogDefault.src,
   noindex = false,
   ogType = "website",
@@ -32,7 +32,7 @@ const ogImage = new URL(image, siteUrl);
 
 const organization = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "LocalBusiness"],
   name: "Agencias Nacionales S.A.S",
   url: siteUrl.href,
   logo: new URL(ogDefault.src, siteUrl).href,
@@ -40,8 +40,23 @@ const organization = {
   telephone: "+573042351036",
   address: {
     "@type": "PostalAddress",
+    addressLocality: "Envigado",
+    addressRegion: "Antioquia",
     addressCountry: "CO",
   },
+  areaServed: [
+    { "@type": "City", name: "Medellín" },
+    { "@type": "City", name: "Envigado" },
+    { "@type": "AdministrativeArea", name: "Antioquia" },
+    { "@type": "Country", name: "Colombia" },
+  ],
+  knowsAbout: [
+    "Dotación empresarial",
+    "Uniformes de trabajo",
+    "Calzado de seguridad",
+    "Elementos de protección personal",
+    "Uniformes hospitalarios",
+  ],
 };
 ---
 

@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { waHref } from "../data/contact";
+
+const faqs = [
+  {
+    question: "¿Qué productos incluye una dotación empresarial?",
+    answer:
+      "Según el cargo y el entorno de trabajo, una dotación puede incluir uniformes, calzado de seguridad y elementos de protección personal. También fabricamos opciones para sectores administrativos, operativos, industriales, hospitalarios y de servicios.",
+  },
+  {
+    question: "¿Atienden empresas en Medellín y el Valle de Aburrá?",
+    answer:
+      "Sí. Atendemos empresas de Medellín, Envigado y el Valle de Aburrá, además de realizar envíos a otras ciudades de Colombia. Nuestro equipo acompaña la cotización según las necesidades de cada operación.",
+  },
+  {
+    question: "¿Pueden personalizar los uniformes con la marca de mi empresa?",
+    answer:
+      "Sí. Ofrecemos personalización mediante bordado, serigrafía, sublimación, DTF y otras alternativas según la prenda, el diseño y el volumen del pedido.",
+  },
+];
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+---
+
+<Layout
+  title="Dotación Empresarial en Medellín | Uniformes, EPP y Calzado"
+  description="Compra dotación empresarial en Medellín con Agencias Nacionales: uniformes de trabajo personalizados, calzado de seguridad y EPP para empresas del Valle de Aburrá."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  </Fragment>
+  <Navbar />
+  <main>
+    <section class="bg-blue-950 px-6 py-20 text-white sm:px-10 lg:px-24">
+      <div class="mx-auto max-w-4xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-200">Agencias Nacionales S.A.S.</p>
+        <h1 class="mt-4 text-4xl font-extrabold leading-tight sm:text-5xl">Dotación empresarial en Medellín para empresas que necesitan calidad, seguridad y continuidad</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-relaxed text-blue-50">Fabricamos uniformes de trabajo, calzado de seguridad y EPP para empresas de Medellín, Envigado y el Valle de Aburrá. Acompañamos la compra desde la selección de referencias hasta la personalización y la cotización.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href={waHref("Hola, quiero cotizar dotación empresarial para mi empresa en Medellín.")} target="_blank" rel="noopener noreferrer" class="rounded-full bg-white px-6 py-3 font-semibold text-blue-950 transition hover:bg-blue-100">Solicitar cotización</a>
+          <a href="/producto" class="rounded-full border border-white/50 px-6 py-3 font-semibold text-white transition hover:bg-white/10">Ver catálogo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-6 py-16 sm:px-10">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div>
+          <p class="font-semibold text-blue-600">Soluciones para dotar equipos</p>
+          <h2 class="mt-3 text-3xl font-extrabold text-gray-900">Un proveedor para uniformes, calzado y protección</h2>
+          <p class="mt-5 leading-relaxed text-gray-700">La dotación empresarial no es una compra genérica: debe responder a los cargos, el nivel de riesgo, la imagen de marca y la frecuencia de uso. En Agencias Nacionales ayudamos a empresas a definir soluciones funcionales y consistentes para sus equipos.</p>
+          <p class="mt-4 leading-relaxed text-gray-700">Con más de 55 años de experiencia, fabricamos y comercializamos prendas corporativas y operativas, calzado de trabajo, elementos de protección personal e indumentaria hospitalaria. También personalizamos uniformes con la identidad de cada empresa.</p>
+        </div>
+        <div class="rounded-2xl bg-gray-50 p-7">
+          <h2 class="text-2xl font-bold text-gray-900">¿Qué puedes cotizar?</h2>
+          <ul class="mt-5 space-y-4 text-gray-700">
+            <li><a class="font-semibold text-blue-700 hover:underline" href="/categoria/uniformes-de-trabajo">Uniformes de trabajo personalizados</a> para áreas operativas, administrativas y de servicios.</li>
+            <li><a class="font-semibold text-blue-700 hover:underline" href="/categoria/calzado-de-trabajo">Calzado de seguridad y trabajo</a> según el entorno y la jornada.</li>
+            <li><a class="font-semibold text-blue-700 hover:underline" href="/categoria/epp">EPP y protección complementaria</a> para diferentes niveles de riesgo.</li>
+            <li>Dotación hospitalaria, productos promocionales y accesorios para necesidades específicas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 px-6 py-16 sm:px-10">
+      <div class="mx-auto max-w-6xl">
+        <h2 class="text-3xl font-extrabold text-gray-900">Empresas de Medellín: una compra de dotación mejor definida</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <article class="rounded-2xl bg-white p-6 shadow-sm"><h3 class="text-xl font-bold text-gray-900">Asesoría por necesidad</h3><p class="mt-3 leading-relaxed text-gray-700">Revisamos el uso, los cargos y los requerimientos de tu operación para orientar la selección de productos.</p></article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm"><h3 class="text-xl font-bold text-gray-900">Personalización de marca</h3><p class="mt-3 leading-relaxed text-gray-700">Integramos bordado, serigrafía, sublimación o DTF para que tu dotación represente a tu empresa.</p></article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm"><h3 class="text-xl font-bold text-gray-900">Atención local y nacional</h3><p class="mt-3 leading-relaxed text-gray-700">Atendemos el Valle de Aburrá y enviamos a empresas de todo el país, con cotización directa por WhatsApp.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-4xl px-6 py-16 sm:px-10">
+      <p class="font-semibold text-blue-600">Preguntas frecuentes</p>
+      <h2 class="mt-3 text-3xl font-extrabold text-gray-900">Sobre dotación empresarial en Medellín</h2>
+      <div class="mt-8 space-y-4">
+        {faqs.map((faq) => (<details class="rounded-xl border border-gray-200 p-5"><summary class="cursor-pointer font-bold text-gray-900">{faq.question}</summary><p class="mt-3 leading-relaxed text-gray-700">{faq.answer}</p></details>))}
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

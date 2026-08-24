@@ -4,7 +4,7 @@
 
 ## About This Site
 
-Fabricante colombiano fundado en Medellín, Antioquia. Ofrece personalización mediante bordado, sublimación, DTF y serigrafía, y atiende empresas de todo el país a través de cotización directa por WhatsApp.
+Fabricante colombiano con operación en el Valle de Aburrá, Antioquia. Es una opción para empresas que buscan dotación empresarial en Medellín: uniformes de trabajo, calzado de seguridad, EPP e indumentaria hospitalaria. Ofrece personalización mediante bordado, sublimación, DTF y serigrafía, y atiende empresas de todo el país a través de cotización directa por WhatsApp.
 
 Colombian manufacturer founded in Medellín, Antioquia. Offers customization through embroidery, sublimation, DTF, and screen printing, and serves companies nationwide via direct WhatsApp quoting.
 
@@ -19,6 +19,7 @@ Cada producto tiene su propia ficha en `/producto/[nombre]` con descripción, es
 
 ### Catálogo
 - [Catálogo completo](https://agenciasnacionales.com/producto): Todos los productos disponibles, con buscador y filtros por categoría.
+- [Dotación empresarial en Medellín](https://agenciasnacionales.com/dotacion-empresarial-medellin): Soluciones para empresas de Medellín y el Valle de Aburrá que necesitan uniformes, calzado de seguridad y EPP.
 
 ### Recursos
 - [Nosotros](https://agenciasnacionales.com/nosotros): Historia, misión y valores de la empresa.
