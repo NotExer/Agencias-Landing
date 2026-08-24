@@ -1,0 +1,187 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import heroImage from "../img/banner2.png";
+import { waHref } from "../data/contact";
+
+const title = "Dotaciones Empresariales en Colombia | Agencias Nacionales";
+const description = "Dotaciones empresariales para compañías en Colombia: uniformes de trabajo, calzado de seguridad y EPP. Estandariza pedidos por cargo, sede y talla.";
+const quoteHref = waHref("Hola, quiero cotizar dotaciones empresariales para una compañía en Colombia. Necesito información sobre uniformes, calzado o EPP.");
+
+const faqs = [
+  {
+    question: "¿Realizan despachos de dotaciones a diferentes ciudades de Colombia?",
+    answer: "Sí. Atendemos pedidos empresariales con despacho nacional. La cobertura, el costo y las condiciones de entrega se confirman al preparar cada cotización.",
+  },
+  {
+    question: "¿Puedo consolidar uniformes, calzado y EPP en una sola solicitud?",
+    answer: "Sí. Puedes incluir varias categorías en la misma solicitud. Esto facilita revisar cantidades, tallas, especificaciones y ciudades de entrega antes de cotizar.",
+  },
+  {
+    question: "¿Cómo se organiza una dotación para varias sedes?",
+    answer: "Recomendamos consolidar la información por sede, cargo, producto, talla y cantidad. También debes indicar si cada sede requiere entregas o empaques separados.",
+  },
+  {
+    question: "¿Fabrican uniformes personalizados?",
+    answer: "Sí. Fabricamos uniformes de trabajo y evaluamos la personalización según la prenda, el logo, la cantidad y los requerimientos técnicos de la empresa.",
+  },
+  {
+    question: "¿Qué información necesitan para cotizar?",
+    answer: "Necesitamos la categoría de producto, las cantidades aproximadas, las tallas disponibles, la ciudad o ciudades de entrega, la fecha requerida y cualquier ficha técnica o requisito de personalización.",
+  },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Dotaciones empresariales en Colombia",
+  serviceType: "Fabricación y suministro de uniformes, calzado de seguridad y EPP para empresas",
+  url: "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+  provider: {
+    "@type": "Organization",
+    name: "Agencias Nacionales S.A.S",
+    url: "https://agenciasnacionales.com/",
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "Colombia",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonicalUrl="https://agenciasnacionales.com/dotaciones-empresariales-colombia/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <Navbar />
+  <main>
+    <section class="relative isolate overflow-hidden bg-slate-950 text-white">
+      <Image
+        src={heroImage}
+        alt="Equipo de Agencias Nacionales preparando dotaciones empresariales"
+        widths={[640, 1024, 1600, 1920]}
+        sizes="100vw"
+        loading="eager"
+        fetchpriority="high"
+        class="absolute inset-0 -z-20 h-full w-full object-cover opacity-35"
+      />
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/90 to-blue-950/60"></div>
+      <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-200">Fabricación y suministro para empresas</p>
+        <h1 class="max-w-5xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+          Dotaciones empresariales para compañías en Colombia
+        </h1>
+        <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
+          Centraliza uniformes de trabajo, calzado de seguridad y EPP para una sede o una operación nacional. Te ayudamos a organizar la solicitud por cargo, talla, cantidad y ciudad de entrega.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={quoteHref} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-7 py-3.5 font-bold transition hover:bg-blue-500">
+            Cotizar dotaciones por WhatsApp
+          </a>
+          <a href="/contacto/" class="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-3.5 font-semibold transition hover:bg-white/10">
+            Enviar una solicitud detallada
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-6 px-5 py-7 text-sm text-slate-700 sm:grid-cols-3 sm:px-8 lg:px-10">
+        <p><strong class="block text-base text-slate-950">Más de 56 años</strong> atendiendo necesidades de dotación empresarial.</p>
+        <p><strong class="block text-base text-slate-950">Una sola solicitud</strong> para uniformes, calzado industrial y EPP.</p>
+        <p><strong class="block text-base text-slate-950">Despachos nacionales</strong> con condiciones validadas en la cotización.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Catálogo empresarial</p>
+        <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Las categorías que necesita tu equipo</h2>
+        <p class="mt-5 text-lg leading-8 text-slate-600">Consulta referencias disponibles y reúne las cantidades de cada sede antes de solicitar la propuesta.</p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        <a href="/categoria/uniformes-de-trabajo/" class="rounded-3xl border border-slate-200 p-7 transition hover:border-blue-300 hover:shadow-lg">
+          <h3 class="text-xl font-bold text-slate-950">Uniformes empresariales</h3>
+          <p class="mt-3 leading-7 text-slate-600">Prendas operativas y administrativas con opciones de personalización para la identidad de tu empresa.</p>
+          <span class="mt-5 inline-block font-semibold text-blue-700">Explorar uniformes</span>
+        </a>
+        <a href="/categoria/calzado-de-trabajo/" class="rounded-3xl border border-slate-200 p-7 transition hover:border-blue-300 hover:shadow-lg">
+          <h3 class="text-xl font-bold text-slate-950">Calzado de trabajo</h3>
+          <p class="mt-3 leading-7 text-slate-600">Referencias para labores industriales, alimentos, construcción y otros entornos de operación.</p>
+          <span class="mt-5 inline-block font-semibold text-blue-700">Explorar calzado</span>
+        </a>
+        <a href="/categoria/epp/" class="rounded-3xl border border-slate-200 p-7 transition hover:border-blue-300 hover:shadow-lg">
+          <h3 class="text-xl font-bold text-slate-950">EPP</h3>
+          <p class="mt-3 leading-7 text-slate-600">Elementos de protección para diferentes partes del cuerpo y condiciones de riesgo laboral.</p>
+          <span class="mt-5 inline-block font-semibold text-blue-700">Explorar EPP</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-slate-100">
+      <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+        <div class="grid gap-12 lg:grid-cols-2">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Pedidos por varias sedes</p>
+            <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Estandariza la dotación antes de comprar</h2>
+            <p class="mt-5 leading-8 text-slate-600">Un pedido nacional necesita una estructura clara. Define qué recibe cada cargo y consolida la información en una matriz para evitar referencias duplicadas, faltantes y cambios de última hora.</p>
+            <a href="/articulos-del-blog/como-estandarizar-dotaciones-por-cargo-y-area/" class="mt-6 inline-block font-bold text-blue-700">Ver guía para estandarizar dotaciones</a>
+          </div>
+          <ol class="space-y-4">
+            <li class="rounded-2xl bg-white p-6 shadow-sm"><strong class="text-slate-950">1. Cargos y condiciones de trabajo</strong><p class="mt-2 text-slate-600">Define las prendas, el calzado y la protección necesaria para cada función.</p></li>
+            <li class="rounded-2xl bg-white p-6 shadow-sm"><strong class="text-slate-950">2. Sedes, cantidades y tallas</strong><p class="mt-2 text-slate-600">Consolida la demanda por ciudad para revisar el total antes de cotizar.</p></li>
+            <li class="rounded-2xl bg-white p-6 shadow-sm"><strong class="text-slate-950">3. Personalización y entrega</strong><p class="mt-2 text-slate-600">Incluye logos, fichas técnicas, fechas requeridas y condiciones de separación por sede.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+      <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Preguntas frecuentes</p>
+          <h2 class="mt-3 text-3xl font-black text-slate-950">Cotización y cobertura nacional</h2>
+        </div>
+        <div class="divide-y divide-slate-200 border-y border-slate-200">
+          {faqs.map((faq) => (
+            <details class="py-5">
+              <summary class="cursor-pointer list-none pr-8 text-lg font-bold text-slate-950">{faq.question}</summary>
+              <p class="mt-3 leading-7 text-slate-600">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 pb-20 sm:px-8 lg:px-10">
+      <div class="rounded-3xl bg-blue-700 px-7 py-10 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-black">Prepara tu próxima solicitud de dotación</h2>
+          <p class="mt-3 leading-7 text-blue-100">Comparte categorías, cantidades y ciudades. Revisaremos la información para orientar la cotización.</p>
+        </div>
+        <a href={quoteHref} target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex rounded-full bg-white px-7 py-3.5 font-bold text-blue-800 transition hover:bg-blue-50 lg:mt-0">
+          Cotizar dotaciones empresariales
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

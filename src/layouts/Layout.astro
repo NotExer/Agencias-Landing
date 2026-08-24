@@ -3,6 +3,7 @@ import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 import ogDefault from "../img/Logo.avif";
 import WhatsAppFloat from "../components/WhatsAppFloat.astro";
+import { EMAIL, WHATSAPP_NUMBER } from "../data/contact";
 
 interface Props {
   title?: string;
@@ -32,16 +33,48 @@ const ogImage = new URL(image, siteUrl);
 
 const organization = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "LocalBusiness"],
+  "@id": `${siteUrl.href}#business`,
   name: "Agencias Nacionales S.A.S",
+  description:
+    "Fabricante y proveedor colombiano de dotaciones empresariales, uniformes de trabajo, calzado de seguridad y elementos de protección personal.",
   url: siteUrl.href,
   logo: new URL(ogDefault.src, siteUrl).href,
-  email: "contactanos@agenciasnacionales.com",
-  telephone: "+573042351036",
+  image: new URL(ogDefault.src, siteUrl).href,
+  email: EMAIL,
+  telephone: `+${WHATSAPP_NUMBER}`,
+  taxID: "890903993-3",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Carrera 47 #20 Sur-7, Bosques de Zúñiga",
+    addressLocality: "Envigado",
+    addressRegion: "Antioquia",
+    postalCode: "055422",
     addressCountry: "CO",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 6.1753942,
+    longitude: -75.5905534,
+  },
+  areaServed: [
+    { "@type": "City", name: "Medellín" },
+    { "@type": "City", name: "Envigado" },
+    { "@type": "AdministrativeArea", name: "Antioquia" },
+    { "@type": "Country", name: "Colombia" },
+  ],
+  sameAs: [
+    "https://www.instagram.com/agencias_nacionales",
+    "https://www.linkedin.com/company/agencias-nacionales/",
+    "https://www.facebook.com/profile.php?id=61566851084986",
+  ],
+  knowsAbout: [
+    "Dotaciones empresariales",
+    "Uniformes de trabajo",
+    "Calzado de seguridad",
+    "Elementos de protección personal",
+    "Uniformes hospitalarios",
+  ],
 };
 ---
 
@@ -111,8 +144,19 @@ const organization = {
         document.addEventListener("astro:page-load", adjustHeaderOffset);
         document.addEventListener("astro:after-swap", adjustHeaderOffset);
         document.fonts?.ready.then(adjustHeaderOffset);
+
+        if (!window.__agenciasLeadTrackingBound) {
+          window.__agenciasLeadTrackingBound = true;
+          document.addEventListener("click", (event) => {
+            const link = event.target.closest?.('a[href*="wa.me/"]');
+            if (!link) return;
+            window.gtag?.("event", "generate_lead", {
+              method: "whatsapp",
+              link_url: link.href,
+            });
+          });
+        }
       })();
     </script>
   </body>
 </html>
-

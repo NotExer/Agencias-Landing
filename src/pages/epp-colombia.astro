@@ -1,0 +1,41 @@
+---
+import EppLanding from "../components/EppLanding.astro";
+
+const faqs = [
+  {
+    question: "¿Realizan despachos de EPP a diferentes ciudades de Colombia?",
+    answer: "Sí. Atendemos solicitudes empresariales con despacho nacional. La cobertura, el costo y las condiciones de entrega se confirman en cada cotización.",
+  },
+  {
+    question: "¿Qué información debo enviar para cotizar EPP?",
+    answer: "Indica el tipo de elemento, la cantidad, la ciudad de entrega y las condiciones de uso. Si tu empresa tiene una ficha técnica, una marca homologada o una norma requerida, inclúyela en la solicitud.",
+  },
+  {
+    question: "¿Puedo cotizar EPP para varias sedes?",
+    answer: "Sí. Organiza las cantidades por sede, área o centro de costo e indica si necesitas entregas separadas. Esto permite revisar la solicitud completa antes de preparar la propuesta.",
+  },
+  {
+    question: "¿Los EPP se seleccionan únicamente por precio?",
+    answer: "No. La selección debe considerar el peligro, el nivel y tiempo de exposición, la compatibilidad con otros elementos y los requisitos técnicos de la empresa.",
+  },
+  {
+    question: "¿También ofrecen calzado y uniformes de trabajo?",
+    answer: "Sí. Puedes consolidar elementos de protección personal, calzado de seguridad y uniformes de trabajo en una misma solicitud empresarial.",
+  },
+];
+---
+
+<EppLanding
+  title="EPP Colombia | Elementos de Protección Personal para Empresas"
+  description="EPP en Colombia para empresas: cascos, protección visual y auditiva, guantes, respiradores y más. Cotiza por cantidad con despacho nacional."
+  canonicalUrl="https://agenciasnacionales.com/epp-colombia/"
+  eyebrow="Suministro empresarial con cobertura nacional"
+  heading="Elementos de protección personal para empresas en Colombia"
+  intro="Cotiza cascos, protección visual y auditiva, guantes, respiradores, arneses y otros EPP para una sede o una operación nacional. Organizamos la solicitud por referencia, cantidad y ciudad de entrega."
+  areaName="Colombia"
+  areaType="Country"
+  quoteMessage="Hola, quiero cotizar elementos de protección personal para una empresa en Colombia."
+  coverageCopy="Despachos a ciudades de Colombia según las condiciones de cada pedido."
+  sectors={["Manufactura", "Construcción", "Logística y bodegas", "Alimentos", "Mantenimiento", "Salud", "Agricultura", "Servicios generales"]}
+  faqs={faqs}
+/>

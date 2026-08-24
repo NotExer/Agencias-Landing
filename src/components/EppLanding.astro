@@ -1,0 +1,183 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "./Navbar.astro";
+import Footer from "./Footer.astro";
+import heroImage from "../img/Categoria epp apple.png";
+import { waHref } from "../data/contact";
+
+interface Faq {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  areaName: string;
+  areaType: "City" | "Country";
+  quoteMessage: string;
+  coverageCopy: string;
+  sectors: string[];
+  faqs: Faq[];
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  eyebrow,
+  heading,
+  intro,
+  areaName,
+  areaType,
+  quoteMessage,
+  coverageCopy,
+  sectors,
+  faqs,
+} = Astro.props;
+
+const quoteHref = waHref(quoteMessage);
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: heading,
+  serviceType: "Suministro de elementos de protección personal para empresas",
+  url: canonicalUrl,
+  provider: {
+    "@type": "Organization",
+    name: "Agencias Nacionales S.A.S",
+    url: "https://agenciasnacionales.com/",
+  },
+  areaServed: {
+    "@type": areaType,
+    name: areaName,
+  },
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <Navbar />
+  <main>
+    <section class="relative isolate overflow-hidden bg-slate-950 text-white">
+      <Image
+        src={heroImage}
+        alt="Elementos de protección personal para empresas"
+        widths={[640, 1024, 1600]}
+        sizes="100vw"
+        loading="eager"
+        fetchpriority="high"
+        class="absolute inset-0 -z-20 h-full w-full object-cover opacity-30"
+      />
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/90 to-blue-950/60"></div>
+      <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-200">{eyebrow}</p>
+        <h1 class="max-w-5xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">{heading}</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{intro}</p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={quoteHref} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-7 py-3.5 font-bold transition hover:bg-blue-500">
+            Cotizar EPP por WhatsApp
+          </a>
+          <a href="/categoria/epp/" class="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-3.5 font-semibold transition hover:bg-white/10">
+            Ver catálogo de EPP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-6 px-5 py-7 text-sm text-slate-700 sm:grid-cols-3 sm:px-8 lg:px-10">
+        <p><strong class="block text-base text-slate-950">Selección por riesgo</strong> El EPP debe responder a la labor y al peligro identificado.</p>
+        <p><strong class="block text-base text-slate-950">Atención empresarial</strong> Consolidamos solicitudes por producto y cantidad.</p>
+        <p><strong class="block text-base text-slate-950">Cobertura confirmada</strong> {coverageCopy}</p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Protección por parte del cuerpo</p>
+        <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Organiza la compra de EPP por necesidad de protección</h2>
+        <p class="mt-5 text-lg leading-8 text-slate-600">La referencia correcta depende del riesgo, el tiempo de exposición, la compatibilidad con otros elementos y las condiciones reales del puesto.</p>
+      </div>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-3xl border border-slate-200 p-6"><h3 class="text-lg font-bold text-slate-950">Cabeza y rostro</h3><p class="mt-3 leading-7 text-slate-600">Cascos, caretas y protección visual para impactos, partículas y tareas específicas.</p></div>
+        <div class="rounded-3xl border border-slate-200 p-6"><h3 class="text-lg font-bold text-slate-950">Oídos y respiración</h3><p class="mt-3 leading-7 text-slate-600">Protectores auditivos y respiradores seleccionados según la exposición del trabajador.</p></div>
+        <div class="rounded-3xl border border-slate-200 p-6"><h3 class="text-lg font-bold text-slate-950">Manos y cuerpo</h3><p class="mt-3 leading-7 text-slate-600">Guantes, prendas de alta visibilidad y protección para labores operativas.</p></div>
+        <div class="rounded-3xl border border-slate-200 p-6"><h3 class="text-lg font-bold text-slate-950">Pies</h3><p class="mt-3 leading-7 text-slate-600">Calzado de seguridad según el terreno, el riesgo eléctrico y las sustancias presentes.</p></div>
+      </div>
+      <a href="/categoria/epp/" class="mt-8 inline-flex rounded-full bg-slate-950 px-6 py-3 font-bold text-white transition hover:bg-blue-800">Consultar referencias de EPP</a>
+    </section>
+
+    <section class="bg-slate-100">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:px-10 lg:py-24">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Información para cotizar</p>
+          <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Evita comprar una referencia que no corresponde al riesgo</h2>
+          <p class="mt-5 leading-8 text-slate-600">Comparte la matriz de peligros, la ficha técnica o una descripción clara de la labor. También necesitamos cantidades, ciudad de entrega y cualquier requisito de marca o norma.</p>
+          <a href="/articulos-del-blog/como-crear-matriz-reposicion-epp-por-cargo-consumo/" class="mt-6 inline-block font-bold text-blue-700">Ver guía para organizar la reposición de EPP</a>
+        </div>
+        <ol class="space-y-4">
+          <li class="rounded-2xl bg-white p-6 shadow-sm"><strong class="text-slate-950">1. Identifica la labor y el peligro</strong><p class="mt-2 text-slate-600">Describe el entorno, la exposición y la parte del cuerpo que debe protegerse.</p></li>
+          <li class="rounded-2xl bg-white p-6 shadow-sm"><strong class="text-slate-950">2. Define especificaciones y cantidades</strong><p class="mt-2 text-slate-600">Incluye tallas, clases, materiales, normas solicitadas y consumo estimado.</p></li>
+          <li class="rounded-2xl bg-white p-6 shadow-sm"><strong class="text-slate-950">3. Confirma entrega y reposición</strong><p class="mt-2 text-slate-600">Indica ciudad, fecha requerida y si necesitas separar el pedido por sede o área.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="bg-slate-950 text-white">
+      <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
+        <h2 class="text-3xl font-black">EPP para distintos sectores</h2>
+        <p class="mt-4 max-w-3xl leading-7 text-slate-300">Cada sector tiene exposiciones diferentes. La solicitud debe especificar el cargo y la tarea, incluso cuando varios equipos usan la misma categoría de protección.</p>
+        <ul class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {sectors.map((sector) => <li class="rounded-2xl bg-white/7 p-5 font-semibold text-slate-100">{sector}</li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+      <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Preguntas frecuentes</p>
+          <h2 class="mt-3 text-3xl font-black text-slate-950">Antes de cotizar EPP</h2>
+        </div>
+        <div class="divide-y divide-slate-200 border-y border-slate-200">
+          {faqs.map((faq) => (
+            <details class="py-5">
+              <summary class="cursor-pointer list-none pr-8 text-lg font-bold text-slate-950">{faq.question}</summary>
+              <p class="mt-3 leading-7 text-slate-600">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 pb-20 sm:px-8 lg:px-10">
+      <div class="rounded-3xl bg-blue-700 px-7 py-10 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-black">Solicita una cotización de EPP</h2>
+          <p class="mt-3 leading-7 text-blue-100">Comparte los elementos, cantidades, ciudad y condiciones de uso. Revisaremos la solicitud para orientarte sobre las opciones disponibles.</p>
+        </div>
+        <a href={quoteHref} target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex rounded-full bg-white px-7 py-3.5 font-bold text-blue-800 transition hover:bg-blue-50 lg:mt-0">Cotizar elementos de protección</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

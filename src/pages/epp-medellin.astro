@@ -1,0 +1,41 @@
+---
+import EppLanding from "../components/EppLanding.astro";
+
+const faqs = [
+  {
+    question: "¿Atienden empresas que buscan EPP en Medellín?",
+    answer: "Sí. Nuestra operación está en Envigado y atendemos solicitudes empresariales de Medellín y los municipios del Valle de Aburrá.",
+  },
+  {
+    question: "¿Puedo solicitar asesoría para definir una referencia?",
+    answer: "Puedes compartir la labor, el peligro identificado, la cantidad y cualquier ficha técnica. Con esa información revisamos las opciones disponibles para la solicitud.",
+  },
+  {
+    question: "¿Qué tipos de EPP puedo cotizar?",
+    answer: "El catálogo incluye protección para cabeza, ojos, oídos, respiración, manos y cuerpo, además de referencias para trabajo en alturas y alta visibilidad.",
+  },
+  {
+    question: "¿Puedo incluir calzado de seguridad en la misma cotización?",
+    answer: "Sí. La solicitud puede incluir EPP, calzado de seguridad y uniformes de trabajo. Indica cantidades y tallas por cada categoría.",
+  },
+  {
+    question: "¿Cómo agilizo una cotización de EPP?",
+    answer: "Envía una lista con producto, cantidad, ciudad, fecha requerida y especificaciones. Si ya existe una referencia homologada por SST, incluye la marca o la ficha técnica.",
+  },
+];
+---
+
+<EppLanding
+  title="EPP Medellín | Elementos de Protección Personal"
+  description="EPP en Medellín para empresas: cascos, guantes, protección visual, auditiva y respiratoria. Atención desde Envigado para el Valle de Aburrá."
+  canonicalUrl="https://agenciasnacionales.com/epp-medellin/"
+  eyebrow="Atención desde Envigado para el Valle de Aburrá"
+  heading="Elementos de protección personal en Medellín"
+  intro="Cotiza EPP para equipos de manufactura, construcción, logística, alimentos, mantenimiento y otros sectores. Revisamos la solicitud según la labor, la cantidad y las especificaciones de tu empresa."
+  areaName="Medellín"
+  areaType="City"
+  quoteMessage="Hola, quiero cotizar EPP para una empresa en Medellín o el Valle de Aburrá."
+  coverageCopy="Atención en Medellín y municipios del Valle de Aburrá desde nuestra operación en Envigado."
+  sectors={["Manufactura", "Construcción", "Logística", "Alimentos", "Mantenimiento", "Salud", "Servicios públicos", "Servicios generales"]}
+  faqs={faqs}
+/>

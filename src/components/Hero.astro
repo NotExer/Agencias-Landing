@@ -6,6 +6,7 @@ import banner3 from "../img/banner3.optimized.avif";
 import people1 from "../img/people-1.avatar.avif";
 import people2 from "../img/people-2.avatar.avif";
 import people3 from "../img/people-3.avatar.avif";
+import { waHref } from "../data/contact";
 
 const slides = [
   {
@@ -13,9 +14,10 @@ const slides = [
     align: "right",
     badge: true,
     alt: "Trabajador con uniforme y calzado de seguridad industrial Agencias Nacionales",
-    title: "Protección y Confianza en Cada Paso",
-    text: "Uniformes y calzado industrial diseñados para la seguridad, comodidad y durabilidad que tu equipo necesita. Innovamos para proteger a los que mueven el mundo.",
-    cta: "VER MÁS",
+    title: "Uniformes, calzado de seguridad y EPP para empresas",
+    text: "Fabricamos y suministramos uniformes de trabajo, calzado industrial y elementos de protección personal para empresas, con atención en Medellín y despachos a toda Colombia.",
+    cta: "Cotizar por WhatsApp",
+    href: waHref("Hola, quiero cotizar dotaciones, calzado de seguridad o EPP para mi empresa."),
     overlay: "bg-gradient-to-r from-black/70 via-black/40 to-transparent",
   },
   {
@@ -26,6 +28,7 @@ const slides = [
     title: "Un equipo que trabaja para ti",
     text: "Más de 55 años de experiencia ofreciendo soluciones en calzado, uniformes, EPP e indumentaria hospitalaria, con calidad, seguridad y confianza para tu negocio.",
     cta: "VER MÁS",
+    href: "/nosotros/",
     overlay: "bg-gradient-to-r from-black/75 via-black/45 to-transparent",
   },
   {
@@ -36,6 +39,7 @@ const slides = [
     title: "¡Envío Gratis en Compras en el Área Metropolitana!",
     text: "Aprovecha esta oferta y recibe tus productos de manera rápida y segura sin costo adicional. ¡Protege a tu equipo sin preocuparte por el envío! Para otras ciudades validar cobertura.",
     cta: "VER MÁS",
+    href: "#productos",
     overlay: "bg-gradient-to-r from-blue-950/80 via-blue-900/40 to-transparent",
   },
 ];
@@ -136,7 +140,7 @@ const stats = [
                     {slide.text}
                   </p>
                   <a
-                    href="#productos"
+                    href={slide.href}
                     class="mt-4 inline-flex rounded-full bg-blue-950 px-5 py-2 text-xs font-semibold text-white shadow-lg transition hover:bg-blue-800 sm:mt-6 sm:px-7 sm:py-3 sm:text-sm"
                   >
                     {slide.cta}
@@ -226,7 +230,7 @@ const stats = [
                   {slide.text}
                 </p>
                 <a
-                  href="#productos"
+                  href={slide.href}
                   class="mt-4 inline-flex rounded-full bg-blue-950 px-5 py-2 text-xs font-semibold text-white shadow-lg transition hover:bg-blue-800 sm:mt-6 sm:px-7 sm:py-3 sm:text-sm"
                 >
                   {slide.cta}
@@ -310,7 +314,7 @@ const stats = [
                     {slide.text}
                   </p>
                   <a
-                    href="#productos"
+                    href={slide.href}
                     class="mt-4 inline-flex rounded-full bg-blue-950 px-5 py-2 text-xs font-semibold text-white shadow-lg transition hover:bg-blue-800 sm:mt-6 sm:px-7 sm:py-3 sm:text-sm"
                   >
                     {slide.cta}

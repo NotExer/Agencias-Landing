@@ -52,7 +52,7 @@ export function getArticleImage(slug: string) {
 }
 
 export function getArticlePath(slug: string) {
-  return `/articulos-del-blog/${slug}`;
+  return `/articulos-del-blog/${slug}/`;
 }
 
 export function getRelatedArticles(article: Article, amount = 3) {
