@@ -13,7 +13,7 @@ const related = products
   .filter((p) => p.category === category && p.slug !== currentSlug)
   .slice(0, 4);
 
-const verTodosHref = `/categoria/${categorySlug(category)}`;
+const verTodosHref = `/categoria/${categorySlug(category)}/`;
 ---
 
 {related.length > 0 && (

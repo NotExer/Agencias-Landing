@@ -22,7 +22,7 @@ const categoriesWithImage = catalogCats
   .map((c) => ({
     name:    c.label,
     count:   `${c.products.length} Producto${c.products.length !== 1 ? "s" : ""}`,
-    href:    `/categoria/${categorySlug(c.label)}`,
+    href:    `/categoria/${categorySlug(c.label)}/`,
     img:     categoryImages[c.label],
   }));
 ---

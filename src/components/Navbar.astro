@@ -2,26 +2,22 @@
 import { Image } from "astro:assets";
 import logo from "../img/Logo.nav.avif";
 import { categories, products, productHref } from "../data/catalog";
-import p1 from "../img/Producto 1.avif";
-import p2 from "../img/Producto 2.avif";
-import p3 from "../img/Producto 3.avif";
-import p4 from "../img/Producto 4.avif";
-import p5 from "../img/Producto 5.avif";
+import { waHref } from "../data/contact";
 
 const links = [
-  { label: "Nosotros", href: "/nosotros" },
-  { label: "Contacto", href: "/contacto" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Blog", href: "/articulos" },
-  { label: "Política ambiental", href: "/politica_ambiental" },
+  { label: "Dotaciones", href: "/dotaciones-empresariales-colombia/" },
+  { label: "Nosotros", href: "/nosotros/" },
+  { label: "Blog", href: "/articulos/" },
+  { label: "Contacto", href: "/contacto/" },
 ];
+const quoteHref = waHref("Hola, quiero cotizar dotaciones, calzado de seguridad o EPP para mi empresa.");
 
 const searchSections = [
   {
     type: "Sección",
     title: "Productos",
     subtitle: "Catálogo completo",
-    href: "/producto",
+    href: "/producto/",
     keywords: ["productos", "catalogo", "catálogo", "todos"],
   },
   {
@@ -35,38 +31,55 @@ const searchSections = [
     type: "Sección",
     title: "Nosotros",
     subtitle: "Conoce la empresa",
-    href: "/nosotros",
+    href: "/nosotros/",
     keywords: ["nosotros", "empresa", "quienes somos"],
   },
   {
     type: "Sección",
     title: "Contacto",
     subtitle: "Escríbenos para cotizar",
-    href: "/contacto",
+    href: "/contacto/",
     keywords: ["contacto", "whatsapp", "cotizar"],
   },
   {
     type: "Sección",
     title: "FAQ",
     subtitle: "Preguntas frecuentes",
-    href: "/faq",
+    href: "/faq/",
     keywords: ["faq", "preguntas", "frecuentes"],
   },
   {
     type: "Sección",
     title: "Blog",
     subtitle: "Artículos y noticias",
-    href: "/articulos",
+    href: "/articulos/",
     keywords: ["blog", "articulos", "noticias"],
   },
   {
     type: "Sección",
     title: "Política ambiental",
     subtitle: "Compromiso sostenible",
-    href: "/politica_ambiental",
+    href: "/politica_ambiental/",
     keywords: ["ambiental", "sostenibilidad", "politica"],
   },
 ];
+
+searchSections.unshift(
+  {
+    type: "Servicio",
+    title: "Dotaciones empresariales en Medellín",
+    subtitle: "Uniformes, calzado y EPP",
+    href: "/dotaciones-medellin/",
+    keywords: ["dotaciones medellin", "uniformes medellin"],
+  },
+  {
+    type: "Servicio",
+    title: "EPP en Colombia y Medellín",
+    subtitle: "Elementos de protección personal",
+    href: "/epp-colombia/",
+    keywords: ["epp colombia", "epp medellin", "seguridad industrial"],
+  },
+);
 
 const searchIndex = [
   ...searchSections,
@@ -94,7 +107,7 @@ const searchIndex = [
   <nav
     class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8"
   >
-    <a href="../" class="flex shrink-0 items-center">
+    <a href="/" class="flex shrink-0 items-center" aria-label="Agencias Nacionales, inicio">
       <Image
         src={logo}
         alt="Agencias Nacionales S.A.S"
@@ -125,7 +138,7 @@ const searchIndex = [
       <button
         type="button"
         data-search-open
-        class="hidden items-center gap-2 rounded-full border border-gray-200 bg-gray-200 px-16 py-2.5 text-m text-gray-600 transition hover:border-gray-300 hover:bg-gray-100 lg:inline-flex"
+        class="hidden items-center gap-2 rounded-full border border-gray-200 bg-gray-100 px-5 py-2.5 text-m text-gray-600 transition hover:border-gray-300 hover:bg-gray-200 lg:inline-flex"
         aria-label="Abrir búsqueda"
         aria-haspopup="dialog"
       >
@@ -143,6 +156,15 @@ const searchIndex = [
         </svg>
         <span>Buscar</span>
       </button>
+
+      <a
+        href={quoteHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hidden rounded-full bg-blue-700 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-blue-800 lg:inline-flex"
+      >
+        Cotizar ahora
+      </a>
 
       <button
         type="button"
@@ -309,6 +331,16 @@ const searchIndex = [
     class="mobile-menu hidden border-t border-gray-100 bg-white lg:hidden"
   >
     <div class="mobile-menu-inner">
+      <div class="px-4 pt-4">
+        <a
+          href={quoteHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block rounded-full bg-blue-700 px-5 py-3 text-center font-bold text-white"
+        >
+          Cotizar por WhatsApp
+        </a>
+      </div>
       <ul class="space-y-1 px-4 pb-3">
         {
           links.map((link) => (
@@ -555,7 +587,7 @@ const searchIndex = [
     const searchEmptyState = {
       title: "No encontramos resultados",
       subtitle: "Prueba con otro término o busca por categoría.",
-      href: "/producto",
+      href: "/producto/",
       type: "Sugerencia",
     };
 

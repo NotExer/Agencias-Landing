@@ -8,7 +8,7 @@ import { waHref } from "../data/contact";
   <div
     class="relative w-full rounded-[32px] bg-[#1a1c1d] mx-auto px-8 md:px-16 py-10"
   >
-    <!-- Top Section: Newsletter -->
+    <!-- Top Section: Quote CTA -->
     <div
       class="flex flex-col lg:flex-row justify-between items-center gap-6 mb-10"
     >
@@ -16,31 +16,20 @@ import { waHref } from "../data/contact";
         <h2
           class="text-xl md:text-[24px] font-semibold text-white leading-tight max-w-[500px]"
         >
-          Recibe las mejores ofertas y novedades antes que nadie
+          ¿Necesitas dotaciones para tu empresa?
         </h2>
-      </div>
-      <div class="w-full lg:w-1/2 max-w-[550px]">
-        <p class="text-sm text-white mb-4 leading-relaxed">
-          Suscríbete a nuestro boletín y mantente al día con promociones
-          exclusivas, nuevos lanzamientos y contenido útil para tu negocio.
+        <p class="mt-3 max-w-[550px] text-sm leading-relaxed text-gray-300">
+          Comparte productos, cantidades y ciudad de entrega. Nuestro equipo revisará tu solicitud.
         </p>
-        <form
-          class="flex w-full max-w-full items-center bg-white rounded-full overflow-hidden p-1"
-        >
-          <input
-            type="email"
-            placeholder="nombre@gmail.com"
-            class="w-full min-w-0 flex-1 bg-transparent px-3 sm:px-4 py-2 outline-none text-gray-800 text-sm sm:text-sm"
-            required
-          />
-          <button
-            type="submit"
-            class="shrink-0 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-colors text-sm sm:text-sm"
-          >
-            Suscribirme
-          </button>
-        </form>
       </div>
+      <a
+        href={waHref("Hola, quiero cotizar dotaciones, calzado de seguridad o EPP para mi empresa.")}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex w-full justify-center rounded-full bg-blue-600 px-7 py-3.5 font-bold text-white transition hover:bg-blue-500 sm:w-auto"
+      >
+        Solicitar cotización
+      </a>
     </div>
 
     <!-- Middle Section: Links -->
@@ -69,14 +58,14 @@ import { waHref } from "../data/contact";
         <ul class="space-y-2">
           {
             [
-              { label: "Nosotros", href: "/nosotros" },
-              { label: "Contacto", href: "/contacto" },
-              { label: "FAQ", href: "/faq" },
-              { label: "Blog", href: "/articulos" },
-              { label: "Política ambiental", href: "/politica_ambiental" },
-              { label: "Política de seguridad", href: "/politica_seguridad" },
-              { label: "Política de calidad", href: "/politica_calidad" },
-              { label: "Política de privacidad", href: "/politica_privacidad" },
+              { label: "Nosotros", href: "/nosotros/" },
+              { label: "Contacto", href: "/contacto/" },
+              { label: "FAQ", href: "/faq/" },
+              { label: "Blog", href: "/articulos/" },
+              { label: "Política ambiental", href: "/politica_ambiental/" },
+              { label: "Política de seguridad", href: "/politica_seguridad/" },
+              { label: "Política de calidad", href: "/politica_calidad/" },
+              { label: "Política de privacidad", href: "/politica_privacidad/" },
             ].map((link) => (
               <li>
                 <a
@@ -97,10 +86,14 @@ import { waHref } from "../data/contact";
         <ul class="space-y-2">
           {
             [
-              { label: "Todos los productos", href: "/producto" },
+              { label: "Todos los productos", href: "/producto/" },
+              { label: "Dotaciones Medellín", href: "/dotaciones-medellin/" },
+              { label: "Dotaciones Colombia", href: "/dotaciones-empresariales-colombia/" },
+              { label: "EPP Medellín", href: "/epp-medellin/" },
+              { label: "EPP Colombia", href: "/epp-colombia/" },
               ...categories.map((c) => ({
                 label: c.label,
-                href: `/categoria/${categorySlug(c.label)}`,
+                href: `/categoria/${categorySlug(c.label)}/`,
               })),
             ].map((link) => (
               <li>
@@ -147,8 +140,7 @@ import { waHref } from "../data/contact";
           <li>
             <span
               class="text-gray-400 hover:text-white text-sm transition-colors"
-              >Agencias Nacionales SAS. Carrera, 47 20 Sur Zona 2, Envigado,
-              Antioquia</span
+              >Agencias Nacionales S.A.S., Carrera 47 #20 Sur-7, Bosques de Zúñiga, Envigado, Antioquia</span
             >
           </li>
         </ul>
@@ -199,10 +191,10 @@ import { waHref } from "../data/contact";
         © Agencias Nacionales 2026. Todos los derechos reservados.
       </p>
       <div class="flex gap-6">
-        <a href="/politica_privacidad" class="text-[#3b82f6] hover:text-blue-400 transition-colors"
+        <a href="/politica_privacidad/" class="text-[#3b82f6] hover:text-blue-400 transition-colors"
           >Política de privacidad</a
         >
-        <a href="/politica_uso" class="text-[#3b82f6] hover:text-blue-400 transition-colors"
+        <a href="/politica_uso/" class="text-[#3b82f6] hover:text-blue-400 transition-colors"
           >Términos de uso</a
         >
       </div>

@@ -1248,7 +1248,7 @@ const CATALOG: CatalogEntry[] = [
   {
     name:     "Tapón Auditivo Reutilizable",
     category: "EPP",
-    images:   ["Tapón Auditivo Reutilizable.jpeg"],
+    images:   ["Tapón Auditivo Reutilizable.jpeg"],
     price:    19000,
     description: [
       "Tapón auditivo reutilizable para reducir la exposición al ruido en ambientes de trabajo exigentes.",
@@ -1690,7 +1690,7 @@ export function slugify(name: string): string {
 }
 
 export function productHref(name: string): string {
-  return `/producto/${slugify(name)}`;
+  return `/producto/${slugify(name)}/`;
 }
 
 export interface Product {
@@ -1740,12 +1740,12 @@ export function categorySlug(label: string): string {
 }
 
 const CATEGORY_CONFIG: { label: CategoryName; href: string }[] = [
-  { label: "Calzado de Trabajo",   href: `/categoria/${categorySlug("Calzado de Trabajo")}`   },
-  { label: "Uniformes de Trabajo", href: `/categoria/${categorySlug("Uniformes de Trabajo")}` },
-  { label: "EPP",                  href: `/categoria/${categorySlug("EPP")}`                  },
-  { label: "Hospitalaria",         href: `/categoria/${categorySlug("Hospitalaria")}`         },
-  { label: "Gorros y Redecillas",  href: `/categoria/${categorySlug("Gorros y Redecillas")}`  },
-  { label: "Promocionales",        href: `/categoria/${categorySlug("Promocionales")}`        },
+  { label: "Calzado de Trabajo",   href: `/categoria/${categorySlug("Calzado de Trabajo")}/`   },
+  { label: "Uniformes de Trabajo", href: `/categoria/${categorySlug("Uniformes de Trabajo")}/` },
+  { label: "EPP",                  href: `/categoria/${categorySlug("EPP")}/`                  },
+  { label: "Hospitalaria",         href: `/categoria/${categorySlug("Hospitalaria")}/`         },
+  { label: "Gorros y Redecillas",  href: `/categoria/${categorySlug("Gorros y Redecillas")}/`  },
+  { label: "Promocionales",        href: `/categoria/${categorySlug("Promocionales")}/`        },
 ];
 
 export const categories: Category[] = CATEGORY_CONFIG.map(({ label, href }) => {
