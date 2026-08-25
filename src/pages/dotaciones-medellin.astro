@@ -1,8 +1,8 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import Banner from "../components/Banner.astro";
 import heroImage from "../img/banner1.optimized.avif";
 import { waHref } from "../data/contact";
 
@@ -72,48 +72,20 @@ const faqSchema = {
 
   <Navbar />
   <main>
-    <section class="relative isolate overflow-hidden bg-slate-950 text-white">
-      <Image
-        src={heroImage}
-        alt="Trabajador con dotación industrial y calzado de seguridad"
-        widths={[640, 1024, 1600, 1920]}
-        sizes="100vw"
-        loading="eager"
-        fetchpriority="high"
-        class="absolute inset-0 -z-20 h-full w-full object-cover opacity-45"
-      />
-      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/90 to-blue-950/55"></div>
-      <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
-        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-200">
-          Atención empresarial desde Envigado
-        </p>
-        <h1 class="max-w-4xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
-          Dotaciones empresariales en Medellín
-        </h1>
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-          Uniformes de trabajo, calzado de seguridad y EPP para empresas de Medellín y el Valle de Aburrá. Te ayudamos a definir la dotación según el cargo, el entorno de trabajo y la cantidad que necesitas.
-        </p>
-        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a
-            href={quoteHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-full bg-blue-600 px-7 py-3.5 font-bold text-white transition hover:bg-blue-500"
-          >
-            Cotizar dotaciones por WhatsApp
-          </a>
-          <a
-            href="/contacto/"
-            class="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-3.5 font-semibold text-white transition hover:bg-white/10"
-          >
-            Enviar solicitud de cotización
-          </a>
-        </div>
-      </div>
-    </section>
+    <Banner
+      image={heroImage}
+      alt="Trabajador con dotación industrial y calzado de seguridad"
+      eyebrow="Atención empresarial desde Envigado"
+      heading="Dotaciones empresariales en Medellín"
+      description="Uniformes de trabajo, calzado de seguridad y EPP para empresas de Medellín y el Valle de Aburrá. Te ayudamos a definir la dotación según el cargo, el entorno de trabajo y la cantidad que necesitas."
+      headingLevel="h1"
+      primaryAction={{ href: quoteHref, label: "Cotizar dotaciones por WhatsApp", newTab: true }}
+      secondaryAction={{ href: "/contacto/", label: "Enviar solicitud de cotización" }}
+      secondaryActionStyle="outline"
+    />
 
-    <section class="border-b border-slate-200 bg-white">
-      <div class="mx-auto grid max-w-7xl gap-6 px-5 py-7 text-sm text-slate-700 sm:grid-cols-3 sm:px-8 lg:px-10">
+    <section class="w-full bg-white px-4 pb-5 sm:px-6 lg:px-10">
+      <div class="mx-auto grid max-w-7xl gap-6 rounded-2xl border border-gray-100 bg-gray-50 px-6 py-7 text-sm text-gray-700 sm:grid-cols-3 sm:px-8">
         <p><strong class="block text-base text-slate-950">Más de 56 años</strong> fabricando y suministrando dotaciones.</p>
         <p><strong class="block text-base text-slate-950">Atención local</strong> desde Envigado para el Valle de Aburrá.</p>
         <p><strong class="block text-base text-slate-950">Solución completa</strong> uniformes, calzado industrial y EPP.</p>
@@ -122,48 +94,48 @@ const faqSchema = {
 
     <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
       <div class="max-w-3xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Productos para tu operación</p>
-        <h2 class="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Una dotación definida por el trabajo, no por un paquete genérico</h2>
-        <p class="mt-5 text-lg leading-8 text-slate-600">
+        <p class="text-m font-semibold text-blue-600">Productos para tu operación</p>
+        <h2 class="mt-2 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">Una dotación definida por el trabajo, no por un paquete genérico</h2>
+        <p class="mt-4 text-m leading-relaxed text-gray-500">
           Compras, SST y Talento Humano necesitan productos que respondan al cargo, al riesgo y a la identidad de la empresa. Puedes cotizar una línea específica o consolidar varias categorías en una sola solicitud.
         </p>
       </div>
 
       <div class="mt-10 grid gap-5 md:grid-cols-3">
-        <a href="/categoria/uniformes-de-trabajo/" class="rounded-3xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg">
-          <h3 class="text-xl font-bold text-slate-950">Uniformes de trabajo</h3>
-          <p class="mt-3 leading-7 text-slate-600">Camisas, pantalones, jeans, polos, overoles y prendas personalizables para equipos operativos y administrativos.</p>
-          <span class="mt-5 inline-block font-semibold text-blue-700">Ver uniformes</span>
+        <a href="/categoria/uniformes-de-trabajo/" class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-base font-bold text-gray-900">Uniformes de trabajo</h3>
+          <p class="mt-3 text-m leading-relaxed text-black">Camisas, pantalones, jeans, polos, overoles y prendas personalizables para equipos operativos y administrativos.</p>
+          <span class="mt-4 inline-flex items-center gap-1 text-m font-semibold text-blue-600 hover:text-blue-700">Ver uniformes</span>
         </a>
-        <a href="/categoria/calzado-de-trabajo/" class="rounded-3xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg">
-          <h3 class="text-xl font-bold text-slate-950">Calzado de seguridad</h3>
-          <p class="mt-3 leading-7 text-slate-600">Botas y zapatos para distintos entornos, con opciones dieléctricas, antideslizantes y resistentes a hidrocarburos.</p>
-          <span class="mt-5 inline-block font-semibold text-blue-700">Ver calzado de trabajo</span>
+        <a href="/categoria/calzado-de-trabajo/" class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-base font-bold text-gray-900">Calzado de seguridad</h3>
+          <p class="mt-3 text-m leading-relaxed text-black">Botas y zapatos para distintos entornos, con opciones dieléctricas, antideslizantes y resistentes a hidrocarburos.</p>
+          <span class="mt-4 inline-flex items-center gap-1 text-m font-semibold text-blue-600 hover:text-blue-700">Ver calzado de trabajo</span>
         </a>
-        <a href="/categoria/epp/" class="rounded-3xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg">
-          <h3 class="text-xl font-bold text-slate-950">Elementos de protección personal</h3>
-          <p class="mt-3 leading-7 text-slate-600">Protección para cabeza, ojos, oídos, manos y cuerpo, seleccionada según las condiciones de cada labor.</p>
-          <span class="mt-5 inline-block font-semibold text-blue-700">Ver elementos de protección</span>
+        <a href="/categoria/epp/" class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-base font-bold text-gray-900">Elementos de protección personal</h3>
+          <p class="mt-3 text-m leading-relaxed text-black">Protección para cabeza, ojos, oídos, manos y cuerpo, seleccionada según las condiciones de cada labor.</p>
+          <span class="mt-4 inline-flex items-center gap-1 text-m font-semibold text-blue-600 hover:text-blue-700">Ver elementos de protección</span>
         </a>
       </div>
     </section>
 
-    <section class="bg-slate-950 text-white">
-      <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:px-10 lg:py-24">
+    <section class="w-full bg-white px-4 py-5 sm:px-6 lg:px-10">
+      <div class="mx-auto grid max-w-7xl gap-12 rounded-2xl bg-blue-950 px-7 py-12 text-white sm:px-10 lg:grid-cols-2 lg:px-12 lg:py-16">
         <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-300">Información para cotizar</p>
-          <h2 class="mt-3 text-3xl font-black sm:text-4xl">Recibe una propuesta acorde con tu empresa</h2>
-          <p class="mt-5 leading-8 text-slate-300">
+          <p class="text-m font-semibold text-blue-200">Información para cotizar</p>
+          <h2 class="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">Recibe una propuesta acorde con tu empresa</h2>
+          <p class="mt-4 text-m leading-relaxed text-gray-300">
             Una solicitud clara reduce cambios de talla, referencias equivocadas y retrasos. Comparte estos datos con nuestro equipo para orientar mejor la cotización.
           </p>
         </div>
-        <ul class="grid gap-3 text-slate-200 sm:grid-cols-2">
-          <li class="rounded-2xl bg-white/7 p-5">Producto o cargo que necesitas dotar</li>
-          <li class="rounded-2xl bg-white/7 p-5">Cantidad aproximada por referencia</li>
-          <li class="rounded-2xl bg-white/7 p-5">Tallas o proceso para consolidarlas</li>
-          <li class="rounded-2xl bg-white/7 p-5">Logo y tipo de personalización</li>
-          <li class="rounded-2xl bg-white/7 p-5">Condiciones de uso y riesgos del cargo</li>
-          <li class="rounded-2xl bg-white/7 p-5">Ciudad y fecha requerida de entrega</li>
+        <ul class="grid gap-3 text-m leading-relaxed text-white sm:grid-cols-2">
+          <li class="rounded-2xl bg-white/10 p-5">Producto o cargo que necesitas dotar</li>
+          <li class="rounded-2xl bg-white/10 p-5">Cantidad aproximada por referencia</li>
+          <li class="rounded-2xl bg-white/10 p-5">Tallas o proceso para consolidarlas</li>
+          <li class="rounded-2xl bg-white/10 p-5">Logo y tipo de personalización</li>
+          <li class="rounded-2xl bg-white/10 p-5">Condiciones de uso y riesgos del cargo</li>
+          <li class="rounded-2xl bg-white/10 p-5">Ciudad y fecha requerida de entrega</li>
         </ul>
       </div>
     </section>
@@ -171,15 +143,15 @@ const faqSchema = {
     <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
       <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">Preguntas frecuentes</p>
-          <h2 class="mt-3 text-3xl font-black text-slate-950">Antes de pedir una cotización</h2>
-          <p class="mt-5 leading-7 text-slate-600">Estas respuestas cubren las dudas más comunes de empresas que buscan dotaciones en Medellín.</p>
+          <p class="text-m font-semibold text-blue-600">Preguntas frecuentes</p>
+          <h2 class="mt-2 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">Antes de pedir una cotización</h2>
+          <p class="mt-4 text-m leading-relaxed text-gray-500">Estas respuestas cubren las dudas más comunes de empresas que buscan dotaciones en Medellín.</p>
         </div>
         <div class="divide-y divide-slate-200 border-y border-slate-200">
           {faqs.map((faq) => (
             <details class="group py-5">
-              <summary class="cursor-pointer list-none pr-8 text-lg font-bold text-slate-950">{faq.question}</summary>
-              <p class="mt-3 max-w-3xl leading-7 text-slate-600">{faq.answer}</p>
+              <summary class="cursor-pointer list-none pr-8 text-base font-bold text-gray-900">{faq.question}</summary>
+              <p class="mt-3 max-w-3xl text-m leading-relaxed text-gray-500">{faq.answer}</p>
             </details>
           ))}
         </div>
@@ -187,10 +159,10 @@ const faqSchema = {
     </section>
 
     <section class="mx-auto max-w-7xl px-5 pb-20 sm:px-8 lg:px-10">
-      <div class="rounded-3xl bg-blue-700 px-7 py-10 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
+      <div class="rounded-2xl bg-blue-950 px-7 py-10 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
         <div class="max-w-2xl">
-          <h2 class="text-3xl font-black">Cuéntanos qué necesita tu equipo</h2>
-          <p class="mt-3 leading-7 text-blue-100">Indica productos, cantidades y ciudad. Nuestro equipo revisará la solicitud y te orientará sobre las opciones disponibles.</p>
+          <h2 class="text-3xl font-extrabold leading-tight sm:text-4xl">Cuéntanos qué necesita tu equipo</h2>
+          <p class="mt-3 text-m leading-relaxed text-blue-100">Indica productos, cantidades y ciudad. Nuestro equipo revisará la solicitud y te orientará sobre las opciones disponibles.</p>
         </div>
         <a
           href={quoteHref}

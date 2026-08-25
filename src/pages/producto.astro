@@ -6,7 +6,7 @@ import ProductGrid from "../components/ProductGrid.astro";
 import { products, categories, categorySlug } from "../data/catalog";
 
 const baseBtn = "px-4 py-1.5 rounded-full text-m font-medium transition border";
-const activeBtn = baseBtn + " bg-[#2B395E] text-white border-transparent";
+const activeBtn = baseBtn + " bg-blue-950 text-white border-transparent hover:bg-blue-800";
 const inactiveBtn =
   baseBtn + " bg-white text-gray-600 border-gray-200 hover:border-gray-400";
 ---
@@ -58,7 +58,7 @@ const inactiveBtn =
 
       // Clases de estilos
       const ACTIVE =
-        "px-4 py-1.5 rounded-full text-m font-medium transition border bg-[#2B395E] text-white border-transparent";
+        "px-4 py-1.5 rounded-full text-m font-medium transition border bg-blue-950 text-white border-transparent hover:bg-blue-800";
       const INACTIVE =
         "px-4 py-1.5 rounded-full text-m font-medium transition border bg-white text-gray-600 border-gray-200 hover:border-gray-400";
 

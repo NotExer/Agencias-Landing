@@ -107,7 +107,7 @@ const breadcrumbLd = {
           href={waHref(`Hola, quiero cotizar ${label.toLowerCase()} para mi empresa.`)}
           target="_blank"
           rel="noopener noreferrer"
-          class="rounded-full bg-blue-700 px-6 py-3 font-bold text-white transition hover:bg-blue-800"
+          class="rounded-full bg-blue-950 px-6 py-3 font-bold text-white transition hover:bg-blue-800"
         >
           Cotizar {label.toLowerCase()}
         </a>
@@ -131,7 +131,7 @@ const breadcrumbLd = {
               href={`/categoria/${categorySlug(cat.label)}/`}
               class={`px-4 py-1.5 rounded-full text-m font-medium transition border ${
                 cat.label === label
-                  ? "bg-[#2B395E] text-white border-transparent"
+                  ? "bg-blue-950 text-white border-transparent hover:bg-blue-800"
                   : "bg-white text-gray-600 border-gray-200 hover:border-gray-400"
               }`}
             >
@@ -154,7 +154,7 @@ const breadcrumbLd = {
               href={waHref(`Hola, quisiera cotizar productos de la categoría "${label}".`)}
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-block rounded-full bg-green-600 px-6 py-3 text-m font-medium text-white transition hover:bg-green-700"
+              class="inline-block rounded-full bg-blue-950 px-6 py-3 text-m font-medium text-white transition hover:bg-blue-800"
             >
               Cotizar por WhatsApp
             </a>
