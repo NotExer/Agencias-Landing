@@ -1,5 +1,290 @@
 [
   {
+    "slug": "dotacion-para-brigada-de-emergencias",
+    "title": "Dotación para brigada de emergencias",
+    "description": "Define la dotación para brigada de emergencias según riesgos, roles y sedes. Guía práctica para compras y SST con inventario, fichas y reposición.",
+    "excerpt": "La dotación para brigada de emergencias no se resuelve comprando el mismo chaleco, casco y par de guantes para todas las personas. Cada elemento debe responder a los escenarios de la sede, las tareas asignadas a la brigada y los peligros a los que podría exponerse durante una respuesta.",
+    "date": "25 ago 2026",
+    "dateISO": "2026-08-25",
+    "tag": "Tips",
+    "author": "Agencias Nacionales",
+    "image": "dotacion-para-brigada-de-emergencias.webp",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "La dotación para brigada de emergencias no se resuelve comprando el mismo chaleco, casco y par de guantes para todas las personas. Cada elemento debe responder a los escenarios de la sede, las tareas asignadas a la brigada y los peligros a los que podría exponerse durante una respuesta."
+      },
+      {
+        "type": "p",
+        "text": "Para Compras y SST, el reto consiste en convertir el plan de emergencias en una solicitud clara: qué se necesita, quién lo usa, en qué sede, con qué especificación y bajo qué criterio se repone. Esta guía ayuda a organizar ese trabajo sin presentar una lista genérica como si sirviera para cualquier empresa."
+      },
+      {
+        "type": "h2",
+        "text": "Empieza por los riesgos de cada sede"
+      },
+      {
+        "type": "p",
+        "text": "El punto de partida es la evaluación incluida en el plan de prevención, preparación y respuesta ante emergencias. El artículo 2.2.4.6.25 del Decreto 1072 de 2015 indica que la brigada debe conformarse, capacitarse, entrenarse y dotarse de acuerdo con el nivel de riesgo y los recursos disponibles. Por eso, el catálogo viene después del análisis, no antes."
+      },
+      {
+        "type": "p",
+        "text": "Una oficina, una bodega y una planta pueden pertenecer a la misma empresa y requerir dotaciones distintas. Antes de cotizar, SST debería dejar por escrito los escenarios que cubre la brigada y el alcance real de su actuación."
+      },
+      {
+        "type": "li",
+        "text": "Amenazas y condiciones de la sede que contempla el plan de emergencias."
+      },
+      {
+        "type": "li",
+        "text": "Funciones asignadas a evacuación, primeros auxilios, comunicaciones u otros roles definidos por la empresa."
+      },
+      {
+        "type": "li",
+        "text": "Peligros presentes durante el desplazamiento y la atención inicial."
+      },
+      {
+        "type": "li",
+        "text": "Cantidad de brigadistas activos por turno y ubicación."
+      },
+      {
+        "type": "li",
+        "text": "Apoyo externo previsto y límites de actuación del equipo interno."
+      },
+      {
+        "type": "h2",
+        "text": "Separa la compra en tres grupos"
+      },
+      {
+        "type": "p",
+        "text": "Muchas solicitudes mezclan prendas, EPP y equipos compartidos en una sola lista. Separarlos ayuda a definir responsables, especificaciones, tallas, almacenamiento y reposición. También evita pedirle al proveedor de vestuario que resuelva equipos técnicos que deben revisar especialistas de otras áreas."
+      },
+      {
+        "type": "h3",
+        "text": "Prendas e identificación del brigadista"
+      },
+      {
+        "type": "p",
+        "text": "Este grupo permite reconocer a la brigada durante un ejercicio o una emergencia. Puede incluir chalecos, prendas de trabajo u otros distintivos definidos por el plan interno. La ficha debe precisar color, material, tipo de cierre, bolsillos, marcación autorizada y condiciones de uso. Si la prenda llevará componentes reflectivos, la empresa debe indicar dónde se necesitan y qué desempeño espera."
+      },
+      {
+        "type": "h3",
+        "text": "EPP seleccionado según el peligro"
+      },
+      {
+        "type": "p",
+        "text": "El casco, los guantes, la protección visual o el calzado no se eligen por el nombre del cargo. Se seleccionan según el peligro identificado, la tarea y el entorno en el que se usarán. Una misma referencia no cubre de manera automática golpes, sustancias, calor, electricidad o superficies húmedas. La matriz de peligros y las especificaciones de SST deben definir el desempeño requerido."
+      },
+      {
+        "type": "li",
+        "text": "Protección de cabeza y ojos, cuando el escenario evaluado la requiera."
+      },
+      {
+        "type": "li",
+        "text": "Guantes compatibles con la tarea y el peligro previsto."
+      },
+      {
+        "type": "li",
+        "text": "Calzado con ajuste, suela y protección acordes con la superficie y la exposición."
+      },
+      {
+        "type": "li",
+        "text": "Protección respiratoria o auditiva solo cuando la evaluación técnica la justifique."
+      },
+      {
+        "type": "h3",
+        "text": "Equipos e insumos compartidos"
+      },
+      {
+        "type": "p",
+        "text": "Radios, sistemas de alerta, camillas, botiquines y otros recursos de respuesta no son dotación personal. Su selección, ubicación e inspección pertenecen al plan de emergencias y deben quedar a cargo del responsable técnico correspondiente. Compras puede consolidar el proceso, pero conviene mantener estos equipos en un capítulo separado para no confundir cantidades por persona con cantidades por sede."
+      },
+      {
+        "type": "h2",
+        "text": "Organiza la matriz por rol, sede y turno"
+      },
+      {
+        "type": "p",
+        "text": "Una matriz sencilla permite pasar del plan a la orden de compra. Cada fila puede representar una combinación de sede, turno y rol. Las columnas reúnen el elemento, la cantidad, la talla si aplica, la especificación aprobada, el lugar de almacenamiento y la persona responsable del control."
+      },
+      {
+        "type": "p",
+        "text": "No basta con contar brigadistas en una lista general. Si cinco personas están asignadas al turno de noche en una sede, la dotación debe estar disponible allí y en ese horario. Trasladar equipos entre sedes para cuadrar el inventario en una hoja de cálculo puede dejar un punto sin cobertura cuando se necesita."
+      },
+      {
+        "type": "li",
+        "text": "Sede y área de cobertura."
+      },
+      {
+        "type": "li",
+        "text": "Turno y número de brigadistas activos."
+      },
+      {
+        "type": "li",
+        "text": "Rol previsto en el plan de emergencias."
+      },
+      {
+        "type": "li",
+        "text": "Elemento personal o recurso compartido."
+      },
+      {
+        "type": "li",
+        "text": "Talla, referencia aprobada y cantidad."
+      },
+      {
+        "type": "li",
+        "text": "Fecha de entrega, estado y próxima revisión."
+      },
+      {
+        "type": "h2",
+        "text": "Calcula cantidades sin aplicar un porcentaje fijo"
+      },
+      {
+        "type": "p",
+        "text": "La cantidad base de elementos personales sale del número de brigadistas activos que realmente los usarán. Después se revisan rotación, tallas, tiempos de reposición y continuidad de la operación. No existe un porcentaje universal de reserva que funcione igual para una oficina pequeña y una operación con varias sedes."
+      },
+      {
+        "type": "p",
+        "text": "Para definir existencias de respaldo, revisa el historial de altas y retiros, el plazo habitual del proveedor y la criticidad de quedar sin el elemento. El resultado debe quedar documentado. Así, una compra adicional tiene una razón operativa y no una cifra redonda elegida por costumbre."
+      },
+      {
+        "type": "h2",
+        "text": "Escribe fichas técnicas que permitan comparar ofertas"
+      },
+      {
+        "type": "p",
+        "text": "Una ficha vaga produce ofertas difíciles de comparar. Pedir solo un \"chaleco rojo\" o una \"bota de seguridad\" deja decisiones importantes abiertas. La ficha debe describir el uso esperado y los atributos que SST haya definido, sin copiar características de una marca cuando no son necesarias."
+      },
+      {
+        "type": "li",
+        "text": "Nombre del elemento y usuario previsto."
+      },
+      {
+        "type": "li",
+        "text": "Material, construcción, ajuste y rango de tallas."
+      },
+      {
+        "type": "li",
+        "text": "Desempeño requerido frente al peligro identificado."
+      },
+      {
+        "type": "li",
+        "text": "Marcación, color y ubicación de distintivos aprobados."
+      },
+      {
+        "type": "li",
+        "text": "Documentos o soportes técnicos que deben acompañar la oferta."
+      },
+      {
+        "type": "li",
+        "text": "Muestra, prueba de talla o criterio de aceptación, si aplica."
+      },
+      {
+        "type": "h2",
+        "text": "Prueba tallas y movilidad antes de comprar en volumen"
+      },
+      {
+        "type": "p",
+        "text": "El brigadista necesita moverse, agacharse y manipular equipos sin que la prenda se abra, se enganche o limite el alcance. Una muestra permite revisar el chaleco sobre el uniforme habitual, confirmar tallas y detectar interferencias entre guantes, mangas, casco y otros elementos."
+      },
+      {
+        "type": "p",
+        "text": "Haz la prueba con personas de distintos turnos y contexturas. Registra el resultado por referencia y talla para que Compras no tenga que empezar de cero en la siguiente reposición. Si cambia el material o la construcción ofrecida, la aprobación anterior ya no basta y conviene revisar la nueva muestra."
+      },
+      {
+        "type": "h2",
+        "text": "Recibe la dotación con inventario y criterios de aceptación"
+      },
+      {
+        "type": "p",
+        "text": "La entrega física debe compararse con la ficha aprobada. La factura por sí sola no permite confirmar el cumplimiento. Revisa cantidades, tallas, marcación, estado de las piezas y documentos solicitados. Después asigna cada elemento personal y registra dónde quedan los recursos compartidos."
+      },
+      {
+        "type": "li",
+        "text": "Coincidencia entre referencia recibida y referencia aprobada."
+      },
+      {
+        "type": "li",
+        "text": "Tallas completas por sede y turno."
+      },
+      {
+        "type": "li",
+        "text": "Costuras, cierres, suelas y demás partes sin defectos visibles."
+      },
+      {
+        "type": "li",
+        "text": "Marcación legible y ubicada según la orden."
+      },
+      {
+        "type": "li",
+        "text": "Responsable, ubicación y fecha de próxima inspección registradas."
+      },
+      {
+        "type": "p",
+        "text": "El Decreto 1072 también exige inspeccionar los equipos relacionados con la prevención y atención de emergencias con la periodicidad definida en el SG-SST. El inventario debe ayudar a encontrar faltantes y daños antes del simulacro o de una situación real."
+      },
+      {
+        "type": "h2",
+        "text": "Define la reposición por estado, cambio y disponibilidad"
+      },
+      {
+        "type": "p",
+        "text": "Una fecha fija puede servir como recordatorio, pero no reemplaza la inspección. La reposición puede activarse por desgaste, daño, pérdida, contaminación, cambio de talla, retiro del brigadista o modificación del riesgo. También debe revisarse cuando una referencia deja de estar disponible y el proveedor propone otra."
+      },
+      {
+        "type": "li",
+        "text": "Daño que afecta ajuste, visibilidad, cierre o protección."
+      },
+      {
+        "type": "li",
+        "text": "Cambio de rol, sede, turno o escenario de exposición."
+      },
+      {
+        "type": "li",
+        "text": "Ingreso o retiro de integrantes de la brigada."
+      },
+      {
+        "type": "li",
+        "text": "Resultado de inspecciones, entrenamientos o simulacros."
+      },
+      {
+        "type": "li",
+        "text": "Sustitución de referencia, material o proveedor."
+      },
+      {
+        "type": "h2",
+        "text": "Información mínima para solicitar la cotización"
+      },
+      {
+        "type": "p",
+        "text": "Una solicitud completa reduce correos de ida y vuelta y permite comparar propuestas sobre la misma base. Antes de enviarla, confirma que Compras y SST estén trabajando con la misma versión de la matriz."
+      },
+      {
+        "type": "li",
+        "text": "Listado de prendas, calzado y EPP aprobados por SST."
+      },
+      {
+        "type": "li",
+        "text": "Cantidades y tallas consolidadas por sede."
+      },
+      {
+        "type": "li",
+        "text": "Fichas técnicas y marcación requerida."
+      },
+      {
+        "type": "li",
+        "text": "Ciudad y dirección de entrega de cada lote."
+      },
+      {
+        "type": "li",
+        "text": "Fecha requerida y condiciones de recepción."
+      },
+      {
+        "type": "p",
+        "text": "Agencias Nacionales puede cotizar uniformes de trabajo, calzado de seguridad y EPP para la brigada con base en las especificaciones de tu empresa. Comparte la matriz, las cantidades, las tallas y las ciudades de entrega para revisar la solicitud sin sustituir la evaluación técnica de SST."
+      }
+    ]
+  },
+  {
     "slug": "como-elegir-calzado-de-trabajo-comodo-jornadas-largas",
     "title": "Cómo elegir calzado de trabajo cómodo para jornadas largas sin perder seguridad",
     "description": "Guía práctica para elegir calzado de trabajo cómodo para jornadas largas: ajuste, suela, materiales, peso, ergonomía y reposición.",
