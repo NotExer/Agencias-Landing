@@ -1,5 +1,310 @@
 [
   {
+    "slug": "botas-de-seguridad-para-mujer",
+    "title": "Botas de seguridad para mujer: guía",
+    "description": "Guía para comprar botas de seguridad para mujer por riesgo, ajuste y talla. Reduce cambios con muestras, pruebas de uso y recepción por referencia.",
+    "excerpt": "Comprar botas de seguridad para mujer no consiste en pedir una talla menor del modelo disponible. Compras y SST deben mantener la protección exigida para el cargo y, al mismo tiempo, validar horma, ajuste y movilidad con la referencia que recibirá cada trabajadora.",
+    "date": "26 ago 2026",
+    "dateISO": "2026-08-26",
+    "tag": "Tips",
+    "author": "Agencias Nacionales",
+    "image": "botas-de-seguridad-para-mujer.webp",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Comprar botas de seguridad para mujer no consiste en pedir una talla menor del modelo disponible. Compras y SST deben mantener la protección exigida para el cargo y, al mismo tiempo, validar horma, ajuste y movilidad con la referencia que recibirá cada trabajadora."
+      },
+      {
+        "type": "p",
+        "text": "El objetivo es sencillo: entregar un calzado que responda al riesgo y que pueda usarse durante la jornada sin movimientos excesivos del talón, presión incómoda ni cambios de talla después del despacho. Para lograrlo, la ficha técnica, el tallaje y la prueba de uso deben trabajar juntos."
+      },
+      {
+        "type": "h2",
+        "text": "Separa la protección del ajuste"
+      },
+      {
+        "type": "p",
+        "text": "La evaluación del cargo define la protección. La persona que usará la bota define si la referencia elegida ajusta bien. Mezclar ambas decisiones suele producir dos errores: escoger por apariencia sin revisar el peligro o aprobar una especificación técnica que no se adapta al pie de parte del equipo."
+      },
+      {
+        "type": "p",
+        "text": "Antes de mirar modelos, SST debe describir la tarea, la superficie, la exposición y las condiciones de la jornada. Con esa base, Compras puede comparar referencias que cumplan la misma necesidad y evaluar cuál ofrece una curva de tallas y un ajuste adecuados para las usuarias."
+      },
+      {
+        "type": "li",
+        "text": "Tarea principal y movimientos frecuentes durante el turno."
+      },
+      {
+        "type": "li",
+        "text": "Tipo de piso, presencia de humedad, grasas, residuos o terreno irregular."
+      },
+      {
+        "type": "li",
+        "text": "Protección de puntera, suela u otros atributos definidos por SST."
+      },
+      {
+        "type": "li",
+        "text": "Horas de uso, desplazamientos y cambios de nivel habituales."
+      },
+      {
+        "type": "li",
+        "text": "Compatibilidad con medias, pantalón y demás elementos usados en la jornada."
+      },
+      {
+        "type": "h2",
+        "text": "No uses la etiqueta para mujer como ficha técnica"
+      },
+      {
+        "type": "p",
+        "text": "El nombre comercial no explica por sí solo la horma, el ancho, el volumen interno ni la forma del talón. Dos referencias vendidas como calzado femenino pueden sentirse muy distintas en la misma talla. Por eso, la solicitud de cotización debe pedir información de construcción y una muestra, no limitarse a una etiqueta del catálogo."
+      },
+      {
+        "type": "p",
+        "text": "NIOSH incluye el largo y el ancho del pie entre las medidas antropométricas usadas para diseñar calzado de protección. En la práctica, esto respalda una decisión de compra básica: validar más que el número impreso en la lengüeta."
+      },
+      {
+        "type": "h3",
+        "text": "Qué conviene pedir al proveedor"
+      },
+      {
+        "type": "li",
+        "text": "Curva de tallas disponible para la referencia exacta ofrecida."
+      },
+      {
+        "type": "li",
+        "text": "Guía de talla propia del fabricante, si existe."
+      },
+      {
+        "type": "li",
+        "text": "Descripción de horma, sistema de ajuste, puntera, suela y plantilla."
+      },
+      {
+        "type": "li",
+        "text": "Ficha técnica y soportes de desempeño solicitados por SST."
+      },
+      {
+        "type": "li",
+        "text": "Muestras en tallas cercanas a las de mayor demanda."
+      },
+      {
+        "type": "h2",
+        "text": "Levanta tallas sobre la referencia real"
+      },
+      {
+        "type": "p",
+        "text": "Una talla registrada para tenis, zapatos de calle u otra bota no garantiza el mismo ajuste. La conversión puede cambiar entre fabricantes e incluso entre referencias de una misma marca. El padrón de tallas debe indicar qué modelo se probó y cuándo se aprobó."
+      },
+      {
+        "type": "p",
+        "text": "Haz el levantamiento con las medias que se usarán en el trabajo y, cuando sea posible, al final de una jornada normal. No elijas la talla solo porque el pie entra. La usuaria debe poder caminar y flexionar el pie sin que la puntera presione los dedos ni el talón se desplace de forma marcada."
+      },
+      {
+        "type": "li",
+        "text": "Nombre de la trabajadora, cargo, sede y turno."
+      },
+      {
+        "type": "li",
+        "text": "Referencia y talla probadas."
+      },
+      {
+        "type": "li",
+        "text": "Tipo de media usada durante la validación."
+      },
+      {
+        "type": "li",
+        "text": "Resultado del ajuste y novedad encontrada, si la hubo."
+      },
+      {
+        "type": "li",
+        "text": "Fecha de la prueba y responsable del registro."
+      },
+      {
+        "type": "h2",
+        "text": "Haz una prueba de uso antes del pedido completo"
+      },
+      {
+        "type": "p",
+        "text": "Probar la bota durante unos minutos en una oficina no reproduce el trabajo. La muestra debe pasar por movimientos habituales en un espacio controlado: caminar, subir escalones, agacharse y permanecer de pie. Si el cargo usa pedales o escaleras, incluye esos movimientos sin exponer a la trabajadora a una tarea peligrosa durante la prueba."
+      },
+      {
+        "type": "p",
+        "text": "Registra observaciones concretas. Frases como se siente rara o está cómoda no ayudan a comparar. Es mejor anotar dónde aparece la presión, si el talón se levanta, si los cordones mantienen el ajuste y si la suela flexiona en el punto esperado."
+      },
+      {
+        "type": "li",
+        "text": "Espacio suficiente para los dedos sin deslizamiento hacia adelante."
+      },
+      {
+        "type": "li",
+        "text": "Talón estable al caminar y subir escalones."
+      },
+      {
+        "type": "li",
+        "text": "Ausencia de puntos de presión en empeine, tobillo y laterales."
+      },
+      {
+        "type": "li",
+        "text": "Ajuste que se mantiene con el sistema de cierre previsto."
+      },
+      {
+        "type": "li",
+        "text": "Movilidad compatible con las tareas del cargo."
+      },
+      {
+        "type": "h2",
+        "text": "Define el desempeño según el riesgo"
+      },
+      {
+        "type": "p",
+        "text": "No existe una bota universal para todas las trabajadoras. Una referencia puede ajustar bien y aun así ser inadecuada para la superficie o la exposición. La ficha de SST debe indicar qué desempeño necesita la empresa y qué documentos debe entregar el proveedor para demostrarlo."
+      },
+      {
+        "type": "p",
+        "text": "Puntera, comportamiento de la suela, resistencia frente a sustancias, propiedades eléctricas y altura de la caña se piden cuando la evaluación del cargo las justifica. Copiar todos los atributos de otra compra puede encarecer el pedido o dejar por fuera la característica que sí importa."
+      },
+      {
+        "type": "h3",
+        "text": "El color no reemplaza el criterio técnico"
+      },
+      {
+        "type": "p",
+        "text": "El color puede formar parte de la presentación corporativa, pero no convierte una bota en femenina ni demuestra su protección. Primero se aprueban desempeño, ajuste y tallas. Después se revisan las opciones visuales disponibles dentro de las referencias que pasaron la evaluación."
+      },
+      {
+        "type": "h2",
+        "text": "Calcula cantidades con la curva de tallas"
+      },
+      {
+        "type": "p",
+        "text": "Comprar una cantidad total sin separar tallas traslada el problema al día de la entrega. Consolida el pedido por referencia, talla, sede y usuaria. Si habrá inventario de respaldo, defínelo con el historial de ingresos, cambios y reposiciones, no repartiendo pares por igual entre todas las tallas."
+      },
+      {
+        "type": "p",
+        "text": "También conviene confirmar qué tallas puede reponer el proveedor y en cuánto tiempo. Una referencia adecuada para el grupo actual puede volverse difícil de administrar si su curva es corta o si algunas tallas solo se fabrican por pedido."
+      },
+      {
+        "type": "h2",
+        "text": "Escribe una ficha que permita comparar ofertas"
+      },
+      {
+        "type": "p",
+        "text": "La ficha debe dejar claro qué es obligatorio y qué admite alternativas. Así, los proveedores cotizan sobre la misma base y Compras puede detectar diferencias antes de adjudicar."
+      },
+      {
+        "type": "li",
+        "text": "Cargo, tarea y entorno de uso."
+      },
+      {
+        "type": "li",
+        "text": "Desempeño técnico definido por SST."
+      },
+      {
+        "type": "li",
+        "text": "Referencia propuesta, materiales y sistema de ajuste."
+      },
+      {
+        "type": "li",
+        "text": "Curva de tallas y guía del fabricante."
+      },
+      {
+        "type": "li",
+        "text": "Muestra requerida y criterio de aprobación."
+      },
+      {
+        "type": "li",
+        "text": "Condiciones para cambios, reposición y continuidad de la referencia."
+      },
+      {
+        "type": "h2",
+        "text": "Compara el costo del proceso, no solo el par"
+      },
+      {
+        "type": "p",
+        "text": "El precio unitario no muestra el trabajo que generan una curva incompleta, una guía de talla imprecisa o una política de cambios lenta. Al comparar ofertas, agrega las muestras, el tallaje, los despachos por sede, la gestión de novedades y la reposición de tallas poco frecuentes."
+      },
+      {
+        "type": "p",
+        "text": "Pide que cada alternativa conserve la misma especificación de riesgo. Una opción más barata deja de ser comparable si cambia la construcción o elimina un atributo solicitado por SST."
+      },
+      {
+        "type": "h2",
+        "text": "Recibe contra la muestra aprobada"
+      },
+      {
+        "type": "p",
+        "text": "Antes de distribuir, compara el lote con la ficha, la muestra y el consolidado de tallas. Haz la revisión con pares de distintas cajas y documenta cualquier diferencia antes de entregar."
+      },
+      {
+        "type": "li",
+        "text": "Referencia, talla y cantidad coinciden con la orden."
+      },
+      {
+        "type": "li",
+        "text": "Puntera, suela, plantilla y sistema de cierre corresponden a la muestra."
+      },
+      {
+        "type": "li",
+        "text": "Los dos pies del par tienen la misma talla y no muestran defectos visibles."
+      },
+      {
+        "type": "li",
+        "text": "Las etiquetas y fichas permiten identificar el producto recibido."
+      },
+      {
+        "type": "li",
+        "text": "Los soportes técnicos solicitados acompañan el lote."
+      },
+      {
+        "type": "li",
+        "text": "Las novedades quedan separadas antes de la distribución."
+      },
+      {
+        "type": "h2",
+        "text": "Usa los cambios para mejorar la siguiente compra"
+      },
+      {
+        "type": "p",
+        "text": "Cada cambio debe registrar el motivo. Talla corta, talla larga, presión lateral, movimiento del talón, defecto o error de despacho son problemas distintos. Si todo queda marcado como cambio de talla, el equipo pierde la oportunidad de corregir la referencia, la captura del dato o la recepción."
+      },
+      {
+        "type": "p",
+        "text": "Revisa esas novedades por modelo y talla después de cada entrega. Si una referencia concentra el mismo problema entre varias usuarias, vuelve a la muestra y a la guía del fabricante antes de hacer otra compra."
+      },
+      {
+        "type": "h2",
+        "text": "Información mínima para solicitar la cotización"
+      },
+      {
+        "type": "p",
+        "text": "Una solicitud ordenada permite que el proveedor responda con una referencia concreta y no con una lista de botas parecidas. Antes de enviarla, confirma estos datos:"
+      },
+      {
+        "type": "li",
+        "text": "Cargos, tareas y riesgos definidos por SST."
+      },
+      {
+        "type": "li",
+        "text": "Cantidad estimada y curva de tallas por sede."
+      },
+      {
+        "type": "li",
+        "text": "Atributos obligatorios y documentos técnicos requeridos."
+      },
+      {
+        "type": "li",
+        "text": "Fecha y lugar para la muestra o jornada de tallaje."
+      },
+      {
+        "type": "li",
+        "text": "Ciudades de entrega y condiciones para gestionar cambios."
+      },
+      {
+        "type": "p",
+        "text": "Agencias Nacionales puede cotizar botas de seguridad para mujer y otras referencias de calzado de trabajo con base en los riesgos, las cantidades y las tallas que defina tu empresa. Comparte la ficha de SST, las sedes y la curva estimada para revisar opciones sin reemplazar la evaluación técnica de la operación."
+      }
+    ]
+  },
+  {
     "slug": "dotacion-para-brigada-de-emergencias",
     "title": "Dotación para brigada de emergencias",
     "description": "Define la dotación para brigada de emergencias según riesgos, roles y sedes. Guía práctica para compras y SST con inventario, fichas y reposición.",
