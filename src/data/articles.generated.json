@@ -1,5 +1,238 @@
 [
   {
+    "slug": "trabajo-en-alturas-guia-epp",
+    "title": "Trabajo en alturas: guía de EPP",
+    "description": "Trabajo en alturas: define EPP y equipos por tarea, compatibilidad y soportes. Guía para Compras y SST con criterios de recepción, inspección y reposición.",
+    "excerpt": "Una compra para trabajo en alturas no debería empezar con una lista de arneses, eslingas y conectores. Primero hay que definir la tarea, el sistema de acceso, la medida de prevención o protección y las condiciones que debe resolver cada componente.",
+    "date": "27 ago 2026",
+    "dateISO": "2026-08-27",
+    "tag": "Tips",
+    "author": "Agencias Nacionales",
+    "image": "trabajo-en-alturas-guia-epp.webp",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Una compra para trabajo en alturas no debería empezar con una lista de arneses, eslingas y conectores. Primero hay que definir la tarea, el sistema de acceso, la medida de prevención o protección y las condiciones que debe resolver cada componente."
+      },
+      {
+        "type": "p",
+        "text": "Ese orden les permite a Compras y SST comparar ofertas equivalentes, pedir los soportes correctos y recibir equipos que funcionen como un sistema. También evita que una referencia se apruebe solo por precio, marca o una descripción comercial demasiado amplia."
+      },
+      {
+        "type": "h2",
+        "text": "Confirma dónde existe el riesgo de caída"
+      },
+      {
+        "type": "p",
+        "text": "La Resolución 4272 de 2021 define el trabajo en alturas como una actividad con suspensión o desplazamiento en la que el trabajador queda expuesto a un riesgo de caída mayor a 2,0 metros, medidos desde el plano de sus pies hasta el plano horizontal inferior más cercano. La misma resolución exige medidas de prevención y protección en alturas inferiores cuando el análisis identifica obstáculos, bordes, elementos salientes, sistemas energizados, máquinas u otras condiciones que puedan agravar una caída."
+      },
+      {
+        "type": "p",
+        "text": "Por eso la altura, por sí sola, no alcanza para preparar una compra. SST y el coordinador de trabajo en alturas deben ubicar cada tarea, revisar el entorno y dejar claro qué peligro se controlará. Compras necesita esa definición antes de solicitar referencias o cantidades."
+      },
+      {
+        "type": "li",
+        "text": "Lugar y altura de la tarea, incluidos los puntos de ingreso, desplazamiento y salida."
+      },
+      {
+        "type": "li",
+        "text": "Sistema de acceso previsto, como escalera, andamio, elevador de personal o acceso por cuerdas."
+      },
+      {
+        "type": "li",
+        "text": "Riesgos asociados: energía eléctrica, bordes, superficies calientes, corrosión, herramientas que puedan caer o tránsito de equipos."
+      },
+      {
+        "type": "li",
+        "text": "Número de personas que trabajarán y condiciones de rescate definidas para la actividad."
+      },
+      {
+        "type": "h2",
+        "text": "No conviertas el EPP en el único control"
+      },
+      {
+        "type": "p",
+        "text": "La norma colombiana trata los EPP para trabajo en alturas como el último control. Deben usarse junto con las medidas de prevención y protección que correspondan. Una cotización de equipos personales no reemplaza el diseño del acceso, la protección de bordes, la verificación del anclaje, el permiso de trabajo ni el procedimiento de rescate."
+      },
+      {
+        "type": "p",
+        "text": "Antes de pedir productos, documenta qué medida se adoptó para eliminar o reducir el riesgo y qué función cumplirá el sistema personal. Así evitas comprar un equipo correcto para una aplicación distinta a la que realmente existe en la sede."
+      },
+      {
+        "type": "h2",
+        "text": "Compra un sistema compatible, no piezas sueltas"
+      },
+      {
+        "type": "p",
+        "text": "El arnés, los conectores, la eslinga, la línea y el punto de anclaje no se evalúan como artículos independientes. La Resolución 4272 exige compatibilidad entre los componentes en tamaño, forma, materiales y diámetro. También aclara que, para las líneas de vida verticales, compatibilidad no significa que todo deba pertenecer a la misma marca."
+      },
+      {
+        "type": "p",
+        "text": "La ficha de compra debe identificar qué componentes se conectan, cuál es el sistema de acceso y qué condiciones impone la tarea. Si se cambia una referencia que ya estaba aprobada, el coordinador debe evaluar el sistema completo; cuando exista duda, corresponde gestionar la aprobación de una persona calificada."
+      },
+      {
+        "type": "h3",
+        "text": "Separa la protección contra caídas del EPP complementario"
+      },
+      {
+        "type": "p",
+        "text": "El sistema contra caídas se define por la forma en que la persona accede, se desplaza, se posiciona o puede ser detenida. El casco, el calzado, los guantes, la protección visual o la ropa de trabajo responden además a los peligros propios de la labor. No todos los equipos que trabajan a la misma altura necesitan el mismo conjunto."
+      },
+      {
+        "type": "p",
+        "text": "Un mantenimiento cerca de instalaciones energizadas, una limpieza de fachada y una intervención sobre una cubierta pueden compartir el riesgo de caída, pero tener exposiciones adicionales diferentes. La matriz debe registrar esas diferencias sin presentar un kit universal como solución."
+      },
+      {
+        "type": "h2",
+        "text": "Escribe una ficha que permita comparar ofertas"
+      },
+      {
+        "type": "p",
+        "text": "Una descripción como 'kit de alturas certificado' deja demasiadas decisiones abiertas. La ficha debe partir de la aplicación y traducirla en requisitos verificables. Evita copiar el texto de un catálogo si no sabes cómo se conecta con la tarea."
+      },
+      {
+        "type": "li",
+        "text": "Tarea, ubicación, sistema de acceso y función de cada componente dentro del sistema."
+      },
+      {
+        "type": "li",
+        "text": "Rango de uso o talla requerido, según la población que utilizará la referencia y la información del fabricante."
+      },
+      {
+        "type": "li",
+        "text": "Materiales y condiciones ambientales que pueden afectar el equipo, cuando apliquen."
+      },
+      {
+        "type": "li",
+        "text": "Compatibilidad requerida con los equipos, conectores y sistemas que la empresa ya tiene aprobados."
+      },
+      {
+        "type": "li",
+        "text": "Documentos que deben entregarse con el producto y criterios para aceptar o rechazar la recepción."
+      },
+      {
+        "type": "li",
+        "text": "Condiciones de almacenamiento, inspección, mantenimiento y retiro indicadas por el fabricante."
+      },
+      {
+        "type": "p",
+        "text": "La marca puede servir para identificar una referencia aprobada, pero no sustituye la descripción técnica. Si el proceso admite equivalencias, define qué debe demostrar una alternativa para que SST pueda evaluarla sin bajar el nivel de control."
+      },
+      {
+        "type": "h2",
+        "text": "Exige soportes que acompañen al equipo"
+      },
+      {
+        "type": "p",
+        "text": "Para los equipos y EPP que correspondan, la Resolución 4272 señala como soportes mínimos el registro de inspección preuso, la ficha técnica, la hoja de vida y el certificado de conformidad. También exige que las fichas técnicas, los manuales de usuario y los manuales de mantenimiento entregados por fabricantes o proveedores estén en español."
+      },
+      {
+        "type": "p",
+        "text": "Incluye estos documentos como entregables de la compra y revísalos antes de distribuir los equipos. Un certificado aislado no corrige una referencia distinta, un manual que no corresponde al modelo o una incompatibilidad entre componentes."
+      },
+      {
+        "type": "h3",
+        "text": "Organiza la trazabilidad desde la recepción"
+      },
+      {
+        "type": "p",
+        "text": "Registra la referencia recibida, su cantidad, talla o rango, y los identificadores que use el fabricante. Relaciona esa información con la hoja de vida y con la persona o sede a la que se asigna. Esta base evita que las inspecciones posteriores dependan de fotos sueltas, correos o la memoria del encargado."
+      },
+      {
+        "type": "h2",
+        "text": "Haz una prueba controlada antes de comprar en volumen"
+      },
+      {
+        "type": "p",
+        "text": "Cuando la compra cubre varias tallas, sedes o tareas, una muestra ayuda a comprobar ajuste, movilidad, identificación de componentes y lectura de etiquetas. La prueba debe hacerse bajo el procedimiento definido por SST y con la supervisión correspondiente. No es una improvisación en obra ni una autorización para usar un sistema todavía no aprobado."
+      },
+      {
+        "type": "p",
+        "text": "Documenta qué referencia se evaluó, con qué configuración y qué observaciones aparecieron. Si el proveedor cambia el modelo después de la muestra, trata el cambio como una nueva evaluación y no como una sustitución automática."
+      },
+      {
+        "type": "h2",
+        "text": "Recibe contra la ficha, el sistema y los documentos"
+      },
+      {
+        "type": "p",
+        "text": "La recepción física debería reunir a Almacén o Compras con SST cuando la criticidad lo amerite. Primero confirma cantidades y referencias. Luego revisa integridad, etiquetas, piezas incluidas, documentación y correspondencia con la muestra aprobada. Mantén separado cualquier equipo con daños, información incompleta o una referencia no autorizada."
+      },
+      {
+        "type": "li",
+        "text": "Verifica que la referencia y el rango recibido coincidan con la orden y la ficha aprobada."
+      },
+      {
+        "type": "li",
+        "text": "Revisa costuras, correas, conectores y piezas visibles sin poner el equipo en servicio."
+      },
+      {
+        "type": "li",
+        "text": "Relaciona manuales, certificados y hojas de vida con los productos que cubren."
+      },
+      {
+        "type": "li",
+        "text": "Documenta faltantes, daños o sustituciones antes de firmar la conformidad."
+      },
+      {
+        "type": "h2",
+        "text": "Planea inspección, almacenamiento y retiro"
+      },
+      {
+        "type": "p",
+        "text": "El costo de la compra no termina con la entrega. La empresa debe conservar los registros de revisión y mantenimiento. La Resolución 4272 establece que los equipos y sistemas se inspeccionen por lo menos una vez al año o con la periodicidad indicada por el fabricante, además de las inspecciones preuso que correspondan."
+      },
+      {
+        "type": "p",
+        "text": "No fijes una vida útil general para todos los arneses, eslingas o conectores. Usa las instrucciones del fabricante, el estado del equipo, su historial y las condiciones de exposición. Todo sistema o equipo sometido a una caída debe retirarse de operación y no puede volver a utilizarse hasta contar con el aval del fabricante o de una persona calificada."
+      },
+      {
+        "type": "p",
+        "text": "Define también un lugar de almacenamiento con acceso controlado y las condiciones recomendadas por el fabricante. Si el equipo circula entre sedes o contratistas, registra cada movimiento para no perder su hoja de vida."
+      },
+      {
+        "type": "h2",
+        "text": "Incluye el rescate en la planeación de recursos"
+      },
+      {
+        "type": "p",
+        "text": "Cuando el riesgo de caída hace parte de la operación, el plan de emergencias debe incluir un capítulo de trabajo en alturas y un plan de rescate acorde con la actividad. La resolución exige equipos de rescate certificados para la operación y personal capacitado. La compra del sistema personal no debería cerrarse sin confirmar cómo se atenderá una emergencia."
+      },
+      {
+        "type": "p",
+        "text": "Esto no significa agregar un kit genérico al pedido. El responsable del plan debe definir los recursos, su ubicación y las personas que los usarán. Compras puede entonces cotizar una necesidad concreta y conservar los soportes junto con el resto del sistema."
+      },
+      {
+        "type": "h2",
+        "text": "Información mínima para solicitar la cotización"
+      },
+      {
+        "type": "li",
+        "text": "Tareas, sedes, alturas, sistemas de acceso y riesgos asociados ya evaluados por SST."
+      },
+      {
+        "type": "li",
+        "text": "Configuración aprobada por el coordinador de trabajo en alturas y componentes con los que debe ser compatible."
+      },
+      {
+        "type": "li",
+        "text": "Cantidad de usuarios, rangos o tallas y necesidad de muestra para validación."
+      },
+      {
+        "type": "li",
+        "text": "Soportes requeridos, esquema de entrega por sede y condiciones de recepción."
+      },
+      {
+        "type": "li",
+        "text": "Criterios de almacenamiento, inspección, mantenimiento, reposición y retiro."
+      },
+      {
+        "type": "p",
+        "text": "Con esta información, Agencias Nacionales puede ayudarte a cotizar EPP, calzado y prendas de trabajo complementarias para los perfiles definidos por tu empresa. La selección del sistema contra caídas debe conservar la aprobación de SST, del coordinador de trabajo en alturas y de la persona calificada cuando corresponda."
+      }
+    ]
+  },
+  {
     "slug": "botas-de-seguridad-para-mujer",
     "title": "Botas de seguridad para mujer: guía",
     "description": "Guía para comprar botas de seguridad para mujer por riesgo, ajuste y talla. Reduce cambios con muestras, pruebas de uso y recepción por referencia.",
