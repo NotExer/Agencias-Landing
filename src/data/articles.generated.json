@@ -1,5 +1,286 @@
 [
   {
+    "slug": "guantes-de-seguridad-guia-compra",
+    "title": "Guantes de seguridad: guía de compra",
+    "description": "Guantes de seguridad: define la referencia por peligro, tarea, ajuste y consumo. Guía para Compras y SST con criterios de prueba, recepción y reposición.",
+    "excerpt": "Comprar guantes de seguridad para una empresa exige algo más que escoger entre nitrilo, cuero o tejido recubierto. La referencia debe responder al peligro, la tarea, el tiempo de uso y las condiciones reales de la operación.",
+    "date": "28 ago 2026",
+    "dateISO": "2026-08-28",
+    "tag": "Tips",
+    "author": "Agencias Nacionales",
+    "image": "guantes-de-seguridad-guia-compra.webp",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Comprar guantes de seguridad para una empresa exige algo más que escoger entre nitrilo, cuero o tejido recubierto. La referencia debe responder al peligro, la tarea, el tiempo de uso y las condiciones reales de la operación."
+      },
+      {
+        "type": "p",
+        "text": "Ese punto de partida les permite a Compras y SST comparar ofertas equivalentes, probar el ajuste antes de pedir volumen y definir una reposición que no dependa de urgencias. También evita que un mismo guante termine asignado a tareas con exposiciones distintas."
+      },
+      {
+        "type": "h2",
+        "text": "Empieza por el peligro, no por el material"
+      },
+      {
+        "type": "p",
+        "text": "En Colombia, el artículo 2.2.4.6.24 del Decreto 1072 de 2015 ubica los EPP como una medida complementaria dentro de la jerarquía de controles. Su selección debe corresponder a la identificación de peligros y a la evaluación y valoración de los riesgos. Por eso, comprar guantes no reemplaza la eliminación, la sustitución, los controles de ingeniería ni los controles administrativos que sean aplicables."
+      },
+      {
+        "type": "p",
+        "text": "Antes de pedir catálogos, SST debe describir qué puede afectar las manos y cómo ocurre la exposición. Una etiqueta amplia como 'riesgo mecánico' no basta para distinguir entre roce ocasional, manipulación continua de piezas abrasivas, contacto con bordes o una tarea que exige mucha sensibilidad en los dedos."
+      },
+      {
+        "type": "li",
+        "text": "Peligro identificado y posible consecuencia: abrasión, corte, punción, contacto químico, calor, frío, humedad u otra exposición evaluada por SST."
+      },
+      {
+        "type": "li",
+        "text": "Forma de contacto: salpicadura, inmersión, manipulación intermitente, agarre continuo o contacto accidental."
+      },
+      {
+        "type": "li",
+        "text": "Duración y frecuencia de la tarea durante el turno."
+      },
+      {
+        "type": "li",
+        "text": "Condiciones del entorno, como humedad, presencia de aceites, temperatura, suciedad y superficies de agarre."
+      },
+      {
+        "type": "h2",
+        "text": "Convierte la tarea en criterios de compra"
+      },
+      {
+        "type": "p",
+        "text": "Como referencia técnica, la norma estadounidense OSHA 1910.138 propone evaluar el desempeño de la protección de manos frente a la tarea, las condiciones presentes, la duración de uso y los peligros identificados. No es una obligación jurídica colombiana por sí sola, pero el criterio ayuda a redactar una solicitud de compra que pueda verificarse."
+      },
+      {
+        "type": "p",
+        "text": "Describe la acción concreta: levantar cajas, sujetar una herramienta, limpiar una superficie, manipular una pieza con bordes o dosificar una sustancia. Luego registra qué debe conservar la persona para trabajar bien, por ejemplo agarre, precisión, movilidad de la muñeca o compatibilidad con la manga de una prenda."
+      },
+      {
+        "type": "h3",
+        "text": "No agrupes tareas distintas bajo un solo cargo"
+      },
+      {
+        "type": "p",
+        "text": "Un técnico de mantenimiento puede ajustar piezas, lavar componentes y apoyar una intervención con calor en momentos distintos. El nombre del cargo no demuestra que una sola referencia cubra esas actividades. Separa las tareas y define si se necesita más de un tipo de guante, con reglas claras para cada uso."
+      },
+      {
+        "type": "h2",
+        "text": "Revisa la exposición antes de escoger la familia de guante"
+      },
+      {
+        "type": "h3",
+        "text": "Manipulación, abrasión y corte"
+      },
+      {
+        "type": "p",
+        "text": "Para labores mecánicas, especifica el nivel de desempeño que SST haya definido para la exposición real. Incluye el tipo de agarre, la destreza necesaria y las zonas de la mano que requieren cobertura. Un guante más grueso no es automáticamente la mejor opción si impide controlar la pieza o realizar el movimiento previsto."
+      },
+      {
+        "type": "p",
+        "text": "Carnaza, vaqueta, tejidos y recubrimientos ofrecen comportamientos diferentes. El nombre del material sirve para filtrar alternativas, pero la compra debe cerrarse con la ficha del modelo, sus resultados de ensayo aplicables y una prueba de uso controlada."
+      },
+      {
+        "type": "h3",
+        "text": "Sustancias químicas y tareas húmedas"
+      },
+      {
+        "type": "p",
+        "text": "Para contacto químico, una solicitud que diga 'guante de nitrilo' o 'guante de caucho' queda incompleta. Identifica la sustancia o mezcla, su concentración, la forma de contacto, la temperatura y el tiempo esperado. Revisa la hoja de datos de seguridad y pide al fabricante la información de compatibilidad de la referencia exacta."
+      },
+      {
+        "type": "p",
+        "text": "NIOSH advierte que algunos químicos pueden atravesar ciertos materiales de guante con rapidez. Una referencia adecuada para limpieza ligera no queda aprobada automáticamente para inmersión, contacto prolongado o una mezcla diferente. SST debe validar la barrera y definir cuándo retirar el guante."
+      },
+      {
+        "type": "h3",
+        "text": "Calor, soldadura y riesgos especiales"
+      },
+      {
+        "type": "p",
+        "text": "Las tareas con calor, soldadura, electricidad u otras exposiciones especiales necesitan una especificación propia. No asumas que un guante de cuero protege frente a cualquier fuente de calor ni que una descripción comercial como 'industrial' demuestra desempeño eléctrico. Solicita la evaluación y los requisitos escritos de SST antes de cotizar."
+      },
+      {
+        "type": "h2",
+        "text": "Lee la ficha técnica sin quedarte en el nombre comercial"
+      },
+      {
+        "type": "p",
+        "text": "Dos guantes que se anuncian con el mismo material pueden cambiar en espesor, recubrimiento, forro, puño, tallaje y desempeño. La ficha de compra debe identificar atributos que el equipo de recepción pueda revisar sin interpretar frases de mercadeo."
+      },
+      {
+        "type": "li",
+        "text": "Referencia exacta, fabricante y presentación ofrecida."
+      },
+      {
+        "type": "li",
+        "text": "Material de la base, recubrimiento, forro y zonas protegidas cuando correspondan."
+      },
+      {
+        "type": "li",
+        "text": "Tallas disponibles, longitud del puño y sistema de ajuste."
+      },
+      {
+        "type": "li",
+        "text": "Norma, versión y niveles de desempeño que SST haya exigido para ese riesgo, con soporte del modelo ofrecido."
+      },
+      {
+        "type": "li",
+        "text": "Instrucciones de uso, limpieza, almacenamiento, inspección y retiro entregadas por el fabricante."
+      },
+      {
+        "type": "p",
+        "text": "Una declaración general de cumplimiento no sustituye el soporte que corresponde a la referencia. Si el proveedor propone una equivalencia, compara los mismos atributos y no solo el material, el color o el precio."
+      },
+      {
+        "type": "h2",
+        "text": "Incluye ajuste y destreza en la evaluación"
+      },
+      {
+        "type": "p",
+        "text": "La talla correcta debe permitir el movimiento que exige la tarea sin dejar exceso de material en los dedos ni comprimir la mano. Pide la tabla de medidas de cada fabricante, porque una talla nominal puede cambiar entre modelos. Para una compra amplia, consolida la distribución por talla solo después de validar la referencia final."
+      },
+      {
+        "type": "p",
+        "text": "Comprueba además cómo se integra el guante con mangas, puños, ropa de protección y otros EPP. La combinación debe conservar la cobertura definida por SST y permitir que la persona se coloque y retire los elementos según el procedimiento de la empresa."
+      },
+      {
+        "type": "h2",
+        "text": "Haz una prueba controlada antes del pedido en volumen"
+      },
+      {
+        "type": "p",
+        "text": "Entrega muestras identificadas a un grupo pequeño de usuarios que represente las tareas y tallas. La prueba debe seguir el procedimiento seguro de la operación y limitarse a observar el desempeño dentro de condiciones ya controladas. Nunca expongas a una persona para comprobar hasta dónde resiste el guante."
+      },
+      {
+        "type": "li",
+        "text": "Ajuste en dedos, palma y muñeca durante los movimientos habituales."
+      },
+      {
+        "type": "li",
+        "text": "Agarre sobre las superficies reales, en las condiciones permitidas por el procedimiento."
+      },
+      {
+        "type": "li",
+        "text": "Destreza para accionar herramientas, controles o piezas sin modificar la forma segura de trabajar."
+      },
+      {
+        "type": "li",
+        "text": "Comodidad durante un periodo representativo, sin convertir la percepción del usuario en el único criterio."
+      },
+      {
+        "type": "li",
+        "text": "Estado del guante al terminar la prueba y facilidad para aplicar la inspección definida."
+      },
+      {
+        "type": "p",
+        "text": "Registra el modelo, la talla, la tarea, el tiempo observado y el resultado. Si cambia la referencia o su construcción, no des por válida la prueba anterior."
+      },
+      {
+        "type": "h2",
+        "text": "Calcula consumo y reposición por referencia"
+      },
+      {
+        "type": "p",
+        "text": "La cantidad no sale solo del número de trabajadores. Un guante desechable, uno de uso repetido y uno asignado a una tarea ocasional tienen patrones de consumo distintos. Separa las referencias y documenta cómo se estimó cada necesidad."
+      },
+      {
+        "type": "li",
+        "text": "Personas expuestas, turnos, sedes y frecuencia de la tarea."
+      },
+      {
+        "type": "li",
+        "text": "Consumo observado por jornada o por actividad cuando aplique."
+      },
+      {
+        "type": "li",
+        "text": "Condiciones de reutilización, limpieza o descarte indicadas por el fabricante y aprobadas por SST."
+      },
+      {
+        "type": "li",
+        "text": "Tiempo de entrega del proveedor y nivel de respaldo necesario para una referencia crítica."
+      },
+      {
+        "type": "li",
+        "text": "Causales de reposición por deterioro, contaminación, pérdida de desempeño o cambio de tarea."
+      },
+      {
+        "type": "p",
+        "text": "Evita fijar una vida útil única para todos los guantes. Usa la información del fabricante, la inspección, las condiciones de uso y los registros de consumo para ajustar la reposición sin extender el uso de una referencia deteriorada."
+      },
+      {
+        "type": "h2",
+        "text": "Recibe el pedido contra la muestra aprobada"
+      },
+      {
+        "type": "p",
+        "text": "En la recepción, compara el producto con la orden, la ficha y la muestra aprobada. Revisa cantidades, tallas, referencia, empaque, integridad y documentos. Si el fabricante usa lote o fecha para la trazabilidad, registra esos datos antes de distribuir."
+      },
+      {
+        "type": "p",
+        "text": "Mantén separados los guantes con daños, una referencia no autorizada, tallas diferentes o soportes incompletos. La urgencia de entrega no convierte una sustitución en equivalencia técnica."
+      },
+      {
+        "type": "h2",
+        "text": "Evita tres errores frecuentes de compra"
+      },
+      {
+        "type": "h3",
+        "text": "Pedir un guante industrial para toda la operación"
+      },
+      {
+        "type": "p",
+        "text": "La palabra 'industrial' no describe el peligro ni el desempeño. Crea referencias por tarea cuando cambien la exposición, el agarre, la cobertura o el tiempo de uso."
+      },
+      {
+        "type": "h3",
+        "text": "Elegir solo por el material"
+      },
+      {
+        "type": "p",
+        "text": "Nitrilo, carnaza, vaqueta o tejido recubierto no son especificaciones completas. El modelo, su construcción y los soportes de desempeño deben coincidir con el uso aprobado."
+      },
+      {
+        "type": "h3",
+        "text": "Comparar únicamente el precio por par"
+      },
+      {
+        "type": "p",
+        "text": "Un precio unitario bajo puede perder sentido si la referencia necesita cambios frecuentes, no cubre las tallas o falla la prueba de destreza. Compara el costo con el consumo esperado, la reposición, la documentación y el resultado de la muestra."
+      },
+      {
+        "type": "h2",
+        "text": "Información mínima para solicitar una cotización"
+      },
+      {
+        "type": "li",
+        "text": "Cargo, tarea, sede, peligro y forma de contacto ya evaluados por SST."
+      },
+      {
+        "type": "li",
+        "text": "Desempeño requerido, condiciones de uso y compatibilidad con otros EPP."
+      },
+      {
+        "type": "li",
+        "text": "Cantidad por talla, referencia y sede, con esquema de entregas."
+      },
+      {
+        "type": "li",
+        "text": "Documentos exigidos y criterios para aprobar la muestra y recibir el pedido."
+      },
+      {
+        "type": "li",
+        "text": "Condiciones de almacenamiento, consumo, inspección, reposición y retiro."
+      },
+      {
+        "type": "p",
+        "text": "Con esta información, Agencias Nacionales puede ayudarte a cotizar guantes de seguridad industrial por referencia, talla, cantidad y destino. La selección final debe conservar la evaluación de peligros, los requisitos y la aprobación del equipo de SST de tu empresa."
+      }
+    ]
+  },
+  {
     "slug": "trabajo-en-alturas-guia-epp",
     "title": "Trabajo en alturas: guía de EPP",
     "description": "Trabajo en alturas: define EPP y equipos por tarea, compatibilidad y soportes. Guía para Compras y SST con criterios de recepción, inspección y reposición.",
