@@ -1,8 +1,8 @@
 [
   {
     "slug": "casco-de-seguridad-guia-compra",
-    "title": "Casco de seguridad: guía de compra",
-    "description": "Casco de seguridad: elige tipo, clase, ajuste y accesorios según el riesgo. Guía para Compras y SST con criterios de prueba, recepción y reposición.",
+    "title": "Casco de seguridad: guía de compra para empresas en Colombia",
+    "description": "Casco de seguridad industrial: cómo elegir tipo, clase eléctrica, ajuste y accesorios según el riesgo. Guía práctica para Compras y SST con checklist, ficha comparable y criterios de recepción.",
     "excerpt": "Comprar un casco de seguridad para una empresa exige definir el riesgo que debe controlar, el tipo de impacto, la clase eléctrica, el ajuste y los accesorios compatibles antes de comparar precios.",
     "date": "31 ago 2026",
     "dateISO": "2026-08-31",
@@ -12,11 +12,23 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Comprar un casco de seguridad para una empresa exige definir el riesgo que debe controlar, el tipo de impacto, la clase eléctrica, el ajuste y los accesorios compatibles antes de comparar precios. La palabra 'industrial' por sí sola no demuestra que dos referencias ofrezcan el mismo desempeño."
+        "text": "Comprar un casco de seguridad para una empresa no empieza en el catálogo. Empieza por definir el riesgo que debe controlar: el tipo de impacto, la clase eléctrica, el ajuste y los accesorios compatibles. La palabra 'industrial' por sí sola no demuestra que dos referencias ofrezcan el mismo desempeño. Un precio bajo, además, puede esconder un casco que no corresponde a la tarea real del trabajador."
       },
       {
         "type": "p",
-        "text": "Cuando Compras recibe una ficha clara de SST, puede solicitar ofertas equivalentes, revisar los documentos del modelo exacto y recibir cada lote contra una muestra aprobada. El proceso también deja criterios concretos para inspeccionar, almacenar y retirar el casco durante su uso."
+        "text": "Esta guía explica, paso a paso, cómo Compras y SST pueden convertir un requisito de EPP cabeza en una ficha comparable. También muestra cómo revisar el ajuste con una muestra real, qué evidencia pedir al proveedor y cómo definir inspección, almacenamiento y retiro. Si tu empresa está estructurando su programa completo de dotación, puedes complementar este contenido con nuestra guía de [dotaciones empresariales en Colombia](/dotaciones-empresariales-colombia/)."
+      },
+      {
+        "type": "h2",
+        "text": "Respuesta rápida: qué casco de seguridad comprar"
+      },
+      {
+        "type": "p",
+        "text": "No existe un único 'mejor casco de seguridad'. Existe el casco correcto para cada riesgo. Antes de cotizar, SST debe definir tres datos: el tipo de impacto que debe reducir (golpes desde arriba o también laterales), la clase eléctrica requerida y los accesorios que debe aceptar, como protección auditiva, pantalla facial o barbuquejo. Con esos tres datos, Compras puede pedir ofertas equivalentes y comparar documentación real, no solo el precio."
+      },
+      {
+        "type": "p",
+        "text": "**El casco de seguridad** es un elemento de protección personal diseñado para reducir la fuerza de un impacto sobre la cabeza y, en algunos modelos, aislar de contacto con conductores energizados. No es un accesorio genérico: su desempeño depende del tipo, la clase eléctrica y la suspensión con que fue certificado."
       },
       {
         "type": "h2",
@@ -24,11 +36,15 @@
       },
       {
         "type": "p",
-        "text": "En Colombia, el artículo 2.2.4.6.24 del Decreto 1072 de 2015 indica que los EPP se usan como complemento de las demás medidas de control y de acuerdo con la identificación de peligros y la evaluación y valoración de los riesgos. El casco no reemplaza controles en la fuente, medidas de ingeniería, procedimientos seguros ni demarcaciones que correspondan."
+        "text": "En Colombia, el artículo 2.2.4.6.24 del [Decreto 1072 de 2015](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=62506) indica que los EPP se usan como complemento de las demás medidas de control. Deben elegirse de acuerdo con la identificación de peligros y la evaluación de riesgos. Por eso, el casco no reemplaza controles en la fuente, medidas de ingeniería, procedimientos seguros ni demarcaciones que correspondan."
       },
       {
         "type": "p",
-        "text": "La Resolución 2400 de 1979 también establece, en sus artículos 176 y 177, que el equipo suministrado debe ser adecuado a la naturaleza del riesgo. Para protección de la cabeza menciona, entre otros escenarios, la exposición a golpes y a posibles caídas de materiales. La obligación general no convierte una referencia en adecuada para cualquier labor: SST debe bajar el análisis al puesto y a la tarea."
+        "text": "La [Resolución 2400 de 1979](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=53565) también establece, en sus artículos 176 y 177, que el equipo suministrado debe ser adecuado a la naturaleza del riesgo. Para protección de la cabeza menciona, entre otros escenarios, la exposición a golpes y a posibles caídas de materiales. Sin embargo, esta obligación general no convierte una referencia en adecuada para cualquier labor. SST debe bajar el análisis al puesto y a la tarea, tal como se recomienda también para otras líneas de EPP en nuestra [guía de EPP para Colombia](/epp-colombia/)."
+      },
+      {
+        "type": "h3",
+        "text": "Variables que debe recoger la matriz de peligros"
       },
       {
         "type": "li",
@@ -40,7 +56,7 @@
       },
       {
         "type": "li",
-        "text": "Posiciones de trabajo, desplazamientos y movimientos que puedan desprender el casco."
+        "text": "Posiciones de trabajo, desplazamientos y movimientos que puedan desprender el casco, por ejemplo en [trabajo en alturas](/articulos-del-blog/trabajo-en-alturas-guia-epp/)."
       },
       {
         "type": "li",
@@ -48,23 +64,27 @@
       },
       {
         "type": "h2",
-        "text": "Distingue el tipo de impacto y la clase eléctrica"
+        "text": "Tipo I vs. Tipo II: distingue el tipo de impacto"
       },
       {
         "type": "p",
-        "text": "Como referencia técnica, el boletín de OSHA sobre protección de cabeza publicado en 2024 distingue dos tipos de casco por impacto. El Tipo I está diseñado para reducir la fuerza de golpes en la parte superior de la cabeza. El Tipo II contempla golpes en la parte superior y en los lados. Esta clasificación ayuda a formular la compra, pero OSHA no es una obligación jurídica colombiana por sí sola."
+        "text": "Como referencia técnica complementaria, el boletín de OSHA sobre protección de cabeza distingue dos tipos de casco de seguridad por impacto. **El casco Tipo I** es el diseñado para reducir la fuerza de golpes recibidos en la parte superior de la cabeza. **El casco Tipo II**, en cambio, contempla golpes en la parte superior y también en los lados. Esto lo hace más adecuado para operaciones con riesgo de impacto lateral o de tránsito en espacios reducidos."
       },
       {
         "type": "p",
-        "text": "La misma referencia separa las clases eléctricas G, E y C. Las clases G y E corresponden a niveles diferentes de protección frente al contacto con conductores, mientras que la clase C no está destinada a proteger frente a peligros eléctricos. SST debe escoger la clase a partir de la exposición evaluada y pedir el soporte aplicable al modelo, no basarse en el color ni en una descripción comercial."
+        "text": "Esta clasificación está alineada conceptualmente con normas como ANSI Z89.1 en Estados Unidos, y ayuda a formular la compra. Sin embargo, OSHA no es una obligación jurídica colombiana por sí sola: debe usarse junto con los requisitos nacionales ya citados."
       },
       {
         "type": "h3",
-        "text": "No uses la palabra dieléctrico como ficha técnica"
+        "text": "Clases eléctricas G, E y C: por qué importan en un casco dieléctrico"
       },
       {
         "type": "p",
-        "text": "Una oferta que solo diga 'casco dieléctrico' deja preguntas abiertas. Compras necesita la norma declarada, su edición, la clase, la referencia exacta y el documento que respalda ese desempeño. También debe confirmar si la configuración ofrecida tiene ventilación, accesorios o modificaciones que cambien las condiciones de uso indicadas por el fabricante."
+        "text": "La misma referencia técnica separa las clases eléctricas G, E y C. **Un casco dieléctrico** es aquel diseñado para reducir el riesgo de contacto eléctrico con conductores, y su nivel de protección depende de la clase certificada. Las clases G y E corresponden a niveles diferentes de protección frente al contacto con conductores, mientras que la clase C no está destinada a proteger frente a peligros eléctricos. Por eso, SST debe escoger la clase a partir de la exposición evaluada y pedir el soporte aplicable al modelo exacto, no basarse en el color del casco ni en una descripción comercial genérica."
+      },
+      {
+        "type": "p",
+        "text": "Una oferta que solo diga 'casco dieléctrico' deja preguntas abiertas. Compras necesita la norma declarada, su edición, la clase eléctrica, la referencia exacta y el documento que respalda ese desempeño. También debe confirmar si la configuración ofrecida tiene ventilación u otras modificaciones, porque un casco ventilado suele perder la protección dieléctrica del modelo cerrado."
       },
       {
         "type": "h2",
@@ -72,7 +92,7 @@
       },
       {
         "type": "p",
-        "text": "La solicitud de cotización debe permitir que dos proveedores respondan sobre el mismo alcance. Evita copiar una descripción de catálogo sin revisar si corresponde al riesgo. SST define el desempeño y Compras organiza los atributos que se podrán verificar en la oferta y en la recepción."
+        "text": "La solicitud de cotización debe permitir que dos proveedores respondan sobre el mismo alcance. Evita copiar una descripción de catálogo sin revisar si corresponde al riesgo real del puesto. En ese sentido, SST define el desempeño requerido y Compras organiza los atributos que se podrán verificar en la oferta y en la recepción del lote."
       },
       {
         "type": "li",
@@ -100,15 +120,39 @@
       },
       {
         "type": "h2",
+        "text": "Ejemplo práctico: cómo decidir en 3 pasos"
+      },
+      {
+        "type": "p",
+        "text": "Ejemplo: una empresa de construcción con 40 operarios necesita renovar los cascos de la cuadrilla. Parte del equipo trabaja en estructura metálica con riesgo de golpe lateral, y un grupo pequeño maniobra cerca de tableros eléctricos de baja tensión. A continuación, un método simple para no comprar una sola referencia genérica."
+      },
+      {
+        "type": "li",
+        "text": "Paso 1. Clasificar por tarea: quién enfrenta solo caída de objetos (Tipo I) y quién tiene riesgo lateral o eléctrico (Tipo II y clase G o E)."
+      },
+      {
+        "type": "li",
+        "text": "Paso 2. Definir accesorios por grupo: barbuquejo para alturas, protección auditiva para corte, y ninguna ranura extra cerca de tableros eléctricos."
+      },
+      {
+        "type": "li",
+        "text": "Paso 3. Pedir ficha comparable a dos o tres proveedores, probar una muestra por grupo de riesgo y solo entonces cotizar el volumen completo."
+      },
+      {
+        "type": "p",
+        "text": "Como resultado, la empresa compra al menos dos referencias distintas en lugar de una sola 'talla única'. El mismo método aplica a operaciones más pequeñas: cambia el número de referencias, no el orden de los pasos."
+      },
+      {
+        "type": "h2",
         "text": "Revisa el ajuste con una muestra real"
       },
       {
         "type": "p",
-        "text": "El casco debe quedar estable sin generar puntos de presión que lleven a aflojarlo durante la jornada. Una muestra permite revisar el rango de ajuste, la suspensión, el contacto de la banda, la estabilidad al agacharse y la facilidad de graduación con los demás EPP puestos."
+        "text": "El casco debe quedar estable sin generar puntos de presión que lleven a aflojarlo durante la jornada. Una muestra permite revisar el rango de ajuste, la suspensión, el contacto de la banda y la estabilidad al agacharse. Además, permite comprobar la facilidad de graduación con los demás EPP puestos, un criterio que aplica igual al evaluar [guantes de seguridad](/articulos-del-blog/guantes-de-seguridad-guia-compra/) o cualquier otro elemento de protección personal."
       },
       {
         "type": "p",
-        "text": "Incluye personas con diferentes medidas y formas de cabeza dentro de la prueba. Registra la referencia, la configuración y el resultado. Si una talla o suspensión no se ajusta bien a parte del equipo, la solución puede requerir otra opción compatible en lugar de forzar una única referencia para todos."
+        "text": "Incluye personas con diferentes medidas y formas de cabeza dentro de la prueba. Registra la referencia, la configuración y el resultado. Si una talla o suspensión no se ajusta bien a parte del equipo, la solución puede requerir otra opción compatible en lugar de forzar una única referencia para todos los trabajadores."
       },
       {
         "type": "h3",
@@ -116,7 +160,7 @@
       },
       {
         "type": "p",
-        "text": "El barbuquejo puede ayudar a mantener el casco en su sitio cuando la postura, el movimiento o una posible caída pueden desprenderlo. Debe ser compatible con el modelo y corresponder a la evaluación de la tarea. No agregues una correa genérica ni perfores el casquete para instalarla."
+        "text": "**El barbuquejo** es la correa que ayuda a mantener el casco en su sitio cuando la postura, el movimiento o una posible caída pueden desprenderlo. Debe ser compatible con el modelo y corresponder a la evaluación de la tarea. Por eso, no se debe agregar una correa genérica ni perforar el casquete para instalarla: hazlo siempre con el accesorio y el método autorizados por el fabricante."
       },
       {
         "type": "h2",
@@ -124,7 +168,7 @@
       },
       {
         "type": "p",
-        "text": "Protección auditiva tipo copa, pantalla facial, gafas, lámpara o elementos de comunicación pueden interferir con la suspensión, el ajuste o el desempeño del conjunto. Una ranura lateral parecida no garantiza que un accesorio sea compatible. Pide al fabricante o proveedor la combinación aprobada y cotiza el sistema completo cuando la operación lo requiera."
+        "text": "Protección auditiva tipo copa, pantalla facial, gafas, lámpara o elementos de comunicación pueden interferir con la suspensión, el ajuste o el desempeño del conjunto. Una ranura lateral parecida no garantiza que un accesorio sea compatible. Por eso, pide al fabricante o proveedor la combinación aprobada y cotiza el sistema completo cuando la operación lo requiera. Nuestro catálogo de [EPP](/categoria/epp/) permite revisar referencias que suelen combinarse con casco industrial."
       },
       {
         "type": "p",
@@ -136,11 +180,11 @@
       },
       {
         "type": "p",
-        "text": "La identificación por color o logo puede ser útil para reconocer áreas y roles, pero no debe alterar el casquete. La ficha de 2024 del Instituto Nacional de Seguridad y Salud en el Trabajo de España advierte que pinturas, solventes, adhesivos y accesorios no recomendados pueden afectar el casco. Úsala como referencia técnica y confirma el método de marcación permitido para el modelo exacto."
+        "text": "La identificación por color o logo puede ser útil para reconocer áreas y roles, pero no debe alterar el casquete. La ficha de 2024 del Instituto Nacional de Seguridad y Salud en el Trabajo de España advierte que pinturas, solventes, adhesivos y accesorios no recomendados pueden afectar el desempeño del casco. Úsala como referencia técnica y confirma el método de marcación permitido para el modelo exacto antes de aprobar un diseño."
       },
       {
         "type": "p",
-        "text": "Incluye en la muestra la ubicación, tamaño, material y proceso de aplicación del logo. Así, el proveedor no decide la marcación después de adjudicar y el equipo de recepción puede compararla con lo aprobado sin improvisar."
+        "text": "Incluye en la muestra la ubicación, tamaño, material y proceso de aplicación del logo. Así, el proveedor no decide la marcación después de adjudicar, y el equipo de recepción puede compararla con lo aprobado sin improvisar."
       },
       {
         "type": "h2",
@@ -148,7 +192,7 @@
       },
       {
         "type": "p",
-        "text": "El nombre de una norma en la cotización no basta. Solicita documentos donde aparezcan el fabricante, la referencia, la clasificación y el alcance que necesitas. Revisa que los datos del certificado, la ficha y el marcado del casco correspondan entre sí. Si el documento cubre otra familia o una configuración distinta, pide aclaración antes de evaluar el precio."
+        "text": "El nombre de una norma en la cotización no basta. Solicita documentos donde aparezcan el fabricante, la referencia, la clasificación y el alcance que necesitas. Revisa, además, que los datos del certificado, la ficha técnica y el marcado del casco correspondan entre sí. Si el documento cubre otra familia de producto o una configuración distinta, pide aclaración antes de evaluar el precio."
       },
       {
         "type": "li",
@@ -172,11 +216,11 @@
       },
       {
         "type": "p",
-        "text": "Una prueba controlada no certifica el casco ni reemplaza los ensayos. Sirve para detectar problemas de ajuste, estabilidad, compatibilidad y uso diario antes de comprar en volumen. Define tareas, duración, participantes y preguntas de evaluación con SST."
+        "text": "Una prueba controlada no certifica el casco ni reemplaza los ensayos de laboratorio. Sirve para detectar problemas de ajuste, estabilidad, compatibilidad y uso diario antes de comprar en volumen. Define tareas, duración, participantes y preguntas de evaluación junto con SST."
       },
       {
         "type": "p",
-        "text": "Registra si el casco permanece ajustado, si crea presión, si limita la visión, si choca con otros EPP y si puede graduarse con facilidad. Cualquier cambio de modelo, suspensión o accesorio después de la prueba debe volver a revisarse; no apruebes una muestra y recibas otra configuración."
+        "text": "Registra si el casco permanece ajustado, si crea presión, si limita la visión y si choca con otros EPP. De hecho, cualquier cambio de modelo, suspensión o accesorio después de la prueba debe volver a revisarse; no apruebes una muestra y recibas después una configuración distinta."
       },
       {
         "type": "h2",
@@ -184,7 +228,7 @@
       },
       {
         "type": "p",
-        "text": "La recepción debe confirmar más que cantidad y color. Separa una muestra del lote, revisa el estado del empaque y compara casquete, suspensión, barbuquejo, accesorios y marcados con la referencia aprobada. Documenta diferencias antes de distribuir."
+        "text": "La recepción debe confirmar más que cantidad y color. Separa una muestra del lote, revisa el estado del empaque y compara casquete, suspensión, barbuquejo, accesorios y marcados con la referencia aprobada. Documenta cualquier diferencia antes de distribuir el casco a los trabajadores."
       },
       {
         "type": "li",
@@ -212,7 +256,7 @@
       },
       {
         "type": "p",
-        "text": "OSHA recomienda revisar el casquete, la suspensión, el barbuquejo y los accesorios; seguir las indicaciones del fabricante sobre vida útil; y retirar el casco después de un impacto importante, aunque el daño no sea visible. También aconseja almacenarlo limpio y seco, lejos de luz solar directa, temperaturas extremas y sustancias que puedan degradarlo. Estas pautas son una referencia técnica externa y deben aplicarse junto con los requisitos colombianos y el manual del modelo."
+        "text": "OSHA recomienda revisar el casquete, la suspensión, el barbuquejo y los accesorios, y seguir las indicaciones del fabricante sobre vida útil. También recomienda retirar el casco después de un impacto importante, aunque el daño no sea visible. Además, aconseja almacenarlo limpio y seco, lejos de luz solar directa, temperaturas extremas y sustancias que lo degraden. Estas pautas son referencia técnica externa y deben aplicarse junto con los requisitos colombianos y el manual del modelo, con una periodicidad similar a la que recomendamos en [cada cuánto renovar uniformes, calzado y EPP en la empresa](/articulos-del-blog/cada-cuanto-renovar-uniformes-calzado-epp-empresa/)."
       },
       {
         "type": "p",
@@ -220,11 +264,11 @@
       },
       {
         "type": "h3",
-        "text": "No fijes una fecha única para todos los cascos"
+        "text": "No fijes una fecha única de reposición para todos los cascos"
       },
       {
         "type": "p",
-        "text": "La reposición no debe depender de una regla genérica copiada de otro modelo. Exposición al sol, químicos, golpes, frecuencia de uso, condiciones de almacenamiento y deterioro de la suspensión pueden cambiar el momento de retiro. Usa el manual del fabricante y los hallazgos de inspección para definirlo."
+        "text": "La reposición no debe depender de una regla genérica copiada de otro modelo. Exposición al sol, químicos, golpes, frecuencia de uso, condiciones de almacenamiento y deterioro de la suspensión pueden cambiar el momento de retiro. Por eso, usa el manual del fabricante y los hallazgos de inspección para definirlo, en lugar de una fecha fija para todo el inventario."
       },
       {
         "type": "h2",
@@ -236,15 +280,43 @@
       },
       {
         "type": "li",
-        "text": "Elegir por color, precio o número de puntos de suspensión sin verificar tipo, clase y documentos."
+        "text": "Elegir por color, precio o número de puntos de suspensión sin verificar tipo de impacto, clase eléctrica y documentos de soporte."
       },
       {
         "type": "li",
-        "text": "Mezclar casquetes, suspensiones, barbuquejos y protectores de referencias que no han sido aprobadas como conjunto."
+        "text": "Mezclar casquetes, suspensiones, barbuquejos y protectores de referencias que no han sido aprobadas como conjunto por el fabricante."
       },
       {
         "type": "li",
-        "text": "Distribuir el lote antes de revisar marcados, estado físico, ajuste y coincidencia con la muestra."
+        "text": "Distribuir el lote antes de revisar marcados, estado físico, ajuste y coincidencia con la muestra aprobada."
+      },
+      {
+        "type": "h2",
+        "text": "Preguntas frecuentes sobre la compra de cascos de seguridad"
+      },
+      {
+        "type": "h3",
+        "text": "¿Cuál es la diferencia entre un casco Tipo I y uno Tipo II?"
+      },
+      {
+        "type": "p",
+        "text": "El Tipo I reduce la fuerza de golpes en la parte superior de la cabeza. El Tipo II añade protección frente a golpes laterales. Por eso, se prefiere en operaciones con riesgo de impacto desde los costados, como espacios confinados o tránsito entre estructuras."
+      },
+      {
+        "type": "h3",
+        "text": "¿Todo casco dieléctrico sirve para trabajo eléctrico?"
+      },
+      {
+        "type": "p",
+        "text": "No. La palabra 'dieléctrico' no es una ficha técnica. Hay que confirmar la clase eléctrica (G o E), la norma declarada, su edición y el documento del fabricante que respalda esa referencia exacta antes de asignarlo a una tarea con riesgo eléctrico."
+      },
+      {
+        "type": "h3",
+        "text": "¿Cada cuánto se debe cambiar un casco industrial en Colombia?"
+      },
+      {
+        "type": "p",
+        "text": "No hay una fecha única válida para todos los modelos. Depende del manual del fabricante, la frecuencia de uso, la exposición ambiental y los hallazgos de inspección. Sin embargo, un casco debe retirarse siempre después de un impacto importante, aunque no muestre daño visible."
       },
       {
         "type": "h2",
@@ -252,18 +324,18 @@
       },
       {
         "type": "p",
-        "text": "Comparte con el proveedor la matriz de peligros aplicable, el tipo y la clase definidos por SST, las referencias de accesorios, el método autorizado de marcación, las cantidades por sede, el lugar de entrega y los documentos exigidos. Añade si necesitas muestras, acompañamiento para tallaje o entregas parciales."
+        "text": "Comparte con el proveedor la matriz de peligros aplicable, el tipo y la clase definidos por SST, y las referencias de accesorios. Añade también el método autorizado de marcación, las cantidades por sede, el lugar de entrega y los documentos exigidos. Por último, indica si necesitas muestras, acompañamiento para tallaje o entregas parciales."
       },
       {
         "type": "p",
-        "text": "Si tu empresa necesita cotizar cascos de seguridad junto con protección visual, auditiva, uniformes o calzado de trabajo, Agencias Nacionales puede organizar la propuesta por referencia, cantidad y ciudad de entrega. La aprobación técnica debe mantenerse en manos de SST y sustentarse en los riesgos, los requisitos vigentes y la documentación del fabricante."
+        "text": "Si tu empresa necesita cotizar cascos de seguridad junto con protección visual, auditiva, uniformes o calzado de trabajo, Agencias Nacionales puede organizar la propuesta por referencia, cantidad y ciudad de entrega. Esto incluye operaciones con [dotación empresarial en Medellín](/dotacion-empresarial-medellin/) o cobertura nacional. Revisa también nuestro catálogo de [calzado de trabajo](/categoria/calzado-de-trabajo/) y de [uniformes de trabajo](/categoria/uniformes-de-trabajo/) si estás estructurando la dotación completa del año. Complementa la evaluación de riesgo con nuestra guía para [elegir calzado de trabajo según el riesgo de la operación](/articulos-del-blog/como-elegir-calzado-de-trabajo-segun-riesgo-operacion/). En cualquier caso, la aprobación técnica debe mantenerse siempre en manos de SST y sustentarse en los riesgos, los requisitos vigentes y la documentación del fabricante."
       }
     ]
   },
   {
     "slug": "guantes-de-seguridad-guia-compra",
-    "title": "Guantes de seguridad: guía de compra",
-    "description": "Guantes de seguridad: define la referencia por peligro, tarea, ajuste y consumo. Guía para Compras y SST con criterios de prueba, recepción y reposición.",
+    "title": "Guantes de seguridad: guía de compra para Colombia (criterios, normas y checklist)",
+    "description": "Guía de compra de guantes de seguridad para empresas en Colombia: cómo elegir por peligro (mecánico, químico, térmico, corte), qué exige el Decreto 1072 y la Resolución 2400, y checklist para Compras y SST.",
     "excerpt": "Comprar guantes de seguridad para una empresa exige algo más que escoger entre nitrilo, cuero o tejido recubierto. La referencia debe responder al peligro, la tarea, el tiempo de uso y las condiciones reales de la operación.",
     "date": "28 ago 2026",
     "dateISO": "2026-08-28",
@@ -273,23 +345,27 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Comprar guantes de seguridad para una empresa exige algo más que escoger entre nitrilo, cuero o tejido recubierto. La referencia debe responder al peligro, la tarea, el tiempo de uso y las condiciones reales de la operación."
+        "text": "Comprar guantes de seguridad para una empresa exige algo más que escoger entre nitrilo, cuero o tejido recubierto. La referencia correcta responde al peligro, la tarea y el tiempo de exposición. No responde al nombre comercial del producto."
       },
       {
         "type": "p",
-        "text": "Ese punto de partida les permite a Compras y SST comparar ofertas equivalentes, probar el ajuste antes de pedir volumen y definir una reposición que no dependa de urgencias. También evita que un mismo guante termine asignado a tareas con exposiciones distintas."
+        "text": "Esta guía está pensada para equipos de Compras y de SST. Verás qué preguntar antes de cotizar y qué exigir en la ficha técnica. También cómo probar el ajuste antes de pedir volumen y cómo calcular la reposición sin depender de urgencias. Complementa esta guía con [EPP en Colombia](/epp-colombia/) y el catálogo de [dotaciones empresariales](/dotaciones-empresariales-colombia/)."
       },
       {
         "type": "h2",
-        "text": "Empieza por el peligro, no por el material"
+        "text": "¿Qué es un guante de seguridad y por qué empezar por el peligro, no por el material?"
       },
       {
         "type": "p",
-        "text": "En Colombia, el artículo 2.2.4.6.24 del Decreto 1072 de 2015 ubica los EPP como una medida complementaria dentro de la jerarquía de controles. Su selección debe corresponder a la identificación de peligros y a la evaluación y valoración de los riesgos. Por eso, comprar guantes no reemplaza la eliminación, la sustitución, los controles de ingeniería ni los controles administrativos que sean aplicables."
+        "text": "**Un guante de seguridad** (o guante de protección industrial) es un elemento de protección personal (EPP). Su función es reducir la exposición de las manos a un peligro específico: corte, abrasión, punción, contacto químico, calor, frío o riesgo eléctrico. La palabra clave es 'específico'. No existe un guante universal que resuelva todas las exposiciones de una operación."
       },
       {
         "type": "p",
-        "text": "Antes de pedir catálogos, SST debe describir qué puede afectar las manos y cómo ocurre la exposición. Una etiqueta amplia como 'riesgo mecánico' no basta para distinguir entre roce ocasional, manipulación continua de piezas abrasivas, contacto con bordes o una tarea que exige mucha sensibilidad en los dedos."
+        "text": "En Colombia, el artículo 2.2.4.6.24 del [Decreto 1072 de 2015](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=62506) ubica los EPP como una medida complementaria en la jerarquía de controles. La [Resolución 2400 de 1979](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=53565) —aunque anterior— sigue siendo referencia general sobre suministro y uso de EPP. En ambos casos, la selección del guante debe corresponder a la evaluación de riesgos que haga SST. Por eso, comprar guantes no reemplaza la eliminación, la sustitución ni los controles de ingeniería aplicables antes del EPP."
+      },
+      {
+        "type": "p",
+        "text": "Antes de pedir catálogos, SST debe describir qué puede afectar las manos y cómo ocurre la exposición. Una etiqueta amplia como 'riesgo mecánico' no basta. No distingue entre roce ocasional y manipulación continua de piezas abrasivas. Tampoco distingue el contacto con bordes filosos de una tarea que exige mucha sensibilidad en los dedos."
       },
       {
         "type": "li",
@@ -309,15 +385,99 @@
       },
       {
         "type": "h2",
-        "text": "Convierte la tarea en criterios de compra"
+        "text": "Tipos de riesgo y niveles de protección: mecánico, químico, térmico y corte"
       },
       {
         "type": "p",
-        "text": "Como referencia técnica, la norma estadounidense OSHA 1910.138 propone evaluar el desempeño de la protección de manos frente a la tarea, las condiciones presentes, la duración de uso y los peligros identificados. No es una obligación jurídica colombiana por sí sola, pero el criterio ayuda a redactar una solicitud de compra que pueda verificarse."
+        "text": "Además de la normativa colombiana, existen estándares técnicos internacionales de uso común. Describen el desempeño de un guante frente a un peligro concreto. La norma europea EN 388 clasifica resistencia a abrasión, corte, rasgado y punción. El estándar ANSI/ISEA 105 clasifica niveles de resistencia al corte. Ninguno reemplaza la normativa colombiana, pero sirven como lenguaje técnico común para comparar fichas."
+      },
+      {
+        "type": "h3",
+        "text": "Comparación rápida por tipo de riesgo"
       },
       {
         "type": "p",
-        "text": "Describe la acción concreta: levantar cajas, sujetar una herramienta, limpiar una superficie, manipular una pieza con bordes o dosificar una sustancia. Luego registra qué debe conservar la persona para trabajar bien, por ejemplo agarre, precisión, movilidad de la muñeca o compatibilidad con la manga de una prenda."
+        "text": "Antes de cotizar, ubica la tarea en esta comparación general. Es un punto de partida, no un reemplazo de la evaluación formal de SST ni de la ficha técnica del modelo exacto."
+      },
+      {
+        "type": "li",
+        "text": "Riesgo mecánico (abrasión, corte, punción): prioriza materiales resistentes a fricción; valida el nivel bajo EN 388 o ANSI/ISEA 105 si el proveedor lo reporta."
+      },
+      {
+        "type": "li",
+        "text": "Riesgo químico (salpicadura, inmersión): prioriza la barrera frente a la sustancia exacta, no solo el material; exige compatibilidad química de la referencia puntual."
+      },
+      {
+        "type": "li",
+        "text": "Riesgo térmico (calor, soldadura, frío): prioriza resistencia a la fuente específica de temperatura; no asumas protección eléctrica por el nombre 'industrial'."
+      },
+      {
+        "type": "li",
+        "text": "Riesgo por corte especializado (vidrio, chapa metálica): prioriza el nivel de corte certificado y la cobertura de dedos y palma; combina con procedimiento de manipulación segura."
+      },
+      {
+        "type": "h3",
+        "text": "Riesgo mecánico: manipulación, abrasión y corte"
+      },
+      {
+        "type": "p",
+        "text": "**El guante anticorte** es una referencia diseñada para resistir bordes filosos o herramientas afiladas. Se clasifica en niveles de resistencia según normas como EN 388 o ANSI/ISEA 105. Especifica el nivel que SST haya definido para la exposición real, junto con el tipo de agarre y las zonas de cobertura. Un guante más grueso no es automáticamente mejor: puede impedir controlar la pieza."
+      },
+      {
+        "type": "p",
+        "text": "Carnaza, vaqueta, tejidos y recubrimientos se comportan distinto frente a la abrasión y el corte. El nombre del material filtra alternativas. Sin embargo, la compra debe cerrarse con la ficha técnica del modelo exacto y una prueba de uso controlada."
+      },
+      {
+        "type": "h3",
+        "text": "Riesgo químico: sustancias y tareas húmedas"
+      },
+      {
+        "type": "p",
+        "text": "Para contacto químico, una solicitud que diga 'guante de nitrilo' queda incompleta. Identifica la sustancia, su concentración, la forma de contacto y el tiempo esperado de exposición. Además, revisa la hoja de datos de seguridad (SDS) y pide al fabricante la compatibilidad química de la referencia exacta."
+      },
+      {
+        "type": "p",
+        "text": "**La permeación química** es el proceso por el cual una sustancia atraviesa el material del guante a nivel molecular, incluso sin daño visible. NIOSH advierte que algunos químicos pueden permear ciertos materiales con rapidez. Como resultado, una referencia adecuada para limpieza ligera no queda aprobada automáticamente para inmersión o contacto prolongado. SST debe validar la barrera química y definir cuándo retirar el guante."
+      },
+      {
+        "type": "h3",
+        "text": "Riesgo térmico: calor, soldadura y exposiciones especiales"
+      },
+      {
+        "type": "p",
+        "text": "Las tareas con calor, soldadura o electricidad necesitan una especificación propia. No asumas que un guante de cuero protege frente a cualquier fuente de calor, ni que 'industrial' demuestra desempeño térmico o eléctrico. Exige al proveedor el respaldo técnico específico para esa exposición."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo elegir el guante correcto en 3 pasos"
+      },
+      {
+        "type": "p",
+        "text": "Cuando el equipo de Compras recibe una solicitud vaga, es útil aplicar un método corto antes de pedir cotizaciones. Este ejercicio no reemplaza la evaluación formal de SST, pero ordena la conversación inicial."
+      },
+      {
+        "type": "li",
+        "text": "Paso 1 — Nombra el peligro y la tarea exacta. Por ejemplo: 'manipulación de láminas metálicas con bordes filosos, cuatro horas por turno', en lugar de 'trabajo en bodega'."
+      },
+      {
+        "type": "li",
+        "text": "Paso 2 — Define el desempeño mínimo requerido y las condiciones de contacto. Puede ser nivel de corte, compatibilidad química o resistencia térmica, según el peligro nombrado en el paso 1."
+      },
+      {
+        "type": "li",
+        "text": "Paso 3 — Verifica destreza, tallaje y compatibilidad con el resto del EPP mediante una prueba controlada. Hazlo antes de aprobar la compra en volumen."
+      },
+      {
+        "type": "p",
+        "text": "Un ejemplo ayuda a ver el método en acción. Una empresa de mantenimiento pidió inicialmente 'guantes resistentes' para sus técnicos. Con el paso 1, SST vio que el cargo cubría tres tareas: ajuste de piezas, lavado con solvente y apoyo en soldadura. Con el paso 2, definieron tres referencias: anticorte, resistente a solventes y térmica. La prueba del paso 3 mostró que la anticorte inicial no daba suficiente destreza para tornillos pequeños, así que ajustaron el grosor. Este análisis por tarea, y no por cargo, suele evitar devoluciones."
+      },
+      {
+        "type": "h2",
+        "text": "Convierte la tarea en criterios de compra verificables"
+      },
+      {
+        "type": "p",
+        "text": "Describe la acción concreta: levantar cajas, sujetar una herramienta, limpiar una superficie, manipular una pieza con bordes o dosificar una sustancia. Luego registra qué debe conservar la persona para trabajar bien. Piensa en agarre, precisión, movilidad de la muñeca o compatibilidad con la manga de una prenda de dotación."
       },
       {
         "type": "h3",
@@ -325,51 +485,15 @@
       },
       {
         "type": "p",
-        "text": "Un técnico de mantenimiento puede ajustar piezas, lavar componentes y apoyar una intervención con calor en momentos distintos. El nombre del cargo no demuestra que una sola referencia cubra esas actividades. Separa las tareas y define si se necesita más de un tipo de guante, con reglas claras para cada uso."
+        "text": "Un técnico de mantenimiento puede ajustar piezas, lavar componentes y apoyar una intervención con calor en momentos distintos del turno. El nombre del cargo no demuestra que una sola referencia de guante cubra esas actividades. Separa las tareas y define reglas claras de uso. Esta lógica aplica al resto de la dotación: en alimentos u hospitalario, la [dotación para empresas de alimentos](/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/) o la [dotación hospitalaria antifluido](/articulos-del-blog/como-elegir-dotacion-hospitalaria-antifluido-clinicas-laboratorios/) también se definen por tarea, no por cargo."
       },
       {
         "type": "h2",
-        "text": "Revisa la exposición antes de escoger la familia de guante"
-      },
-      {
-        "type": "h3",
-        "text": "Manipulación, abrasión y corte"
+        "text": "Lee la ficha técnica, no solo el nombre comercial"
       },
       {
         "type": "p",
-        "text": "Para labores mecánicas, especifica el nivel de desempeño que SST haya definido para la exposición real. Incluye el tipo de agarre, la destreza necesaria y las zonas de la mano que requieren cobertura. Un guante más grueso no es automáticamente la mejor opción si impide controlar la pieza o realizar el movimiento previsto."
-      },
-      {
-        "type": "p",
-        "text": "Carnaza, vaqueta, tejidos y recubrimientos ofrecen comportamientos diferentes. El nombre del material sirve para filtrar alternativas, pero la compra debe cerrarse con la ficha del modelo, sus resultados de ensayo aplicables y una prueba de uso controlada."
-      },
-      {
-        "type": "h3",
-        "text": "Sustancias químicas y tareas húmedas"
-      },
-      {
-        "type": "p",
-        "text": "Para contacto químico, una solicitud que diga 'guante de nitrilo' o 'guante de caucho' queda incompleta. Identifica la sustancia o mezcla, su concentración, la forma de contacto, la temperatura y el tiempo esperado. Revisa la hoja de datos de seguridad y pide al fabricante la información de compatibilidad de la referencia exacta."
-      },
-      {
-        "type": "p",
-        "text": "NIOSH advierte que algunos químicos pueden atravesar ciertos materiales de guante con rapidez. Una referencia adecuada para limpieza ligera no queda aprobada automáticamente para inmersión, contacto prolongado o una mezcla diferente. SST debe validar la barrera y definir cuándo retirar el guante."
-      },
-      {
-        "type": "h3",
-        "text": "Calor, soldadura y riesgos especiales"
-      },
-      {
-        "type": "p",
-        "text": "Las tareas con calor, soldadura, electricidad u otras exposiciones especiales necesitan una especificación propia. No asumas que un guante de cuero protege frente a cualquier fuente de calor ni que una descripción comercial como 'industrial' demuestra desempeño eléctrico. Solicita la evaluación y los requisitos escritos de SST antes de cotizar."
-      },
-      {
-        "type": "h2",
-        "text": "Lee la ficha técnica sin quedarte en el nombre comercial"
-      },
-      {
-        "type": "p",
-        "text": "Dos guantes que se anuncian con el mismo material pueden cambiar en espesor, recubrimiento, forro, puño, tallaje y desempeño. La ficha de compra debe identificar atributos que el equipo de recepción pueda revisar sin interpretar frases de mercadeo."
+        "text": "**La ficha técnica** es el documento del fabricante que detalla material, construcción, tallas y niveles de desempeño certificados de una referencia exacta. Dos guantes con el mismo material pueden cambiar en espesor, forro, puño y desempeño real. La ficha de compra debe identificar atributos verificables, sin interpretar frases de mercadeo."
       },
       {
         "type": "li",
@@ -385,7 +509,7 @@
       },
       {
         "type": "li",
-        "text": "Norma, versión y niveles de desempeño que SST haya exigido para ese riesgo, con soporte del modelo ofrecido."
+        "text": "Norma, versión y niveles de desempeño que SST haya exigido para ese riesgo, por ejemplo EN 388 o ANSI/ISEA 105, con soporte del modelo ofrecido."
       },
       {
         "type": "li",
@@ -393,19 +517,19 @@
       },
       {
         "type": "p",
-        "text": "Una declaración general de cumplimiento no sustituye el soporte que corresponde a la referencia. Si el proveedor propone una equivalencia, compara los mismos atributos y no solo el material, el color o el precio."
+        "text": "Una declaración general de cumplimiento no sustituye el soporte técnico de la referencia específica. Si el proveedor propone una equivalencia, compara los mismos atributos. No compares solo el material, el color o el precio."
       },
       {
         "type": "h2",
-        "text": "Incluye ajuste y destreza en la evaluación"
+        "text": "Ajuste y destreza: dos criterios que se olvidan al comparar precios"
       },
       {
         "type": "p",
-        "text": "La talla correcta debe permitir el movimiento que exige la tarea sin dejar exceso de material en los dedos ni comprimir la mano. Pide la tabla de medidas de cada fabricante, porque una talla nominal puede cambiar entre modelos. Para una compra amplia, consolida la distribución por talla solo después de validar la referencia final."
+        "text": "La talla correcta debe permitir el movimiento que exige la tarea, sin exceso de material ni compresión. Pide la tabla de medidas de cada fabricante, porque una talla nominal (S, M, L) cambia entre marcas. Consolida la distribución por talla solo después de validar la referencia final."
       },
       {
         "type": "p",
-        "text": "Comprueba además cómo se integra el guante con mangas, puños, ropa de protección y otros EPP. La combinación debe conservar la cobertura definida por SST y permitir que la persona se coloque y retire los elementos según el procedimiento de la empresa."
+        "text": "Comprueba cómo se integra el guante con mangas, ropa y otros EPP. La combinación debe conservar la cobertura definida por SST y permitir colocarse y retirar los elementos según el procedimiento de la empresa. Si la operación exige protección en cabeza o alturas, revisa [casco de seguridad](/articulos-del-blog/casco-de-seguridad-guia-compra/) y [EPP para trabajo en alturas](/articulos-del-blog/trabajo-en-alturas-guia-epp/)."
       },
       {
         "type": "h2",
@@ -413,7 +537,7 @@
       },
       {
         "type": "p",
-        "text": "Entrega muestras identificadas a un grupo pequeño de usuarios que represente las tareas y tallas. La prueba debe seguir el procedimiento seguro de la operación y limitarse a observar el desempeño dentro de condiciones ya controladas. Nunca expongas a una persona para comprobar hasta dónde resiste el guante."
+        "text": "Entrega muestras identificadas a un grupo pequeño de usuarios que represente las tareas y tallas de la operación. La prueba debe seguir el procedimiento seguro ya establecido y limitarse a observar el desempeño dentro de condiciones controladas. Nunca expongas a una persona para comprobar hasta dónde resiste el guante."
       },
       {
         "type": "li",
@@ -445,7 +569,7 @@
       },
       {
         "type": "p",
-        "text": "La cantidad no sale solo del número de trabajadores. Un guante desechable, uno de uso repetido y uno asignado a una tarea ocasional tienen patrones de consumo distintos. Separa las referencias y documenta cómo se estimó cada necesidad."
+        "text": "La cantidad a comprar no sale solo del número de trabajadores. Un guante desechable, uno de uso repetido y uno asignado a una tarea ocasional tienen patrones de consumo distintos. Por eso, separa las referencias y documenta cómo se estimó cada necesidad."
       },
       {
         "type": "li",
@@ -469,7 +593,7 @@
       },
       {
         "type": "p",
-        "text": "Evita fijar una vida útil única para todos los guantes. Usa la información del fabricante, la inspección, las condiciones de uso y los registros de consumo para ajustar la reposición sin extender el uso de una referencia deteriorada."
+        "text": "Evita fijar una vida útil única para todos los guantes. Usa la información del fabricante, la inspección periódica y las condiciones de uso. Apóyate también en los registros de consumo para ajustar la reposición. Así evitas extender el uso de una referencia deteriorada."
       },
       {
         "type": "h2",
@@ -477,43 +601,43 @@
       },
       {
         "type": "p",
-        "text": "En la recepción, compara el producto con la orden, la ficha y la muestra aprobada. Revisa cantidades, tallas, referencia, empaque, integridad y documentos. Si el fabricante usa lote o fecha para la trazabilidad, registra esos datos antes de distribuir."
+        "text": "En la recepción, compara el producto con la orden de compra, la ficha técnica y la muestra aprobada previamente. Revisa cantidades, tallas, referencia, empaque, integridad y documentos. Si el fabricante usa lote o fecha para la trazabilidad, registra esos datos antes de distribuir el pedido."
       },
       {
         "type": "p",
-        "text": "Mantén separados los guantes con daños, una referencia no autorizada, tallas diferentes o soportes incompletos. La urgencia de entrega no convierte una sustitución en equivalencia técnica."
+        "text": "Mantén separados los guantes con daños, una referencia no autorizada, tallas diferentes o soportes incompletos. La urgencia de entrega no convierte una sustitución en equivalencia técnica. Si el proveedor cambia el modelo, esa nueva referencia debe pasar de nuevo por validación de SST."
       },
       {
         "type": "h2",
-        "text": "Evita tres errores frecuentes de compra"
+        "text": "Tres errores frecuentes al comprar guantes de seguridad"
       },
       {
         "type": "h3",
-        "text": "Pedir un guante industrial para toda la operación"
+        "text": "1. Pedir un guante 'industrial' para toda la operación"
       },
       {
         "type": "p",
-        "text": "La palabra 'industrial' no describe el peligro ni el desempeño. Crea referencias por tarea cuando cambien la exposición, el agarre, la cobertura o el tiempo de uso."
+        "text": "La palabra 'industrial' no describe el peligro ni el desempeño del guante. Crea referencias por tarea cuando cambien la exposición, el agarre, la cobertura o el tiempo de uso. Evita estandarizar solo por comodidad de compra."
       },
       {
         "type": "h3",
-        "text": "Elegir solo por el material"
+        "text": "2. Elegir solo por el material"
       },
       {
         "type": "p",
-        "text": "Nitrilo, carnaza, vaqueta o tejido recubierto no son especificaciones completas. El modelo, su construcción y los soportes de desempeño deben coincidir con el uso aprobado."
+        "text": "Nitrilo, carnaza, vaqueta o tejido recubierto no son especificaciones completas. El modelo, su construcción y los soportes de desempeño deben coincidir con el uso aprobado por SST, no solo con el nombre del material."
       },
       {
         "type": "h3",
-        "text": "Comparar únicamente el precio por par"
+        "text": "3. Comparar únicamente el precio por par"
       },
       {
         "type": "p",
-        "text": "Un precio unitario bajo puede perder sentido si la referencia necesita cambios frecuentes, no cubre las tallas o falla la prueba de destreza. Compara el costo con el consumo esperado, la reposición, la documentación y el resultado de la muestra."
+        "text": "Un precio unitario bajo puede perder sentido si la referencia necesita cambios frecuentes. También pierde sentido si no cubre las tallas requeridas o falla la prueba de destreza. Compara el costo con el consumo esperado, la reposición y la documentación. No compares solo el valor por par."
       },
       {
         "type": "h2",
-        "text": "Información mínima para solicitar una cotización"
+        "text": "Checklist: información mínima para solicitar una cotización"
       },
       {
         "type": "li",
@@ -521,7 +645,7 @@
       },
       {
         "type": "li",
-        "text": "Desempeño requerido, condiciones de uso y compatibilidad con otros EPP."
+        "text": "Desempeño requerido (mecánico, químico, térmico), condiciones de uso y compatibilidad con otros EPP."
       },
       {
         "type": "li",
@@ -536,16 +660,52 @@
         "text": "Condiciones de almacenamiento, consumo, inspección, reposición y retiro."
       },
       {
+        "type": "h2",
+        "text": "Preguntas frecuentes sobre guantes de seguridad"
+      },
+      {
+        "type": "h3",
+        "text": "¿Un solo tipo de guante sirve para toda la planta?"
+      },
+      {
         "type": "p",
-        "text": "Con esta información, Agencias Nacionales puede ayudarte a cotizar guantes de seguridad industrial por referencia, talla, cantidad y destino. La selección final debe conservar la evaluación de peligros, los requisitos y la aprobación del equipo de SST de tu empresa."
+        "text": "No. Cada guante responde a un peligro y una tarea específicos. Estandarizar una sola referencia 'industrial' para toda la operación suele dejar exposiciones sin cubrir. También puede forzar el uso de un guante que reduce la destreza necesaria."
+      },
+      {
+        "type": "h3",
+        "text": "¿Qué diferencia hay entre EN 388 y ANSI/ISEA 105?"
+      },
+      {
+        "type": "p",
+        "text": "Son dos estándares técnicos distintos: uno europeo y otro estadounidense. Los fabricantes los usan para reportar resistencia a abrasión, corte, rasgado o punción. Ninguno es una norma colombiana obligatoria. Sin embargo, sirven como referencia comparable para exigir soporte técnico verificable."
+      },
+      {
+        "type": "h3",
+        "text": "¿Con qué frecuencia se deben reponer los guantes?"
+      },
+      {
+        "type": "p",
+        "text": "No existe una vida útil única. Depende del tipo de guante (desechable o reutilizable), la tarea, la frecuencia de uso y las instrucciones del fabricante. La inspección periódica y los registros de consumo deben guiar la reposición, no una fecha fija para todas las referencias."
+      },
+      {
+        "type": "h3",
+        "text": "¿Qué debe incluir la ficha técnica antes de aprobar la compra?"
+      },
+      {
+        "type": "p",
+        "text": "Como mínimo debe incluir: referencia y fabricante, material y construcción, tallas y sistema de ajuste. También norma y nivel de desempeño aplicable al riesgo evaluado, e instrucciones de uso, limpieza y retiro."
+      },
+      {
+        "type": "p",
+        "text": "Con esta información, Agencias Nacionales puede ayudarte a cotizar guantes de seguridad industrial por referencia, talla, cantidad y destino. Esto es parte de un plan más amplio de [EPP para empresas en Medellín](/epp-medellin/) o de [dotación empresarial en Medellín](/dotacion-empresarial-medellin/). Explora también el catálogo de [elementos de protección personal](/categoria/epp/) y de [uniformes de trabajo](/categoria/uniformes-de-trabajo/). La selección final debe conservar siempre la evaluación de peligros y la aprobación de SST."
       }
     ]
   },
   {
     "slug": "trabajo-en-alturas-guia-epp",
-    "title": "Trabajo en alturas: guía de EPP",
-    "description": "Trabajo en alturas: define EPP y equipos por tarea, compatibilidad y soportes. Guía para Compras y SST con criterios de recepción, inspección y reposición.",
-    "excerpt": "Una compra para trabajo en alturas no debería empezar con una lista de arneses, eslingas y conectores. Primero hay que definir la tarea, el sistema de acceso, la medida de prevención o protección y las condiciones que debe resolver cada componente.",
+    "title": "Trabajo en alturas: guía de EPP para Compras y SST en Colombia",
+    "description": "Guía práctica de EPP para trabajo en alturas en Colombia: arnés de seguridad, eslingas, anclajes, compatibilidad, inspección y retiro según la Resolución 4272 de 2021.",
+    "excerpt": "Una compra de EPP para trabajo en alturas no debería empezar con una lista de arneses, eslingas y conectores. Primero hay que definir la tarea, el sistema de acceso, la medida de prevención o protección y las condiciones que debe resolver cada componente.",
     "date": "27 ago 2026",
     "dateISO": "2026-08-27",
     "tag": "Tips",
@@ -554,23 +714,23 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Una compra para trabajo en alturas no debería empezar con una lista de arneses, eslingas y conectores. Primero hay que definir la tarea, el sistema de acceso, la medida de prevención o protección y las condiciones que debe resolver cada componente."
+        "text": "Una compra de EPP para trabajo en alturas no debería empezar con una lista de arneses y eslingas. Primero hay que definir la tarea. Luego, el sistema de acceso y las condiciones que debe resolver cada componente. Ese orden distingue una compra técnica de una simple cotización de kits genéricos."
       },
       {
         "type": "p",
-        "text": "Ese orden les permite a Compras y SST comparar ofertas equivalentes, pedir los soportes correctos y recibir equipos que funcionen como un sistema. También evita que una referencia se apruebe solo por precio, marca o una descripción comercial demasiado amplia."
+        "text": "Esta guía es para equipos de Compras y de SST que definen, cotizan y reciben equipo de protección contra caídas en Colombia. No reemplaza el análisis de riesgo ni la aprobación del coordinador. Sin embargo, sí ordena las preguntas que deberían resolverse antes de pedir precio. Si necesitas calzado o uniformes, revisa nuestro catálogo de [dotaciones empresariales en Colombia](/dotaciones-empresariales-colombia/)."
       },
       {
         "type": "h2",
-        "text": "Confirma dónde existe el riesgo de caída"
+        "text": "¿Qué se considera trabajo en alturas en Colombia?"
       },
       {
         "type": "p",
-        "text": "La Resolución 4272 de 2021 define el trabajo en alturas como una actividad con suspensión o desplazamiento en la que el trabajador queda expuesto a un riesgo de caída mayor a 2,0 metros, medidos desde el plano de sus pies hasta el plano horizontal inferior más cercano. La misma resolución exige medidas de prevención y protección en alturas inferiores cuando el análisis identifica obstáculos, bordes, elementos salientes, sistemas energizados, máquinas u otras condiciones que puedan agravar una caída."
+        "text": "La [Resolución 4272 de 2021](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=120880) define el trabajo en alturas como toda actividad con riesgo de caída mayor a 2,0 metros. Esa medida se toma desde los pies hasta el plano inferior más cercano. Además, la resolución exige medidas de prevención en alturas menores. Esto aplica cuando existen bordes, obstáculos o sistemas energizados que agraven una caída."
       },
       {
         "type": "p",
-        "text": "Por eso la altura, por sí sola, no alcanza para preparar una compra. SST y el coordinador de trabajo en alturas deben ubicar cada tarea, revisar el entorno y dejar claro qué peligro se controlará. Compras necesita esa definición antes de solicitar referencias o cantidades."
+        "text": "Por eso la altura, por sí sola, no alcanza para preparar una compra de EPP. SST y el coordinador deben ubicar cada tarea y definir qué peligro se controlará. En ese sentido, Compras necesita esa definición antes de pedir referencias o cantidades."
       },
       {
         "type": "li",
@@ -582,7 +742,7 @@
       },
       {
         "type": "li",
-        "text": "Riesgos asociados: energía eléctrica, bordes, superficies calientes, corrosión, herramientas que puedan caer o tránsito de equipos."
+        "text": "Riesgos asociados: energía eléctrica, bordes, superficies calientes, corrosión o herramientas que puedan caer."
       },
       {
         "type": "li",
@@ -590,15 +750,51 @@
       },
       {
         "type": "h2",
-        "text": "No conviertas el EPP en el único control"
+        "text": "El EPP para alturas es el último control, no el único"
       },
       {
         "type": "p",
-        "text": "La norma colombiana trata los EPP para trabajo en alturas como el último control. Deben usarse junto con las medidas de prevención y protección que correspondan. Una cotización de equipos personales no reemplaza el diseño del acceso, la protección de bordes, la verificación del anclaje, el permiso de trabajo ni el procedimiento de rescate."
+        "text": "La normativa colombiana trata los EPP para alturas como el último eslabón de la jerarquía de controles. Deben usarse junto con las medidas del Sistema de Gestión de SST de cada empresa. Esto es coherente con el [Decreto 1072 de 2015](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=62506). Por lo tanto, una cotización de equipos no reemplaza el diseño del acceso, la protección de bordes ni el plan de rescate."
       },
       {
         "type": "p",
-        "text": "Antes de pedir productos, documenta qué medida se adoptó para eliminar o reducir el riesgo y qué función cumplirá el sistema personal. Así evitas comprar un equipo correcto para una aplicación distinta a la que realmente existe en la sede."
+        "text": "Antes de pedir productos, documenta qué medida se adoptó para reducir el riesgo. Así evitas comprar un equipo correcto para una aplicación distinta a la que existe en la sede."
+      },
+      {
+        "type": "h2",
+        "text": "Componentes de un sistema de protección contra caídas"
+      },
+      {
+        "type": "p",
+        "text": "Antes de escribir la ficha de compra conviene tener claro qué hace cada componente. Un sistema personal suele incluir arnés, elemento de conexión y punto de anclaje. Cuando la tarea lo requiere, se suma un dispositivo de detención o de posicionamiento. A continuación se definen los términos más usados en una ficha técnica."
+      },
+      {
+        "type": "p",
+        "text": "**El arnés de seguridad** es el equipo que se ajusta al cuerpo y distribuye la fuerza de una caída. **La eslinga o línea de vida** es el elemento que conecta el arnés con el anclaje. **El absorbedor de energía** es el componente que reduce la fuerza que llega al cuerpo durante una caída. **El punto de anclaje** es el elemento estructural, fijo o portátil, al que se conecta el sistema."
+      },
+      {
+        "type": "h3",
+        "text": "Arnés de seguridad"
+      },
+      {
+        "type": "p",
+        "text": "El arnés que exige la normativa colombiana debe ajustarse al cuerpo del trabajador. Además, debe distribuir la fuerza de una caída sin comprometer su movilidad. Existen configuraciones de un punto dorsal para detención de caídas. También hay arneses con puntos adicionales en pecho, cadera o laterales para posicionamiento o rescate. La cantidad de anillos debe corresponder a la actividad definida por SST, no a la disponibilidad del proveedor."
+      },
+      {
+        "type": "h3",
+        "text": "Eslingas, líneas de vida y absorbedores de energía"
+      },
+      {
+        "type": "p",
+        "text": "La eslinga o línea de vida conecta el arnés con el punto de anclaje. Por ejemplo, puede incorporar un absorbedor de energía que limita la fuerza transmitida al cuerpo. La longitud y el tipo de conector deben definirse según la distancia libre de caída del sitio, no de forma genérica. Para tareas de restricción o detención, el elemento de conexión no es intercambiable sin revisión del coordinador."
+      },
+      {
+        "type": "h3",
+        "text": "Puntos de anclaje"
+      },
+      {
+        "type": "p",
+        "text": "El punto de anclaje debe soportar las cargas exigidas por la tarea. Además, debe estar evaluado o certificado según corresponda a estructuras fijas o dispositivos portátiles. Por lo tanto, la resistencia y ubicación del anclaje son decisiones que le corresponden al coordinador o a una persona calificada, no al catálogo del proveedor."
       },
       {
         "type": "h2",
@@ -606,11 +802,11 @@
       },
       {
         "type": "p",
-        "text": "El arnés, los conectores, la eslinga, la línea y el punto de anclaje no se evalúan como artículos independientes. La Resolución 4272 exige compatibilidad entre los componentes en tamaño, forma, materiales y diámetro. También aclara que, para las líneas de vida verticales, compatibilidad no significa que todo deba pertenecer a la misma marca."
+        "text": "El arnés, los conectores, la eslinga y el anclaje no se evalúan como artículos independientes. La Resolución 4272 exige compatibilidad entre componentes en tamaño, forma y materiales. También aclara que, para las líneas de vida verticales, compatibilidad no significa que todo deba ser de la misma marca."
       },
       {
         "type": "p",
-        "text": "La ficha de compra debe identificar qué componentes se conectan, cuál es el sistema de acceso y qué condiciones impone la tarea. Si se cambia una referencia que ya estaba aprobada, el coordinador debe evaluar el sistema completo; cuando exista duda, corresponde gestionar la aprobación de una persona calificada."
+        "text": "La ficha de compra debe identificar qué componentes se conectan y qué condiciones impone la tarea. Si se cambia una referencia ya aprobada, el coordinador debe evaluar el sistema completo. Cuando exista duda, corresponde gestionar la aprobación de una persona calificada."
       },
       {
         "type": "h3",
@@ -618,11 +814,23 @@
       },
       {
         "type": "p",
-        "text": "El sistema contra caídas se define por la forma en que la persona accede, se desplaza, se posiciona o puede ser detenida. El casco, el calzado, los guantes, la protección visual o la ropa de trabajo responden además a los peligros propios de la labor. No todos los equipos que trabajan a la misma altura necesitan el mismo conjunto."
+        "text": "El sistema contra caídas se define por cómo la persona accede, se desplaza o puede ser detenida. Sin embargo, el casco, el calzado y los guantes responden a los peligros propios de la labor. Revisa criterios en nuestras guías de [casco de seguridad](/articulos-del-blog/casco-de-seguridad-guia-compra/) y de [guantes de seguridad](/articulos-del-blog/guantes-de-seguridad-guia-compra/). Complementa la dotación en nuestra [categoría de calzado de trabajo](/categoria/calzado-de-trabajo/)."
       },
       {
         "type": "p",
-        "text": "Un mantenimiento cerca de instalaciones energizadas, una limpieza de fachada y una intervención sobre una cubierta pueden compartir el riesgo de caída, pero tener exposiciones adicionales diferentes. La matriz debe registrar esas diferencias sin presentar un kit universal como solución."
+        "text": "No todos los equipos que trabajan a la misma altura necesitan el mismo conjunto. Por ejemplo, un mantenimiento cerca de instalaciones energizadas y una limpieza de fachada comparten el riesgo de caída. Sin embargo, tienen exposiciones adicionales distintas. La matriz debe registrar esas diferencias sin presentar un kit universal como solución."
+      },
+      {
+        "type": "p",
+        "text": "Ejemplo: una brigada debe intervenir un ducto sobre cubierta, a 6 metros de altura, cerca del borde perimetral del techo. El riesgo de caída ya existe por la altura, pero el borde sin protección agrava la exposición. Por eso se suma una línea de vida horizontal, además del arnés y la eslinga con absorbedor. La ficha de compra no puede limitarse a 'arnés certificado'. Debe indicar la tarea, el borde sin protección y el anclaje requerido. Así, Compras y SST evalúan una solución concreta y no un kit genérico."
+      },
+      {
+        "type": "h2",
+        "text": "Formación y competencia del personal"
+      },
+      {
+        "type": "p",
+        "text": "Ningún EPP para alturas compensa la falta de entrenamiento. La Resolución 4272 exige certificación vigente en el nivel correspondiente: autorizado, avanzado o coordinador. Además, la empresa debe verificar esa competencia antes de asignar la tarea. Compras puede apoyar este control condicionando la entrega de equipos a la certificación del usuario final, y no solo a la disponibilidad en bodega."
       },
       {
         "type": "h2",
@@ -638,7 +846,7 @@
       },
       {
         "type": "li",
-        "text": "Rango de uso o talla requerido, según la población que utilizará la referencia y la información del fabricante."
+        "text": "Rango de uso o talla requerido, según la población que utilizará la referencia."
       },
       {
         "type": "li",
@@ -646,11 +854,11 @@
       },
       {
         "type": "li",
-        "text": "Compatibilidad requerida con los equipos, conectores y sistemas que la empresa ya tiene aprobados."
+        "text": "Compatibilidad requerida con los equipos y sistemas ya aprobados."
       },
       {
         "type": "li",
-        "text": "Documentos que deben entregarse con el producto y criterios para aceptar o rechazar la recepción."
+        "text": "Documentos que deben entregarse con el producto y criterios de recepción."
       },
       {
         "type": "li",
@@ -658,7 +866,7 @@
       },
       {
         "type": "p",
-        "text": "La marca puede servir para identificar una referencia aprobada, pero no sustituye la descripción técnica. Si el proceso admite equivalencias, define qué debe demostrar una alternativa para que SST pueda evaluarla sin bajar el nivel de control."
+        "text": "La marca puede identificar una referencia aprobada, pero no sustituye la descripción técnica. Si el proceso admite equivalencias, define qué debe demostrar una alternativa para que SST la evalúe. Si tu empresa opera en Antioquia, nuestro equipo de [dotación empresarial en Medellín](/dotacion-empresarial-medellin/) puede ayudarte a validar disponibilidad local antes de cotizar en volumen."
       },
       {
         "type": "h2",
@@ -666,11 +874,11 @@
       },
       {
         "type": "p",
-        "text": "Para los equipos y EPP que correspondan, la Resolución 4272 señala como soportes mínimos el registro de inspección preuso, la ficha técnica, la hoja de vida y el certificado de conformidad. También exige que las fichas técnicas, los manuales de usuario y los manuales de mantenimiento entregados por fabricantes o proveedores estén en español."
+        "text": "Para los equipos que correspondan, la Resolución 4272 señala como soportes mínimos el registro de inspección preuso, la ficha técnica y el certificado de conformidad. También exige que las fichas y manuales estén en español."
       },
       {
         "type": "p",
-        "text": "Incluye estos documentos como entregables de la compra y revísalos antes de distribuir los equipos. Un certificado aislado no corrige una referencia distinta, un manual que no corresponde al modelo o una incompatibilidad entre componentes."
+        "text": "Incluye estos documentos como entregables de la compra y revísalos antes de distribuir los equipos. Un certificado aislado no corrige una referencia distinta ni una incompatibilidad entre componentes."
       },
       {
         "type": "h3",
@@ -678,7 +886,7 @@
       },
       {
         "type": "p",
-        "text": "Registra la referencia recibida, su cantidad, talla o rango, y los identificadores que use el fabricante. Relaciona esa información con la hoja de vida y con la persona o sede a la que se asigna. Esta base evita que las inspecciones posteriores dependan de fotos sueltas, correos o la memoria del encargado."
+        "text": "Registra la referencia recibida, su cantidad, talla y los identificadores del fabricante. Relaciona esa información con la hoja de vida y con la persona a la que se asigna. Esta base evita que las inspecciones dependan de fotos sueltas, correos o la memoria del encargado."
       },
       {
         "type": "h2",
@@ -686,11 +894,11 @@
       },
       {
         "type": "p",
-        "text": "Cuando la compra cubre varias tallas, sedes o tareas, una muestra ayuda a comprobar ajuste, movilidad, identificación de componentes y lectura de etiquetas. La prueba debe hacerse bajo el procedimiento definido por SST y con la supervisión correspondiente. No es una improvisación en obra ni una autorización para usar un sistema todavía no aprobado."
+        "text": "Cuando la compra cubre varias tallas o sedes, una muestra ayuda a comprobar ajuste, movilidad e identificación de componentes. La prueba debe hacerse bajo el procedimiento definido por SST. No es una improvisación en obra ni una autorización para usar un sistema todavía no aprobado."
       },
       {
         "type": "p",
-        "text": "Documenta qué referencia se evaluó, con qué configuración y qué observaciones aparecieron. Si el proveedor cambia el modelo después de la muestra, trata el cambio como una nueva evaluación y no como una sustitución automática."
+        "text": "Documenta qué referencia se evaluó y qué observaciones aparecieron. Si el proveedor cambia el modelo después de la muestra, trata el cambio como una nueva evaluación."
       },
       {
         "type": "h2",
@@ -698,7 +906,7 @@
       },
       {
         "type": "p",
-        "text": "La recepción física debería reunir a Almacén o Compras con SST cuando la criticidad lo amerite. Primero confirma cantidades y referencias. Luego revisa integridad, etiquetas, piezas incluidas, documentación y correspondencia con la muestra aprobada. Mantén separado cualquier equipo con daños, información incompleta o una referencia no autorizada."
+        "text": "La recepción debería reunir a Almacén o Compras con SST cuando la criticidad lo amerite. Primero confirma cantidades y referencias. Luego revisa integridad, etiquetas y correspondencia con la muestra aprobada. Mantén separado cualquier equipo con daños o una referencia no autorizada."
       },
       {
         "type": "li",
@@ -718,19 +926,83 @@
       },
       {
         "type": "h2",
+        "text": "Checklist de inspección preuso de un arnés"
+      },
+      {
+        "type": "p",
+        "text": "Además de la inspección anual, la norma exige revisar el equipo antes de cada jornada. Este checklist resume lo que un trabajador autorizado debería verificar en su arnés:"
+      },
+      {
+        "type": "li",
+        "text": "Etiqueta legible con modelo, fecha de fabricación y datos del fabricante."
+      },
+      {
+        "type": "li",
+        "text": "Correas y cintas sin cortes, deshilachados, quemaduras ni decoloración marcada."
+      },
+      {
+        "type": "li",
+        "text": "Costuras completas, sin hilos sueltos ni puntadas rotas."
+      },
+      {
+        "type": "li",
+        "text": "Hebillas y anillos de enganche sin deformación, corrosión ni grietas visibles."
+      },
+      {
+        "type": "li",
+        "text": "Mecanismos de ajuste y cierre que funcionan sin trabarse."
+      },
+      {
+        "type": "li",
+        "text": "Ausencia de indicadores de impacto activados, cuando el arnés los incluye."
+      },
+      {
+        "type": "p",
+        "text": "Si alguno de estos puntos falla, el equipo no debe ponerse en servicio. En ese caso, corresponde retirarlo y notificar a SST. Este mismo criterio aplica, con variaciones, a eslingas y conectores."
+      },
+      {
+        "type": "h2",
         "text": "Planea inspección, almacenamiento y retiro"
       },
       {
         "type": "p",
-        "text": "El costo de la compra no termina con la entrega. La empresa debe conservar los registros de revisión y mantenimiento. La Resolución 4272 establece que los equipos y sistemas se inspeccionen por lo menos una vez al año o con la periodicidad indicada por el fabricante, además de las inspecciones preuso que correspondan."
+        "text": "El costo de la compra no termina con la entrega. La empresa debe conservar los registros de revisión y mantenimiento. La Resolución 4272 establece que los equipos se inspeccionen al menos una vez al año, además de las inspecciones preuso."
       },
       {
         "type": "p",
-        "text": "No fijes una vida útil general para todos los arneses, eslingas o conectores. Usa las instrucciones del fabricante, el estado del equipo, su historial y las condiciones de exposición. Todo sistema o equipo sometido a una caída debe retirarse de operación y no puede volver a utilizarse hasta contar con el aval del fabricante o de una persona calificada."
+        "text": "No fijes una vida útil general para todos los arneses o conectores. Usa las instrucciones del fabricante, el estado del equipo y su historial. Todo sistema sometido a una caída debe retirarse de operación. No puede volver a usarse hasta contar con el aval del fabricante o de una persona calificada."
       },
       {
         "type": "p",
-        "text": "Define también un lugar de almacenamiento con acceso controlado y las condiciones recomendadas por el fabricante. Si el equipo circula entre sedes o contratistas, registra cada movimiento para no perder su hoja de vida."
+        "text": "Define también un lugar de almacenamiento con acceso controlado. Si el equipo circula entre sedes o contratistas, registra cada movimiento para no perder su hoja de vida. Esta misma lógica aplica a otras dotaciones: nuestra guía sobre [cada cuánto renovar uniformes, calzado y EPP](/articulos-del-blog/cada-cuanto-renovar-uniformes-calzado-epp-empresa/) profundiza en criterios de reposición."
+      },
+      {
+        "type": "h2",
+        "text": "Señales de que un equipo debe retirarse de servicio"
+      },
+      {
+        "type": "p",
+        "text": "Además de haber estado sometido a una caída, hay señales que justifican retirar un componente. Ninguna reemplaza el criterio del fabricante o de la persona calificada. Sin embargo, deben motivar una revisión inmediata."
+      },
+      {
+        "type": "li",
+        "text": "Cortes, deshilachados, quemaduras o decoloración marcada en cintas, correas o costuras."
+      },
+      {
+        "type": "li",
+        "text": "Deformación, corrosión, grietas o desgaste excesivo en hebillas, argollas y conectores metálicos."
+      },
+      {
+        "type": "li",
+        "text": "Indicadores de impacto activados en absorbedores de energía o eslingas."
+      },
+      {
+        "type": "li",
+        "text": "Etiquetas ilegibles que impiden identificar el modelo, el lote o la fecha de fabricación."
+      },
+      {
+        "type": "li",
+        "text": "Vencimiento de la vida útil o de la garantía indicada por el fabricante."
       },
       {
         "type": "h2",
@@ -738,11 +1010,47 @@
       },
       {
         "type": "p",
-        "text": "Cuando el riesgo de caída hace parte de la operación, el plan de emergencias debe incluir un capítulo de trabajo en alturas y un plan de rescate acorde con la actividad. La resolución exige equipos de rescate certificados para la operación y personal capacitado. La compra del sistema personal no debería cerrarse sin confirmar cómo se atenderá una emergencia."
+        "text": "Cuando el riesgo de caída hace parte de la operación, el plan de emergencias debe incluir un plan de rescate acorde con la actividad. La resolución exige equipos de rescate certificados y personal capacitado. Por eso, la compra del sistema personal no debería cerrarse sin confirmar cómo se atenderá una emergencia. Este enfoque aplica también a la [dotación para brigada de emergencias](/articulos-del-blog/dotacion-para-brigada-de-emergencias/) de la empresa."
       },
       {
         "type": "p",
-        "text": "Esto no significa agregar un kit genérico al pedido. El responsable del plan debe definir los recursos, su ubicación y las personas que los usarán. Compras puede entonces cotizar una necesidad concreta y conservar los soportes junto con el resto del sistema."
+        "text": "Esto no significa agregar un kit genérico al pedido. El responsable del plan debe definir los recursos, su ubicación y quién los usará. Como resultado, Compras puede cotizar una necesidad concreta y conservar los soportes junto con el resto del sistema."
+      },
+      {
+        "type": "h2",
+        "text": "Preguntas frecuentes sobre EPP para trabajo en alturas"
+      },
+      {
+        "type": "h3",
+        "text": "¿Desde qué altura se considera trabajo en alturas en Colombia?"
+      },
+      {
+        "type": "p",
+        "text": "Según la [Resolución 4272 de 2021](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=120880), se considera trabajo en alturas toda actividad con riesgo de caída a más de 2,0 metros. Sin embargo, la empresa debe aplicar medidas de prevención en alturas menores cuando existan bordes u obstáculos."
+      },
+      {
+        "type": "h3",
+        "text": "¿Un arnés de seguridad certificado es suficiente para trabajar en alturas?"
+      },
+      {
+        "type": "p",
+        "text": "No. El arnés es un componente de un sistema más amplio. Ese sistema incluye el anclaje, el elemento de conexión, la formación del trabajador y las medidas de prevención definidas para la tarea. Comprar un arnés certificado no reemplaza el análisis de riesgo ni el plan de rescate."
+      },
+      {
+        "type": "h3",
+        "text": "¿Cada cuánto se debe inspeccionar el equipo de protección contra caídas?"
+      },
+      {
+        "type": "p",
+        "text": "Como mínimo una vez al año. También aplica la periodicidad que indique el fabricante y la inspección preuso antes de cada jornada. Cualquier equipo sometido a una caída debe retirarse de servicio hasta que el fabricante o una persona calificada autorice su reingreso."
+      },
+      {
+        "type": "h3",
+        "text": "¿Quién debe aprobar los cambios en un sistema ya aprobado?"
+      },
+      {
+        "type": "p",
+        "text": "El coordinador de trabajo en alturas debe evaluar cualquier cambio de referencia dentro de un sistema aprobado. Cuando exista duda sobre la compatibilidad o la carga, corresponde gestionar la aprobación de una persona calificada."
       },
       {
         "type": "h2",
@@ -770,15 +1078,15 @@
       },
       {
         "type": "p",
-        "text": "Con esta información, Agencias Nacionales puede ayudarte a cotizar EPP, calzado y prendas de trabajo complementarias para los perfiles definidos por tu empresa. La selección del sistema contra caídas debe conservar la aprobación de SST, del coordinador de trabajo en alturas y de la persona calificada cuando corresponda."
+        "text": "Con esta información, Agencias Nacionales puede ayudarte a cotizar EPP, calzado y prendas de trabajo complementarias. Explora nuestro catálogo de [EPP en Colombia](/epp-colombia/), consulta disponibilidad en [EPP Medellín](/epp-medellin/) o revisa toda la [categoría de EPP](/categoria/epp/). La selección del sistema contra caídas debe conservar siempre la aprobación de SST y del coordinador de trabajo en alturas."
       }
     ]
   },
   {
     "slug": "botas-de-seguridad-para-mujer",
-    "title": "Botas de seguridad para mujer: guía",
-    "description": "Guía para comprar botas de seguridad para mujer por riesgo, ajuste y talla. Reduce cambios con muestras, pruebas de uso y recepción por referencia.",
-    "excerpt": "Comprar botas de seguridad para mujer no consiste en pedir una talla menor del modelo disponible. Compras y SST deben mantener la protección exigida para el cargo y, al mismo tiempo, validar horma, ajuste y movilidad con la referencia que recibirá cada trabajadora.",
+    "title": "Botas de seguridad para mujer en Colombia: guía completa de compra 2026",
+    "description": "Guía práctica para comprar botas de seguridad para mujer: tipos de puntera, suela antideslizante, ajuste por horma, tallaje y checklist de compra según el riesgo del cargo.",
+    "excerpt": "Comprar botas de seguridad para mujer no consiste en pedir una talla menor del modelo unisex disponible. Compras y SST deben mantener la protección exigida para el cargo y, al mismo tiempo, validar horma, ajuste y movilidad con la referencia que recibirá cada trabajadora.",
     "date": "26 ago 2026",
     "dateISO": "2026-08-26",
     "tag": "Tips",
@@ -787,23 +1095,23 @@
     "blocks": [
       {
         "type": "p",
-        "text": "Comprar botas de seguridad para mujer no consiste en pedir una talla menor del modelo disponible. Compras y SST deben mantener la protección exigida para el cargo y, al mismo tiempo, validar horma, ajuste y movilidad con la referencia que recibirá cada trabajadora."
+        "text": "Comprar botas de seguridad para mujer no consiste en pedir una talla menor del modelo unisex del catálogo. Compras y SST deben mantener la protección exigida para el cargo. Además, deben validar horma, ajuste y movilidad con la referencia real que recibirá cada trabajadora. Si esas exigencias se resuelven por separado, el resultado suele ser un calzado que ajusta mal o sacrifica desempeño."
       },
       {
         "type": "p",
-        "text": "El objetivo es sencillo: entregar un calzado que responda al riesgo y que pueda usarse durante la jornada sin movimientos excesivos del talón, presión incómoda ni cambios de talla después del despacho. Para lograrlo, la ficha técnica, el tallaje y la prueba de uso deben trabajar juntos."
+        "text": "Esta guía reúne los criterios que usan Compras y SST en Colombia para elegir botas de seguridad para mujer dentro de sus [programas de dotación empresarial](/dotaciones-empresariales-colombia/): puntera, suela, materiales, tallaje y ficha de compra. El objetivo: un calzado de trabajo mujer que responda al riesgo real y se pueda usar toda la jornada sin presión incómoda."
       },
       {
         "type": "h2",
-        "text": "Separa la protección del ajuste"
+        "text": "Por qué la horma para mujer no es solo una talla menor"
       },
       {
         "type": "p",
-        "text": "La evaluación del cargo define la protección. La persona que usará la bota define si la referencia elegida ajusta bien. Mezclar ambas decisiones suele producir dos errores: escoger por apariencia sin revisar el peligro o aprobar una especificación técnica que no se adapta al pie de parte del equipo."
+        "text": "La evaluación del cargo define qué protección necesita la operación. La persona que usará la bota define si esa referencia ajusta bien a su pie. Mezclar ambas decisiones produce dos errores frecuentes: escoger por apariencia sin revisar el peligro, o aprobar una especificación técnica que no se adapta al pie de buena parte del equipo, porque se construyó sobre una horma unisex reducida en talla y no sobre una horma para pie de mujer."
       },
       {
         "type": "p",
-        "text": "Antes de mirar modelos, SST debe describir la tarea, la superficie, la exposición y las condiciones de la jornada. Con esa base, Compras puede comparar referencias que cumplan la misma necesidad y evaluar cuál ofrece una curva de tallas y un ajuste adecuados para las usuarias."
+        "text": "**La horma** es el molde tridimensional sobre el que se construye el calzado; define ancho, volumen interno y forma del talón, no solo el largo. El pie femenino promedio tiene proporciones distintas al masculino en el ancho del antepié y el talón, incluso cuando el largo coincide. Una horma para mujer bien diseñada respeta esas proporciones; una bota unisex reducida en talla mantiene el volumen de una horma masculina, y suele generar espacio de más en el talón y presión en el antepié. Antes de mirar modelos, SST debe describir la tarea y la exposición. Con esa base, Compras compara [elementos de protección personal (EPP)](/epp-colombia/) que ofrezcan un ajuste adecuado."
       },
       {
         "type": "li",
@@ -827,15 +1135,27 @@
       },
       {
         "type": "h2",
-        "text": "No uses la etiqueta para mujer como ficha técnica"
+        "text": "Marco legal: qué exige la normativa colombiana en dotación y calzado"
       },
       {
         "type": "p",
-        "text": "El nombre comercial no explica por sí solo la horma, el ancho, el volumen interno ni la forma del talón. Dos referencias vendidas como calzado femenino pueden sentirse muy distintas en la misma talla. Por eso, la solicitud de cotización debe pedir información de construcción y una muestra, no limitarse a una etiqueta del catálogo."
+        "text": "En Colombia, el suministro de calzado y EPP se enmarca en la normativa de seguridad y salud en el trabajo. La [Resolución 2400 de 1979](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=53565) exige dotar a los trabajadores expuestos a riesgo con elementos de protección adecuados a la labor. El [Decreto 1072 de 2015](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=62506) obliga además a identificar peligros y definir controles dentro del Sistema de Gestión de SST, incluido el calzado por cargo."
       },
       {
         "type": "p",
-        "text": "NIOSH incluye el largo y el ancho del pie entre las medidas antropométricas usadas para diseñar calzado de protección. En la práctica, esto respalda una decisión de compra básica: validar más que el número impreso en la lengüeta."
+        "text": "Ninguna de estas normas fija una talla, un color ni una marca específica de bota. Solo definen que la protección debe corresponder al riesgo identificado, y que su idoneidad debe sustentarse técnicamente. Por eso la ficha de SST, y no el catálogo del proveedor, es el documento que debe justificar cada atributo exigido en la compra."
+      },
+      {
+        "type": "h2",
+        "text": "No uses la etiqueta \"para mujer\" como ficha técnica"
+      },
+      {
+        "type": "p",
+        "text": "El nombre comercial no explica por sí solo la horma, el ancho ni la forma del talón. De hecho, dos referencias vendidas como calzado femenino pueden sentirse muy distintas en la misma talla numérica. Por eso, la solicitud de cotización debe pedir información de construcción y una muestra física, no solo una etiqueta del catálogo."
+      },
+      {
+        "type": "p",
+        "text": "NIOSH, el instituto estadounidense de salud y seguridad ocupacional, incluye el largo y el ancho del pie entre las medidas usadas para diseñar calzado de protección. En la práctica, esto respalda una decisión básica: validar más que el número impreso en la lengüeta antes de aprobar una referencia de botas industriales mujer Colombia para todo un equipo."
       },
       {
         "type": "h3",
@@ -855,7 +1175,7 @@
       },
       {
         "type": "li",
-        "text": "Ficha técnica y soportes de desempeño solicitados por SST."
+        "text": "Puntera de policarbonato o termoplástico: opción más liviana para riesgos moderados, común en manejo de materiales sin cargas extremas."
       },
       {
         "type": "li",
@@ -863,15 +1183,99 @@
       },
       {
         "type": "h2",
+        "text": "Tipos de protección de puntera y cuándo se necesita cada uno"
+      },
+      {
+        "type": "p",
+        "text": "La protección de puntera es el atributo que con más frecuencia define si una bota de seguridad para mujer es apta para un cargo. También es el que más varía en peso y comodidad. No hay una opción superior en todos los casos: cada una responde a un riesgo distinto. Elegirla debe salir de la evaluación de SST. Este criterio aplica a cualquier [calzado de trabajo](/categoria/calzado-de-trabajo/), y es especialmente relevante en referencias femeninas, porque el volumen interno de la puntera afecta el ajuste más que en un modelo masculino."
+      },
+      {
+        "type": "p",
+        "text": "**La puntera compuesta** es una protección de impacto y compresión fabricada en materiales no metálicos (fibra de vidrio, kevlar o similares). A diferencia del acero, no conduce electricidad ni frío y pesa menos, lo que la hace útil en tareas con exposición eléctrica o cambios de temperatura."
+      },
+      {
+        "type": "li",
+        "text": "Puntera de acero: alta resistencia a impacto y compresión, pero conduce temperatura y suma peso; se reserva para riesgos mecánicos claramente identificados."
+      },
+      {
+        "type": "li",
+        "text": "Puntera compuesta (no metálica): protege frente a impacto y compresión con menor peso y sin conducir electricidad ni frío; útil en tareas con exposición eléctrica o cambios de temperatura."
+      },
+      {
+        "type": "li",
+        "text": "Puntera de policarbonato o termoplástico: opción más liviana para riesgos moderados, común en tareas de manejo de materiales sin cargas extremas."
+      },
+      {
+        "type": "li",
+        "text": "Sin puntera reforzada: solo cuando la evaluación de riesgo del cargo descarta impacto y compresión en el pie; no debe usarse por comodidad si el riesgo está presente."
+      },
+      {
+        "type": "h2",
+        "text": "Suela, resistencia al deslizamiento y estabilidad"
+      },
+      {
+        "type": "p",
+        "text": "La suela es la segunda variable técnica que más incide en accidentes evitables: caídas por deslizamiento en pisos húmedos, con grasa o con residuos. Al comparar referencias conviene pedir al proveedor el tipo de compuesto y el patrón de la banda. Si la operación lo exige, pide soportes de desempeño frente a deslizamiento sobre las superficies reales de la planta. Una suela adecuada para piso seco puede no comportarse igual sobre metal con aceite, así que la prueba debe hacerse sobre el piso real."
+      },
+      {
+        "type": "p",
+        "text": "La estabilidad también depende de la altura de la caña y del soporte de tobillo. Los cargos con terreno irregular, escaleras o cambios de nivel frecuentes suelen requerir mayor sujeción que las tareas de piso plano. Este atributo también debe salir de la ficha de SST, siguiendo el criterio que se aplica al [elegir calzado de trabajo según el riesgo de la operación](/articulos-del-blog/como-elegir-calzado-de-trabajo-segun-riesgo-operacion/)."
+      },
+      {
+        "type": "h2",
+        "text": "Materiales y transpirabilidad para jornadas largas"
+      },
+      {
+        "type": "p",
+        "text": "El material del corte (cuero, sintéticos transpirables) determina cuánto calor y humedad retiene la bota en un turno largo. Un material poco transpirable aumenta el sudor y favorece rozaduras. Como resultado, es más probable que la trabajadora reporte molestia aunque la talla sea correcta. Lo mismo aplica a la plantilla: una con buen soporte de arco reduce la fatiga."
+      },
+      {
+        "type": "p",
+        "text": "Estos factores de comodidad no reemplazan la protección exigida por el cargo. Sin embargo, sí influyen en la aceptación del calzado y en la tasa de cambios. Los mismos criterios que aplican para elegir [calzado cómodo para jornadas largas](/articulos-del-blog/como-elegir-calzado-de-trabajo-comodo-jornadas-largas/) son válidos aquí, y suelen ser más determinantes en turnos extensos."
+      },
+      {
+        "type": "h2",
+        "text": "Cómo verificar el ajuste correcto en 3 pasos"
+      },
+      {
+        "type": "p",
+        "text": "Antes de aprobar una referencia para todo el equipo, conviene validar el ajuste con un procedimiento corto y repetible. Esta comparación diferencia el ajuste típico de una talla unisex reducida frente al de una horma para mujer."
+      },
+      {
+        "type": "li",
+        "text": "Paso 1 - Prueba de talón: con la bota calzada y sin amarrar del todo, la trabajadora camina y sube un escalón. Si el talón se levanta o se desplaza, la horma es demasiado ancha, señal típica de una talla unisex reducida."
+      },
+      {
+        "type": "li",
+        "text": "Paso 2 - Prueba de antepié: la trabajadora flexiona el pie como al caminar rápido. Si los dedos presionan la puntera o el borde del pie roza el costado, la bota es angosta, aunque el largo sea correcto."
+      },
+      {
+        "type": "li",
+        "text": "Paso 3 - Prueba de jornada simulada: con la bota puesta 15 a 20 minutos, incluyendo tramos de pie y en movimiento, se revisa si aparecen puntos de presión nuevos."
+      },
+      {
+        "type": "p",
+        "text": "Si una referencia falla en dos o más pasos, no conviene aprobarla solo porque la talla coincide con el registro previo. Mejor probar una referencia con horma específica para mujer antes de cerrar el pedido."
+      },
+      {
+        "type": "h3",
+        "text": "El color no reemplaza el criterio técnico"
+      },
+      {
+        "type": "p",
+        "text": "El color puede formar parte de la presentación corporativa y de la coherencia con los [uniformes de trabajo](/categoria/uniformes-de-trabajo/) de la empresa, pero no convierte una bota en femenina ni demuestra su protección. Primero se aprueban desempeño, ajuste y tallas. Después se revisan las opciones visuales disponibles dentro de las referencias que ya pasaron la evaluación."
+      },
+      {
+        "type": "h2",
         "text": "Levanta tallas sobre la referencia real"
       },
       {
         "type": "p",
-        "text": "Una talla registrada para tenis, zapatos de calle u otra bota no garantiza el mismo ajuste. La conversión puede cambiar entre fabricantes e incluso entre referencias de una misma marca. El padrón de tallas debe indicar qué modelo se probó y cuándo se aprobó."
+        "text": "Una talla registrada para tenis u otra bota no garantiza el mismo ajuste. La conversión puede cambiar entre fabricantes e incluso entre referencias de una misma marca. Por eso, el padrón de tallas debe indicar qué modelo se probó y cuándo."
       },
       {
         "type": "p",
-        "text": "Haz el levantamiento con las medias que se usarán en el trabajo y, cuando sea posible, al final de una jornada normal. No elijas la talla solo porque el pie entra. La usuaria debe poder caminar y flexionar el pie sin que la puntera presione los dedos ni el talón se desplace de forma marcada."
+        "text": "Haz el levantamiento con las medias que se usarán en el trabajo. Cuando sea posible, hazlo al final de una jornada, porque el pie se hincha con el uso. No elijas la talla solo porque el pie entra: la usuaria debe caminar y flexionar el pie sin que la puntera presione los dedos ni el talón se desplace."
       },
       {
         "type": "li",
@@ -899,11 +1303,11 @@
       },
       {
         "type": "p",
-        "text": "Probar la bota durante unos minutos en una oficina no reproduce el trabajo. La muestra debe pasar por movimientos habituales en un espacio controlado: caminar, subir escalones, agacharse y permanecer de pie. Si el cargo usa pedales o escaleras, incluye esos movimientos sin exponer a la trabajadora a una tarea peligrosa durante la prueba."
+        "text": "Probar la bota unos minutos en una oficina no reproduce el trabajo real. La muestra debe pasar por movimientos habituales: caminar, subir escalones, agacharse y permanecer de pie. Si el cargo usa pedales o escaleras, incluye esos movimientos sin exponer a la trabajadora a riesgo."
       },
       {
         "type": "p",
-        "text": "Registra observaciones concretas. Frases como se siente rara o está cómoda no ayudan a comparar. Es mejor anotar dónde aparece la presión, si el talón se levanta, si los cordones mantienen el ajuste y si la suela flexiona en el punto esperado."
+        "text": "Registra observaciones concretas. Frases como \"se siente rara\" no ayudan a comparar. Es mejor anotar dónde aparece la presión, si el talón se levanta, si los cordones mantienen el ajuste y si la suela flexiona en el punto esperado."
       },
       {
         "type": "li",
@@ -931,19 +1335,11 @@
       },
       {
         "type": "p",
-        "text": "No existe una bota universal para todas las trabajadoras. Una referencia puede ajustar bien y aun así ser inadecuada para la superficie o la exposición. La ficha de SST debe indicar qué desempeño necesita la empresa y qué documentos debe entregar el proveedor para demostrarlo."
+        "text": "No existe una bota universal para todas las trabajadoras. Una referencia puede ajustar bien y, aun así, ser inadecuada para la superficie o exposición del cargo. Por eso, la ficha de SST debe indicar qué desempeño necesita la empresa y qué documentos debe entregar el proveedor."
       },
       {
         "type": "p",
-        "text": "Puntera, comportamiento de la suela, resistencia frente a sustancias, propiedades eléctricas y altura de la caña se piden cuando la evaluación del cargo las justifica. Copiar todos los atributos de otra compra puede encarecer el pedido o dejar por fuera la característica que sí importa."
-      },
-      {
-        "type": "h3",
-        "text": "El color no reemplaza el criterio técnico"
-      },
-      {
-        "type": "p",
-        "text": "El color puede formar parte de la presentación corporativa, pero no convierte una bota en femenina ni demuestra su protección. Primero se aprueban desempeño, ajuste y tallas. Después se revisan las opciones visuales disponibles dentro de las referencias que pasaron la evaluación."
+        "text": "Puntera, comportamiento de la suela, resistencia frente a sustancias, propiedades eléctricas y altura de la caña se piden solo cuando la evaluación del cargo las justifica. Copiar todos los atributos de otra compra puede encarecer el pedido; dejar por fuera lo que sí importa puede generar un riesgo real."
       },
       {
         "type": "h2",
@@ -951,11 +1347,11 @@
       },
       {
         "type": "p",
-        "text": "Comprar una cantidad total sin separar tallas traslada el problema al día de la entrega. Consolida el pedido por referencia, talla, sede y usuaria. Si habrá inventario de respaldo, defínelo con el historial de ingresos, cambios y reposiciones, no repartiendo pares por igual entre todas las tallas."
+        "text": "Comprar una cantidad total sin separar tallas traslada el problema al día de la entrega. Consolida el pedido por referencia, talla, sede y usuaria. Si habrá inventario de respaldo, defínelo con el historial de ingresos, cambios y reposiciones, en lugar de repartir pares por igual entre todas las tallas."
       },
       {
         "type": "p",
-        "text": "También conviene confirmar qué tallas puede reponer el proveedor y en cuánto tiempo. Una referencia adecuada para el grupo actual puede volverse difícil de administrar si su curva es corta o si algunas tallas solo se fabrican por pedido."
+        "text": "También conviene confirmar qué tallas puede reponer el proveedor y en cuánto tiempo. Una referencia adecuada hoy puede volverse difícil de administrar si su curva es corta. Para empresas con operación en varias ciudades, vale la pena revisar la capacidad de despacho y [dotación empresarial en Medellín](/dotacion-empresarial-medellin/) frente a otras sedes."
       },
       {
         "type": "h2",
@@ -995,7 +1391,7 @@
       },
       {
         "type": "p",
-        "text": "El precio unitario no muestra el trabajo que generan una curva incompleta, una guía de talla imprecisa o una política de cambios lenta. Al comparar ofertas, agrega las muestras, el tallaje, los despachos por sede, la gestión de novedades y la reposición de tallas poco frecuentes."
+        "text": "El precio unitario no muestra el trabajo que generan una curva incompleta, una guía imprecisa o una política de cambios lenta. Al comparar ofertas, suma las muestras, el tallaje, los despachos por sede y la reposición de tallas poco frecuentes."
       },
       {
         "type": "p",
@@ -1039,11 +1435,47 @@
       },
       {
         "type": "p",
-        "text": "Cada cambio debe registrar el motivo. Talla corta, talla larga, presión lateral, movimiento del talón, defecto o error de despacho son problemas distintos. Si todo queda marcado como cambio de talla, el equipo pierde la oportunidad de corregir la referencia, la captura del dato o la recepción."
+        "text": "Cada cambio debe registrar el motivo. Talla corta, talla larga, presión lateral, movimiento del talón, defecto o error de despacho son problemas distintos. Si todo queda marcado como \"cambio de talla\", el equipo pierde la oportunidad de corregir la referencia."
       },
       {
         "type": "p",
-        "text": "Revisa esas novedades por modelo y talla después de cada entrega. Si una referencia concentra el mismo problema entre varias usuarias, vuelve a la muestra y a la guía del fabricante antes de hacer otra compra."
+        "text": "Revisa esas novedades por modelo y talla después de cada entrega. Si una referencia concentra el mismo problema entre varias usuarias, vuelve a la muestra y a la guía del fabricante. Este seguimiento ayuda a definir [cada cuánto renovar el calzado y los EPP de la empresa](/articulos-del-blog/cada-cuanto-renovar-uniformes-calzado-epp-empresa/), en lugar de fijar una fecha genérica."
+      },
+      {
+        "type": "h2",
+        "text": "Preguntas frecuentes sobre botas de seguridad para mujer"
+      },
+      {
+        "type": "h3",
+        "text": "¿Una bota unisex en talla pequeña sirve como bota de seguridad para mujer?"
+      },
+      {
+        "type": "p",
+        "text": "Puede ajustar el largo del pie, pero normalmente conserva el ancho y el volumen de una horma masculina. El resultado más común es holgura en el talón y presión en el antepié, aunque la talla sea correcta. Por eso conviene pedir referencias con horma para pie de mujer, no solo tallas reducidas de un modelo unisex."
+      },
+      {
+        "type": "h3",
+        "text": "¿Qué protección de puntera necesita una bota de seguridad para mujer?"
+      },
+      {
+        "type": "p",
+        "text": "Depende del riesgo del cargo, no del género de quien la usa. En términos generales: acero para impacto y compresión altos, compuesta o de policarbonato cuando se busca menos peso o hay exposición eléctrica, y sin refuerzo solo si SST descarta ese riesgo en la evaluación del puesto."
+      },
+      {
+        "type": "h3",
+        "text": "¿Cómo se debe hacer el tallaje para evitar cambios por talla?"
+      },
+      {
+        "type": "p",
+        "text": "Con la referencia real que se va a comprar y con las medias que se usarán en el trabajo. Si es posible, hazlo al final de una jornada. Registrar cargo, sede, referencia probada y resultado del ajuste permite auditar el proceso y corregir la guía de tallas si se repiten novedades."
+      },
+      {
+        "type": "h3",
+        "text": "¿La normativa colombiana exige un modelo específico de bota de seguridad para mujer?"
+      },
+      {
+        "type": "p",
+        "text": "No. La [Resolución 2400 de 1979](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=53565) y el [Decreto 1072 de 2015](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=62506) exigen que la empresa identifique el riesgo y suministre protección adecuada al cargo, pero no fijan marca, color ni referencia. La idoneidad técnica debe sustentarse en la evaluación de SST, y el ajuste debe validarse con la trabajadora que usará el calzado."
       },
       {
         "type": "h2",
@@ -1051,7 +1483,7 @@
       },
       {
         "type": "p",
-        "text": "Una solicitud ordenada permite que el proveedor responda con una referencia concreta y no con una lista de botas parecidas. Antes de enviarla, confirma estos datos:"
+        "text": "Una solicitud ordenada permite que el proveedor responda con una referencia concreta, y no con una lista de botas parecidas. Antes de enviarla, confirma estos datos:"
       },
       {
         "type": "li",
@@ -1075,14 +1507,14 @@
       },
       {
         "type": "p",
-        "text": "Agencias Nacionales puede cotizar botas de seguridad para mujer y otras referencias de calzado de trabajo con base en los riesgos, las cantidades y las tallas que defina tu empresa. Comparte la ficha de SST, las sedes y la curva estimada para revisar opciones sin reemplazar la evaluación técnica de la operación."
+        "text": "Agencias Nacionales puede cotizar botas de seguridad para mujer y otras referencias de calzado de trabajo según los riesgos, cantidades y tallas que defina tu empresa, dentro de tus [programas de dotación empresarial en Colombia](/dotaciones-empresariales-colombia/). Comparte la ficha de SST y la curva estimada para revisar opciones."
       }
     ]
   },
   {
     "slug": "dotacion-para-brigada-de-emergencias",
-    "title": "Dotación para brigada de emergencias",
-    "description": "Define la dotación para brigada de emergencias según riesgos, roles y sedes. Guía práctica para compras y SST con inventario, fichas y reposición.",
+    "title": "Dotación para brigada de emergencias: guía de compra 2026",
+    "description": "Guía práctica de dotación para brigada de emergencias en Colombia: EPP por rol, matriz por sede y turno, fichas técnicas, inventario y criterios de reposición para Compras y SST.",
     "excerpt": "La dotación para brigada de emergencias no se resuelve comprando el mismo chaleco, casco y par de guantes para todas las personas. Cada elemento debe responder a los escenarios de la sede, las tareas asignadas a la brigada y los peligros a los que podría exponerse durante una respuesta.",
     "date": "25 ago 2026",
     "dateISO": "2026-08-25",
@@ -1092,11 +1524,23 @@
     "blocks": [
       {
         "type": "p",
-        "text": "La dotación para brigada de emergencias no se resuelve comprando el mismo chaleco, casco y par de guantes para todas las personas. Cada elemento debe responder a los escenarios de la sede, las tareas asignadas a la brigada y los peligros a los que podría exponerse durante una respuesta."
+        "text": "La dotación para brigada de emergencias no se resuelve comprando el mismo chaleco, casco y par de guantes para todas las personas. Cada elemento debe responder a los escenarios de la sede. También debe responder a las tareas asignadas a la brigada y a los peligros que podría enfrentar durante una respuesta."
       },
       {
         "type": "p",
-        "text": "Para Compras y SST, el reto consiste en convertir el plan de emergencias en una solicitud clara: qué se necesita, quién lo usa, en qué sede, con qué especificación y bajo qué criterio se repone. Esta guía ayuda a organizar ese trabajo sin presentar una lista genérica como si sirviera para cualquier empresa."
+        "text": "Para Compras y SST, el reto consiste en convertir el plan de emergencias en una solicitud clara. Es decir, definir qué se necesita, quién lo usa, en qué sede, con qué especificación y bajo qué criterio se repone. Esta guía explica cómo estructurar los equipos de brigadista por rol, cómo armar una matriz por sede y turno, y cómo documentar la reposición. En ese sentido, evitamos presentar una lista genérica como si sirviera para cualquier empresa. Si tu empresa también está definiendo la [dotación empresarial](/dotaciones-empresariales-colombia/) para el resto del personal, conviene revisar ambos procesos en paralelo para no duplicar fichas técnicas."
+      },
+      {
+        "type": "h2",
+        "text": "¿Qué incluye la dotación para brigada de emergencias?"
+      },
+      {
+        "type": "p",
+        "text": "En términos generales, la dotación de un brigadista empresarial en Colombia se agrupa en tres bloques. El primero son prendas de identificación, como el chaleco o un distintivo. El segundo es el EPP seleccionado según el peligro de la tarea, que cubre cabeza, manos, ojos, pies y, en algunos casos, protección respiratoria o auditiva. El tercero son los equipos o insumos compartidos por sede, como botiquín, camilla, extintores y sistema de alerta. Sin embargo, no todo brigadista necesita los tres bloques: depende del rol dentro del plan de emergencias y del nivel de riesgo de su sede."
+      },
+      {
+        "type": "p",
+        "text": "Para aclarar los términos de esta guía, definamos algunos conceptos clave. **La brigada de emergencias empresarial** es el grupo de trabajadores capacitados y organizados para actuar ante incendios, evacuaciones o primeros auxilios dentro de una sede. **El brigadista de primera respuesta** es la persona encargada de atender una emergencia en los primeros minutos, antes de que lleguen bomberos, ARL u otros cuerpos de socorro externos. **La dotación personal** es el conjunto de prendas y EPP asignado a cada brigadista según su rol y su exposición al peligro. **Los equipos compartidos** son los recursos de uso colectivo por sede, como camillas o sistemas de alerta, que no pertenecen a una sola persona."
       },
       {
         "type": "h2",
@@ -1104,11 +1548,11 @@
       },
       {
         "type": "p",
-        "text": "El punto de partida es la evaluación incluida en el plan de prevención, preparación y respuesta ante emergencias. El artículo 2.2.4.6.25 del Decreto 1072 de 2015 indica que la brigada debe conformarse, capacitarse, entrenarse y dotarse de acuerdo con el nivel de riesgo y los recursos disponibles. Por eso, el catálogo viene después del análisis, no antes."
+        "text": "El punto de partida es la evaluación incluida en el plan de prevención, preparación y respuesta ante emergencias. El artículo 2.2.4.6.25 del [Decreto 1072 de 2015](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=62506) compila el Decreto Único Reglamentario del Sector Trabajo y regula el SG-SST. Este artículo indica que la brigada debe conformarse, capacitarse, entrenarse y dotarse de acuerdo con el nivel de riesgo y los recursos disponibles. Por eso, el catálogo de equipos de brigadista viene después del análisis de riesgo, no antes."
       },
       {
         "type": "p",
-        "text": "Una oficina, una bodega y una planta pueden pertenecer a la misma empresa y requerir dotaciones distintas. Antes de cotizar, SST debería dejar por escrito los escenarios que cubre la brigada y el alcance real de su actuación."
+        "text": "Una oficina, una bodega y una planta pueden pertenecer a la misma empresa. Sin embargo, cada una puede requerir una dotación distinta. Antes de cotizar, SST debería dejar por escrito los escenarios que cubre la brigada y el alcance real de su actuación. Si necesitas revisar además los EPP generales de la operación, la guía de [EPP en Colombia](/epp-colombia/) resume las categorías de protección personal más solicitadas por sector."
       },
       {
         "type": "li",
@@ -1128,7 +1572,7 @@
       },
       {
         "type": "li",
-        "text": "Apoyo externo previsto y límites de actuación del equipo interno."
+        "text": "Apoyo externo previsto (bomberos, ARL, cuerpos de socorro) y límites de actuación del equipo interno."
       },
       {
         "type": "h2",
@@ -1136,31 +1580,31 @@
       },
       {
         "type": "p",
-        "text": "Muchas solicitudes mezclan prendas, EPP y equipos compartidos en una sola lista. Separarlos ayuda a definir responsables, especificaciones, tallas, almacenamiento y reposición. También evita pedirle al proveedor de vestuario que resuelva equipos técnicos que deben revisar especialistas de otras áreas."
+        "text": "Muchas solicitudes mezclan prendas, EPP y equipos compartidos en una sola lista. Separarlos ayuda a definir responsables, especificaciones, tallas, almacenamiento y reposición. Además, evita pedirle al proveedor de vestuario que resuelva equipos técnicos que deben revisar especialistas de otras áreas, como camillas o sistemas de detección."
       },
       {
         "type": "h3",
-        "text": "Prendas e identificación del brigadista"
+        "text": "1. Prendas e identificación del brigadista"
       },
       {
         "type": "p",
-        "text": "Este grupo permite reconocer a la brigada durante un ejercicio o una emergencia. Puede incluir chalecos, prendas de trabajo u otros distintivos definidos por el plan interno. La ficha debe precisar color, material, tipo de cierre, bolsillos, marcación autorizada y condiciones de uso. Si la prenda llevará componentes reflectivos, la empresa debe indicar dónde se necesitan y qué desempeño espera."
+        "text": "Este grupo permite reconocer a la brigada durante un ejercicio o una emergencia real. Puede incluir chalecos, prendas de trabajo u otros distintivos definidos por el plan interno. La ficha debe precisar color, material, tipo de cierre, bolsillos, marcación autorizada y condiciones de uso. Si la prenda llevará componentes reflectivos, la empresa debe indicar dónde se necesitan y qué desempeño espera. Cuando la brigada comparte piso con personal operativo, conviene revisar también los criterios del [uniforme de trabajo](/categoria/uniformes-de-trabajo/) de la sede. Así se evita confusión visual entre roles."
       },
       {
         "type": "h3",
-        "text": "EPP seleccionado según el peligro"
+        "text": "2. EPP seleccionado según el peligro"
       },
       {
         "type": "p",
-        "text": "El casco, los guantes, la protección visual o el calzado no se eligen por el nombre del cargo. Se seleccionan según el peligro identificado, la tarea y el entorno en el que se usarán. Una misma referencia no cubre de manera automática golpes, sustancias, calor, electricidad o superficies húmedas. La matriz de peligros y las especificaciones de SST deben definir el desempeño requerido."
+        "text": "El casco, los guantes, la protección visual o el calzado no se eligen por el nombre del cargo. Se seleccionan según el peligro identificado, la tarea y el entorno en el que se usarán. Por ejemplo, una misma referencia no cubre de manera automática golpes, sustancias, calor, electricidad o superficies húmedas. Por eso, la matriz de peligros y las especificaciones de SST deben definir el desempeño requerido para cada elemento de EPP de brigada empresarial en Colombia."
       },
       {
         "type": "li",
-        "text": "Protección de cabeza y ojos, cuando el escenario evaluado la requiera."
+        "text": "Protección de cabeza y ojos, cuando el escenario evaluado la requiera. Si tu sede maneja riesgo de caída de objetos o trabajo en altura durante la respuesta, revisa la [guía de compra de casco de seguridad](/articulos-del-blog/casco-de-seguridad-guia-compra/)."
       },
       {
         "type": "li",
-        "text": "Guantes compatibles con la tarea y el peligro previsto."
+        "text": "Guantes compatibles con la tarea y el peligro previsto; la [guía de guantes de seguridad](/articulos-del-blog/guantes-de-seguridad-guia-compra/) explica cómo diferenciar corte, calor y químicos."
       },
       {
         "type": "li",
@@ -1171,12 +1615,28 @@
         "text": "Protección respiratoria o auditiva solo cuando la evaluación técnica la justifique."
       },
       {
+        "type": "p",
+        "text": "Si algún rol de la brigada opera en cubiertas, mezzanines o rescate en altura, la dotación debe coordinarse con los criterios de la [guía de EPP para trabajo en alturas](/articulos-del-blog/trabajo-en-alturas-guia-epp/). Esa guía detalla arnés, línea de vida y puntos de anclaje."
+      },
+      {
         "type": "h3",
-        "text": "Equipos e insumos compartidos"
+        "text": "3. Equipos e insumos compartidos"
       },
       {
         "type": "p",
-        "text": "Radios, sistemas de alerta, camillas, botiquines y otros recursos de respuesta no son dotación personal. Su selección, ubicación e inspección pertenecen al plan de emergencias y deben quedar a cargo del responsable técnico correspondiente. Compras puede consolidar el proceso, pero conviene mantener estos equipos en un capítulo separado para no confundir cantidades por persona con cantidades por sede."
+        "text": "Radios, sistemas de alerta, camillas, botiquines y otros recursos de respuesta no son dotación personal. Su selección, ubicación e inspección pertenecen al plan de emergencias, a cargo del responsable técnico correspondiente. Compras puede consolidar el proceso, pero conviene mantener estos equipos en un capítulo separado. De esa manera no se confunden cantidades por persona con cantidades por sede."
+      },
+      {
+        "type": "h2",
+        "text": "Ejemplo práctico: una empresa con tres sedes organiza su brigada"
+      },
+      {
+        "type": "p",
+        "text": "Para ilustrar cómo se aplica todo lo anterior, veamos un caso hipotético. Una empresa tiene una oficina administrativa, una bodega y una planta de producción en ciudades distintas. SST evalúa cada sede por separado y define roles diferentes para cada brigada. En la oficina, los brigadistas cubren evacuación y primeros auxilios básicos, por lo que su dotación se limita a chaleco, botiquín portátil y guantes de nitrilo. En la bodega, el riesgo de golpes y caída de objetos obliga a sumar casco y calzado con puntera. En la planta, además del casco y el calzado, los brigadistas de control de incendios reciben guantes resistentes al calor y protección auditiva, según la matriz de peligros del área."
+      },
+      {
+        "type": "p",
+        "text": "Como resultado, Compras recibe tres solicitudes distintas en lugar de una lista única. Cada una indica sede, turno, rol y especificación técnica."
       },
       {
         "type": "h2",
@@ -1188,7 +1648,7 @@
       },
       {
         "type": "p",
-        "text": "No basta con contar brigadistas en una lista general. Si cinco personas están asignadas al turno de noche en una sede, la dotación debe estar disponible allí y en ese horario. Trasladar equipos entre sedes para cuadrar el inventario en una hoja de cálculo puede dejar un punto sin cobertura cuando se necesita."
+        "text": "No basta con contar brigadistas en una lista general. Por ejemplo, si cinco personas están asignadas al turno de noche en una sede, la dotación debe estar disponible allí y en ese horario. Trasladar equipos entre sedes para cuadrar el inventario en una hoja de cálculo puede dejar un punto sin cobertura cuando se necesita. Para empresas con operación en varias ciudades, este ejercicio suele repetirse por regional. Si una de tus sedes está en Antioquia, la página de [dotación empresarial en Medellín](/dotacion-empresarial-medellin/) resume tiempos y cobertura de entrega en esa zona."
       },
       {
         "type": "li",
@@ -1200,7 +1660,7 @@
       },
       {
         "type": "li",
-        "text": "Rol previsto en el plan de emergencias."
+        "text": "Rol previsto en el plan de emergencias (evacuación, primer respondiente, control de incendios)."
       },
       {
         "type": "li",
@@ -1220,7 +1680,7 @@
       },
       {
         "type": "p",
-        "text": "La cantidad base de elementos personales sale del número de brigadistas activos que realmente los usarán. Después se revisan rotación, tallas, tiempos de reposición y continuidad de la operación. No existe un porcentaje universal de reserva que funcione igual para una oficina pequeña y una operación con varias sedes."
+        "text": "La cantidad base de elementos personales sale del número de brigadistas activos que realmente los usarán. Después se revisan rotación, tallas, tiempos de reposición y continuidad de la operación. Sin embargo, no existe un porcentaje universal de reserva que funcione igual para una oficina pequeña y una operación con varias sedes."
       },
       {
         "type": "p",
@@ -1232,7 +1692,7 @@
       },
       {
         "type": "p",
-        "text": "Una ficha vaga produce ofertas difíciles de comparar. Pedir solo un \"chaleco rojo\" o una \"bota de seguridad\" deja decisiones importantes abiertas. La ficha debe describir el uso esperado y los atributos que SST haya definido, sin copiar características de una marca cuando no son necesarias."
+        "text": "Una ficha vaga produce ofertas difíciles de comparar. Pedir solo un \"chaleco rojo\" o una \"bota de seguridad\" deja decisiones importantes abiertas. Por eso, la ficha debe describir el uso esperado y los atributos que SST haya definido, sin copiar características de una marca cuando no son necesarias."
       },
       {
         "type": "li",
@@ -1264,11 +1724,11 @@
       },
       {
         "type": "p",
-        "text": "El brigadista necesita moverse, agacharse y manipular equipos sin que la prenda se abra, se enganche o limite el alcance. Una muestra permite revisar el chaleco sobre el uniforme habitual, confirmar tallas y detectar interferencias entre guantes, mangas, casco y otros elementos."
+        "text": "El brigadista necesita moverse, agacharse y manipular equipos sin que la prenda se abra, se enganche o limite el alcance. Una muestra permite revisar el chaleco sobre el uniforme habitual. También permite confirmar tallas y detectar interferencias entre guantes, mangas, casco y otros elementos."
       },
       {
         "type": "p",
-        "text": "Haz la prueba con personas de distintos turnos y contexturas. Registra el resultado por referencia y talla para que Compras no tenga que empezar de cero en la siguiente reposición. Si cambia el material o la construcción ofrecida, la aprobación anterior ya no basta y conviene revisar la nueva muestra."
+        "text": "Haz la prueba con personas de distintos turnos y contexturas. Registra el resultado por referencia y talla para que Compras no empiece de cero en la siguiente reposición. De hecho, si cambia el material o la construcción ofrecida, la aprobación anterior ya no basta y conviene revisar la nueva muestra."
       },
       {
         "type": "h2",
@@ -1276,7 +1736,7 @@
       },
       {
         "type": "p",
-        "text": "La entrega física debe compararse con la ficha aprobada. La factura por sí sola no permite confirmar el cumplimiento. Revisa cantidades, tallas, marcación, estado de las piezas y documentos solicitados. Después asigna cada elemento personal y registra dónde quedan los recursos compartidos."
+        "text": "La entrega física debe compararse con la ficha aprobada. La factura por sí sola no permite confirmar el cumplimiento. Por eso, revisa cantidades, tallas, marcación, estado de las piezas y documentos solicitados. Después asigna cada elemento personal y registra dónde quedan los recursos compartidos."
       },
       {
         "type": "li",
@@ -1300,7 +1760,43 @@
       },
       {
         "type": "p",
-        "text": "El Decreto 1072 también exige inspeccionar los equipos relacionados con la prevención y atención de emergencias con la periodicidad definida en el SG-SST. El inventario debe ayudar a encontrar faltantes y daños antes del simulacro o de una situación real."
+        "text": "El Decreto 1072 también exige inspeccionar los equipos relacionados con la prevención y atención de emergencias, con la periodicidad definida en el SG-SST. El inventario debe ayudar a encontrar faltantes y daños antes del simulacro o de una situación real."
+      },
+      {
+        "type": "h3",
+        "text": "Checklist: qué revisar cada mes en el kit de la brigada"
+      },
+      {
+        "type": "p",
+        "text": "Además del inventario formal, conviene fijar una revisión rápida y mensual por sede. Esta lista de verificación resume los puntos que un líder de brigada o un encargado de SST puede confirmar en pocos minutos:"
+      },
+      {
+        "type": "li",
+        "text": "¿El chaleco o distintivo está limpio, completo y sin roturas visibles?"
+      },
+      {
+        "type": "li",
+        "text": "¿El casco no presenta grietas, golpes fuertes ni suciedad que afecte la visión?"
+      },
+      {
+        "type": "li",
+        "text": "¿Los guantes conservan su elasticidad y no tienen cortes ni perforaciones?"
+      },
+      {
+        "type": "li",
+        "text": "¿El calzado mantiene la suela adherida y la puntera sin deformaciones?"
+      },
+      {
+        "type": "li",
+        "text": "¿El botiquín tiene los insumos vigentes y sin fecha de vencimiento cumplida?"
+      },
+      {
+        "type": "li",
+        "text": "¿Las tallas asignadas siguen correspondiendo a los brigadistas activos del turno?"
+      },
+      {
+        "type": "li",
+        "text": "¿Los equipos compartidos, como camilla o radios, están ubicados donde indica la matriz?"
       },
       {
         "type": "h2",
@@ -1308,7 +1804,7 @@
       },
       {
         "type": "p",
-        "text": "Una fecha fija puede servir como recordatorio, pero no reemplaza la inspección. La reposición puede activarse por desgaste, daño, pérdida, contaminación, cambio de talla, retiro del brigadista o modificación del riesgo. También debe revisarse cuando una referencia deja de estar disponible y el proveedor propone otra."
+        "text": "Una fecha fija puede servir como recordatorio, pero no reemplaza la inspección. La reposición de la dotación de brigada de emergencias puede activarse por varios motivos: desgaste, daño, pérdida, contaminación, cambio de talla, retiro del brigadista o modificación del riesgo. También debe revisarse cuando una referencia deja de estar disponible y el proveedor propone otra."
       },
       {
         "type": "li",
@@ -1336,7 +1832,7 @@
       },
       {
         "type": "p",
-        "text": "Una solicitud completa reduce correos de ida y vuelta y permite comparar propuestas sobre la misma base. Antes de enviarla, confirma que Compras y SST estén trabajando con la misma versión de la matriz."
+        "text": "Una solicitud completa reduce correos de ida y vuelta. Además, permite comparar propuestas sobre la misma base. Antes de enviarla, confirma que Compras y SST estén trabajando con la misma versión de la matriz. Si la operación también necesita EPP para otras áreas fuera de la brigada, la [categoría de EPP](/categoria/epp/) del catálogo agrupa las referencias más pedidas por industria."
       },
       {
         "type": "li",
@@ -1359,8 +1855,36 @@
         "text": "Fecha requerida y condiciones de recepción."
       },
       {
+        "type": "h2",
+        "text": "Preguntas frecuentes sobre dotación de brigada de emergencias"
+      },
+      {
+        "type": "h3",
+        "text": "¿La dotación de la brigada es distinta de la dotación legal del cargo?"
+      },
+      {
         "type": "p",
-        "text": "Agencias Nacionales puede cotizar uniformes de trabajo, calzado de seguridad y EPP para la brigada con base en las especificaciones de tu empresa. Comparte la matriz, las cantidades, las tallas y las ciudades de entrega para revisar la solicitud sin sustituir la evaluación técnica de SST."
+        "text": "Sí. La dotación legal de calzado y vestido de labor que exige la ley laboral responde al cargo y la antigüedad del trabajador. En cambio, la dotación de brigada responde al rol dentro del plan de emergencias y se define según el [Decreto 1072 de 2015](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=62506). Sin embargo, en la práctica muchas empresas coordinan ambos procesos con el mismo proveedor para simplificar tallas y entregas."
+      },
+      {
+        "type": "h3",
+        "text": "¿Quién define las especificaciones técnicas de la dotación de brigada?"
+      },
+      {
+        "type": "p",
+        "text": "SST define las especificaciones, con base en la matriz de peligros y el plan de emergencias de cada sede. Compras consolida cantidades, cotiza y gestiona la entrega. Sin embargo, no debería sustituir el criterio técnico sobre qué protección corresponde a cada peligro."
+      },
+      {
+        "type": "h3",
+        "text": "¿Con qué frecuencia se debe revisar la dotación de la brigada?"
+      },
+      {
+        "type": "p",
+        "text": "No hay una fecha única válida para todas las empresas. La inspección debe seguir la periodicidad definida en el SG-SST. Además, debe activarse por daño, cambio de rol o resultado de simulacros, tal como se describe en la sección de reposición de esta guía."
+      },
+      {
+        "type": "p",
+        "text": "Agencias Nacionales puede cotizar uniformes de trabajo, calzado de seguridad y EPP para la brigada con base en las especificaciones de tu empresa. Comparte la matriz, las cantidades, las tallas y las ciudades de entrega —incluyendo sedes cubiertas por [EPP en Medellín](/epp-medellin/) o por nuestra atención nacional— para revisar la solicitud sin sustituir la evaluación técnica de SST."
       }
     ]
   },
