@@ -1,5 +1,266 @@
 [
   {
+    "slug": "casco-de-seguridad-guia-compra",
+    "title": "Casco de seguridad: guía de compra",
+    "description": "Casco de seguridad: elige tipo, clase, ajuste y accesorios según el riesgo. Guía para Compras y SST con criterios de prueba, recepción y reposición.",
+    "excerpt": "Comprar un casco de seguridad para una empresa exige definir el riesgo que debe controlar, el tipo de impacto, la clase eléctrica, el ajuste y los accesorios compatibles antes de comparar precios.",
+    "date": "31 ago 2026",
+    "dateISO": "2026-08-31",
+    "tag": "Tips",
+    "author": "Agencias Nacionales",
+    "image": "casco-de-seguridad-guia-compra.webp",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Comprar un casco de seguridad para una empresa exige definir el riesgo que debe controlar, el tipo de impacto, la clase eléctrica, el ajuste y los accesorios compatibles antes de comparar precios. La palabra 'industrial' por sí sola no demuestra que dos referencias ofrezcan el mismo desempeño."
+      },
+      {
+        "type": "p",
+        "text": "Cuando Compras recibe una ficha clara de SST, puede solicitar ofertas equivalentes, revisar los documentos del modelo exacto y recibir cada lote contra una muestra aprobada. El proceso también deja criterios concretos para inspeccionar, almacenar y retirar el casco durante su uso."
+      },
+      {
+        "type": "h2",
+        "text": "Empieza por el peligro que debe controlar"
+      },
+      {
+        "type": "p",
+        "text": "En Colombia, el artículo 2.2.4.6.24 del Decreto 1072 de 2015 indica que los EPP se usan como complemento de las demás medidas de control y de acuerdo con la identificación de peligros y la evaluación y valoración de los riesgos. El casco no reemplaza controles en la fuente, medidas de ingeniería, procedimientos seguros ni demarcaciones que correspondan."
+      },
+      {
+        "type": "p",
+        "text": "La Resolución 2400 de 1979 también establece, en sus artículos 176 y 177, que el equipo suministrado debe ser adecuado a la naturaleza del riesgo. Para protección de la cabeza menciona, entre otros escenarios, la exposición a golpes y a posibles caídas de materiales. La obligación general no convierte una referencia en adecuada para cualquier labor: SST debe bajar el análisis al puesto y a la tarea."
+      },
+      {
+        "type": "li",
+        "text": "Origen y dirección del posible impacto: objetos que caen desde arriba, golpes laterales, proyecciones o contacto con estructuras."
+      },
+      {
+        "type": "li",
+        "text": "Presencia de conductores o equipos energizados que puedan entrar en contacto con la cabeza."
+      },
+      {
+        "type": "li",
+        "text": "Posiciones de trabajo, desplazamientos y movimientos que puedan desprender el casco."
+      },
+      {
+        "type": "li",
+        "text": "Condiciones de uso como sol, lluvia, polvo, temperatura, sustancias y frecuencia de exposición."
+      },
+      {
+        "type": "h2",
+        "text": "Distingue el tipo de impacto y la clase eléctrica"
+      },
+      {
+        "type": "p",
+        "text": "Como referencia técnica, el boletín de OSHA sobre protección de cabeza publicado en 2024 distingue dos tipos de casco por impacto. El Tipo I está diseñado para reducir la fuerza de golpes en la parte superior de la cabeza. El Tipo II contempla golpes en la parte superior y en los lados. Esta clasificación ayuda a formular la compra, pero OSHA no es una obligación jurídica colombiana por sí sola."
+      },
+      {
+        "type": "p",
+        "text": "La misma referencia separa las clases eléctricas G, E y C. Las clases G y E corresponden a niveles diferentes de protección frente al contacto con conductores, mientras que la clase C no está destinada a proteger frente a peligros eléctricos. SST debe escoger la clase a partir de la exposición evaluada y pedir el soporte aplicable al modelo, no basarse en el color ni en una descripción comercial."
+      },
+      {
+        "type": "h3",
+        "text": "No uses la palabra dieléctrico como ficha técnica"
+      },
+      {
+        "type": "p",
+        "text": "Una oferta que solo diga 'casco dieléctrico' deja preguntas abiertas. Compras necesita la norma declarada, su edición, la clase, la referencia exacta y el documento que respalda ese desempeño. También debe confirmar si la configuración ofrecida tiene ventilación, accesorios o modificaciones que cambien las condiciones de uso indicadas por el fabricante."
+      },
+      {
+        "type": "h2",
+        "text": "Convierte el análisis en una ficha comparable"
+      },
+      {
+        "type": "p",
+        "text": "La solicitud de cotización debe permitir que dos proveedores respondan sobre el mismo alcance. Evita copiar una descripción de catálogo sin revisar si corresponde al riesgo. SST define el desempeño y Compras organiza los atributos que se podrán verificar en la oferta y en la recepción."
+      },
+      {
+        "type": "li",
+        "text": "Fabricante, referencia exacta y uso previsto por el fabricante."
+      },
+      {
+        "type": "li",
+        "text": "Norma y edición solicitadas, tipo de impacto y clase eléctrica cuando apliquen."
+      },
+      {
+        "type": "li",
+        "text": "Material del casquete, sistema de suspensión, rango de ajuste y banda de sudor."
+      },
+      {
+        "type": "li",
+        "text": "Barbuquejo, puntos de sujeción y condiciones en las que debe usarse."
+      },
+      {
+        "type": "li",
+        "text": "Ranuras y accesorios compatibles, identificados por referencia y aprobados por el fabricante."
+      },
+      {
+        "type": "li",
+        "text": "Marcados, lote o fecha de fabricación, manual de uso y criterios de retiro."
+      },
+      {
+        "type": "h2",
+        "text": "Revisa el ajuste con una muestra real"
+      },
+      {
+        "type": "p",
+        "text": "El casco debe quedar estable sin generar puntos de presión que lleven a aflojarlo durante la jornada. Una muestra permite revisar el rango de ajuste, la suspensión, el contacto de la banda, la estabilidad al agacharse y la facilidad de graduación con los demás EPP puestos."
+      },
+      {
+        "type": "p",
+        "text": "Incluye personas con diferentes medidas y formas de cabeza dentro de la prueba. Registra la referencia, la configuración y el resultado. Si una talla o suspensión no se ajusta bien a parte del equipo, la solución puede requerir otra opción compatible en lugar de forzar una única referencia para todos."
+      },
+      {
+        "type": "h3",
+        "text": "Define la retención según la tarea"
+      },
+      {
+        "type": "p",
+        "text": "El barbuquejo puede ayudar a mantener el casco en su sitio cuando la postura, el movimiento o una posible caída pueden desprenderlo. Debe ser compatible con el modelo y corresponder a la evaluación de la tarea. No agregues una correa genérica ni perfores el casquete para instalarla."
+      },
+      {
+        "type": "h2",
+        "text": "Verifica la compatibilidad de los accesorios"
+      },
+      {
+        "type": "p",
+        "text": "Protección auditiva tipo copa, pantalla facial, gafas, lámpara o elementos de comunicación pueden interferir con la suspensión, el ajuste o el desempeño del conjunto. Una ranura lateral parecida no garantiza que un accesorio sea compatible. Pide al fabricante o proveedor la combinación aprobada y cotiza el sistema completo cuando la operación lo requiera."
+      },
+      {
+        "type": "p",
+        "text": "Durante la prueba, verifica que la copa auditiva selle, que la pantalla se mueva sin golpear el casquete y que el peso adicional no desplace el casco. Si el accesorio obliga a llevar la suspensión floja o deja espacios, la combinación debe revisarse antes del pedido."
+      },
+      {
+        "type": "h2",
+        "text": "Personaliza solo con autorización del fabricante"
+      },
+      {
+        "type": "p",
+        "text": "La identificación por color o logo puede ser útil para reconocer áreas y roles, pero no debe alterar el casquete. La ficha de 2024 del Instituto Nacional de Seguridad y Salud en el Trabajo de España advierte que pinturas, solventes, adhesivos y accesorios no recomendados pueden afectar el casco. Úsala como referencia técnica y confirma el método de marcación permitido para el modelo exacto."
+      },
+      {
+        "type": "p",
+        "text": "Incluye en la muestra la ubicación, tamaño, material y proceso de aplicación del logo. Así, el proveedor no decide la marcación después de adjudicar y el equipo de recepción puede compararla con lo aprobado sin improvisar."
+      },
+      {
+        "type": "h2",
+        "text": "Pide evidencia del modelo ofrecido"
+      },
+      {
+        "type": "p",
+        "text": "El nombre de una norma en la cotización no basta. Solicita documentos donde aparezcan el fabricante, la referencia, la clasificación y el alcance que necesitas. Revisa que los datos del certificado, la ficha y el marcado del casco correspondan entre sí. Si el documento cubre otra familia o una configuración distinta, pide aclaración antes de evaluar el precio."
+      },
+      {
+        "type": "li",
+        "text": "Ficha técnica vigente y manual del fabricante en un idioma que el equipo pueda aplicar."
+      },
+      {
+        "type": "li",
+        "text": "Certificado o reporte aplicable a la referencia y a la norma solicitada."
+      },
+      {
+        "type": "li",
+        "text": "Instrucciones de ajuste, limpieza, almacenamiento, inspección y retiro de servicio."
+      },
+      {
+        "type": "li",
+        "text": "Listado de repuestos y accesorios aprobados para esa referencia."
+      },
+      {
+        "type": "h2",
+        "text": "Haz una prueba de uso antes del pedido completo"
+      },
+      {
+        "type": "p",
+        "text": "Una prueba controlada no certifica el casco ni reemplaza los ensayos. Sirve para detectar problemas de ajuste, estabilidad, compatibilidad y uso diario antes de comprar en volumen. Define tareas, duración, participantes y preguntas de evaluación con SST."
+      },
+      {
+        "type": "p",
+        "text": "Registra si el casco permanece ajustado, si crea presión, si limita la visión, si choca con otros EPP y si puede graduarse con facilidad. Cualquier cambio de modelo, suspensión o accesorio después de la prueba debe volver a revisarse; no apruebes una muestra y recibas otra configuración."
+      },
+      {
+        "type": "h2",
+        "text": "Recibe cada lote contra la muestra aprobada"
+      },
+      {
+        "type": "p",
+        "text": "La recepción debe confirmar más que cantidad y color. Separa una muestra del lote, revisa el estado del empaque y compara casquete, suspensión, barbuquejo, accesorios y marcados con la referencia aprobada. Documenta diferencias antes de distribuir."
+      },
+      {
+        "type": "li",
+        "text": "Referencia, color, talla o rango de ajuste y cantidades entregadas."
+      },
+      {
+        "type": "li",
+        "text": "Casquete sin grietas, deformaciones, perforaciones ni señales de impacto."
+      },
+      {
+        "type": "li",
+        "text": "Suspensión completa, bien instalada y correspondiente al modelo."
+      },
+      {
+        "type": "li",
+        "text": "Marcados internos legibles y documentos coincidentes con el producto."
+      },
+      {
+        "type": "li",
+        "text": "Accesorios y repuestos en las referencias y cantidades contratadas."
+      },
+      {
+        "type": "h2",
+        "text": "Define inspección, almacenamiento y retiro"
+      },
+      {
+        "type": "p",
+        "text": "OSHA recomienda revisar el casquete, la suspensión, el barbuquejo y los accesorios; seguir las indicaciones del fabricante sobre vida útil; y retirar el casco después de un impacto importante, aunque el daño no sea visible. También aconseja almacenarlo limpio y seco, lejos de luz solar directa, temperaturas extremas y sustancias que puedan degradarlo. Estas pautas son una referencia técnica externa y deben aplicarse junto con los requisitos colombianos y el manual del modelo."
+      },
+      {
+        "type": "p",
+        "text": "Asigna un código o registro por unidad o por lote, según el tamaño de la operación. Guarda fecha de entrega, referencia, inspecciones, novedades y motivo de retiro. Ese historial permite separar el desgaste normal de los daños por impacto, almacenamiento incorrecto o uso de accesorios no aprobados."
+      },
+      {
+        "type": "h3",
+        "text": "No fijes una fecha única para todos los cascos"
+      },
+      {
+        "type": "p",
+        "text": "La reposición no debe depender de una regla genérica copiada de otro modelo. Exposición al sol, químicos, golpes, frecuencia de uso, condiciones de almacenamiento y deterioro de la suspensión pueden cambiar el momento de retiro. Usa el manual del fabricante y los hallazgos de inspección para definirlo."
+      },
+      {
+        "type": "h2",
+        "text": "Evita cuatro errores frecuentes"
+      },
+      {
+        "type": "li",
+        "text": "Comprar un solo casco para construcción, electricidad, visitas y trabajo en alturas sin comparar los riesgos de cada tarea."
+      },
+      {
+        "type": "li",
+        "text": "Elegir por color, precio o número de puntos de suspensión sin verificar tipo, clase y documentos."
+      },
+      {
+        "type": "li",
+        "text": "Mezclar casquetes, suspensiones, barbuquejos y protectores de referencias que no han sido aprobadas como conjunto."
+      },
+      {
+        "type": "li",
+        "text": "Distribuir el lote antes de revisar marcados, estado físico, ajuste y coincidencia con la muestra."
+      },
+      {
+        "type": "h2",
+        "text": "Información mínima para solicitar la cotización"
+      },
+      {
+        "type": "p",
+        "text": "Comparte con el proveedor la matriz de peligros aplicable, el tipo y la clase definidos por SST, las referencias de accesorios, el método autorizado de marcación, las cantidades por sede, el lugar de entrega y los documentos exigidos. Añade si necesitas muestras, acompañamiento para tallaje o entregas parciales."
+      },
+      {
+        "type": "p",
+        "text": "Si tu empresa necesita cotizar cascos de seguridad junto con protección visual, auditiva, uniformes o calzado de trabajo, Agencias Nacionales puede organizar la propuesta por referencia, cantidad y ciudad de entrega. La aprobación técnica debe mantenerse en manos de SST y sustentarse en los riesgos, los requisitos vigentes y la documentación del fabricante."
+      }
+    ]
+  },
+  {
     "slug": "guantes-de-seguridad-guia-compra",
     "title": "Guantes de seguridad: guía de compra",
     "description": "Guantes de seguridad: define la referencia por peligro, tarea, ajuste y consumo. Guía para Compras y SST con criterios de prueba, recepción y reposición.",
