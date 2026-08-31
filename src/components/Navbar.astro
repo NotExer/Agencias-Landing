@@ -626,6 +626,12 @@ const searchIndex = [
       if (!slug || !name || !image) return;
 
       const wasAdded = addToCart({ slug, name, image });
+      if (wasAdded) {
+        window.gtag?.("event", "add_to_quote", {
+          item_id: slug,
+          item_name: name,
+        });
+      }
 
       const label = button.querySelector<HTMLElement>("[data-cart-button-label]");
       const previousLabel = label?.textContent ?? "Agregar a cotización";

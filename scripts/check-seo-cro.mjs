@@ -191,6 +191,51 @@ if (!contactPage.includes("contact_form_whatsapp")) {
   console.error("The quote form is missing the GA4 generate_lead event.");
   process.exit(1);
 }
+if (!contactPage.includes('"contact_form_submit"')) {
+  console.error("The quote form is missing its dedicated GA4 contact_form_submit event.");
+  process.exit(1);
+}
+
+const layoutSource = await readFile(path.join(root, "src/layouts/Layout.astro"), "utf8");
+for (const eventName of ["whatsapp_click", "phone_click", "email_click"]) {
+  if (!layoutSource.includes(`"${eventName}"`)) {
+    console.error(`Global conversion tracking is missing the ${eventName} event.`);
+    process.exit(1);
+  }
+}
+
+const navbarSource = await readFile(path.join(root, "src/components/Navbar.astro"), "utf8");
+if (!navbarSource.includes('"add_to_quote"')) {
+  console.error("Quote-cart tracking is missing the add_to_quote event.");
+  process.exit(1);
+}
+
+const cartSource = await readFile(path.join(root, "src/pages/carrito.astro"), "utf8");
+if (!cartSource.includes('"begin_quote"')) {
+  console.error("Quote-cart tracking is missing the begin_quote event.");
+  process.exit(1);
+}
+
+const sitemap = await readFile(path.join(root, "dist/sitemap-0.xml"), "utf8");
+if (sitemap.includes("https://agenciasnacionales.com/carrito/")) {
+  console.error("The noindex cart page must not be included in the sitemap.");
+  process.exit(1);
+}
+
+const sampleProduct = await readFile(
+  path.join(root, "dist/producto/zapato-tipo-crocs-ref-219/index.html"),
+  "utf8",
+);
+const sampleProductJsonLd = [...sampleProduct.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+  .map((match) => JSON.parse(match[1]));
+if (sampleProductJsonLd.some((item) => item["@type"] === "Product")) {
+  console.error("Product structured data without an Offer, Review, or AggregateRating must not be published.");
+  process.exit(1);
+}
+if (!sampleProductJsonLd.some((item) => item["@type"] === "BreadcrumbList")) {
+  console.error("Product pages must retain BreadcrumbList structured data.");
+  process.exit(1);
+}
 
 const articlePage = await readFile(
   path.join(root, "dist/articulos-del-blog/como-elegir-calzado-de-trabajo-comodo-jornadas-largas/index.html"),
