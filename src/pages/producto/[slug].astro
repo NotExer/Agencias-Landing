@@ -17,16 +17,6 @@ const { product } = Astro.props;
 const raw = product.description.join(" ").replace(/\s+/g, " ").trim();
 const description = raw.length > 158 ? raw.slice(0, 155).trimEnd() + "…" : raw;
 
-const productLd = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: product.name,
-  description: raw,
-  image: product.images.map((i) => new URL(i.src, Astro.site).href),
-  category: product.category,
-  brand: { "@type": "Brand", name: "Agencias Nacionales S.A.S" },
-};
-
 const breadcrumbLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -50,7 +40,6 @@ const breadcrumbLd = {
   image={product.images[0]?.src}
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(productLd)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
   </Fragment>
   <Navbar />

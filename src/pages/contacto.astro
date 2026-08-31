@@ -277,6 +277,9 @@ import { waHref, WHATSAPP_NUMBER } from "../data/contact";
           `Solicitud: ${data.get("message")}`,
         ].join("\n");
 
+        window.gtag?.("event", "contact_form_submit", {
+          method: "whatsapp",
+        });
         window.gtag?.("event", "generate_lead", {
           method: "contact_form_whatsapp",
         });

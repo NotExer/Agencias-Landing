@@ -162,6 +162,14 @@ import Footer from "../components/Footer.astro";
     });
 
     document.getElementById("cart-page-clear")?.addEventListener("click", clearCart);
+    document.getElementById("cart-page-quote")?.addEventListener("click", () => {
+      window.gtag?.("event", "begin_quote", {
+        item_count: getCount(),
+      });
+      window.gtag?.("event", "generate_lead", {
+        method: "quote_cart_whatsapp",
+      });
+    });
     if (!window.__agenciasCartPageBound) {
       window.__agenciasCartPageBound = true;
       window.addEventListener("cart:updated", renderCartPage);

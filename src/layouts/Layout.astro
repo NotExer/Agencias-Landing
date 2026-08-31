@@ -164,12 +164,29 @@ const organization = {
         if (!window.__agenciasLeadTrackingBound) {
           window.__agenciasLeadTrackingBound = true;
           document.addEventListener("click", (event) => {
-            const link = event.target.closest?.('a[href*="wa.me/"]');
+            const link = event.target.closest?.("a[href]");
             if (!link) return;
-            window.gtag?.("event", "generate_lead", {
-              method: "whatsapp",
-              link_url: link.href,
-            });
+
+            const href = link.href;
+            if (href.includes("wa.me/")) {
+              window.gtag?.("event", "whatsapp_click", { link_url: href });
+              window.gtag?.("event", "generate_lead", {
+                method: "whatsapp",
+                link_url: href,
+              });
+              return;
+            }
+
+            if (href.startsWith("tel:")) {
+              window.gtag?.("event", "phone_click", { link_url: href });
+              window.gtag?.("event", "generate_lead", { method: "phone" });
+              return;
+            }
+
+            if (href.startsWith("mailto:")) {
+              window.gtag?.("event", "email_click", { link_url: href });
+              window.gtag?.("event", "generate_lead", { method: "email" });
+            }
           });
         }
       })();

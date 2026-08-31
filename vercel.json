@@ -91,6 +91,21 @@
       "source": "/pol%C3%ADticas/pol%C3%ADtica-ambiental",
       "destination": "/politica_ambiental/",
       "permanent": true
+    },
+    {
+      "source": "/camisa-m-c-dril-caqui",
+      "destination": "/producto/camisa-dril-caqui-manga-corta/",
+      "permanent": true
+    },
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/hospitalaria.php",
+      "destination": "/categoria/hospitalaria/",
+      "permanent": true
     }
   ]
 }

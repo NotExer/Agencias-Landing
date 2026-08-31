@@ -28,6 +28,9 @@ const required = new Map([
   ["/bota-soldador-inyectada", "/producto/bota-soldador-inyectada/"],
   ["/pantal%C3%B3n-epm", "/producto/pantalon-epm/"],
   ["/pava-epm-con-solapa-especiales", "/producto/pava-epm/"],
+  ["/camisa-m-c-dril-caqui", "/producto/camisa-dril-caqui-manga-corta/"],
+  ["/index.php", "/"],
+  ["/hospitalaria.php", "/categoria/hospitalaria/"],
 ]);
 
 for (const [source, destination] of required) {
