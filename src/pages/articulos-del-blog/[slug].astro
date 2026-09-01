@@ -41,6 +41,69 @@ for (const block of article.blocks) {
   }
 }
 
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+// Supports simple inline markdown links: [texto](/ruta/) for internal site
+// links, and [texto](https://dominio-confiable/...) for citations to a small
+// allowlist of official/standards sources. Falls back to plain escaped text
+// when no link syntax is present, so existing article content renders
+// exactly as before.
+const TRUSTED_EXTERNAL_HOSTS = [
+  "www.suin-juriscol.gov.co",
+  "suin-juriscol.gov.co",
+  "www.mintrabajo.gov.co",
+  "mintrabajo.gov.co",
+  "www.minsalud.gov.co",
+  "minsalud.gov.co",
+  "www.icontec.org",
+  "icontec.org",
+  "www.ansi.org",
+  "ansi.org",
+  "www.alcaldiabogota.gov.co",
+  "alcaldiabogota.gov.co",
+  "www.funcionpublica.gov.co",
+  "funcionpublica.gov.co",
+];
+
+function isTrustedExternal(href: string): boolean {
+  try {
+    const url = new URL(href);
+    return url.protocol === "https:" && TRUSTED_EXTERNAL_HOSTS.includes(url.host);
+  } catch {
+    return false;
+  }
+}
+
+function renderInline(text: string): string {
+  const linkPattern = /\[([^\]]+)\]\((\/[a-z0-9\-\/]*\/|https:\/\/agenciasnacionales\.com\/[a-z0-9\-\/]*\/?|https:\/\/[a-z0-9.\-]+\/[^\s)]*)\)/gi;
+  let lastIndex = 0;
+  let html = "";
+  let match: RegExpExecArray | null;
+
+  while ((match = linkPattern.exec(text)) !== null) {
+    html += escapeHtml(text.slice(lastIndex, match.index));
+    const [, label, href] = match;
+    const isInternal = href.startsWith("/") || href.startsWith("https://agenciasnacionales.com");
+    if (isInternal) {
+      html += `<a href="${escapeHtml(href)}" class="text-blue-700 underline decoration-blue-200 underline-offset-2 hover:text-blue-900">${escapeHtml(label)}</a>`;
+    } else if (isTrustedExternal(href)) {
+      html += `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline decoration-blue-200 underline-offset-2 hover:text-blue-900">${escapeHtml(label)}</a>`;
+    } else {
+      // Unknown external host: render as plain text, do not link.
+      html += escapeHtml(match[0]);
+    }
+    lastIndex = match.index + match[0].length;
+  }
+  html += escapeHtml(text.slice(lastIndex));
+  return html;
+}
+
 const hasMissionPymeAvatar = article.author === "MisiónPyme";
 const articleSchema = {
   "@context": "https://schema.org",
@@ -137,12 +200,16 @@ const articleSchema = {
     <article class="article-body mx-auto max-w-[800px] pt-16 lg:pt-20">
         {
           contentGroups.map((block) => {
-            if (block.type === "h2") return <h2>{block.text}</h2>;
-            if (block.type === "h3") return <h3>{block.text}</h3>;
+            if (block.type === "h2") return <h2 set:html={renderInline(block.text)} />;
+            if (block.type === "h3") return <h3 set:html={renderInline(block.text)} />;
             if (block.type === "ul") {
-              return <ul>{block.items.map((item) => <li>{item}</li>)}</ul>;
+              return (
+                <ul>
+                  {block.items.map((item) => <li set:html={renderInline(item)} />)}
+                </ul>
+              );
             }
-            return <p>{block.text}</p>;
+            return <p set:html={renderInline(block.text)} />;
           })
         }
     </article>
