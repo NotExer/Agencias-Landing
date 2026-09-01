@@ -1,5 +1,298 @@
 [
   {
+    "slug": "gafas-de-seguridad-guia-compra",
+    "title": "Gafas de seguridad: guía de compra",
+    "description": "Gafas de seguridad para empresas: elige el formato según el riesgo y verifica ajuste, soportes, recepción y reposición antes de comprar por volumen.",
+    "excerpt": "Comprar gafas de seguridad para una empresa empieza por el peligro que debe controlar cada referencia, no por el color del lente ni por el precio unitario.",
+    "date": "1 sep 2026",
+    "dateISO": "2026-09-01",
+    "tag": "Tips",
+    "author": "Agencias Nacionales",
+    "image": "gafas-de-seguridad-guia-compra.webp",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Comprar gafas de seguridad para una empresa empieza por el peligro que debe controlar cada referencia, no por el color del lente ni por el precio unitario. Partículas, salpicaduras, polvo y radiación óptica plantean exposiciones distintas, así que una sola descripción de catálogo no sirve para todos los cargos."
+      },
+      {
+        "type": "p",
+        "text": "Una ficha preparada por SST permite que Compras compare ofertas equivalentes, pruebe el ajuste con usuarios reales y reciba el lote contra criterios visibles. También reduce la compra de gafas que terminan guardadas porque se empañan, interfieren con otros EPP o no funcionan con lentes formulados."
+      },
+      {
+        "type": "h2",
+        "text": "Define el peligro antes de pedir una referencia"
+      },
+      {
+        "type": "p",
+        "text": "La protección ocular se selecciona a partir de la tarea y de la forma en que puede ocurrir la exposición. La guía de NIOSH sobre seguridad ocular, actualizada el 4 de febrero de 2025, distingue lesiones por partículas que golpean o raspan, penetraciones y quemaduras químicas o térmicas. También señala que la elección depende de la naturaleza y el alcance del peligro, las condiciones de exposición, los demás equipos usados y las necesidades visuales de la persona."
+      },
+      {
+        "type": "li",
+        "text": "Partículas proyectadas o que caen: polvo, virutas, fragmentos de metal, concreto o madera."
+      },
+      {
+        "type": "li",
+        "text": "Salpicaduras de líquidos, productos de limpieza, ácidos, sustancias cáusticas u otros químicos definidos por SST."
+      },
+      {
+        "type": "li",
+        "text": "Polvo fino o material suspendido que puede entrar por los espacios entre la montura y el rostro."
+      },
+      {
+        "type": "li",
+        "text": "Radiación óptica generada por soldadura, corte, hornos u otras tareas que exigen un filtro específico."
+      },
+      {
+        "type": "p",
+        "text": "Registra para cada cargo el origen del peligro, su dirección, la frecuencia de la tarea y si la exposición alcanza solo los ojos o también el rostro. Esa información define el formato de protección. Pedir el lente solo como \"transparente\" deja el requisito incompleto: el color no demuestra que la gafa cubra el peligro evaluado."
+      },
+      {
+        "type": "h2",
+        "text": "Escoge el formato que corresponde a la exposición"
+      },
+      {
+        "type": "h3",
+        "text": "Gafa tipo lente"
+      },
+      {
+        "type": "p",
+        "text": "Puede ser adecuada para tareas donde se requiere protección frontal y lateral frente a partículas, siempre que la referencia y su marcado correspondan al desempeño definido por SST. Revisa cuánto cubre alrededor del ojo, si la varilla ajusta sin presión y si quedan aberturas relevantes por la forma del rostro."
+      },
+      {
+        "type": "h3",
+        "text": "Monogafa"
+      },
+      {
+        "type": "p",
+        "text": "La monogafa ofrece una cobertura distinta y puede incorporar ventilación directa, indirecta o una construcción sin ventilación, según el modelo. La elección depende de si el peligro es polvo, salpicadura u otro agente. No asumas que todas sellan igual: pide la configuración exacta y pruébala en las condiciones de uso."
+      },
+      {
+        "type": "h3",
+        "text": "Pantalla facial"
+      },
+      {
+        "type": "p",
+        "text": "Cuando la tarea también expone el rostro, SST puede definir una pantalla facial compatible con la protección ocular. Como referencia técnica externa, OSHA indica que una pantalla no sustituye las gafas o monogafas frente a peligros de impacto. La combinación completa debe quedar en la ficha y en la prueba; una pantalla levantada durante parte de la tarea no resuelve la exposición ocular."
+      },
+      {
+        "type": "h2",
+        "text": "Resuelve los lentes formulados desde la ficha"
+      },
+      {
+        "type": "p",
+        "text": "El artículo 180 de la Resolución 2400 de 1979 contempla a quienes usan lentes para corregir su visión. Si necesitan protección adicional, el empleador debe suministrar gafas especiales que puedan colocarse sobre los anteojos habituales o, cuando ambos elementos no puedan usarse juntos, anteojos de seguridad corregidos."
+      },
+      {
+        "type": "p",
+        "text": "Incluye esta necesidad en el levantamiento previo. Una monogafa o sobregafa debe alojar la montura formulada sin moverla ni presionarla contra el rostro. Si la solución es una gafa de seguridad formulada, Compras necesita un proceso para recoger la prescripción, controlar la referencia y gestionar cambios sin exponer datos personales de manera innecesaria."
+      },
+      {
+        "type": "h2",
+        "text": "Haz del ajuste un criterio de compra"
+      },
+      {
+        "type": "p",
+        "text": "NIOSH recomienda ajustar la protección para obtener cobertura, comodidad y visión periférica adecuadas. Una referencia que funciona en una persona puede dejar espacios, deslizarse o crear puntos de presión en otra. Por eso conviene probar más de una talla o diseño con una muestra representativa del equipo."
+      },
+      {
+        "type": "li",
+        "text": "La gafa permanece estable al agacharse, mirar hacia arriba y mover la cabeza."
+      },
+      {
+        "type": "li",
+        "text": "El puente nasal y las varillas no generan presión ni obligan a aflojar la protección."
+      },
+      {
+        "type": "li",
+        "text": "La montura cubre los ángulos definidos sin bloquear la visión necesaria para la tarea."
+      },
+      {
+        "type": "li",
+        "text": "El modelo se mantiene en su sitio junto con casco, respirador, protección auditiva o pantalla facial."
+      },
+      {
+        "type": "h3",
+        "text": "Prueba el antiempañante en la operación"
+      },
+      {
+        "type": "p",
+        "text": "Un tratamiento declarado como \"antiempañante\" necesita comprobarse en uso. Verifica la referencia durante desplazamientos, cambios de temperatura y uso simultáneo con respiradores o tapabocas, cuando correspondan. Define una duración y unas tareas concretas, y registra cuándo aparece condensación y si obliga a retirar la gafa."
+      },
+      {
+        "type": "h2",
+        "text": "Convierte el requerimiento en una ficha comparable"
+      },
+      {
+        "type": "p",
+        "text": "Compras necesita atributos que se puedan responder y revisar. Evita pedir una \"gafa industrial certificada\" sin precisar qué desempeño, norma, edición y soporte exige SST para el riesgo. Tampoco copies la ficha de una marca si existen alternativas que cumplen el mismo resultado técnico."
+      },
+      {
+        "type": "li",
+        "text": "Fabricante, referencia exacta, uso previsto y formato: gafa, monogafa, sobregafa o sistema combinado."
+      },
+      {
+        "type": "li",
+        "text": "Peligro cubierto, nivel de desempeño solicitado, norma y edición aplicables y marcados verificables."
+      },
+      {
+        "type": "li",
+        "text": "Cobertura lateral, tipo de ventilación, color o filtro del lente y condiciones de uso."
+      },
+      {
+        "type": "li",
+        "text": "Tratamientos declarados, método de limpieza, restricciones y productos compatibles."
+      },
+      {
+        "type": "li",
+        "text": "Rango de ajuste, opciones para lentes formulados y compatibilidad con los demás EPP."
+      },
+      {
+        "type": "li",
+        "text": "Ficha técnica, instrucciones, soporte de conformidad del modelo y condiciones de reposición."
+      },
+      {
+        "type": "h2",
+        "text": "Revisa claridad óptica y estado físico"
+      },
+      {
+        "type": "p",
+        "text": "La Resolución 2400 establece en su artículo 178 que el equipo debe proteger contra el riesgo particular, adaptarse con comodidad, poder limpiarse y desinfectarse y permitir identificar al fabricante. El artículo 179 añade que los lentes y ventanas deben estar libres de estrías, burbujas, ondulaciones o aberraciones, y no deben producir distorsión lateral salvo cuando incorporen corrección óptica."
+      },
+      {
+        "type": "p",
+        "text": "La inspección de recibo cubre defectos visibles; no valida el desempeño técnico del producto. Separa esos hallazgos de las propiedades que deben demostrarse con documentos y ensayos del modelo. Si el lente llega rayado, deformado o con una visión distorsionada, documenta la novedad antes de distribuirlo."
+      },
+      {
+        "type": "h2",
+        "text": "Prueba la combinación completa"
+      },
+      {
+        "type": "p",
+        "text": "Una gafa puede ajustar bien por separado y fallar cuando se usa con otros elementos. Las varillas pueden romper el sello de un respirador o una copa auditiva; una monogafa puede chocar con el casco; una pantalla puede golpear la montura al subir y bajar. Evalúa el conjunto previsto para el cargo, no piezas aisladas."
+      },
+      {
+        "type": "li",
+        "text": "Usa la misma referencia de casco, respirador, protector auditivo y pantalla que tendrá la persona."
+      },
+      {
+        "type": "li",
+        "text": "Reproduce posturas, recorridos y cambios de temperatura propios de la tarea sin exponer a nadie al peligro durante la prueba."
+      },
+      {
+        "type": "li",
+        "text": "Registra presión, deslizamiento, pérdida de campo visual, empañamiento e interferencias."
+      },
+      {
+        "type": "li",
+        "text": "Vuelve a evaluar cualquier cambio de referencia, talla, lente, ventilación o accesorio."
+      },
+      {
+        "type": "h2",
+        "text": "Pide evidencia del modelo ofrecido"
+      },
+      {
+        "type": "p",
+        "text": "La cotización, la ficha técnica, los marcados y el soporte de conformidad deben referirse al mismo fabricante y modelo. Revisa que el alcance del documento cubra el formato y el desempeño solicitado. Un certificado de otra familia, una edición distinta o una foto genérica no demuestra que el producto entregado sea el evaluado."
+      },
+      {
+        "type": "li",
+        "text": "Nombre del fabricante y referencia coincidentes en oferta, empaque, producto y documentos."
+      },
+      {
+        "type": "li",
+        "text": "Norma, edición, clasificación y marcados que correspondan a la especificación de SST."
+      },
+      {
+        "type": "li",
+        "text": "Instrucciones de ajuste, uso, limpieza, almacenamiento, inspección y retiro."
+      },
+      {
+        "type": "li",
+        "text": "Declaración de tratamientos y restricciones para químicos, temperatura, radiación o esterilización, cuando apliquen."
+      },
+      {
+        "type": "h2",
+        "text": "Recibe el lote contra la muestra aprobada"
+      },
+      {
+        "type": "p",
+        "text": "Conserva una muestra identificada o un registro fotográfico detallado de la referencia aprobada. En la recepción, compara cantidades, empaque, lente, montura, ventilación, bandas, marcados y accesorios. Abre unidades de diferentes cajas cuando el tamaño del lote lo justifique y deja trazabilidad de lo revisado."
+      },
+      {
+        "type": "li",
+        "text": "Lentes limpios, sin rayones, grietas, deformaciones ni defectos ópticos visibles."
+      },
+      {
+        "type": "li",
+        "text": "Varillas, puente, sello y bandas completos, firmes y correspondientes a la muestra."
+      },
+      {
+        "type": "li",
+        "text": "Marcados legibles y documentos asociados a la referencia recibida."
+      },
+      {
+        "type": "li",
+        "text": "Empaque y almacenamiento que eviten abrasión, presión o contaminación antes de la entrega."
+      },
+      {
+        "type": "h2",
+        "text": "Define cuidado, inspección y reposición"
+      },
+      {
+        "type": "p",
+        "text": "La guía de gestión integral de EPP del Ministerio de Salud, versión 02 de noviembre de 2025, asigna a SST la definición por peligros, las especificaciones técnicas, la inspección y la reposición. Como ejemplo operativo, el documento indica que el deterioro depende del uso, el almacenamiento, el mantenimiento y la agresividad del riesgo, por lo que no fija una vida útil única para todos los EPP."
+      },
+      {
+        "type": "p",
+        "text": "Usa las instrucciones del fabricante para limpiar y desinfectar. Entrega un estuche o una forma de almacenamiento cuando la gafa pueda rayarse entre usos. Retira la unidad si pierde transparencia, se deforma, no ajusta, tiene piezas rotas o presenta un daño que limite la protección definida."
+      },
+      {
+        "type": "h3",
+        "text": "Repón por condición, no por una fecha copiada"
+      },
+      {
+        "type": "p",
+        "text": "La frecuencia de reposición puede cambiar entre áreas por abrasión, exposición química, limpieza, temperatura, almacenamiento y frecuencia de uso. Registra la referencia, fecha de entrega, inspecciones, motivo de cambio y consumo por sede. Con ese historial, Compras puede prever existencias sin convertir una cifra genérica en regla técnica."
+      },
+      {
+        "type": "h2",
+        "text": "Evita cinco errores de compra"
+      },
+      {
+        "type": "li",
+        "text": "Comprar el mismo lente transparente para impacto, polvo, salpicaduras y radiación sin diferenciar el peligro."
+      },
+      {
+        "type": "li",
+        "text": "Elegir por precio o apariencia sin verificar la referencia, los marcados y el soporte técnico."
+      },
+      {
+        "type": "li",
+        "text": "Olvidar a las personas que usan lentes formulados o dejar que resuelvan la compatibilidad por su cuenta."
+      },
+      {
+        "type": "li",
+        "text": "Aprobar la gafa sola y descubrir después que interfiere con casco, respirador, copa auditiva o pantalla."
+      },
+      {
+        "type": "li",
+        "text": "Distribuir el lote antes de revisar defectos, marcados y coincidencia con la muestra aprobada."
+      },
+      {
+        "type": "h2",
+        "text": "Información mínima para cotizar"
+      },
+      {
+        "type": "p",
+        "text": "Envía al proveedor los peligros y tareas definidos por SST, el formato de protección, el desempeño y la norma aplicable, las necesidades de ajuste o fórmula, los demás EPP que deben ser compatibles, las cantidades por sede y los documentos requeridos. Aclara si habrá muestra, prueba de uso, entregas parciales o un inventario de reposición."
+      },
+      {
+        "type": "p",
+        "text": "Si tu empresa necesita cotizar gafas de seguridad junto con uniformes, calzado de trabajo u otros EPP, Agencias Nacionales puede organizar la propuesta por referencia, cantidad y ciudad de entrega. La selección técnica debe conservar los criterios definidos por SST y la evidencia del fabricante para cada modelo."
+      }
+    ]
+  },
+  {
     "slug": "casco-de-seguridad-guia-compra",
     "title": "Casco de seguridad: guía de compra",
     "description": "Casco de seguridad: elige tipo, clase, ajuste y accesorios según el riesgo. Guía para Compras y SST con criterios de prueba, recepción y reposición.",
