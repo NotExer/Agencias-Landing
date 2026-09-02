@@ -1,5 +1,254 @@
 [
   {
+    "slug": "protector-auditivo-guia-compra",
+    "title": "Protector auditivo: guía de compra",
+    "description": "Protector auditivo para empresas: elige tapones u orejeras con medición, ajuste y compatibilidad. Guía práctica para Compras y SST en Colombia.",
+    "excerpt": "Comprar un protector auditivo exige conocer la exposición al ruido, la atenuación necesaria y la forma en que cada persona usa el equipo durante su jornada.",
+    "date": "2 sep 2026",
+    "dateISO": "2026-09-02",
+    "tag": "Tips",
+    "author": "Agencias Nacionales",
+    "image": "protector-auditivo-guia-compra.webp",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Comprar un protector auditivo exige conocer la exposición al ruido, la atenuación necesaria y la forma en que cada persona usa el equipo durante su jornada. Elegir por precio, material o por el número más alto de la etiqueta puede dejar a la empresa con una referencia incómoda, difícil de ajustar o inadecuada para la tarea."
+      },
+      {
+        "type": "p",
+        "text": "SST debe definir el criterio técnico y Compras convertirlo en una solicitud comparable. Esa coordinación permite decidir entre tapones y orejeras, probar el ajuste, revisar la compatibilidad con otros EPP y recibir el pedido contra una referencia aprobada."
+      },
+      {
+        "type": "h2",
+        "text": "Empieza con la medición del ruido"
+      },
+      {
+        "type": "p",
+        "text": "El protector no se selecciona a partir del nombre del cargo. Dos personas con el mismo cargo pueden tener exposiciones distintas por la máquina que operan, la distancia a la fuente, el tiempo que permanecen en el área o los cambios entre tareas. La evaluación de SST debe indicar el nivel y el patrón de exposición que la compra necesita controlar."
+      },
+      {
+        "type": "p",
+        "text": "En Colombia, la Resolución 1792 de 1990 adopta valores límite permisibles para exposición ocupacional al ruido. Su artículo 1 fija 85 dBA para ocho horas y reduce el tiempo permitido a medida que aumenta el nivel. Ese dato no autoriza a escoger cualquier referencia que anuncie una reducción igual o mayor: primero se necesita la medición del puesto y después una estimación técnica de la protección que recibirá la persona."
+      },
+      {
+        "type": "h2",
+        "text": "Controla el ruido antes de depender del EPP"
+      },
+      {
+        "type": "p",
+        "text": "La Resolución 2400 de 1979 pide realizar estudios técnicos y aplicar métodos para reducir o amortiguar el ruido. Entre sus medidas están intervenir la maquinaria, controlar el ruido entre la fuente y la persona, aumentar la distancia y limitar el tiempo de exposición. Los tapones y las orejeras aparecen dentro de ese conjunto, no como reemplazo automático de los demás controles."
+      },
+      {
+        "type": "p",
+        "text": "El Decreto 1072 de 2015 mantiene esa lógica de jerarquía: eliminación, sustitución, controles de ingeniería, controles administrativos y, al final, equipos y elementos de protección personal. También exige que el empleador suministre el EPP sin costo, enseñe su uso correcto y gestione su mantenimiento o reemplazo. Compras necesita conocer el control residual que se espera del protector, no resolver por su cuenta una exposición que todavía no ha sido evaluada."
+      },
+      {
+        "type": "h2",
+        "text": "Escoge el formato según la tarea"
+      },
+      {
+        "type": "h3",
+        "text": "Tapón auditivo"
+      },
+      {
+        "type": "p",
+        "text": "El tapón se ajusta dentro del canal auditivo. Hay modelos moldeables de espuma, premoldeados y hechos a la medida. Para una compra empresarial conviene revisar la técnica de inserción, las tallas disponibles, la higiene, la frecuencia de cambio y si el personal puede manipularlo con las manos limpias en el lugar de uso."
+      },
+      {
+        "type": "p",
+        "text": "Un tapón desechable puede simplificar el control higiénico en algunos entornos, pero aumenta el consumo y exige disponibilidad cerca de cada zona. Uno reutilizable necesita instrucciones de limpieza, almacenamiento y reemplazo. Ninguna de esas condiciones demuestra por sí sola que la atenuación sea suficiente."
+      },
+      {
+        "type": "h3",
+        "text": "Orejera o protector tipo copa"
+      },
+      {
+        "type": "p",
+        "text": "La orejera rodea el oído externo y puede usar diadema, banda de nuca o un sistema compatible con casco. Suele ser rápida de poner y retirar cuando la exposición es intermitente. Su desempeño depende del sello de las copas, así que el cabello, las patillas de las gafas, una gorra o una mala regulación pueden afectar el ajuste."
+      },
+      {
+        "type": "h3",
+        "text": "Protección doble"
+      },
+      {
+        "type": "p",
+        "text": "Usar tapón y orejera al mismo tiempo puede ser necesario en exposiciones definidas por el profesional responsable. No sumes directamente los valores de las etiquetas ni conviertas la doble protección en una regla general. Una atenuación excesiva también puede dificultar que la persona escuche instrucciones, alarmas o cambios de la máquina."
+      },
+      {
+        "type": "h2",
+        "text": "No confundas la etiqueta con la protección personal"
+      },
+      {
+        "type": "p",
+        "text": "Las clasificaciones de atenuación de la ficha se obtienen bajo condiciones de ensayo. El resultado real cambia con la anatomía, la técnica, el desgaste y las interferencias durante el trabajo. Por eso no basta con comparar cuál empaque muestra más decibeles. SST debe revisar qué sistema de calificación usa la referencia, bajo qué norma y cómo se aplicará al nivel medido en la operación."
+      },
+      {
+        "type": "p",
+        "text": "NIOSH actualizó su recomendación en enero de 2025 y aconseja usar pruebas cuantitativas de ajuste individual para evaluar la atenuación que recibe cada trabajador. La prueba entrega una calificación personal de atenuación, conocida como PAR, y permite comprobar si una persona obtiene la reducción prevista con un modelo específico. Es una referencia técnica externa, no una obligación jurídica colombiana."
+      },
+      {
+        "type": "p",
+        "text": "Un boletín técnico de OSHA publicado en febrero de 2026 explica que estas pruebas también ayudan a enseñar cómo se siente un tapón bien insertado y a verificar si la persona conserva la capacidad de oír comunicaciones y señales importantes. La empresa puede usar este criterio para fortalecer el piloto y la capacitación sin presentar la norma estadounidense como requisito local."
+      },
+      {
+        "type": "h2",
+        "text": "Incluye el ajuste en la evaluación de muestras"
+      },
+      {
+        "type": "p",
+        "text": "Pide varias opciones que cumplan el criterio técnico y pruébalas con personas de los cargos expuestos. Una única muestra aprobada por quien compra no representa diferencias en canales auditivos, forma de la cabeza, uso de gafas o tolerancia al calor y la presión."
+      },
+      {
+        "type": "li",
+        "text": "Verifica que el tapón pueda insertarse y retirarse siguiendo las instrucciones del fabricante."
+      },
+      {
+        "type": "li",
+        "text": "Comprueba que las copas sellen alrededor de la oreja sin dolor ni presión que obligue a levantar la diadema."
+      },
+      {
+        "type": "li",
+        "text": "Observa si el equipo permanece en su posición al agacharse, girar la cabeza y ejecutar los movimientos habituales."
+      },
+      {
+        "type": "li",
+        "text": "Registra si la persona retira o acomoda el protector para hablar, recibir instrucciones o escuchar una alarma."
+      },
+      {
+        "type": "li",
+        "text": "Repite la evaluación cuando cambien la referencia, la talla, el método de colocación o los demás EPP."
+      },
+      {
+        "type": "h2",
+        "text": "Prueba la compatibilidad con el equipo completo"
+      },
+      {
+        "type": "p",
+        "text": "Una orejera puede ajustar bien sola y perder el sello cuando comparte espacio con gafas de seguridad. Un accesorio para casco debe corresponder al modelo y a las ranuras previstas por el fabricante. Los arneses de respiradores, las capuchas, las prendas para frío y algunos accesorios de cabeza también pueden crear interferencias."
+      },
+      {
+        "type": "p",
+        "text": "La prueba debe reproducir la combinación exacta que usará el cargo. Revisa que cada elemento conserve su función, que el protector auditivo no se desplace y que la persona pueda moverse y comunicarse como exige la tarea. Si una referencia obliga a modificar otro EPP, vuelve a SST antes de aprobarla."
+      },
+      {
+        "type": "h2",
+        "text": "Convierte la necesidad en una ficha comparable"
+      },
+      {
+        "type": "p",
+        "text": "Una solicitud que solo diga \"protector auditivo industrial\" permite cotizar productos que no resuelven la misma exposición. La ficha debe conectar la medición y el uso con atributos que el proveedor pueda documentar y que la empresa pueda revisar al recibir."
+      },
+      {
+        "type": "li",
+        "text": "Cargo, área, tarea, patrón de exposición y nivel de ruido entregados por SST."
+      },
+      {
+        "type": "li",
+        "text": "Tipo de protector, sistema de ajuste, tallas o rango de regulación y forma de uso prevista."
+      },
+      {
+        "type": "li",
+        "text": "Clasificación de atenuación, método de ensayo, norma y edición que SST haya definido para comparar ofertas."
+      },
+      {
+        "type": "li",
+        "text": "Fabricante, referencia exacta, marcados, ficha técnica, instrucciones y soportes aplicables al modelo ofrecido."
+      },
+      {
+        "type": "li",
+        "text": "Compatibilidad requerida con casco, gafas, respirador, pantalla, gorra u otros elementos del cargo."
+      },
+      {
+        "type": "li",
+        "text": "Condiciones de limpieza, almacenamiento, vida útil declarada, repuestos y criterios de retiro."
+      },
+      {
+        "type": "h3",
+        "text": "Compara el costo por uso"
+      },
+      {
+        "type": "p",
+        "text": "El precio unitario no muestra cuánto costará sostener la protección. Para tapones desechables, calcula consumo por turno, visitantes, pérdidas y disponibilidad en cada punto. Para modelos reutilizables u orejeras, incluye limpieza, repuestos, almacenamiento y sustitución por daño o pérdida de ajuste."
+      },
+      {
+        "type": "p",
+        "text": "Una referencia más barata puede salir cara si el personal la retira con frecuencia, si exige demasiados cambios o si no funciona con el casco ya estandarizado. El piloto permite comparar ese comportamiento antes de comprometer el pedido completo."
+      },
+      {
+        "type": "h2",
+        "text": "Recibe el lote contra la muestra aprobada"
+      },
+      {
+        "type": "p",
+        "text": "Separa la revisión documental de la inspección física. La primera confirma que ficha, soporte, fabricante y referencia corresponden al producto aprobado. La segunda busca diferencias visibles, daños, deformaciones, sellos incompletos, empaques deteriorados o piezas faltantes."
+      },
+      {
+        "type": "li",
+        "text": "Confirma cantidades por referencia, tipo y talla o rango de ajuste."
+      },
+      {
+        "type": "li",
+        "text": "Compara copas, almohadillas, bandas, tapones, cordones y estuches con la muestra."
+      },
+      {
+        "type": "li",
+        "text": "Verifica que instrucciones, marcados y documentos identifiquen el mismo modelo recibido."
+      },
+      {
+        "type": "li",
+        "text": "Registra lote o identificación disponible cuando haga parte del control definido por la empresa."
+      },
+      {
+        "type": "li",
+        "text": "Aísla las unidades con novedades antes de distribuirlas y deja evidencia para el reclamo."
+      },
+      {
+        "type": "h2",
+        "text": "Planea capacitación, cuidado y reposición"
+      },
+      {
+        "type": "p",
+        "text": "Entregar el protector dentro de una bolsa no demuestra que esté bien usado. La inducción debe cubrir dónde se necesita, cómo se coloca, qué interferencias debe evitar la persona, cómo se limpia o desecha y a quién reportar incomodidad, daño o pérdida de ajuste."
+      },
+      {
+        "type": "p",
+        "text": "Define el retiro según las instrucciones del fabricante y las condiciones observadas. En orejeras, vigila almohadillas, copas, bandas y mecanismos de ajuste. En tapones reutilizables, revisa deformación, suciedad que no pueda retirarse y cambios en el ajuste. Los desechables requieren una regla clara de un solo uso o reemplazo acorde con la referencia y el entorno."
+      },
+      {
+        "type": "h2",
+        "text": "Evita cuatro errores de compra"
+      },
+      {
+        "type": "li",
+        "text": "Pedir el mismo protector para toda la empresa sin separar niveles, tareas y tiempos de exposición."
+      },
+      {
+        "type": "li",
+        "text": "Elegir el valor más alto de la etiqueta sin comprobar el ajuste ni la atenuación que necesita cada cargo."
+      },
+      {
+        "type": "li",
+        "text": "Aprobar la referencia por separado y descubrir después que interfiere con casco, gafas o respirador."
+      },
+      {
+        "type": "li",
+        "text": "Comprar solo el lote inicial sin prever consumo, repuestos, capacitación y reposición por sede."
+      },
+      {
+        "type": "h2",
+        "text": "Información mínima para solicitar la cotización"
+      },
+      {
+        "type": "p",
+        "text": "Envía al proveedor la cantidad por sede y cargo, el formato requerido, la medición y atenuación definidas por SST, los demás EPP usados, las opciones de talla, los documentos esperados y el plan de muestras. Aclara también si necesitas tapones desechables, reutilizables o ambas alternativas para grupos distintos."
+      },
+      {
+        "type": "p",
+        "text": "Agencias Nacionales ofrece referencias de tapón auditivo desechable y reutilizable dentro de su línea de EPP. Si tu empresa ya cuenta con la evaluación de SST, comparte la ficha, las cantidades y las sedes para cotizar opciones comparables y organizar la compra sin perder el criterio técnico."
+      }
+    ]
+  },
+  {
     "slug": "gafas-de-seguridad-guia-compra",
     "title": "Gafas de seguridad: guía de compra",
     "description": "Gafas de seguridad para empresas: elige el formato según el riesgo y verifica ajuste, soportes, recepción y reposición antes de comprar por volumen.",
