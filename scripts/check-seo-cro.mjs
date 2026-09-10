@@ -7,6 +7,10 @@ const homepage = await readFile(path.join(root, "dist/index.html"), "utf8");
 const stripTags = (value) => value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 
 const expectedHeadline = "Uniformes, calzado de seguridad y EPP para empresas";
+const homepageMain = homepage.match(/<main\b[^>]*>(.*?)<\/main>/s)?.[1] ?? "";
+if (!homepageMain.includes('href="/dotaciones-medellin/"')) {
+  throw new Error("The homepage needs a contextual Medellín link inside its main content.");
+}
 const headings = [...homepage.matchAll(/<h1\b[^>]*>(.*?)<\/h1>/gs)].map((match) => stripTags(match[1]));
 if (headings.length !== 1 || headings[0] !== expectedHeadline) {
   console.error(`Homepage must have exactly one search-focused H1: ${expectedHeadline}`);
@@ -74,6 +78,10 @@ if (!medellinLanding.includes('rel="canonical" href="https://agenciasnacionales.
 }
 if (!medellinLanding.includes("https://wa.me/573042351036")) {
   console.error("The dotaciones Medellín page is missing a WhatsApp quote CTA.");
+  process.exit(1);
+}
+if (!medellinLanding.includes('href="/contacto/"') || !medellinLanding.includes("Enviar estos datos")) {
+  console.error("The dotaciones Medellín quote checklist needs a clear next action.");
   process.exit(1);
 }
 const medellinJsonLd = [...medellinLanding.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]

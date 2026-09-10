@@ -11,12 +11,20 @@ try {
   process.exit(1);
 }
 
-const redirects = new Map((config.redirects ?? []).map((item) => [item.source, item]));
+const redirects = new Map((config.redirects ?? []).map((item) => [item.source.replace(/\/$/, ""), item]));
+const wwwRedirect = config.redirects?.find((item) =>
+  item.has?.some((condition) => condition.type === "host" && condition.value === "www.agenciasnacionales.com"),
+);
+if (wwwRedirect?.source !== "/:path*" || wwwRedirect.destination !== "https://agenciasnacionales.com/:path*" || wwwRedirect.permanent !== true) {
+  throw new Error("www must redirect permanently to the canonical host while preserving the path.");
+}
 if (config.trailingSlash !== true) {
   console.error("vercel.json must enforce canonical trailing slashes.");
   process.exit(1);
 }
 const required = new Map([
+  ["/articulos-del-blog", "/articulos/"],
+  ["/pol%C3%ADtica-de-privacidad", "/politica_privacidad/"],
   ["/dotacion-empresarial-medellin", "/dotaciones-medellin/"],
   ["/categorias/calzado-de-trabajo", "/categoria/calzado-de-trabajo/"],
   ["/categorias/epp", "/categoria/epp/"],
@@ -32,6 +40,16 @@ const required = new Map([
   ["/index.php", "/"],
   ["/hospitalaria.php", "/categoria/hospitalaria/"],
 ]);
+
+// Vercel normalizes extensionless URLs before matching redirect sources strictly.
+for (const redirect of config.redirects) {
+  if (redirect === wwwRedirect) continue;
+  if (!path.extname(redirect.source) && !redirect.source.endsWith("/")) {
+    throw new Error(`Redirect will miss the normalized URL: ${redirect.source}/`);
+  }
+  const destinationPath = new URL(redirect.destination, "https://agenciasnacionales.com").pathname;
+  await readFile(path.join(process.cwd(), "dist", destinationPath, "index.html"));
+}
 
 for (const [source, destination] of required) {
   const redirect = redirects.get(source);
