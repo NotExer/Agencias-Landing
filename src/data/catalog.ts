@@ -107,9 +107,10 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Bota Workman Food Industry Blanca.avif"],
     price:    189000, 
     description: [
-      "Bota inyectada en P.V.C 100% impermeable, resistente a ácidos grasos, ideales para industrias de alimentos.",
+      "Bota Croydon Workman Food Industry fabricada mediante doble inyección en PVC, 100% impermeable y con suela de labrado profundo para mejorar el agarre y facilitar la remoción de residuos.",
+      "Su plantilla interior de poliuretano incorpora surcos de ventilación. Está orientada a labores en frigoríficos, industrias de alimentos, restaurantes, pesca y otros ambientes húmedos.",
     ],  
-    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+    specs: "Marca: Croydon · PVC de doble inyección · 100% impermeable · Suela de labrado profundo · Plantilla interior de poliuretano",
   },  
 
   
@@ -157,9 +158,10 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Zapaton Plastico Machita Dama.jpg"],
     price:    189000, 
     description: [
-      "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
+      "Zapatón agrícola Croydon La Machita para mujer, fabricado en PVC con caña blanca y suela crepé de labrado profundo para facilitar la remoción de residuos y mejorar el agarre.",
+      "Cuenta con forro interno en poliéster tejido tipo rizo y certificación Icontec bajo los requisitos de la norma ASTM F2892-18.",
     ],  
-    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+    specs: "Marca: Croydon · Material: PVC · Caña baja · Forro: poliéster tejido rizo · Suela crepé · Norma ASTM F2892-18",
   },  
 
 
@@ -170,9 +172,10 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Bota Workman Super Safety.avif"],
     price:    189000, 
     description: [
-      "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
+      "Bota Croydon Workman Super Safety inyectada en PVC bicolor, 100% impermeable y resistente a hidrocarburos.",
+      "Incluye puntera y plantilla de acero, protección frente a corriente estática y choque eléctrico, y una altura aproximada de 32 cm.",
     ],  
-    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+    specs: "Marca: Croydon · PVC bicolor · Puntera y plantilla de acero · 100% impermeable · Resistente a hidrocarburos · Altura aproximada: 32 cm",
   },  
 
   
@@ -183,9 +186,10 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Bota Workman Safety Food Industry Blanca.avif"],
     price:    189000, 
     description: [
-      "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
+      "Bota de seguridad Croydon Workman Safety Food Industry con doble inyección en PVC, material 100% impermeable y puntera de acero resistente a impactos.",
+      "Su resistencia a ácidos grasos la hace adecuada para frigoríficos e industrias lácteas, cárnicas, avícolas, piscícolas, pesqueras, casinos y restaurantes.",
     ],
-    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+    specs: "Marca: Croydon · PVC 100% · Puntera de acero · Sin plantilla de seguridad · Impermeable · Resistente a ácidos grasos",
   },
 
   
@@ -195,9 +199,10 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Bota Workman Safety Waterproof.avif"],
     price:    189000, 
     description: [
-      "Este zapato de protección Machita está fabricado con un corte en cuero bovino de alta calidad y cuenta con una puntera de fibras sintéticas que le dan firmeza. Su suela de caucho vulcanizado proporciona un excelente agarre y resistencia a la abrasión.",
+      "Bota de seguridad Croydon Workman Safety Waterproof negra, fabricada mediante doble inyección en PVC y 100% impermeable para labores con agua, barro y superficies húmedas.",
+      "Cuenta con puntera de acero, suela antideslizante de labrado profundo, forro interno en poliéster y plantilla anatómica removible de poliuretano. Está certificada bajo los requisitos de la norma ASTM F2413-18.",
     ],
-    specs: "Material: PVC · Caña alta · Resistente a humedad y abrasión · Suela antideslizante",
+    specs: "Marca: Croydon · PVC de doble inyección · Puntera de acero · 100% impermeable · Suela antideslizante · Norma ASTM F2413-18",
   },
 
   {

@@ -3,98 +3,129 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/dotacion-empresarial-medellin",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.agenciasnacionales.com"
+        }
+      ],
+      "destination": "https://agenciasnacionales.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/dotacion-empresarial-medellin/",
       "destination": "/dotaciones-medellin/",
       "permanent": true
     },
     {
-      "source": "/categorias/calzado-de-trabajo",
+      "source": "/categorias/calzado-de-trabajo/",
       "destination": "/categoria/calzado-de-trabajo/",
       "permanent": true
     },
     {
-      "source": "/categorias/epp",
+      "source": "/categorias/epp/",
       "destination": "/categoria/epp/",
       "permanent": true
     },
     {
-      "source": "/categorias/seguridad",
+      "source": "/categorias/seguridad/",
       "destination": "/categoria/epp/",
       "permanent": true
     },
     {
-      "source": "/categorias/uniformes-de-trabajo",
+      "source": "/categorias/uniformes-de-trabajo/",
       "destination": "/categoria/uniformes-de-trabajo/",
       "permanent": true
     },
     {
-      "source": "/categorias/hospitalaria",
+      "source": "/categorias/hospitalaria/",
       "destination": "/categoria/hospitalaria/",
       "permanent": true
     },
     {
-      "source": "/categorias/cirugia",
+      "source": "/categorias/cirugia/",
       "destination": "/categoria/hospitalaria/",
       "permanent": true
     },
     {
-      "source": "/categorias/habitaciones",
+      "source": "/categorias/habitaciones/",
       "destination": "/categoria/hospitalaria/",
       "permanent": true
     },
     {
-      "source": "/categorias/gorros-y-redecillas",
+      "source": "/categorias/gorros-y-redecillas/",
       "destination": "/categoria/gorros-y-redecillas/",
       "permanent": true
     },
     {
-      "source": "/categorias/todas-los-productos",
+      "source": "/categorias/todas-los-productos/",
       "destination": "/producto/",
       "permanent": true
     },
     {
-      "source": "/zapato-tipo-crocs-ref-219",
+      "source": "/zapato-tipo-crocs-ref-219/",
       "destination": "/producto/zapato-tipo-crocs-ref-219/",
       "permanent": true
     },
     {
-      "source": "/bota-soldador-inyectada",
+      "source": "/bota-soldador-inyectada/",
       "destination": "/producto/bota-soldador-inyectada/",
       "permanent": true
     },
     {
-      "source": "/bota-cana-alta-ref-226",
+      "source": "/bota-cana-alta-ref-226/",
       "destination": "/producto/bota-plastica-cana-alta-agricola/",
       "permanent": true
     },
     {
-      "source": "/bota-seguridad-inyectada-gazella",
+      "source": "/bota-seguridad-inyectada-gazella/",
       "destination": "/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
       "permanent": true
     },
     {
-      "source": "/pantal%C3%B3n-epm",
+      "source": "/pantal%C3%B3n-epm/",
       "destination": "/producto/pantalon-epm/",
       "permanent": true
     },
     {
-      "source": "/pava-epm-con-solapa-especiales",
+      "source": "/pava-epm-con-solapa-especiales/",
       "destination": "/producto/pava-epm/",
       "permanent": true
     },
     {
-      "source": "/p1013327",
-      "destination": "/producto/",
-      "permanent": true
-    },
-    {
-      "source": "/pol%C3%ADticas/pol%C3%ADtica-ambiental",
+      "source": "/pol%C3%ADticas/pol%C3%ADtica-ambiental/",
       "destination": "/politica_ambiental/",
       "permanent": true
     },
     {
-      "source": "/camisa-m-c-dril-caqui",
+      "source": "/camisa-m-c-dril-caqui/",
       "destination": "/producto/camisa-dril-caqui-manga-corta/",
+      "permanent": true
+    },
+    {
+      "source": "/articulos-del-blog/",
+      "destination": "/articulos/",
+      "permanent": true
+    },
+    {
+      "source": "/pol%C3%ADtica-de-privacidad/",
+      "destination": "/politica_privacidad/",
+      "permanent": true
+    },
+    {
+      "source": "/pol%C3%ADticas/pol%C3%ADtica-de-seguridad/",
+      "destination": "/politica_seguridad/",
+      "permanent": true
+    },
+    {
+      "source": "/t%C3%A9rminos-y-condiciones/",
+      "destination": "/politica_uso/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/prendas-de-vestir/",
+      "destination": "/categoria/uniformes-de-trabajo/",
       "permanent": true
     },
     {
@@ -105,6 +136,241 @@
     {
       "source": "/hospitalaria.php",
       "destination": "/categoria/hospitalaria/",
+      "permanent": true
+    },
+    {
+      "source": "/gorro-quirurgico/",
+      "destination": "/producto/gorro-quirurgico/",
+      "permanent": true
+    },
+    {
+      "source": "/zapato-tipo-crocs-ref-224/",
+      "destination": "/producto/zapato-tipo-crocs-ref-224/",
+      "permanent": true
+    },
+    {
+      "source": "/casco-diel%C3%A9ctrico/",
+      "destination": "/producto/casco-dielectrico/",
+      "permanent": true
+    },
+    {
+      "source": "/redecilla-corta-lycra-ref-06/",
+      "destination": "/producto/redecilla-corta-lycra-ref-06/",
+      "permanent": true
+    },
+    {
+      "source": "/respirador-kn95/",
+      "destination": "/producto/respirador-kn95/",
+      "permanent": true
+    },
+    {
+      "source": "/zapato-tipo-crocs-ref-080/",
+      "destination": "/producto/zapato-tipo-crocs-ref-080/",
+      "permanent": true
+    },
+    {
+      "source": "/zapato-tipo-crocs-ref-201/",
+      "destination": "/producto/zapato-tipo-crocs-ref-201/",
+      "permanent": true
+    },
+    {
+      "source": "/redecilla-larga-en-lycra-ref-25/",
+      "destination": "/producto/redecilla-larga-en-lycra-ref-25/",
+      "permanent": true
+    },
+    {
+      "source": "/ambar-mocas%C3%ADn-%28lona%29/",
+      "destination": "/producto/ambar-mocasin-lona/",
+      "permanent": true
+    },
+    {
+      "source": "/redecilla-suave-ref-02/",
+      "destination": "/producto/redecilla-suave-ref-02/",
+      "permanent": true
+    },
+    {
+      "source": "/redecilla-corta-velillo-cristal-ref-06/",
+      "destination": "/producto/redecilla-corta-velillo-cristal-ref-06/",
+      "permanent": true
+    },
+    {
+      "source": "/pantal%C3%B3n-dril-clasico-hombre-caqui/",
+      "destination": "/producto/pantalon-dril-caqui/",
+      "permanent": true
+    },
+    {
+      "source": "/redecilla-larga-1-velillo-cristal/",
+      "destination": "/producto/redecilla-larga-1-velillo-cristal-ref-07/",
+      "permanent": true
+    },
+    {
+      "source": "/zapato-tipo-crocs-ref-242/",
+      "destination": "/producto/zapato-tipo-crocs-kroky-ref-242/",
+      "permanent": true
+    },
+    {
+      "source": "/mocas%C3%ADn-medio-tac%C3%B3n-ref-248-%28lona%29/",
+      "destination": "/producto/mocasin-lona-medio-tacon-ref-248/",
+      "permanent": true
+    },
+    {
+      "source": "/bolso-ref-102/",
+      "destination": "/producto/bolso-promocional-ref-102/",
+      "permanent": true
+    },
+    {
+      "source": "/zapato-tipo-crocs-ref-175-2/",
+      "destination": "/producto/zapato-tipo-crocs-ref-175/",
+      "permanent": true
+    },
+    {
+      "source": "/tenis-royal-hi-cut-alto/",
+      "destination": "/producto/tenis-royal-cut-alto/",
+      "permanent": true
+    },
+    {
+      "source": "/gorro-corto-en-dacron/",
+      "destination": "/producto/gorro-corto-en-dacron-ref-11/",
+      "permanent": true
+    },
+    {
+      "source": "/camisa-oxford/",
+      "destination": "/producto/camisa-oxford-hombre/",
+      "permanent": true
+    },
+    {
+      "source": "/gorro-largo-en-dacron/",
+      "destination": "/producto/gorro-largo-en-dacron-ref-12/",
+      "permanent": true
+    },
+    {
+      "source": "/camisa-indigo-hombre-ml/",
+      "destination": "/producto/camisa-indigo/",
+      "permanent": true
+    },
+    {
+      "source": "/zapaton-machita-blanco/",
+      "destination": "/producto/zapaton-plastico-machita-dama/",
+      "permanent": true
+    },
+    {
+      "source": "/guantes-en-cuero-tipo-ingeniero-sencillo/",
+      "destination": "/producto/guantes-en-cuero-tipo-ingeniero/",
+      "permanent": true
+    },
+    {
+      "source": "/guantes-en-cuero-tipo-ingeniero-reforzado/",
+      "destination": "/producto/guantes-en-cuero-reforzado/",
+      "permanent": true
+    },
+    {
+      "source": "/gorro-tipo-medico-ref-14/",
+      "destination": "/producto/gorro-tipo-medico-ref-14/",
+      "permanent": true
+    },
+    {
+      "source": "/ambar-cord%C3%B3n-%28lona%29/",
+      "destination": "/producto/mocasin-ambar-cordon-lona/",
+      "permanent": true
+    },
+    {
+      "source": "/bota-workman-safety-food-industry-blanca/",
+      "destination": "/producto/bota-workman-safety-food-industry-blanca/",
+      "permanent": true
+    },
+    {
+      "source": "/bota-lisa-vulcanizada/",
+      "destination": "/producto/bota-lisa-vulcanizada/",
+      "permanent": true
+    },
+    {
+      "source": "/redecilla-velillo-cristal-negra-ref-05/",
+      "destination": "/producto/redecilla-velillo-cristal-negra-ref-05/",
+      "permanent": true
+    },
+    {
+      "source": "/rex-cord%C3%B3n-%28lona%29/",
+      "destination": "/producto/rex-cordon-tipo-vans-lona/",
+      "permanent": true
+    },
+    {
+      "source": "/camisa-dril-m-l-caqui/",
+      "destination": "/producto/camisa-dril-caqui-manga-larga/",
+      "permanent": true
+    },
+    {
+      "source": "/camiseta-t-shirt-m-c/",
+      "destination": "/producto/camiseta-t-shirt-manga-corta/",
+      "permanent": true
+    },
+    {
+      "source": "/rex-mocas%C3%ADn-%28lona%29/",
+      "destination": "/producto/rex-mocasin-tipo-vans-lona/",
+      "permanent": true
+    },
+    {
+      "source": "/silla-de-suspenci%C3%B3n/",
+      "destination": "/producto/silla-de-suspension/",
+      "permanent": true
+    },
+    {
+      "source": "/tenis-royal-lo-cut-bajo/",
+      "destination": "/producto/tenis-royal-cut-bajo/",
+      "permanent": true
+    },
+    {
+      "source": "/guantes-con-recubrimiento-de-caucho-latex-en-la-palma-y-dedos/",
+      "destination": "/producto/guantes-con-recubrimiento-de-caucho/",
+      "permanent": true
+    },
+    {
+      "source": "/guantes-en-caucho-calibre-25/",
+      "destination": "/producto/guantes-en-caucho-calibre-25/",
+      "permanent": true
+    },
+    {
+      "source": "/guantex-multiflex-steelpro/",
+      "destination": "/producto/guantex-multiflex-steelpro/",
+      "permanent": true
+    },
+    {
+      "source": "/zapato-tipo-crocs-ref-196/",
+      "destination": "/producto/zapato-tipo-crocs-ref-196/",
+      "permanent": true
+    },
+    {
+      "source": "/camisa-dril-m-l-azul-osc/",
+      "destination": "/producto/camisa-dril-azul-oscuro-manga-larga/",
+      "permanent": true
+    },
+    {
+      "source": "/camisa-dril-m-c-azul-osc/",
+      "destination": "/producto/camisa-dril-azul-oscuro-manga-corta/",
+      "permanent": true
+    },
+    {
+      "source": "/mocasin-dama-cementado-ref-5050-micropiel-tacon-2-1-2/",
+      "destination": "/producto/mocasin-dama-cementado-ref-5050/",
+      "permanent": true
+    },
+    {
+      "source": "/carte-para-esmeril/",
+      "destination": "/producto/careta-para-esmeril/",
+      "permanent": true
+    },
+    {
+      "source": "/casco-mountain-abs-con-barbuquejo/",
+      "destination": "/producto/casco-mountain/",
+      "permanent": true
+    },
+    {
+      "source": "/guantes-en-cuero-reforzado-mediano/",
+      "destination": "/producto/guantes-en-cuero-reforzado/",
+      "permanent": true
+    },
+    {
+      "source": "/guantes-kimberly-ref-g20p-poliuretano/",
+      "destination": "/producto/guantes-kimberly-ref-g20p/",
       "permanent": true
     }
   ]

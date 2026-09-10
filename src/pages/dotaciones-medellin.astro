@@ -12,6 +12,10 @@ const quoteHref = waHref("Hola, quiero cotizar dotaciones para una empresa en Me
 
 const faqs = [
   {
+    question: "¿Dónde está la sede y cómo atienden a las empresas de Medellín?",
+    answer: "Agencias Nacionales S.A.S. tiene su sede en Carrera 47 #20 Sur-7, Bosques de Zúñiga, Envigado, Antioquia. Desde allí atendemos empresas de Medellín y el Valle de Aburrá. Para cotizar, indica los productos, las cantidades y la dirección de entrega; el costo y el plazo se confirman según cada pedido.",
+  },
+  {
     question: "¿Qué incluye una dotación empresarial?",
     answer: "La dotación se define según el cargo y el riesgo de la operación. Puede incluir uniformes de trabajo, calzado de seguridad y elementos de protección personal como cascos, guantes, gafas o protección auditiva.",
   },
@@ -40,6 +44,7 @@ const serviceSchema = {
   serviceType: "Suministro de uniformes de trabajo, calzado de seguridad y EPP para empresas",
   url: "https://agenciasnacionales.com/dotaciones-medellin/",
   provider: {
+    "@id": "https://agenciasnacionales.com/#business",
     "@type": "LocalBusiness",
     name: "Agencias Nacionales S.A.S",
     url: "https://agenciasnacionales.com/",
@@ -129,14 +134,19 @@ const faqSchema = {
             Una solicitud clara reduce cambios de talla, referencias equivocadas y retrasos. Comparte estos datos con nuestro equipo para orientar mejor la cotización.
           </p>
         </div>
-        <ul class="grid gap-3 text-m leading-relaxed text-white sm:grid-cols-2">
-          <li class="rounded-2xl bg-white/10 p-5">Producto o cargo que necesitas dotar</li>
-          <li class="rounded-2xl bg-white/10 p-5">Cantidad aproximada por referencia</li>
-          <li class="rounded-2xl bg-white/10 p-5">Tallas o proceso para consolidarlas</li>
-          <li class="rounded-2xl bg-white/10 p-5">Logo y tipo de personalización</li>
-          <li class="rounded-2xl bg-white/10 p-5">Condiciones de uso y riesgos del cargo</li>
-          <li class="rounded-2xl bg-white/10 p-5">Ciudad y fecha requerida de entrega</li>
-        </ul>
+        <div>
+          <ul class="grid list-disc gap-x-8 gap-y-3 pl-5 text-m leading-relaxed text-white sm:grid-cols-2">
+            <li>Producto o cargo que necesitas dotar</li>
+            <li>Cantidad aproximada por referencia</li>
+            <li>Tallas o proceso para consolidarlas</li>
+            <li>Logo y tipo de personalización</li>
+            <li>Condiciones de uso y riesgos del cargo</li>
+            <li>Ciudad y fecha requerida de entrega</li>
+          </ul>
+          <a href="/contacto/" class="mt-7 inline-flex rounded-full bg-white px-6 py-3 font-bold text-blue-800 transition hover:bg-blue-50">
+            Enviar estos datos
+          </a>
+        </div>
       </div>
     </section>
 
