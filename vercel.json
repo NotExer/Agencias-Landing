@@ -3,17 +3,6 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.agenciasnacionales.com"
-        }
-      ],
-      "destination": "https://agenciasnacionales.com/:path*",
-      "permanent": true
-    },
-    {
       "source": "/dotacion-empresarial-medellin/",
       "destination": "/dotaciones-medellin/",
       "permanent": true

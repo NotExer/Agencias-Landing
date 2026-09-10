@@ -12,12 +12,6 @@ try {
 }
 
 const redirects = new Map((config.redirects ?? []).map((item) => [item.source.replace(/\/$/, ""), item]));
-const wwwRedirect = config.redirects?.find((item) =>
-  item.has?.some((condition) => condition.type === "host" && condition.value === "www.agenciasnacionales.com"),
-);
-if (wwwRedirect?.source !== "/:path*" || wwwRedirect.destination !== "https://agenciasnacionales.com/:path*" || wwwRedirect.permanent !== true) {
-  throw new Error("www must redirect permanently to the canonical host while preserving the path.");
-}
 if (config.trailingSlash !== true) {
   console.error("vercel.json must enforce canonical trailing slashes.");
   process.exit(1);
@@ -43,7 +37,6 @@ const required = new Map([
 
 // Vercel normalizes extensionless URLs before matching redirect sources strictly.
 for (const redirect of config.redirects) {
-  if (redirect === wwwRedirect) continue;
   if (!path.extname(redirect.source) && !redirect.source.endsWith("/")) {
     throw new Error(`Redirect will miss the normalized URL: ${redirect.source}/`);
   }

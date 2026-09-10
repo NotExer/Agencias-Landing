@@ -38,7 +38,7 @@ El código dispara generate_lead al abrir WhatsApp y al preparar el mensaje del 
 
 Clarity, selector últimos 30 días: 150 sesiones, 97 usuarios únicos, 106 sesiones de bot excluidas, 3,24 páginas/sesión, 51,99% de profundidad y 1,1 minutos activos. El tag se añadió el 25 de agosto: el selector de 30 días no implica 30 días completos de instrumentación. No comparar sus totales directamente con GA4.
 
-Clarity detectó clics fallidos en 21 sesiones (14%), retrocesos rápidos en 40 (26,67%) y clics continuos en 2 (1,33%). Son señales para revisar grabaciones, no prueba de la causa de pérdida de posiciones. No se revisaron grabaciones individuales. El evento automático “Finalización de la compra”, 17 sesiones, requiere revisión: el sitio es de cotización y no demuestra 17 ventas.
+Clarity detectó clics fallidos en 21 sesiones (la interfaz mostraba 12,96% al cierre), retrocesos rápidos y clics continuos. La revisión de una sesión móvil en /dotaciones-medellin/ mostró clics repetidos sobre la lista de datos para cotizar: sus tarjetas parecían campos interactivos. Se reemplazaron por una lista semántica y un CTA claro hacia contacto. La muestra incluye al menos una sesión de localhost, por lo que estos porcentajes no deben tratarse como medición limpia. El evento automático “Finalización de la compra”, 17 sesiones, requiere revisión: el sitio es de cotización y no demuestra 17 ventas.
 
 Rendimiento Clarity: 84/100 sobre solo 31 vistas; LCP 3,2 s (mejorable), INP 160 ms y CLS 0,094. Search Console no tenía datos suficientes de Core Web Vitals. No se ejecutó Lighthouse; no se certifica aprobación de CWV con esta muestra.
 
@@ -49,15 +49,15 @@ La landing Medellín recibió 5 sesiones en Clarity; Colombia 13 y la portada 71
 | Prioridad | Hallazgo y evidencia | Acción |
 |---|---|---|
 | Alta | URLs antiguas de categorías terminan en 404: /categorias/epp y /categorias/seguridad. También /articulos-del-blog/ y /política-de-privacidad. | Corregir redirecciones permanentes y recuperar equivalencias reales. |
-| Alta | Las 18 reglas existentes no incluyen barra final; Vercel añade la barra antes de que coincidan las fuentes estrictas. | Preparadas reglas con barra final y comprobación de destinos construidos. Validar HTTP después de desplegar. |
+| Alta | Las 18 reglas existentes no incluyen barra final; Vercel añade la barra antes de que coincidan las fuentes estrictas. | Corregidas y verificadas por HTTP en producción con y sin barra. |
 | Alta | Solo constaban dos sitemaps HTTP enviados en 2014. | Enviado https://agenciasnacionales.com/sitemap-index.xml. Google confirmó envío y después “El índice del sitemap se ha procesado correctamente”; aún mostraba 0 páginas descubiertas. |
 | Alta | Débil visibilidad comercial en Medellín pese a landing indexada y schema local. | Reforzar enlaces contextuales, cobertura explícita y pruebas reales de servicio en Medellín. |
 | Media | Dirección de contacto “Cl. 20 Sur, Zona 2” distinta de footer/schema. | Preparada dirección consistente: Carrera 47 #20 Sur-7, Bosques de Zúñiga, Envigado. |
-| Media | 129 rastreadas sin indexar y 17 con canonical alternativo. | Cruzar ejemplos con sitemap actual antes de decidir consolidaciones; no se diagnosticó individualmente este grupo. |
-| Media | Cuatro fichas comparten descripción de zapato Machita, incluidas tres botas Workman. | Corregir contenido con fichas técnicas reales; verificar marca por referencia. La plantilla atribuye toda marca a Agencias Nacionales. |
+| Media | 129 rastreadas sin indexar y 17 con canonical alternativo. | Cruce completado: 14 recursos AVIF, 22 aliases recuperados y 93 rutas sin equivalencia confirmada. |
+| Media | Fichas Workman compartían descripción de zapato Machita. | Corregidas cinco fichas con datos de fabricante/proveedor y marca Croydon. El marcado Product inválido ya no estaba en la versión activa. |
 | Media | Search Console muestra 24 productos no válidos. La plantilla Product no incluye offers, review ni aggregateRating. | Sin precios o reseñas reales, no inventar datos para obtener resultados enriquecidos. No es un bloqueo automático de indexación ordinaria. |
 | Media | LCP 3,2 s y señales de fricción. | Medir portada/categorías/landing en móvil, identificar recurso LCP y revisar grabaciones de clics fallidos. |
-| Baja | www devuelve 200 en lugar de redirigir, aunque canonical apunta al dominio sin www. | Consolidar www hacia dominio principal preservando rutas. |
+| Baja | www devuelve 200 en lugar de redirigir, aunque canonical apunta al dominio sin www. | Pendiente en Vercel Settings → Domains: la sesión disponible no pertenece al equipo propietario del proyecto. |
 | Baja | “Conócenos más” enlaza al mismo bloque de portada. | Preparado enlace a /nosotros/. |
 
 Rastreo HTTP de las 191 URLs del sitemap publicado: todas devuelven 200, tienen title y H1 único por página, canonical autorreferente y no presentan noindex. Sin titles duplicados. Todas las referencias internas de página encontradas están en el sitemap salvo el carrito, que es una exclusión intencional. Se encontraron dos grupos de descripciones repetidas: dos artículos heredados y cuatro fichas de producto. El inventario está en crawl-publico.csv.
@@ -88,13 +88,13 @@ Horizonte de evaluación propuesto: revisar rastreo y rutas tras publicar; obser
 
 ## Cambios preparados y límites
 
-Preparadas 36 reglas permanentes: corregidas las 18 existentes y añadidas 18. De las 93 URLs 404 exportadas de Search Console, 22 tienen destino preparado; las otras 71 requieren comprobar referencia/equivalencia y están en urls-404-search-console.csv. No se redirigió todo a portada ni se asumió que un producto diferente fuera sustituto.
+Publicadas 72 redirecciones permanentes de ruta. De las 93 URLs 404 exportadas de Search Console, 36 tienen sustituto confirmado y 57 quedan como retiradas sin sustituto. El cruce adicional de 129 URLs rastreadas sin indexar recuperó 22 aliases exactos. No se redirigió todo a portada ni se asumió que un producto diferente fuera sustituto.
 
-Preparados: enlace contextual a Medellín desde portada, descripción de portada, cobertura y dirección en contacto, pregunta local en landing con el mismo texto en FAQ schema y referencia al identificador del negocio. Pruebas de carrito, imágenes, build, redirecciones y SEO pasaron con npm run verify. La comprobación de redirecciones valida configuración y archivos destino; no sustituye la prueba HTTP de Vercel tras publicación.
+Publicados: enlace contextual a Medellín desde portada, descripción de portada, cobertura y dirección en contacto, pregunta local en landing con el mismo texto en FAQ schema, referencia al identificador del negocio y mejora del CTA detectado en Clarity. `npm run verify` construyó 193 páginas y aprobó carrito, imágenes, catálogo, redirecciones y SEO.
 
-No se hizo commit, push ni despliegue. El checkout construye 187 páginas, y producción tiene seis artículos adicionales: botas-de-seguridad-para-mujer, casco-de-seguridad-guia-compra, gafas-de-seguridad-guia-compra, guantes-de-seguridad-guia-compra, protector-auditivo-guia-compra y trabajo-en-alturas-guia-epp. Además, el sitemap local incluye carrito mientras el publicado lo excluye. Integrar el parche sobre la versión más reciente y preservar esa exclusión antes de desplegar.
+El parche partió del commit activo `d4f69a9`, conservó los seis artículos recientes y la exclusión de carrito del sitemap, y se publicó mediante el PR #9 y el merge `1411bcc`. En producción se comprobaron 72 rutas y 142 variantes: todas terminan en su equivalente con HTTP 200 mediante redirecciones permanentes y conservan parámetros. Los seis artículos responden 200; el sitemap excluye carrito e incluye /dotaciones-medellin/.
 
-La única modificación externa realizada fue enviar el sitemap actual. Los resultados de posicionamiento y la publicación del parche siguen pendientes; esta auditoría no afirma que el problema de visibilidad haya quedado resuelto.
+Además del sitemap, se solicitaron en Search Console rastreos prioritarios de portada, /dotaciones-medellin/ y /contacto/. No se reinició la validación global de 404 porque 57 retiradas definitivas deben seguir respondiendo 404. La consolidación `www` sigue pendiente en la configuración de dominios de Vercel; el usuario autenticado disponible no tiene acceso al equipo propietario. Los resultados de posicionamiento se evaluarán durante 8–12 semanas.
 
 ## Fuentes
 
@@ -106,6 +106,10 @@ La única modificación externa realizada fue enviar el sitemap actual. Los resu
 - [Google: optimización para experiencias generativas](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
 - [Google: requisitos de fragmentos de producto](https://developers.google.com/search/docs/appearance/structured-data/product-snippet?hl=es)
 - [Vercel: trailingSlash](https://vercel.com/docs/project-configuration/vercel-json)
+- [Vercel: redirecciones de dominio](https://vercel.com/docs/domains/working-with-domains/deploying-and-redirecting)
 - [Código de Vercel: coincidencia estricta de rutas](https://github.com/vercel/vercel/blob/main/packages/routing-utils/src/superstatic.ts)
+- [Croydon: Workman Food Industry](https://croydon.com.co/products/botas-seguridad-workman-saf-food-ind-blanco-croydon-para-hombre)
+- [Croydon: Workman Super Safety](https://croydon.com.co/products/botas-seguridad-workman-supersafety-oil-resistant-amarillo-croydon-para-hombre)
+- [Croydon: Machita](https://croydon.com.co/products/botas-agricolas-machita-blanco-croydon-para-mujer)
 - [LinkedIn de la empresa](https://co.linkedin.com/company/agencias-nacionales)
 - [Directorio: dotaciones Envigado](https://eldirectorio.co/empresas/envigado/dotaciones)

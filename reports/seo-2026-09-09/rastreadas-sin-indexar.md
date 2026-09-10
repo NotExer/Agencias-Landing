@@ -35,4 +35,4 @@ Revisión en Search Console: 10 de septiembre de 2026. Total mostrado: 129 URLs.
 | `/guantes-en-cuero-reforzado-mediano/` | `/producto/guantes-en-cuero-reforzado/` |
 | `/guantes-kimberly-ref-g20p-poliuretano/` | `/producto/guantes-kimberly-ref-g20p/` |
 
-No se inicia validación de este motivo completo: incluye recursos y rutas retiradas que no deberían indexarse. La validación útil corresponde al grupo 404 después de publicar las redirecciones.
+No se inició validación de este motivo completo: incluye recursos y rutas retiradas que no deberían indexarse. El grupo 404 también conserva retiradas definitivas; reiniciar su validación global volvería a fallar aunque las rutas recuperadas ya respondan correctamente.
