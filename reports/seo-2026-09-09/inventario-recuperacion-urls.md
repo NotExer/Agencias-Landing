@@ -27,4 +27,4 @@ Fuente: `urls-404-search-console.csv`, 93 URLs históricas exportadas de Search 
 | `/guantes-en-cuero-tipo-ingeniero-sencillo/` | `/producto/guantes-en-cuero-tipo-ingeniero/` |
 | `/guantes-en-cuero-tipo-ingeniero-reforzado/` | `/producto/guantes-en-cuero-reforzado/` |
 
-El archivo `vercel.json` contiene 50 redirecciones de ruta verificadas contra archivos construidos. Algunas no provienen del grupo actual de 93 errores, porque recuperan otras rutas heredadas conocidas. La regla adicional de host consolida `www` en el dominio principal.
+El archivo `vercel.json` contiene 72 redirecciones de ruta verificadas contra archivos construidos. Algunas no provienen del grupo actual de 93 errores, porque recuperan otras rutas heredadas conocidas. La consolidación de `www` debe configurarse como redirección de dominio en Vercel: la regla condicional de archivo no se ejecutó delante de las páginas estáticas y se retiró para no declarar una garantía falsa.
