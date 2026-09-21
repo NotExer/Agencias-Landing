@@ -9,6 +9,8 @@ import confianza2 from "../img/Confianza 2.avif";
 import confianza3 from "../img/Confianza 3.avif";
 import ambiental from "../img/Ambiental.webp";
 import material from "../img/Material.avif";
+import premioGazela from "../img/premio-gazela.png";
+import fabricasProductividad from "../img/fabricas-de-productividad.png";
 ---
 
 <Layout
@@ -51,6 +53,37 @@ import material from "../img/Material.avif";
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section
+      class="mx-auto w-full max-w-5xl px-6 py-14 text-center sm:px-8 sm:py-18"
+      aria-labelledby="premios-title"
+    >
+      <h2
+        id="premios-title"
+        class="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
+      >
+        Premios y Certificaciones
+      </h2>
+
+      <div class="mx-auto mt-8 grid max-w-3xl grid-cols-2 items-center gap-8 sm:mt-10 sm:gap-16">
+        <Image
+          src={premioGazela}
+          alt="Premio Gazela otorgado a Agencias Nacionales"
+          widths={[240, 400, 640]}
+          sizes="(min-width: 768px) 320px, 45vw"
+          loading="lazy"
+          class="h-28 w-full object-contain sm:h-36"
+        />
+        <Image
+          src={fabricasProductividad}
+          alt="Reconocimiento Fábricas de Productividad otorgado a Agencias Nacionales"
+          widths={[240, 400, 640]}
+          sizes="(min-width: 768px) 320px, 45vw"
+          loading="lazy"
+          class="h-28 w-full object-contain sm:h-36"
+        />
       </div>
     </section>
 
