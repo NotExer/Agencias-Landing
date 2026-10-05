@@ -1,0 +1,183 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Banner from "../components/Banner.astro";
+import ProductGrid from "../components/ProductGrid.astro";
+import heroImage from "../img/Categoria calzado apple.png";
+import { products } from "../data/catalog";
+import { waHref, YEARS_IN_BUSINESS } from "../data/contact";
+
+const title = "Calzado de Dotación para Empresas en Medellín | Tenis y Mocasines";
+const description = "Calzado de dotación para empresas: tenis, mocasines, valetas y zapatos de fácil limpieza. Sin pedido mínimo. Atención desde Envigado para Medellín y Colombia.";
+const canonicalUrl = "https://agenciasnacionales.com/calzado-de-dotacion/";
+const quoteHref = waHref("Hola, quiero cotizar calzado de dotación para una empresa. Necesito información sobre referencias, tallas y cantidades.");
+
+// ponytail: "dotación" = every footwear reference that is not a boot (boots live in /categoria/calzado-de-trabajo/).
+const dotacion = products.filter(
+  (p) => p.category === "Calzado de Trabajo" && !/^(Bota|Zapaton)/.test(p.name),
+);
+
+const uses = [
+  {
+    title: "Oficina y atención al público",
+    text: "Mocasines de lona, modelos con medio tacón, valetas y mocasines cementados para cargos administrativos, comerciales y de recepción.",
+  },
+  {
+    title: "Operación, bodega y servicios",
+    text: "Tenis de lona en corte alto y bajo, tenis deportivos y modelos tejidos con suela de agarre para jornadas de pie y desplazamientos.",
+  },
+  {
+    title: "Cocina, aseo y salud",
+    text: "Zapatos tipo crocs en material moldeado o EVA, cerrados y de fácil limpieza, para áreas donde el calzado se lava con frecuencia.",
+  },
+];
+
+const faqs = [
+  {
+    question: "¿Qué es el calzado de dotación?",
+    answer: "Es el calzado de uso diario que la empresa entrega como parte de la dotación: tenis, mocasines, valetas o zapatos de fácil limpieza. No reemplaza al calzado de seguridad. Si el cargo tiene riesgo de impacto, eléctrico o químico, se debe usar calzado de seguridad con la protección que exija la matriz de peligros.",
+  },
+  {
+    question: "¿Hay pedido mínimo de calzado?",
+    answer: "No. Puedes cotizar las referencias y cantidades que necesites. Para envíos, la compra mínima es de $500.000 sumando todos los productos del pedido.",
+  },
+  {
+    question: "¿Cuánto tarda la entrega?",
+    answer: "Las referencias disponibles en inventario pueden entregarse de inmediato, según disponibilidad de tallas y colores. El plazo exacto se confirma en la cotización.",
+  },
+  {
+    question: "¿Publican lista de precios?",
+    answer: "No. Cada pedido se cotiza según referencia, cantidad, tallas y ciudad de entrega. Envíanos la solicitud y te enviamos una cotización formal para tu empresa.",
+  },
+  {
+    question: "¿Atienden empresas fuera de Medellín?",
+    answer: "Sí. Atendemos Medellín y el Valle de Aburrá desde nuestra sede en Envigado y despachamos a otras ciudades de Colombia con una compra mínima de $500.000.",
+  },
+  {
+    question: "¿Puedo cotizar calzado junto con uniformes y EPP?",
+    answer: "Sí. Puedes consolidar calzado de dotación, calzado de seguridad, uniformes y elementos de protección personal en una sola solicitud, indicando cantidades y tallas por referencia.",
+  },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Calzado de dotación para empresas",
+  serviceType: "Suministro de calzado de dotación: tenis, mocasines, valetas y zapatos de fácil limpieza",
+  url: canonicalUrl,
+  provider: {
+    "@id": "https://agenciasnacionales.com/#business",
+    "@type": "LocalBusiness",
+    name: "Agencias Nacionales S.A.S",
+    url: "https://agenciasnacionales.com/",
+  },
+  areaServed: [
+    { "@type": "City", name: "Medellín" },
+    { "@type": "Country", name: "Colombia" },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <Navbar />
+  <main>
+    <Banner
+      image={heroImage}
+      alt="Calzado de dotación para empresas"
+      eyebrow="Medellín, Valle de Aburrá y envíos a Colombia"
+      heading="Calzado de dotación para empresas"
+      description="Tenis, mocasines, valetas y zapatos de fácil limpieza para equipos administrativos, operativos y de servicios. Cotiza por referencia y talla, sin pedido mínimo."
+      headingLevel="h1"
+      primaryAction={{ href: quoteHref, label: "Cotizar calzado por WhatsApp", newTab: true }}
+      secondaryAction={{ href: "/contacto/", label: "Enviar solicitud de cotización" }}
+      secondaryActionStyle="outline"
+    />
+
+    <section class="w-full bg-white px-4 pb-5 sm:px-6 lg:px-10">
+      <div class="mx-auto grid max-w-7xl gap-6 rounded-2xl border border-gray-100 bg-gray-50 px-6 py-7 text-sm text-gray-700 sm:grid-cols-3 sm:px-8">
+        <p><strong class="block text-base text-slate-950">{dotacion.length} referencias</strong> de tenis, mocasines, valetas y zapatos tipo crocs.</p>
+        <p><strong class="block text-base text-slate-950">Sin pedido mínimo</strong> Envíos con compra mínima de $500.000 en total.</p>
+        <p><strong class="block text-base text-slate-950">{YEARS_IN_BUSINESS} años</strong> suministrando dotación a empresas.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+      <div class="max-w-3xl">
+        <p class="text-m font-semibold text-blue-600">Según el cargo</p>
+        <h2 class="mt-2 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">Qué calzado de dotación elegir para cada equipo</h2>
+        <p class="mt-4 text-m leading-relaxed text-gray-500">
+          El calzado de dotación se elige por la jornada, la superficie y la imagen que debe proyectar el cargo. Si la labor tiene riesgo de impacto, eléctrico o químico, revisa nuestro
+          <a href="/categoria/calzado-de-trabajo/" class="font-semibold text-blue-600 underline hover:text-blue-700">calzado de seguridad industrial</a>.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {uses.map((use) => (
+          <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h3 class="text-base font-bold text-gray-900">{use.title}</h3>
+            <p class="mt-3 text-m leading-relaxed text-black">{use.text}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 pb-16 sm:px-8 lg:px-10">
+      <h2 class="mb-8 text-2xl font-extrabold text-gray-900 sm:text-3xl">Referencias de calzado de dotación</h2>
+      <ProductGrid products={dotacion} />
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24">
+      <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div>
+          <p class="text-m font-semibold text-blue-600">Preguntas frecuentes</p>
+          <h2 class="mt-2 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">Antes de cotizar calzado de dotación</h2>
+          <p class="mt-4 text-m leading-relaxed text-gray-500">
+            ¿Necesitas también uniformes o EPP? Revisa nuestras
+            <a href="/dotaciones-medellin/" class="font-semibold text-blue-600 underline hover:text-blue-700">dotaciones empresariales en Medellín</a>.
+          </p>
+        </div>
+        <div class="divide-y divide-slate-200 border-y border-slate-200">
+          {faqs.map((faq) => (
+            <details class="group py-5">
+              <summary class="cursor-pointer list-none pr-8 text-base font-bold text-gray-900">{faq.question}</summary>
+              <p class="mt-3 max-w-3xl text-m leading-relaxed text-gray-500">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 pb-20 sm:px-8 lg:px-10">
+      <div class="rounded-2xl bg-blue-950 px-7 py-10 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-extrabold leading-tight sm:text-4xl">Cotiza el calzado de tu equipo</h2>
+          <p class="mt-3 text-m leading-relaxed text-blue-100">Indica referencias, tallas, cantidades y ciudad de entrega. Te respondemos con disponibilidad y una cotización formal.</p>
+        </div>
+        <a
+          href={quoteHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-7 inline-flex rounded-full bg-white px-7 py-3.5 font-bold text-blue-800 transition hover:bg-blue-50 lg:mt-0"
+        >
+          Solicitar cotización por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
