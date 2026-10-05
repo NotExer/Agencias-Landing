@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar.astro";
 import missionPymeAvatar from "../../img/blog/author-misionpyme.jpg";
 import {
   articles,
+  getArticleCluster,
   getArticleImage,
   getArticlePath,
   type Article,
@@ -41,6 +42,8 @@ for (const block of article.blocks) {
   }
 }
 
+const cluster = getArticleCluster(article.slug);
+const clusterLinkIndex = contentGroups.findIndex((block) => block.type === "p");
 const hasMissionPymeAvatar = article.author === "MisiónPyme";
 const articleSchema = {
   "@context": "https://schema.org",
@@ -136,11 +139,21 @@ const articleSchema = {
 
     <article class="article-body mx-auto max-w-[800px] pt-16 lg:pt-20">
         {
-          contentGroups.map((block) => {
+          contentGroups.map((block, index) => {
             if (block.type === "h2") return <h2>{block.text}</h2>;
             if (block.type === "h3") return <h3>{block.text}</h3>;
             if (block.type === "ul") {
               return <ul>{block.items.map((item) => <li>{item}</li>)}</ul>;
+            }
+            if (index === clusterLinkIndex) {
+              return (
+                <>
+                  <p>{block.text}</p>
+                  <p class="cluster-link">
+                    {cluster.lead} <a href={cluster.href}>{cluster.anchor}</a>.
+                  </p>
+                </>
+              );
             }
             return <p>{block.text}</p>;
           })
@@ -153,9 +166,10 @@ const articleSchema = {
         Comparte productos, cantidades y ciudades. Te ayudamos a organizar la solicitud para tu empresa.
       </p>
       <div class="mt-6 flex flex-wrap gap-x-5 gap-y-3 text-sm font-semibold text-blue-200">
+        <a href="/dotaciones-medellin/" class="hover:text-white">Dotaciones en Medellín</a>
         <a href="/dotaciones-empresariales-colombia/" class="hover:text-white">Dotaciones en Colombia</a>
         <a href="/categoria/calzado-de-trabajo/" class="hover:text-white">Calzado de trabajo</a>
-        <a href="/epp-colombia/" class="hover:text-white">Elementos de protección personal</a>
+        <a href="/epp-medellin/" class="hover:text-white">EPP en Medellín</a>
       </div>
       <a
         href={waHref(`Hola, leí el artículo "${article.title}" y quiero cotizar para mi empresa.`)}
@@ -196,6 +210,17 @@ const articleSchema = {
 
   .article-body :global(p) {
     margin: 0 0 1.5rem;
+  }
+
+  .article-body .cluster-link {
+    border-left: 3px solid #1e40af;
+    padding-left: 1rem;
+  }
+
+  .article-body .cluster-link a {
+    color: #1d4ed8;
+    font-weight: 600;
+    text-decoration: underline;
   }
 
   .article-body :global(ul) {
