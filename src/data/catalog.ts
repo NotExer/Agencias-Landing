@@ -50,6 +50,7 @@ interface CatalogEntry {
   inStock?:    boolean;
   highlights?: typeof DEFAULT_HIGHLIGHTS;
   specs?:      string;
+  seoTitle?:   string;
 }
 
 
@@ -886,10 +887,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Overol azul oscuro.jpg"],
     price:    159000,
     description: [
-      "Overol en color azul oscuro pensado para labores operativas donde se necesita una prenda integral, resistente y cómoda.",
+      "Overol de dotación en color azul oscuro pensado para labores operativas donde se necesita una prenda integral, resistente y cómoda.",
       "Ideal para equipos de mantenimiento, industria y operaciones generales.",
     ],
     specs: "Overol de dotación · Color azul oscuro · Uso operativo · Diseño funcional",
+    seoTitle: "Overol Azul Oscuro de Dotación | Agencias Nacionales",
   },
 
   {
@@ -1558,10 +1560,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Gorro quirurgico.png"],
     price:    19000,
     description: [
-      "Gorro quirúrgico diseñado para mantener el cabello contenido en ambientes clínicos y de procedimiento.",
+      "Gorro quirúrgico y de laboratorio diseñado para mantener el cabello contenido en ambientes clínicos y de procedimiento.",
       "Es una prenda práctica para garantizar orden e higiene en áreas hospitalarias.",
     ],
     specs: "Uso clínico · Control de cabello · Ligero · Ideal para procedimientos",
+    seoTitle: "Gorro Quirúrgico y de Laboratorio | Agencias Nacionales",
   },
 
   {
@@ -1582,10 +1585,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido cierre lateral cindy dama 1.png", "Conjunto antifluido cierre lateral cindy dama 2.png"],
     price:    149000,
     description: [
-      "Conjunto antifluido para dama con cierre lateral, pensado para ambientes hospitalarios y de atención clínica.",
+      "Uniforme antifluido para mujer con cierre lateral, pensado para ambientes hospitalarios y de atención clínica.",
       "Ofrece una presentación limpia y protección ligera para la jornada diaria.",
     ],
     specs: "Antifluido · Cierre lateral · Uso hospitalario · Confort y presentación",
+    seoTitle: "Uniforme Antifluido Mujer Cierre Lateral Cindy | Agencias Nacionales",
   },
 
   {
@@ -1594,10 +1598,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido cierre frontal dama 1.png", "Conjunto antifluido cierre frontal dama 2.png"],
     price:    149000,
     description: [
-      "Conjunto antifluido para dama con cierre frontal, ideal para clínicas, consultorios y áreas de cuidado.",
+      "Uniforme antifluido para mujer con cierre frontal, ideal para clínicas, consultorios y áreas de cuidado.",
       "Su diseño busca facilidad de uso y una imagen institucional adecuada.",
     ],
     specs: "Antifluido · Cierre frontal · Uso hospitalario · Práctico y cómodo",
+    seoTitle: "Uniforme Antifluido Mujer Cierre Frontal | Agencias Nacionales",
   },
 
   {
@@ -1606,10 +1611,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido licrado dalia dama 1.png", "Conjunto antifluido licrado dalia dama 2.png"],
     price:    159000,
     description: [
-      "Conjunto antifluido licrado para dama con una confección flexible y cómoda para uso hospitalario.",
+      "Uniforme antifluido licrado para mujer con una confección flexible y cómoda para uso hospitalario.",
       "Pensado para jornadas prolongadas donde se necesita movilidad y buena presentación.",
     ],
     specs: "Licrado · Uso hospitalario · Ajuste cómodo · Alta movilidad",
+    seoTitle: "Uniforme Antifluido Mujer Licrado Dalia | Agencias Nacionales",
   },
 
   {
@@ -1618,10 +1624,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido licrado celeste dama 1.png", "Conjunto antifluido licrado celeste dama 2.png"],
     price:    159000,
     description: [
-      "Conjunto antifluido licrado en color celeste para una presentación limpia y profesional.",
+      "Uniforme antifluido licrado en color celeste para una presentación limpia y profesional.",
       "Adecuado para entornos clínicos y de atención al paciente.",
     ],
     specs: "Licrado · Color celeste · Uso hospitalario · Presentación institucional",
+    seoTitle: "Uniforme Antifluido Mujer Licrado Celeste | Agencias Nacionales",
   },
 
   {
@@ -1630,10 +1637,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido licrado cuello en v larry hombre 1.png", "Conjunto antifluido licrado cuello en v larry hombre 2.png"],
     price:    159000,
     description: [
-      "Conjunto antifluido licrado para hombre con cuello en V, orientado a dotación hospitalaria cómoda y funcional.",
+      "Uniforme antifluido licrado para hombre con cuello en V, orientado a dotación hospitalaria cómoda y funcional.",
       "Muy útil en áreas de atención, consulta y apoyo clínico.",
     ],
     specs: "Licrado · Cuello en V · Uso hospitalario · Funcional y cómodo",
+    seoTitle: "Uniforme Antifluido Hombre Licrado Cuello V Larry | Agencias Nacionales",
   },
 
   {
@@ -1642,10 +1650,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido licrado cuello redondo con bolsillo violet dama 1.png", "Conjunto antifluido licrado cuello redondo con bolsillo violet dama 2.png"],
     price:    159000,
     description: [
-      "Conjunto antifluido licrado para dama con cuello redondo y bolsillo, pensado para uso hospitalario diario.",
+      "Uniforme antifluido licrado para mujer con cuello redondo y bolsillo, pensado para uso hospitalario diario.",
       "Ofrece practicidad sin perder una presentación pulida.",
     ],
     specs: "Licrado · Cuello redondo · Bolsillo frontal · Uso clínico",
+    seoTitle: "Uniforme Antifluido Mujer Licrado Cuello Redondo Violet | Agencias Nacionales",
   },
 
   {
@@ -1654,10 +1663,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido licrado cuello v 1.png", "Conjunto antifluido licrado cuello v 2.png"],
     price:    149000,
     description: [
-      "Conjunto antifluido licrado con cuello en V para dotación hospitalaria y atención al público.",
+      "Uniforme antifluido licrado con cuello en V para dotación hospitalaria y atención al público.",
       "Su confección busca comodidad y una imagen profesional.",
     ],
     specs: "Licrado · Cuello en V · Uso hospitalario · Cómodo y ligero",
+    seoTitle: "Uniforme Antifluido Licrado Cuello V | Agencias Nacionales",
   },
 
   {
@@ -1666,10 +1676,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido cuello v cx dama 1.png", "Conjunto antifluido cuello v cx dama 2.png"],
     price:    149000,
     description: [
-      "Conjunto antifluido para dama con cuello en V CX, creado para entornos de salud y apoyo clínico.",
+      "Uniforme antifluido para mujer con cuello en V CX, creado para entornos de salud y apoyo clínico.",
       "Es una opción funcional para jornadas de trabajo continuas.",
     ],
     specs: "Antifluido · Cuello V CX · Uso hospitalario · Confort diario",
+    seoTitle: "Uniforme Antifluido Mujer Cuello V CX | Agencias Nacionales",
   },
 
   {
@@ -1678,10 +1689,11 @@ const CATALOG: CatalogEntry[] = [
     images:   ["Conjunto antifluido cuello v cx hombre 1.png", "Conjunto antifluido cuello v cx hombre 2.png"],
     price:    149000,
     description: [
-      "Conjunto antifluido para hombre con cuello V CX, diseñado para dotación hospitalaria y clínica.",
+      "Uniforme antifluido para hombre con cuello V CX, diseñado para dotación hospitalaria y clínica.",
       "Aporta una presentación sobria y comodidad durante el uso continuo.",
     ],
     specs: "Antifluido · Cuello V CX · Uso hospitalario · Presentación profesional",
+    seoTitle: "Uniforme Antifluido Hombre Cuello V CX | Agencias Nacionales",
   },
   
 ];
@@ -1709,6 +1721,7 @@ export interface Product {
   highlights:  typeof DEFAULT_HIGHLIGHTS;
   description: string[];
   inStock:     boolean;
+  seoTitle?:   string;
   info:        { title: string; content: string };
 }
 
@@ -1721,6 +1734,7 @@ export const products: Product[] = CATALOG.map((entry) => ({
   highlights:  entry.highlights ?? DEFAULT_HIGHLIGHTS,
   description: entry.description,
   inStock:     entry.inStock ?? true,
+  seoTitle:    entry.seoTitle,
   info: {
     title:   "Información",
     content: entry.specs ?? "Especificaciones técnicas próximamente.",

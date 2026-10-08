@@ -138,6 +138,16 @@
       "permanent": true
     },
     {
+      "source": "/uniforme-epm-contratista/",
+      "destination": "/producto/camisa-epm/",
+      "permanent": true
+    },
+    {
+      "source": "/brazaletes-brigadistas/",
+      "destination": "/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+      "permanent": true
+    },
+    {
       "source": "/casco-diel%C3%A9ctrico/",
       "destination": "/producto/casco-dielectrico/",
       "permanent": true

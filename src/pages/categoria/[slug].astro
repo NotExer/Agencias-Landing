@@ -10,7 +10,7 @@ import { waHref } from "../../data/contact";
 /** Copy editorial por categoría: title, meta description e intro visible. */
 const COPY: Record<
   string,
-  { title: string; description: string; intro: string }
+  { title: string; seoTitle?: string; description: string; intro: string }
 > = {
   "Calzado de Trabajo": {
     title: "Calzado de Seguridad Industrial",
@@ -34,9 +34,10 @@ const COPY: Record<
       "Complementa la dotación de tu equipo con elementos de protección personal seleccionados por nivel de riesgo. Te asesoramos en la matriz de EPP según la actividad y el sector, para que cada puesto de trabajo cuente con la protección adecuada.",
   },
   Hospitalaria: {
-    title: "Uniformes Antifluidos y Ropa Hospitalaria",
+    title: "Uniformes antifluidos y ropa hospitalaria en Medellín",
+    seoTitle: "Uniformes Antifluidos en Medellín | Fabricantes y Cotización",
     description:
-      "Uniformes antifluidos, batas y conjuntos hospitalarios fabricados en Envigado para clínicas, laboratorios y consultorios de Medellín y Colombia. Cotiza por volumen.",
+      "Uniformes antifluidos en Medellín para mujer y hombre: batas y conjuntos hospitalarios para clínicas, laboratorios y consultorios de Medellín y Colombia. Fabricación propia. Cotiza por volumen.",
     intro:
       "Fabricamos uniformes antifluidos y ropa hospitalaria con telas que resisten el lavado frecuente y son cómodas en turnos largos. Atendemos clínicas, laboratorios, odontología y servicios de salud de Medellín, el Valle de Aburrá y el resto del país. Las referencias de línea pueden entregarse de inmediato según disponibilidad; los diseños especiales o con bordado tienen un plazo de hasta 45 días.",
   },
@@ -79,7 +80,7 @@ const breadcrumbLd = {
 ---
 
 <Layout
-  title={`${copy.title} | Agencias Nacionales S.A.S`}
+  title={copy.seoTitle ?? `${copy.title} | Agencias Nacionales S.A.S`}
   description={copy.description}
   image={catProducts[0]?.images[0]?.src}
 >
