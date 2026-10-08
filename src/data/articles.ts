@@ -106,6 +106,7 @@ const ARTICLE_CLUSTER: Record<string, keyof typeof CLUSTERS> = {
   "checklist-dotacion-nuevos-ingresos-empresa": "compras",
   "control-calidad-dotaciones-empresariales-checklist-compras-sst": "compras",
   "acta-entrega-dotacion-epp-empresa": "compras",
+  "ley-dotacion-colombia-quien-tiene-derecho-fechas-entrega": "compras",
   "como-armar-pliego-dotacion-epp-licitacion-privada": "compras",
   "como-crear-ficha-tecnica-dotacion-por-cargo": "compras",
   "como-estandarizar-dotaciones-por-cargo-y-area": "compras",
