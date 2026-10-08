@@ -143,7 +143,7 @@ async function checkEppLanding({ route, title, heading, area }) {
   }
   const jsonLd = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
     .map((match) => JSON.parse(match[1]));
-  if (!jsonLd.some((item) => item["@type"] === "Service" && item.areaServed?.name === area)) {
+  if (!jsonLd.some((item) => item["@type"] === "Service" && [item.areaServed].flat().some((place) => place?.name === area))) {
     console.error(`The ${route} page is missing Service structured data for ${area}.`);
     process.exit(1);
   }
@@ -163,6 +163,13 @@ await checkEppLanding({
   route: "epp-medellin",
   title: "EPP Medellín | Elementos de Protección Personal",
   heading: "Elementos de protección personal en Medellín",
+  area: "Medellín",
+});
+
+await checkEppLanding({
+  route: "camisas-de-dotacion",
+  title: "Camisas de Dotación en Medellín | Dril, Oxford e Índigo",
+  heading: "Camisas de dotación para empresas en Medellín",
   area: "Medellín",
 });
 
