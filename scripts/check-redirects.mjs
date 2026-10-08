@@ -31,6 +31,8 @@ const required = new Map([
   ["/pantal%C3%B3n-epm", "/producto/pantalon-epm/"],
   ["/pava-epm-con-solapa-especiales", "/producto/pava-epm/"],
   ["/camisa-m-c-dril-caqui", "/producto/camisa-dril-caqui-manga-corta/"],
+  ["/uniforme-epm-contratista", "/producto/camisa-epm/"],
+  ["/brazaletes-brigadistas", "/articulos-del-blog/dotacion-para-brigada-de-emergencias/"],
   ["/index.php", "/"],
   ["/hospitalaria.php", "/categoria/hospitalaria/"],
 ]);

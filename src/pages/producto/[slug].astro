@@ -35,7 +35,7 @@ const breadcrumbLd = {
 ---
 
 <Layout
-  title={`${product.name} | Agencias Nacionales S.A.S`}
+  title={product.seoTitle ?? `${product.name} | Agencias Nacionales S.A.S`}
   description={description}
   image={product.images[0]?.src}
 >
