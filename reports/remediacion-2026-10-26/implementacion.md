@@ -91,3 +91,24 @@ PageSpeed API devolvió 429 por cuota del proyecto público. No se obtuvo eviden
 ### Seguimiento configurado
 
 Automatización activa `verificar-remediaci-n-seo-agencias-nacionales`, ligada a este chat: hitos 29/10, 02/11, 23/11 y 21/12 de 2026. Verifica hitos pendientes a diario y permanece en silencio entre ellos salvo un cambio accionable. Debe desactivarse tras el último hito. La automatización semanal anterior permanece pausada.
+
+## Segunda publicación y comprobaciones finales
+
+PR [#18](https://github.com/NotExer/Agencias-Landing/pull/18), merge `9a0482eb6c2d9c314cd48c193b7677982164fa5a`, 26/10/2026 16:28:59 UTC (11:28:59 Bogotá). Precarga de Inter Latin y prioridad de decodificación de la imagen principal. `npm run verify` y las 13 pruebas de navegador vuelven a pasar. El dominio público sirve el link as=font; inventario final construido: 195 URLs indexables, títulos únicos, un H1 y canonical autorreferente en todas.
+
+Mapa de Híbrida: dos elementos con un clic cada uno, ambos miniaturas de la galería; la prueba de navegador confirma que cambian la imagen y sus candidatos responsive. Los mapas permiten localizar acciones, no probar por sí solos que un clic haya fallado.
+
+PageSpeed Insights también se revisó mediante su interfaz: [informe público](https://pagespeed.web.dev/analysis/https-agenciasnacionales-com/u3jp1fvb92?form_factor=mobile), 26/10 11:29 Bogotá. Confirma **“No hay datos” de usuarios reales** para esta consulta. La única ejecución alojada por Google obtuvo rendimiento 73, accesibilidad 100, recomendaciones 100 y SEO 100; LCP 5,4 s, TBT 30 ms y CLS 0,01. Es otra infraestructura y versión de Lighthouse, no una cuarta repetición equivalente a las mediciones locales ni prueba de aprobación de CWV. La optimización del rendimiento debe seguir evaluándose con tráfico real; no se promete LCP de campo aprobado.
+
+### Medianas finales de laboratorio
+
+| Página | LCP antes | LCP final | CLS final | TBT final |
+| --- | --- | --- | --- | --- |
+| portada | 6.223 s | 4.251 s | 0 | 99.5 ms |
+| medellin | 1.931 s | 3.113 s | 0 | 36 ms |
+| epp | 2.107 s | 3.877 s | 0 | 38 ms |
+| producto | 6.141 s | 3.702 s | 0 | 27 ms |
+
+Los resultados finales mejoran portada y producto frente a la referencia inicial, pero **Medellín y EPP siguen por encima de su muestra inicial y todas las medianas LCP finales superan 2,5 s**. La precarga elimina el descubrimiento tardío de la fuente, pero no basta para alcanzar el objetivo de LCP. El CLS final de las cuatro páginas es 0. No se declara el rendimiento completamente resuelto: queda monitorización de campo y diagnóstico de LCP con trazas bajo condiciones controladas si persiste. La variabilidad entre repeticiones impide atribuir todo el cambio a una sola modificación; no se siguen cambiando recursos a ciegas para obtener una puntuación favorable.
+
+La configuración final de cuentas se volvió a consultar: mismos cuatro eventos clave y sus métodos de conteo; solo el sitemap HTTPS vigente. La propiedad, los históricos y la intranet no se modificaron. La recopilación de línea base filtrada por hostname se ejecutó correctamente en seguimiento/2026-10-26/. La automatización está activa y vinculada a este chat.

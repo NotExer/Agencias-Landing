@@ -1,0 +1,34 @@
+[
+  {
+    "pagina": "portada",
+    "LCP_antes_s": 6.223,
+    "LCP_final_s": 4.251,
+    "CLS_final": 0,
+    "TBT_final_ms": 99.5,
+    "performance_final": 81
+  },
+  {
+    "pagina": "medellin",
+    "LCP_antes_s": 1.931,
+    "LCP_final_s": 3.113,
+    "CLS_final": 0,
+    "TBT_final_ms": 36,
+    "performance_final": 93
+  },
+  {
+    "pagina": "epp",
+    "LCP_antes_s": 2.107,
+    "LCP_final_s": 3.877,
+    "CLS_final": 0,
+    "TBT_final_ms": 38,
+    "performance_final": 88
+  },
+  {
+    "pagina": "producto",
+    "LCP_antes_s": 6.141,
+    "LCP_final_s": 3.702,
+    "CLS_final": 0,
+    "TBT_final_ms": 27,
+    "performance_final": 88
+  }
+]

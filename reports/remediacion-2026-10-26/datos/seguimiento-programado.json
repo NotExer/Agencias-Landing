@@ -1,0 +1,12 @@
+{
+  "automationId": "verificar-remediaci-n-seo-agencias-nacionales",
+  "status": "ACTIVE",
+  "milestones": [
+    "2026-10-29",
+    "2026-11-02",
+    "2026-11-23",
+    "2026-12-21"
+  ],
+  "timezone": "America/Bogota",
+  "previousWeeklyAutomation": "PAUSED"
+}
