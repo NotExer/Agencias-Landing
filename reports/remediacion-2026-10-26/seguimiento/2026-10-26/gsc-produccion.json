@@ -1,0 +1,1727 @@
+{
+  "at": "2026-10-26T16:19:08.614Z",
+  "slug": "GOOGLE_SEARCH_CONSOLE_SEARCH_ANALYTICS_QUERY",
+  "args": {
+    "site_url": "sc-domain:agenciasnacionales.com",
+    "start_date": "2026-09-26",
+    "end_date": "2026-10-23",
+    "dimensions": [
+      "page"
+    ],
+    "dimension_filter_groups": [
+      {
+        "filters": [
+          {
+            "dimension": "page",
+            "operator": "includingRegex",
+            "expression": "^https://agenciasnacionales\\.com/"
+          }
+        ]
+      }
+    ],
+    "data_state": "final",
+    "row_limit": 5000
+  },
+  "result": {
+    "successful": true,
+    "data": {
+      "responseAggregationType": "byPage",
+      "rows": [
+        {
+          "clicks": 34,
+          "ctr": 0.06126126126126126,
+          "impressions": 555,
+          "keys": [
+            "https://agenciasnacionales.com/"
+          ],
+          "position": 8.693693693693692
+        },
+        {
+          "clicks": 11,
+          "ctr": 0.018302828618968387,
+          "impressions": 601,
+          "keys": [
+            "https://agenciasnacionales.com/dotaciones-medellin/"
+          ],
+          "position": 9.252911813643927
+        },
+        {
+          "clicks": 6,
+          "ctr": 0.017142857142857144,
+          "impressions": 350,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/"
+          ],
+          "position": 6.214285714285714
+        },
+        {
+          "clicks": 6,
+          "ctr": 0.058823529411764705,
+          "impressions": 102,
+          "keys": [
+            "https://agenciasnacionales.com/producto/zapato-tipo-crocs-kroky-ref-242/"
+          ],
+          "position": 8.519607843137255
+        },
+        {
+          "clicks": 4,
+          "ctr": 0.058823529411764705,
+          "impressions": 68,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-definir-stock-minimo-epp-dotacion-por-sede/"
+          ],
+          "position": 3.8529411764705883
+        },
+        {
+          "clicks": 4,
+          "ctr": 0.0784313725490196,
+          "impressions": 51,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-evaluar-proveedores-dotaciones-empresariales-colombia/"
+          ],
+          "position": 10.176470588235293
+        },
+        {
+          "clicks": 4,
+          "ctr": 0.025157232704402517,
+          "impressions": 159,
+          "keys": [
+            "https://agenciasnacionales.com/contacto/"
+          ],
+          "position": 3.7735849056603774
+        },
+        {
+          "clicks": 4,
+          "ctr": 0.025157232704402517,
+          "impressions": 159,
+          "keys": [
+            "https://agenciasnacionales.com/epp-medellin/"
+          ],
+          "position": 14.433962264150944
+        },
+        {
+          "clicks": 3,
+          "ctr": 0.022058823529411766,
+          "impressions": 136,
+          "keys": [
+            "https://agenciasnacionales.com/calzado-de-dotacion/"
+          ],
+          "position": 13.514705882352942
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.13333333333333333,
+          "impressions": 15,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-planear-presupuesto-anual-dotaciones-empresariales/"
+          ],
+          "position": 8.4
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.06666666666666667,
+          "impressions": 30,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/reducir-cambios-devoluciones-talla-dotaciones-empresariales"
+          ],
+          "position": 7.2
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.18181818181818182,
+          "impressions": 11,
+          "keys": [
+            "https://agenciasnacionales.com/producto/casco-de-seguridad/"
+          ],
+          "position": 18.363636363636363
+        },
+        {
+          "clicks": 2,
+          "ctr": 0.06666666666666667,
+          "impressions": 30,
+          "keys": [
+            "https://agenciasnacionales.com/producto/pava-en-dril-con-solapa/"
+          ],
+          "position": 12.4
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.011494252873563218,
+          "impressions": 87,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/"
+          ],
+          "position": 7.448275862068965
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.00847457627118644,
+          "impressions": 118,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/cada-cuanto-renovar-uniformes-calzado-epp-empresa/"
+          ],
+          "position": 6.5508474576271185
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.16666666666666666,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/checklist-dotacion-nuevos-ingresos-empresa/"
+          ],
+          "position": 14.5
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.014705882352941176,
+          "impressions": 68,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-crear-ficha-tecnica-dotacion-por-cargo/"
+          ],
+          "position": 5.75
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.25,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-crear-matriz-reposicion-epp-por-cargo-consumo/"
+          ],
+          "position": 7.5
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.037037037037037035,
+          "impressions": 27,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-definir-stock-minimo-dotaciones-por-sede/"
+          ],
+          "position": 3.7037037037037037
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.07692307692307693,
+          "impressions": 13,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-hacer-prueba-piloto-dotaciones-empresariales/"
+          ],
+          "position": 8.384615384615385
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.010309278350515464,
+          "impressions": 97,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/dotacion-personal-aseo-servicios-generales/"
+          ],
+          "position": 6.639175257731959
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.08333333333333333,
+          "impressions": 12,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/dotacion-personal-mantenimiento-facility-management"
+          ],
+          "position": 6.666666666666667
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.05263157894736842,
+          "impressions": 19,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/dotacion-personal-mantenimiento-facility-management/"
+          ],
+          "position": 15.894736842105264
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.05263157894736842,
+          "impressions": 19,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/politica-interna-dotacion-reposicion-empresas-multisede"
+          ],
+          "position": 30.842105263157894
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.038461538461538464,
+          "impressions": 26,
+          "keys": [
+            "https://agenciasnacionales.com/categoria/calzado-de-trabajo/"
+          ],
+          "position": 8.923076923076923
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.0031446540880503146,
+          "impressions": 318,
+          "keys": [
+            "https://agenciasnacionales.com/categoria/epp/"
+          ],
+          "position": 51.509433962264154
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.005917159763313609,
+          "impressions": 169,
+          "keys": [
+            "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/"
+          ],
+          "position": 7.538461538461538
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.008620689655172414,
+          "impressions": 116,
+          "keys": [
+            "https://agenciasnacionales.com/dotaciones-empresariales-colombia/"
+          ],
+          "position": 8.887931034482758
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.2,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/"
+          ],
+          "position": 4.6
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.006289308176100629,
+          "impressions": 159,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camisa-epm/"
+          ],
+          "position": 7.70440251572327
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.1111111111111111,
+          "impressions": 9,
+          "keys": [
+            "https://agenciasnacionales.com/producto/conjunto-antifluido-cierre-lateral-cindy-dama/"
+          ],
+          "position": 13.11111111111111
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.16666666666666666,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/producto/conjunto-antifluido-licrado-dalia-dama/"
+          ],
+          "position": 16
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.16666666666666666,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/producto/gorro-redondo-en-dacron-ref-13/"
+          ],
+          "position": 13.5
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.03333333333333333,
+          "impressions": 30,
+          "keys": [
+            "https://agenciasnacionales.com/producto/polainas-hospitalarias/"
+          ],
+          "position": 35.93333333333333
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.5,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/producto/redecilla-balaca-en-dacron-ref-09/"
+          ],
+          "position": 2
+        },
+        {
+          "clicks": 1,
+          "ctr": 0.14285714285714285,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/redecilla-velillo-cristal-negra-ref-05"
+          ],
+          "position": 16.857142857142858
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog"
+          ],
+          "position": 22
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/best-practices/"
+          ],
+          "position": 29.6
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/botas-de-seguridad-para-mujer/"
+          ],
+          "position": 8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 12,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/checklist-dotacion-nuevos-ingresos-empresa"
+          ],
+          "position": 4.916666666666666
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 33,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/"
+          ],
+          "position": 4.575757575757576
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 28,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-consolidar-tallas-dotacion-por-sede-sin-errores"
+          ],
+          "position": 4.857142857142858
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 30,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-cotizar-dotaciones-empresariales-sin-errores/"
+          ],
+          "position": 8.8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 37,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-crear-ficha-tecnica-dotacion-por-cargo"
+          ],
+          "position": 5.891891891891892
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 8,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-elegir-calzado-de-trabajo-comodo-jornadas-largas/"
+          ],
+          "position": 7.375
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-elegir-calzado-de-trabajo-segun-riesgo-operacion"
+          ],
+          "position": 9
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-elegir-calzado-de-trabajo-segun-riesgo-operacion/"
+          ],
+          "position": 10
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 44,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-estandarizar-dotaciones-por-cargo-y-area/"
+          ],
+          "position": 24.545454545454547
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 8,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/como-planear-presupuesto-anual-dotaciones-empresariales"
+          ],
+          "position": 4.625
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/control-calidad-dotaciones-empresariales-checklist-compras-sst"
+          ],
+          "position": 4.666666666666666
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 35,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/control-dotacion-contratistas-personal-temporal"
+          ],
+          "position": 8.17142857142857
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 130,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/"
+          ],
+          "position": 18.76153846153846
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 115,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/"
+          ],
+          "position": 27.895652173913042
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno"
+          ],
+          "position": 6.285714285714286
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 16,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/"
+          ],
+          "position": 7.125
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/gafas-de-seguridad-guia-compra/"
+          ],
+          "position": 6.142857142857143
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/getting-started/"
+          ],
+          "position": 28.8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 216,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/ley-dotacion-colombia-quien-tiene-derecho-fechas-entrega/"
+          ],
+          "position": 47.83796296296296
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/politica-interna-dotacion-reposicion-empresas-multisede/"
+          ],
+          "position": 43
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/articulos-del-blog/trabajo-en-alturas-guia-epp/"
+          ],
+          "position": 7.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 16,
+          "keys": [
+            "https://agenciasnacionales.com/articulos/"
+          ],
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/bota-cana-alta-ref-226"
+          ],
+          "position": 37
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/bota-gallarda-acidos-grasos"
+          ],
+          "position": 15.333333333333334
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 13,
+          "keys": [
+            "https://agenciasnacionales.com/camisas-de-dotacion/"
+          ],
+          "position": 11.23076923076923
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/camiseta-t-shirt-m-c"
+          ],
+          "position": 4
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/camiseta-t-shirt-m-l"
+          ],
+          "position": 22.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 90,
+          "keys": [
+            "https://agenciasnacionales.com/categoria/gorros-y-redecillas/"
+          ],
+          "position": 6.7444444444444445
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 43,
+          "keys": [
+            "https://agenciasnacionales.com/categoria/hospitalaria/"
+          ],
+          "position": 11.209302325581396
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/categoria/promocionales/"
+          ],
+          "position": 11.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/categorias/botas-caucho-croydon"
+          ],
+          "position": 13.166666666666666
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 8,
+          "keys": [
+            "https://agenciasnacionales.com/categorias/calzado-de-trabajo"
+          ],
+          "position": 12.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 11,
+          "keys": [
+            "https://agenciasnacionales.com/categorias/colegio"
+          ],
+          "position": 5.636363636363637
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/categorias/habitaciones"
+          ],
+          "position": 12
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 11,
+          "keys": [
+            "https://agenciasnacionales.com/categorias/linea-calzado-en-eva-evacol"
+          ],
+          "position": 19.727272727272727
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/categorias/linea-pvc-croydon"
+          ],
+          "position": 19.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/categorias/promocionales"
+          ],
+          "position": 7.4
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/dotacion-empresarial-medellin/"
+          ],
+          "position": 8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/epp-colombia/"
+          ],
+          "position": 9.333333333333334
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/faq/"
+          ],
+          "position": 6.285714285714286
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 82,
+          "keys": [
+            "https://agenciasnacionales.com/nosotros/"
+          ],
+          "position": 3.341463414634146
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 12,
+          "keys": [
+            "https://agenciasnacionales.com/pol%C3%ADticas/pol%C3%ADtica-de-calidad"
+          ],
+          "position": 11.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/politica_ambiental/"
+          ],
+          "position": 4
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/politica_calidad/"
+          ],
+          "position": 4.8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 31,
+          "keys": [
+            "https://agenciasnacionales.com/politica_privacidad/"
+          ],
+          "position": 6.548387096774194
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/politica_seguridad/"
+          ],
+          "position": 10
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/politica_uso/"
+          ],
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/preguntas-frecuentes"
+          ],
+          "position": 7.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 23,
+          "keys": [
+            "https://agenciasnacionales.com/producto/"
+          ],
+          "position": 5.217391304347826
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bata-de-laboratorio-hospitalaria-manga-corta/"
+          ],
+          "position": 15.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 10,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bata-de-laboratorio-hospitalaria-manga-larga/"
+          ],
+          "position": 10.7
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/blue-jean-dama/"
+          ],
+          "position": 16
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/producto/blue-jean-hombre/"
+          ],
+          "position": 15.714285714285714
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/"
+          ],
+          "position": 30.75
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bolso-promocional-ref-122/"
+          ],
+          "position": 21.333333333333332
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bolso-promocional-ref-602/"
+          ],
+          "position": 34.666666666666664
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-de-eva-p-seg-ref-226/"
+          ],
+          "position": 10
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/"
+          ],
+          "position": 4
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 8,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-lisa-vulcanizada/"
+          ],
+          "position": 9.375
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-macha-alta-negra/"
+          ],
+          "position": 20.333333333333332
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 11,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-plastica-cana-alta-agricola/"
+          ],
+          "position": 16.545454545454547
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-soldador-inyectada/"
+          ],
+          "position": 15.666666666666666
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 15,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-workman-food-industry-blanca/"
+          ],
+          "position": 25.8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 20,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-workman-safety-food-industry-blanca/"
+          ],
+          "position": 9.9
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-workman-safety-waterproof-p-seg-negra/"
+          ],
+          "position": 10.571428571428571
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/bota-workman-super-safety-p-seg-plantilla-en-acero/"
+          ],
+          "position": 9.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 14,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camisa-dril-azul-oscuro-manga-corta/"
+          ],
+          "position": 10.214285714285714
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 13,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camisa-dril-azul-oscuro-manga-larga/"
+          ],
+          "position": 8.076923076923077
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camisa-dril-caqui-manga-corta/"
+          ],
+          "position": 17.666666666666668
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 13,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camisa-dril-caqui-manga-larga/"
+          ],
+          "position": 16.153846153846153
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 12,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camisa-indigo/"
+          ],
+          "position": 9.583333333333334
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camiseta-t-shirt-manga-corta/"
+          ],
+          "position": 27.833333333333332
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camiseta-t-shirt-manga-larga/"
+          ],
+          "position": 100
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/producto/camiseta-tipo-polo-manga-larga/"
+          ],
+          "position": 8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/careta-para-esmeril/"
+          ],
+          "position": 15.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 13,
+          "keys": [
+            "https://agenciasnacionales.com/producto/casco-dielectrico/"
+          ],
+          "position": 28.46153846153846
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 9,
+          "keys": [
+            "https://agenciasnacionales.com/producto/casco-eco/"
+          ],
+          "position": 10.777777777777779
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/casco-mountain/"
+          ],
+          "position": 23
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/casco-ref-1300e/"
+          ],
+          "position": 16.75
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 9,
+          "keys": [
+            "https://agenciasnacionales.com/producto/chaleco-reflectivo/"
+          ],
+          "position": 8.333333333333332
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/conjunto-antifluido-cierre-frontal-dama/"
+          ],
+          "position": 8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/conjunto-antifluido-cuello-v-cx-dama/"
+          ],
+          "position": 10.75
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/producto/conjunto-antifluido-cuello-v-cx-hombre/"
+          ],
+          "position": 22
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/conjunto-antifluido-licrado-celeste-dama/"
+          ],
+          "position": 97
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/conjunto-antifluido-licrado-cuello-redondo-con-bolsillo-violet-dama/"
+          ],
+          "position": 6
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 6,
+          "keys": [
+            "https://agenciasnacionales.com/producto/conjunto-antifluido-licrado-cuello-v/"
+          ],
+          "position": 24.166666666666668
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 14,
+          "keys": [
+            "https://agenciasnacionales.com/producto/delantal-pvc/"
+          ],
+          "position": 9.285714285714286
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/"
+          ],
+          "position": 3
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/producto/gorro-corto-en-dacron-ref-11/"
+          ],
+          "position": 8.428571428571429
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 9,
+          "keys": [
+            "https://agenciasnacionales.com/producto/gorro-largo-en-dacron-ref-12/"
+          ],
+          "position": 12.777777777777779
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 33,
+          "keys": [
+            "https://agenciasnacionales.com/producto/gorro-quirurgico/"
+          ],
+          "position": 9.515151515151516
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/producto/gorro-tipo-medico-ref-14/"
+          ],
+          "position": 60
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/guantes-con-recubrimiento-de-caucho/"
+          ],
+          "position": 18.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/guantes-en-caucho-calibre-25/"
+          ],
+          "position": 11
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/guantes-en-cuero-reforzado/"
+          ],
+          "position": 23.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/guantes-en-cuero-tipo-ingeniero/"
+          ],
+          "position": 85
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/guantes-kimberly-ref-g20p/"
+          ],
+          "position": 20
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/guantex-multiflex-steelpro/"
+          ],
+          "position": 6
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/mocasin-ambar-cordon-lona/"
+          ],
+          "position": 71
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/mocasin-dama-cementado-ref-juanita/"
+          ],
+          "position": 44
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/producto/mocasin-lona-medio-tacon-ref-248/"
+          ],
+          "position": 32
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/mocasin-lona-ref-206/"
+          ],
+          "position": 64
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-029/"
+          ],
+          "position": 21
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-035/"
+          ],
+          "position": 35.75
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-062/"
+          ],
+          "position": 76
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-100/"
+          ],
+          "position": 36
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-101/"
+          ],
+          "position": 42.333333333333336
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-113/"
+          ],
+          "position": 62
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-116/"
+          ],
+          "position": 35.25
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-121/"
+          ],
+          "position": 56
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/morral-promocional-ref-804/"
+          ],
+          "position": 31
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/producto/overol-azul-oscuro/"
+          ],
+          "position": 21
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 11,
+          "keys": [
+            "https://agenciasnacionales.com/producto/pantalon-dril-azul-oscuro/"
+          ],
+          "position": 17.09090909090909
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/pantalon-dril-caqui/"
+          ],
+          "position": 52
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 28,
+          "keys": [
+            "https://agenciasnacionales.com/producto/pantalon-epm/"
+          ],
+          "position": 9.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/producto/pava-epm/"
+          ],
+          "position": 6
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/producto/redecilla-corta-franela-ref-06/"
+          ],
+          "position": 27.8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/redecilla-corta-lycra-ref-06/"
+          ],
+          "position": 6
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/redecilla-corta-velillo-cristal-ref-06/"
+          ],
+          "position": 16.75
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 28,
+          "keys": [
+            "https://agenciasnacionales.com/producto/redecilla-larga-1-velillo-cristal-ref-07/"
+          ],
+          "position": 6.071428571428571
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/redecilla-tull-ref-04/"
+          ],
+          "position": 32
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/producto/redecilla-velillo-cristal-blanca-ref-03/"
+          ],
+          "position": 21.142857142857142
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/producto/redecilla-velillo-cristal-negra-ref-05/"
+          ],
+          "position": 20.714285714285715
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/respirador-kn95/"
+          ],
+          "position": 20
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/rinonera-promocional-ref-802/"
+          ],
+          "position": 69
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/saco-blanco-clasico/"
+          ],
+          "position": 39
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tapon-auditivo-reutilizable/"
+          ],
+          "position": 7
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tapon-para-oidos-desechable-sin-cordon/"
+          ],
+          "position": 9.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-clasico-ares-bajo-lona/"
+          ],
+          "position": 10
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-clasico-tipo-reebok-prin/"
+          ],
+          "position": 22.285714285714285
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-clasico-zeus-alto-lona/"
+          ],
+          "position": 13
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-clasico-zeus-bajo-lona/"
+          ],
+          "position": 8.6
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-deportivo-alto/"
+          ],
+          "position": 50
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-deportivo-bajo/"
+          ],
+          "position": 18.75
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-mocasin-lona-ref-510/"
+          ],
+          "position": 99
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-mocasin-lona-ref-963/"
+          ],
+          "position": 21.333333333333332
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-mocasin-suela-jordan/"
+          ],
+          "position": 21.8
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/tenis-royal-cut-alto/"
+          ],
+          "position": 28.333333333333332
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 7,
+          "keys": [
+            "https://agenciasnacionales.com/producto/valeta-gracia-llano-lona/"
+          ],
+          "position": 15.285714285714286
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 3,
+          "keys": [
+            "https://agenciasnacionales.com/producto/valeta-lona-katty-ref-205"
+          ],
+          "position": 3.6666666666666665
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/producto/valeta-lona-katty-ref-205/"
+          ],
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/producto/zapato-tipo-crocs-ref-080/"
+          ],
+          "position": 7
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/producto/zapato-tipo-crocs-ref-175/"
+          ],
+          "position": 50
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/producto/zapato-tipo-crocs-ref-196/"
+          ],
+          "position": 50.5
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 11,
+          "keys": [
+            "https://agenciasnacionales.com/producto/zapato-tipo-crocs-ref-201/"
+          ],
+          "position": 19.09090909090909
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 4,
+          "keys": [
+            "https://agenciasnacionales.com/producto/zapato-tipo-crocs-ref-224/"
+          ],
+          "position": 36
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 5,
+          "keys": [
+            "https://agenciasnacionales.com/producto/zapaton-plastico-machita-dama/"
+          ],
+          "position": 36.4
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 1,
+          "keys": [
+            "https://agenciasnacionales.com/sobres%C3%A1bana"
+          ],
+          "position": 1
+        },
+        {
+          "clicks": 0,
+          "ctr": 0,
+          "impressions": 2,
+          "keys": [
+            "https://agenciasnacionales.com/workman-safety-oil"
+          ],
+          "position": 16.5
+        }
+      ]
+    },
+    "error": null,
+    "logId": "log_msOAg3_Y1oh1"
+  }
+}

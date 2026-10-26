@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { SEO_METADATA } from "../data/seo";
 import { ClientRouter } from "astro:transitions";
+import interLatin from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
 import ogDefault from "../img/Logo.avif";
 import WhatsAppFloat from "../components/WhatsAppFloat.astro";
 import { EMAIL, WHATSAPP_NUMBER } from "../data/contact";
@@ -88,6 +89,7 @@ const organization = {
 <!doctype html>
 <html lang="es" class="w-full">
   <head>
+    <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
     <!-- Production-only bootstrap: previews must not enter live analytics. -->
     <script is:inline>
       (() => {

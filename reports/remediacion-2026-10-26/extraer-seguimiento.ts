@@ -2,7 +2,22 @@ import {writeFileSync,mkdirSync} from 'node:fs';
 const now=new Date();const today=now.toISOString().slice(0,10);const out=`reports/remediacion-2026-10-26/seguimiento/${today}`;mkdirSync(out,{recursive:true});
 const date=(days)=>{const d=new Date(now);d.setUTCDate(d.getUTCDate()-days);return d.toISOString().slice(0,10)};
 const gaStart=process.env.SEO_START||date(28),gaEnd=process.env.SEO_END||date(1);
-async function call(name,slug,args){const result=await execute(slug,args);writeFileSync(`${out}/${name}.json`,JSON.stringify({at:now.toISOString(),slug,args,result},null,2));console.log(name,result.successful,result.logId);}
+async function call(name,slug,args){
+ const pages=[];let offset=0;
+ while(true){
+  const request={...args,...(offset?(slug.startsWith('GOOGLE_ANALYTICS')?{offset}:{start_row:offset}):{})};
+  const result=await execute(slug,request);pages.push({request,result});
+  const d=result.data;
+  if(!result.successful||result.error||d?.http_error||(d?.status_code&&Number(d.status_code)>=300)){
+   writeFileSync(`${out}/${name}.json`,JSON.stringify({at:now.toISOString(),slug,args,pages},null,2));throw new Error(`${name}: failed; log ${result.logId}`);
+  }
+  const limit=args.limit||args.row_limit;
+  if(!limit||!d?.rows||d.rows.length<limit)break;
+  offset+=d.rows.length;
+ }
+ writeFileSync(`${out}/${name}.json`,JSON.stringify({at:now.toISOString(),slug,args,pages},null,2));console.log(name,'pages',pages.length);
+}
+
 const hostname={filter:{fieldName:'hostName',stringFilter:{matchType:'EXACT',value:'agenciasnacionales.com'}}};
 await Promise.all([
 call('ga-canales','GOOGLE_ANALYTICS_RUN_REPORT',{property:'properties/527357451',dateRanges:[{startDate:gaStart,endDate:gaEnd}],dimensions:[{name:'sessionDefaultChannelGroup'}],metrics:['sessions','engagedSessions','keyEvents','sessionKeyEventRate'].map(name=>({name})),dimensionFilter:hostname,limit:10000}),

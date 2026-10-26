@@ -1,0 +1,1612 @@
+{
+  "at": "2026-10-26T16:19:08.614Z",
+  "slug": "MICROSOFT_CLARITY_DATA_EXPORT",
+  "args": {
+    "numOfDays": 3,
+    "dimension1": "URL"
+  },
+  "result": {
+    "successful": true,
+    "data": {
+      "response_data": [
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "pagesViews": 1,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 50,
+              "sessionsWithoutMetricPercentage": 50,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "pagesViews": 1,
+              "sessionsCount": 3,
+              "sessionsWithMetricPercentage": 33.33,
+              "sessionsWithoutMetricPercentage": 66.67,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "pagesViews": 1,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 50,
+              "sessionsWithoutMetricPercentage": 50,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "pagesViews": 1,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 100,
+              "sessionsWithoutMetricPercentage": 0,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "pagesViews": 0,
+              "sessionsCount": 9,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            }
+          ],
+          "metricName": "DeadClickCount"
+        },
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 3,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "pagesViews": 0,
+              "sessionsCount": 9,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            }
+          ],
+          "metricName": "ExcessiveScroll"
+        },
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 3,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "pagesViews": 0,
+              "sessionsCount": 9,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            }
+          ],
+          "metricName": "RageClickCount"
+        },
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "pagesViews": 1,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 50,
+              "sessionsWithoutMetricPercentage": 50,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "pagesViews": 1,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 100,
+              "sessionsWithoutMetricPercentage": 0,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "pagesViews": 1,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 50,
+              "sessionsWithoutMetricPercentage": 50,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "pagesViews": 2,
+              "sessionsCount": 3,
+              "sessionsWithMetricPercentage": 66.67,
+              "sessionsWithoutMetricPercentage": 33.33,
+              "subTotal": 2
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "pagesViews": 1,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 100,
+              "sessionsWithoutMetricPercentage": 0,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "pagesViews": 1,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 50,
+              "sessionsWithoutMetricPercentage": 50,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "pagesViews": 1,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 50,
+              "sessionsWithoutMetricPercentage": 50,
+              "subTotal": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "pagesViews": 3,
+              "sessionsCount": 9,
+              "sessionsWithMetricPercentage": 22.22,
+              "sessionsWithoutMetricPercentage": 77.78,
+              "subTotal": 3
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "pagesViews": 1,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 100,
+              "sessionsWithoutMetricPercentage": 0,
+              "subTotal": 1
+            }
+          ],
+          "metricName": "QuickbackClick"
+        },
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 3,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "pagesViews": 0,
+              "sessionsCount": 9,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            }
+          ],
+          "metricName": "ScriptErrorCount"
+        },
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 3,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "pagesViews": 0,
+              "sessionsCount": 9,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "pagesViews": 0,
+              "sessionsCount": 2,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "pagesViews": 0,
+              "sessionsCount": 1,
+              "sessionsWithMetricPercentage": 0,
+              "sessionsWithoutMetricPercentage": 100,
+              "subTotal": 0
+            }
+          ],
+          "metricName": "ErrorClickCount"
+        },
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "averageScrollDepth": 68
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "averageScrollDepth": 57
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "averageScrollDepth": 100
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "averageScrollDepth": 67
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "averageScrollDepth": 65.4
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "averageScrollDepth": 47
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "averageScrollDepth": 73
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "averageScrollDepth": 53
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "averageScrollDepth": 14
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "averageScrollDepth": 33
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "averageScrollDepth": 25
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "averageScrollDepth": 100
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "averageScrollDepth": 23.5
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "averageScrollDepth": 20.62
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "averageScrollDepth": 68.33
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "averageScrollDepth": 85
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "averageScrollDepth": 71
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "averageScrollDepth": 58
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "averageScrollDepth": 100
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "averageScrollDepth": 99
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "averageScrollDepth": 89
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "averageScrollDepth": 60.5
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "averageScrollDepth": 84
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "averageScrollDepth": 10
+            }
+          ],
+          "metricName": "ScrollDepth"
+        },
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "distinctUserCount": 2,
+              "pagesPerSessionPercentage": 6,
+              "totalBotSessionCount": 1,
+              "totalSessionCount": 2
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 9,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "distinctUserCount": 2,
+              "pagesPerSessionPercentage": 8.5,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 2
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "distinctUserCount": 3,
+              "pagesPerSessionPercentage": 8.666666666666666,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 3
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 9,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 4.5,
+              "totalBotSessionCount": 1,
+              "totalSessionCount": 2
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 9,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 2
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/blue-jean-hombre/",
+              "distinctUserCount": 0,
+              "pagesPerSessionPercentage": null,
+              "totalBotSessionCount": 1,
+              "totalSessionCount": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "distinctUserCount": 9,
+              "pagesPerSessionPercentage": 3.7777777777777777,
+              "totalBotSessionCount": 1,
+              "totalSessionCount": 9
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "distinctUserCount": 2,
+              "pagesPerSessionPercentage": 5.5,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 2
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 9,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 8,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/?fbclid=IwZXh0bgNhZW0CMTEAcGRvZgRzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAR61WO31q5ep9AWBOcqq7FDIAzOi3zi8hkmF2aQ-eOaPLhg-TwxTJX5D45I3Tw_aem_749r7foP5pKDKhyU5O3kJQ",
+              "distinctUserCount": 0,
+              "pagesPerSessionPercentage": null,
+              "totalBotSessionCount": 1,
+              "totalSessionCount": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 3,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 9,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 1,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "distinctUserCount": 1,
+              "pagesPerSessionPercentage": 9,
+              "totalBotSessionCount": 0,
+              "totalSessionCount": 1
+            }
+          ],
+          "metricName": "Traffic"
+        },
+        {
+          "information": [
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-medellin/",
+              "activeTime": 7,
+              "totalTime": 7
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/gorros-y-redecillas/",
+              "activeTime": 10,
+              "totalTime": 10
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/hospitalaria/",
+              "activeTime": 3,
+              "totalTime": 3
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+              "activeTime": 8,
+              "totalTime": 8
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/calzado-de-trabajo/",
+              "activeTime": 25,
+              "totalTime": 29
+            },
+            {
+              "Url": "https://agenciasnacionales.com/carrito/",
+              "activeTime": 3,
+              "totalTime": 3
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-gazella-100-libre-de-metal/",
+              "activeTime": 13,
+              "totalTime": 469
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+              "activeTime": 86,
+              "totalTime": 86
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/como-armar-pliego-dotacion-epp-licitacion-privada/",
+              "activeTime": 7,
+              "totalTime": 12
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/entregas-escalonadas-dotacion-por-sede-y-turno/",
+              "activeTime": 55,
+              "totalTime": 358
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/epp/",
+              "activeTime": 0,
+              "totalTime": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/deportivo-casual-ref-964/",
+              "activeTime": 26,
+              "totalTime": 26
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-logistica-bodegas-por-cargo/",
+              "activeTime": 9,
+              "totalTime": 312
+            },
+            {
+              "Url": "https://agenciasnacionales.com/",
+              "activeTime": 26,
+              "totalTime": 314
+            },
+            {
+              "Url": "https://agenciasnacionales.com/epp-medellin/",
+              "activeTime": 5,
+              "totalTime": 209
+            },
+            {
+              "Url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+              "activeTime": 23,
+              "totalTime": 23
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/bolso-promocional-ref-102/",
+              "activeTime": 4,
+              "totalTime": 4
+            },
+            {
+              "Url": "https://agenciasnacionales.com/politica_seguridad/",
+              "activeTime": 0,
+              "totalTime": 0
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/acta-entrega-dotacion-epp-empresa/",
+              "activeTime": 50,
+              "totalTime": 50
+            },
+            {
+              "Url": "https://agenciasnacionales.com/nosotros/",
+              "activeTime": 16,
+              "totalTime": 16
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/uniformes-de-trabajo/",
+              "activeTime": 8,
+              "totalTime": 8
+            },
+            {
+              "Url": "https://agenciasnacionales.com/categoria/promocionales/",
+              "activeTime": 10,
+              "totalTime": 10
+            },
+            {
+              "Url": "https://agenciasnacionales.com/articulos-del-blog/dotacion-para-empresas-de-alimentos-uniformes-calzado-epp/",
+              "activeTime": 210,
+              "totalTime": 210
+            },
+            {
+              "Url": "https://agenciasnacionales.com/producto/",
+              "activeTime": 3,
+              "totalTime": 3
+            }
+          ],
+          "metricName": "EngagementTime"
+        }
+      ]
+    },
+    "error": null,
+    "logId": "log_HieMTR4IsR0v"
+  }
+}

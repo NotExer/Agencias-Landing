@@ -65,3 +65,29 @@ La comprobación de preview, el cambio coordinado de GA4 y la publicación se re
 Seguimiento mediante Composio CLI con hostname de producción y separación de subdominios de GSC. `extraer-seguimiento.ts` permite fechas explícitas por variables SEO_START/SEO_END y SEO_GSC_START/SEO_GSC_END; las consultas por página son byPage y no se comparan con el antiguo total byProperty. Si una respuesta alcanza el límite solicitado debe paginarse antes de reportar totales. No convertir falta de fila en cero confirmado.
 
 Revisiones: 48–72 h (eventos y rutas), siete días (atribución, errores, Clarity), 28 y 56 días (ventanas comparables y tendencias). La fecha real de publicación define los hitos. Notificar resultados de hitos y fallos accionables; permanecer en silencio fuera de ellos. No interpretar la eliminación de duplicados como caída comercial.
+
+## Cierre de la primera publicación
+
+PR [#17](https://github.com/NotExer/Agencias-Landing/pull/17), merge `8b88d105e4480501739a672b8c4f1b664c2b806f`, 26/10/2026 16:18:38 UTC (11:18:38 Bogotá). Vercel compiló las previews de los dos equipos conectados. La preview del equipo Agencias Nacionales está protegida por SSO; la sesión dcossios no tiene acceso y no se debilitó esa protección. Se verificó el mismo código localmente y, tras publicar, en el dominio público.
+
+La actualización de pageChangesEnabled por Composio devolvió un 403 explícito por scopes insuficientes, sin modificar datos. Se realizó el cambio autorizado desde la interfaz de GA4 y se volvió a leer mediante Composio. La respuesta posterior omite pageChangesEnabled porque su valor por defecto es false; los otros campos siguen activos. No se alteraron eventos clave ni históricos. Las vistas iniciales quedan controladas por send_page_view:false y astro:page-load.
+
+Pruebas aprobadas: `npm run verify` (197 páginas generadas), 13 pruebas de navegador, seis URLs prioritarias con 200/H1/canonical/schema, 15 variantes HTTP de las once rutas y el recorrido real de portada → Medellín → atrás → adelante → recarga. La última secuencia de cinco page_view capturada en red coincide con URL, título y referente esperados; un clic de WhatsApp produce una sola intención, con salidas interceptadas. Evidencia en produccion-navegacion.json, rutas-produccion.json y medellin-movil-despues.png.
+
+### Revisión Clarity
+
+Cuenta Microsoft correcta verificada. Se examinaron dos recorridos recientes: uno de 14:52 con diez clics y ocho páginas (portada, categoría, Híbrida y Gazella), y otro de EPP con dos cargas, sin clics y largos periodos de página oculta. No se cuentan como diez sesiones por página: la muestra fue menor y se documenta como tal.
+
+En el recorrido de calzado, los clics inactivos se ubican a 00:18 sobre el contenedor de categoría/breadcrumb y a 01:35 sobre la sección de otros productos de Gazella. Los enlaces de las fichas sí navegan; los retrocesos se observan al comparar referencias y al volver desde un bolso. Eso no demuestra por sí solo una avería de los enlaces ni justifica cambiar el catálogo. Se reproducen los controles de galería/carrito en las pruebas; no se añadió una interacción ficticia a textos informativos.
+
+Los mapas PC de portada muestran dos elementos de navegación con un clic cada uno; el de categoría muestra cinco elementos con un clic cada uno; el de Gazella muestra un clic en una ficha y otro en el contenedor de más productos. EPP tiene una muestra sin clics en el recorrido revisado. El mapa del Deportivo Casual Ref. 964 no devuelve clics en PC ni móvil para el selector de tres días. No se extrapola a ausencia histórica de fricción ni se hace coincidir este selector con el export móvil de 72 horas. Se conserva el seguimiento por nuevas muestras, sin atribuirles causas inventadas.
+
+### Rendimiento y datos de campo
+
+La primera repetición posterior mejora la mediana LCP de portada de 6,22 a 3,37 s y producto de 6,14 a 2,33 s; Medellín y EPP empeoran en esa muestra. La cadena crítica confirma descubrimiento tardío de la fuente Inter, por lo que se añade su precarga y se repetirá la medición final. No se presenta esta primera repetición como mejora universal ni aprobación de CWV.
+
+PageSpeed API devolvió 429 por cuota del proyecto público. No se obtuvo evidencia nueva de campo; se mantiene este límite explícito. Los ensayos Lighthouse usan tres corridas secuenciales por URL con el mismo Chrome y configuración móvil; aun así reflejan variabilidad de red/CPU y no demuestran causalidad.
+
+### Seguimiento configurado
+
+Automatización activa `verificar-remediaci-n-seo-agencias-nacionales`, ligada a este chat: hitos 29/10, 02/11, 23/11 y 21/12 de 2026. Verifica hitos pendientes a diario y permanece en silencio entre ellos salvo un cambio accionable. Debe desactivarse tras el último hito. La automatización semanal anterior permanece pausada.
