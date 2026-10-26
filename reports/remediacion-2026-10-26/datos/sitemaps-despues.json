@@ -1,0 +1,25 @@
+{
+  "successful": true,
+  "data": {
+    "sitemap": [
+      {
+        "contents": [
+          {
+            "indexed": "0",
+            "submitted": "195",
+            "type": "web"
+          }
+        ],
+        "errors": "0",
+        "isPending": false,
+        "isSitemapsIndex": true,
+        "lastDownloaded": "2026-10-15T15:46:35.789Z",
+        "lastSubmitted": "2026-09-09T21:08:38.659Z",
+        "path": "https://agenciasnacionales.com/sitemap-index.xml",
+        "warnings": "0"
+      }
+    ]
+  },
+  "error": null,
+  "logId": "log_1gkfD3ts2yTb"
+}

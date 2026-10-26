@@ -371,6 +371,16 @@
       "source": "/guantes-kimberly-ref-g20p-poliuretano/",
       "destination": "/producto/guantes-kimberly-ref-g20p/",
       "permanent": true
+    },
+    {
+      "source": "/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met/",
+      "destination": "/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+      "permanent": true
+    },
+    {
+      "source": "/preguntas-frecuentes/",
+      "destination": "/faq/",
+      "permanent": true
     }
   ]
 }

@@ -1,0 +1,12 @@
+ruta,vistas,fechas,http_antes,destino,decision
+/calzado-de-dotacion/,14,20261005,200,,"Resuelto, conservar URL 200"
+/articulos-del-blog/planear-compra-dotacion-diciembre/,2,20261019,200,,"Resuelto, conservar URL 200"
+/cinta-de-seguridad-x-100-metros/,2,20261020,404,,"Conservar 404: no existe equivalente verificado; no sustituir producto, PDF o política"
+/funiformes/BSM01.pdf,1,20261008,404,,"Conservar 404: no existe equivalente verificado; no sustituir producto, PDF o política"
+/políticas/política-de-privacidad-y-sagrilaft/,1,20261014,404,,"Conservar 404: no existe equivalente verificado; no sustituir producto, PDF o política"
+/preguntas-frecuentes/,2,"20261014, 20261015",404,/faq/,308 a página vigente de preguntas frecuentes; equivalencia confirmada en código
+/bata-aislamiento-personal-asistencial/,1,20261016,404,,"Conservar 404: no existe equivalente verificado; no sustituir producto, PDF o política"
+/barbuquejo-de-4-puntos/,1,20261019,404,,"Conservar 404: no existe equivalente verificado; no sustituir producto, PDF o política"
+/bota-plastica-machita-dama/,1,20261020,404,,"Conservar 404: no existe equivalente verificado; no sustituir producto, PDF o política"
+/product/,1,20261020,404,,"Conservar 404: no existe equivalente verificado; no sustituir producto, PDF o política"
+/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met/,1,20261020,404,/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/,308 a ficha exacta con slug completo

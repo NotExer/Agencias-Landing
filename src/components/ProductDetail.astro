@@ -33,14 +33,15 @@ const {
   info,
 } = Astro.props;
 
-// La galeria intercambia mainImg.src desde el cliente, asi que un srcset
-// quedaria obsoleto al cambiar de foto: resolvemos una URL unica por tamano.
-const gallery = await Promise.all(
-  images.map(async (image) => ({
-    full: (await getImage({ src: image, width: 960, format: "avif" })).src,
-    thumb: (await getImage({ src: image, width: 160, height: 160, format: "avif" })).src,
-  })),
-);
+// Keep responsive candidates in sync when a visitor changes gallery image.
+const gallery = await Promise.all(images.map(async (image) => {
+  const variants = await Promise.all([320, 640, 960].map(width => getImage({ src: image, width, format: "webp", quality: 75 })));
+  return {
+    full: variants[1].src,
+    srcset: variants.map((variant, index) => `${variant.src} ${[320, 640, 960][index]}w`).join(", "),
+    thumb: (await getImage({ src: image, width: 160, height: 160, format: "webp", quality: 75 })).src,
+  };
+}));
 const mainImage = gallery[0]?.full;
 const thumbs = gallery;
 const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me pueden cotizar?`);
@@ -58,6 +59,7 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
               <button
                 type="button"
                 data-thumb={img.full}
+                data-thumb-srcset={img.srcset}
                 class={`product-thumb shrink-0 h-20 w-20 overflow-hidden rounded-xl border-2 bg-gray-50 p-1.5 transition ${i === 0 ? "border-blue-600" : "border-transparent hover:border-gray-200"}`}
               >
                 <img
@@ -82,8 +84,15 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
         <img
           id="product-main-image"
           src={mainImage}
+          srcset={gallery[0]?.srcset}
+          sizes="(min-width: 1280px) 560px, (min-width: 1024px) 45vw, calc(100vw - 80px)"
+          width="960"
+          height="960"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
           alt={name}
-          class="max-h-[480px] w-full object-contain"
+          class="aspect-square max-h-[480px] w-full object-contain"
         />
       </div>
     </div>
@@ -314,7 +323,10 @@ const whatsappHref = waHref(`Hola, me interesa el producto "${name}". ¿Me puede
       
       function thumbClickHandler() {
         const src = thumb.dataset.thumb;
-        if (mainImg && src) mainImg.src = src;
+        if (mainImg && src) {
+          mainImg.srcset = thumb.dataset.thumbSrcset || "";
+          mainImg.src = src;
+        }
         thumbs.forEach((t) => {
           t.classList.toggle("border-blue-600", t === thumb);
           t.classList.toggle("border-transparent", t !== thumb);

@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { SEO_METADATA } from "../data/seo";
 import { ClientRouter } from "astro:transitions";
 import ogDefault from "../img/Logo.avif";
 import WhatsAppFloat from "../components/WhatsAppFloat.astro";
@@ -16,14 +17,18 @@ interface Props {
 }
 
 const {
-  title = "Dotación Empresarial en Medellín | Agencias Nacionales",
-  description = "Fabricamos dotación empresarial en Medellín: uniformes de trabajo, calzado de seguridad y EPP personalizados para empresas en Antioquia y Colombia.",
+  title: requestedTitle = "Dotación Empresarial en Medellín | Agencias Nacionales",
+  description: requestedDescription = "Fabricamos dotación empresarial en Medellín: uniformes de trabajo, calzado de seguridad y EPP personalizados para empresas en Antioquia y Colombia.",
   image = ogDefault.src,
   noindex = false,
   ogType = "website",
   canonicalUrl,
   hideWhatsApp = false,
 } = Astro.props;
+
+const metadata = SEO_METADATA[Astro.url.pathname];
+const title = metadata?.title ?? requestedTitle;
+const description = metadata?.description ?? requestedDescription;
 
 const siteUrl = Astro.site ?? new URL("https://agenciasnacionales.com");
 const canonical = canonicalUrl
@@ -83,39 +88,30 @@ const organization = {
 <!doctype html>
 <html lang="es" class="w-full">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-VYZ3Q9LL82"></script>
+    <!-- Production-only bootstrap: previews must not enter live analytics. -->
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      // Snippet tal cual lo entrega Google. No hace falta enviar page_view a
-      // mano en astro:page-load aunque usemos <ClientRouter />: la medicion
-      // mejorada de GA4 ya cuenta las navegaciones por History API, con el
-      // title correcto. Hacerlo a mano duplica cada vista (medido: 7 en vez
-      // de 4). Si alguna vez se apaga "cambios de pagina basados en eventos
-      // del historial" en el stream de GA4, ahi si haria falta.
-      gtag("config", "G-VYZ3Q9LL82");
+      (() => {
+        if (location.hostname !== "agenciasnacionales.com" || window.__agenciasAnalyticsReady) return;
+        window.__agenciasAnalyticsReady = true;
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag("js", new Date());
+        // astro:page-load owns page views; enhanced History API measurement is disabled.
+        window.gtag("config", "G-VYZ3Q9LL82", { send_page_view: false });
+        const tag = document.createElement("script");
+        tag.async = true;
+        tag.src = "https://www.googletagmanager.com/gtag/js?id=G-VYZ3Q9LL82";
+        document.head.appendChild(tag);
+        (function (c, l, a, r, i, t, y) {
+          c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+          t = l.createElement(r); t.async = 1;
+          t.src = "https://www.clarity.ms/tag/" + i;
+          y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "y8116zylkc");
+      })();
     </script>
-
-    <!-- Microsoft Clarity -->
-    <script is:inline>
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "y8116zylkc");
+    <script>
+      import "../scripts/analytics";
     </script>
 
     <meta charset="utf-8" />
@@ -162,35 +158,13 @@ const organization = {
         document.addEventListener("astro:page-load", adjustHeaderOffset);
         document.addEventListener("astro:after-swap", adjustHeaderOffset);
         document.fonts?.ready.then(adjustHeaderOffset);
-
-        if (!window.__agenciasLeadTrackingBound) {
-          window.__agenciasLeadTrackingBound = true;
-          document.addEventListener("click", (event) => {
-            const link = event.target.closest?.("a[href]");
-            if (!link) return;
-
-            const href = link.href;
-            if (href.includes("wa.me/")) {
-              window.gtag?.("event", "whatsapp_click", { link_url: href });
-              window.gtag?.("event", "generate_lead", {
-                method: "whatsapp",
-                link_url: href,
-              });
-              return;
-            }
-
-            if (href.startsWith("tel:")) {
-              window.gtag?.("event", "phone_click", { link_url: href });
-              window.gtag?.("event", "generate_lead", { method: "phone" });
-              return;
-            }
-
-            if (href.startsWith("mailto:")) {
-              window.gtag?.("event", "email_click", { link_url: href });
-              window.gtag?.("event", "generate_lead", { method: "email" });
-            }
-          });
+        const header = document.querySelector("header");
+        if (header && !header.dataset.offsetObserved) {
+          header.dataset.offsetObserved = "true";
+          new ResizeObserver(adjustHeaderOffset).observe(header);
         }
+
+
       })();
     </script>
   </body>

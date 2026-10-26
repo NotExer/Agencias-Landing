@@ -1,0 +1,1818 @@
+{
+  "at": "2026-10-26T15:53:00.465Z",
+  "slug": "GOOGLE_ANALYTICS_RUN_REPORT",
+  "args": {
+    "property": "properties/527357451",
+    "dateRanges": [
+      {
+        "startDate": "2026-09-28",
+        "endDate": "2026-10-25"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "date"
+      },
+      {
+        "name": "sessionSourceMedium"
+      },
+      {
+        "name": "deviceCategory"
+      },
+      {
+        "name": "country"
+      },
+      {
+        "name": "hostName"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "engagedSessions"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "sessionDefaultChannelGroup",
+        "stringFilter": {
+          "matchType": "EXACT",
+          "value": "Direct"
+        }
+      }
+    },
+    "limit": 10000
+  },
+  "result": {
+    "successful": true,
+    "data": {
+      "dimensionHeaders": [
+        {
+          "name": "date"
+        },
+        {
+          "name": "sessionSourceMedium"
+        },
+        {
+          "name": "deviceCategory"
+        },
+        {
+          "name": "country"
+        },
+        {
+          "name": "hostName"
+        }
+      ],
+      "kind": "analyticsData#runReport",
+      "metadata": {
+        "currencyCode": "COP",
+        "timeZone": "America/Bogota"
+      },
+      "metricHeaders": [
+        {
+          "name": "sessions",
+          "type": "TYPE_INTEGER"
+        },
+        {
+          "name": "engagedSessions",
+          "type": "TYPE_INTEGER"
+        }
+      ],
+      "rowCount": 64,
+      "rows": [
+        {
+          "dimensionValues": [
+            {
+              "value": "20261006"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "37"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261020"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261008"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "7"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261009"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "6"
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261014"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "6"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261008"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "5"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261005"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Germany"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "4"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261008"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Peru"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "3"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261018"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Germany"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261020"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "3"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261022"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "3"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20260929"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20260930"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261002"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261002"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261005"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agencias-landing.vercel.app"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261005"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261005"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261006"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261006"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261007"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261009"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261012"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261015"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261019"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Singapore"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261020"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Singapore"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261022"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261023"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261024"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20260928"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20260929"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20260930"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261001"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261003"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Germany"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261003"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261005"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "China"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261005"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "France"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261005"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agencias-landing.vercel.app"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261006"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Taiwan"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261007"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Peru"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261008"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "China"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261008"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261009"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Peru"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261010"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261012"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261013"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261013"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261016"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Singapore"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261016"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261017"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Canada"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261017"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Mexico"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261019"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "(not set)"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261019"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261020"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "(not set)"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261020"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Ecuador"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261020"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261020"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261021"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261021"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "Germany"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261021"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261021"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261023"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261024"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "mobile"
+            },
+            {
+              "value": "Colombia"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "20261025"
+            },
+            {
+              "value": "(direct) / (none)"
+            },
+            {
+              "value": "desktop"
+            },
+            {
+              "value": "United States"
+            },
+            {
+              "value": "agenciasnacionales.com"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "logId": "log_Uy7yZ6ACrDFm"
+  }
+}

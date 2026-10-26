@@ -261,6 +261,7 @@ import { waHref, WHATSAPP_NUMBER } from "../data/contact";
   <Footer />
 
   <script>
+    import { trackContactIntent, trackEvent } from "../scripts/analytics";
     const initQuoteForm = () => {
       const form = document.querySelector<HTMLFormElement>("[data-quote-form]");
       if (!form || form.dataset.ready === "true") return;
@@ -278,12 +279,10 @@ import { waHref, WHATSAPP_NUMBER } from "../data/contact";
           `Solicitud: ${data.get("message")}`,
         ].join("\n");
 
-        window.gtag?.("event", "contact_form_submit", {
+        trackEvent("contact_form_submit", {
           method: "whatsapp",
         });
-        window.gtag?.("event", "generate_lead", {
-          method: "contact_form_whatsapp",
-        });
+        trackContactIntent("contact_form_whatsapp");
         window.open(
           `https://wa.me/${form.dataset.whatsapp}?text=${encodeURIComponent(message)}`,
           "_blank",

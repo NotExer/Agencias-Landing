@@ -56,6 +56,7 @@ import Footer from "../components/Footer.astro";
           </p>
           <a
             id="cart-page-quote"
+            data-contact-method="quote_cart_whatsapp"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -166,9 +167,7 @@ import Footer from "../components/Footer.astro";
       window.gtag?.("event", "begin_quote", {
         item_count: getCount(),
       });
-      window.gtag?.("event", "generate_lead", {
-        method: "quote_cart_whatsapp",
-      });
+
     });
     if (!window.__agenciasCartPageBound) {
       window.__agenciasCartPageBound = true;
