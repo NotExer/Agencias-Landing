@@ -1,0 +1,138 @@
+[
+  {
+    "path": "/calzado-de-dotacion/",
+    "status": 200,
+    "final": "https://agenciasnacionales.com/calzado-de-dotacion/",
+    "redirects": []
+  },
+  {
+    "path": "/articulos-del-blog/planear-compra-dotacion-diciembre/",
+    "status": 200,
+    "final": "https://agenciasnacionales.com/articulos-del-blog/planear-compra-dotacion-diciembre/",
+    "redirects": []
+  },
+  {
+    "path": "/cinta-de-seguridad-x-100-metros/",
+    "status": 404,
+    "final": "https://agenciasnacionales.com/cinta-de-seguridad-x-100-metros/",
+    "redirects": []
+  },
+  {
+    "path": "/funiformes/BSM01.pdf",
+    "status": 404,
+    "final": "https://agenciasnacionales.com/funiformes/BSM01.pdf",
+    "redirects": []
+  },
+  {
+    "path": "/pol%C3%ADticas/pol%C3%ADtica-de-privacidad-y-sagrilaft/",
+    "status": 404,
+    "final": "https://agenciasnacionales.com/pol%C3%ADticas/pol%C3%ADtica-de-privacidad-y-sagrilaft/",
+    "redirects": []
+  },
+  {
+    "path": "/preguntas-frecuentes/",
+    "status": 200,
+    "final": "https://agenciasnacionales.com/faq/",
+    "redirects": [
+      {
+        "status": 308,
+        "from": "https://agenciasnacionales.com/preguntas-frecuentes/",
+        "to": "https://agenciasnacionales.com/faq/"
+      }
+    ]
+  },
+  {
+    "path": "/preguntas-frecuentes",
+    "status": 200,
+    "final": "https://agenciasnacionales.com/faq/",
+    "redirects": [
+      {
+        "status": 308,
+        "from": "https://agenciasnacionales.com/preguntas-frecuentes",
+        "to": "https://agenciasnacionales.com/preguntas-frecuentes/"
+      },
+      {
+        "status": 308,
+        "from": "https://agenciasnacionales.com/preguntas-frecuentes/",
+        "to": "https://agenciasnacionales.com/faq/"
+      }
+    ]
+  },
+  {
+    "path": "/preguntas-frecuentes/?utm_source=seo_test",
+    "status": 200,
+    "final": "https://agenciasnacionales.com/faq/?utm_source=seo_test",
+    "redirects": [
+      {
+        "status": 308,
+        "from": "https://agenciasnacionales.com/preguntas-frecuentes/?utm_source=seo_test",
+        "to": "https://agenciasnacionales.com/faq/?utm_source=seo_test"
+      }
+    ]
+  },
+  {
+    "path": "/bata-aislamiento-personal-asistencial/",
+    "status": 404,
+    "final": "https://agenciasnacionales.com/bata-aislamiento-personal-asistencial/",
+    "redirects": []
+  },
+  {
+    "path": "/barbuquejo-de-4-puntos/",
+    "status": 404,
+    "final": "https://agenciasnacionales.com/barbuquejo-de-4-puntos/",
+    "redirects": []
+  },
+  {
+    "path": "/bota-plastica-machita-dama/",
+    "status": 404,
+    "final": "https://agenciasnacionales.com/bota-plastica-machita-dama/",
+    "redirects": []
+  },
+  {
+    "path": "/product/",
+    "status": 404,
+    "final": "https://agenciasnacionales.com/product/",
+    "redirects": []
+  },
+  {
+    "path": "/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met/",
+    "status": 200,
+    "final": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+    "redirects": [
+      {
+        "status": 308,
+        "from": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met/",
+        "to": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/"
+      }
+    ]
+  },
+  {
+    "path": "/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met",
+    "status": 200,
+    "final": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/",
+    "redirects": [
+      {
+        "status": 308,
+        "from": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met",
+        "to": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met/"
+      },
+      {
+        "status": 308,
+        "from": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met/",
+        "to": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/"
+      }
+    ]
+  },
+  {
+    "path": "/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met/?utm_source=seo_test",
+    "status": 200,
+    "final": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/?utm_source=seo_test",
+    "redirects": [
+      {
+        "status": 308,
+        "from": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met/?utm_source=seo_test",
+        "to": "https://agenciasnacionales.com/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/?utm_source=seo_test"
+      }
+    ]
+  }
+]

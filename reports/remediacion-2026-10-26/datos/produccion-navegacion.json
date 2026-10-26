@@ -1,0 +1,191 @@
+{
+  "checkedAt": "2026-10-26T16:21:48.104Z",
+  "checks": [
+    {
+      "url": "https://agenciasnacionales.com/",
+      "title": "Dotaciones Empresariales, Calzado y EPP | Agencias Nacionales",
+      "h1": 1,
+      "canonical": "https://agenciasnacionales.com/",
+      "schemas": [
+        [
+          "Organization",
+          "LocalBusiness"
+        ]
+      ]
+    },
+    {
+      "url": "https://agenciasnacionales.com/dotaciones-medellin/",
+      "title": "Dotaciones en Medellín para Empresas | Uniformes y EPP",
+      "h1": 1,
+      "canonical": "https://agenciasnacionales.com/dotaciones-medellin/",
+      "schemas": [
+        [
+          "Organization",
+          "LocalBusiness"
+        ],
+        "Service",
+        "FAQPage"
+      ]
+    },
+    {
+      "url": "https://agenciasnacionales.com/epp-medellin/",
+      "title": "EPP en Medellín para Empresas | Agencias Nacionales",
+      "h1": 1,
+      "canonical": "https://agenciasnacionales.com/epp-medellin/",
+      "schemas": [
+        [
+          "Organization",
+          "LocalBusiness"
+        ],
+        "Service",
+        "FAQPage"
+      ]
+    },
+    {
+      "url": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+      "title": "Dotaciones para Empresas en Colombia | Uniformes y EPP",
+      "h1": 1,
+      "canonical": "https://agenciasnacionales.com/dotaciones-empresariales-colombia/",
+      "schemas": [
+        [
+          "Organization",
+          "LocalBusiness"
+        ],
+        "Service",
+        "FAQPage"
+      ]
+    },
+    {
+      "url": "https://agenciasnacionales.com/calzado-de-dotacion/",
+      "title": "Zapatos y Calzado de Dotación para Empresas en Medellín",
+      "h1": 1,
+      "canonical": "https://agenciasnacionales.com/calzado-de-dotacion/",
+      "schemas": [
+        [
+          "Organization",
+          "LocalBusiness"
+        ],
+        "Service",
+        "FAQPage"
+      ]
+    },
+    {
+      "url": "https://agenciasnacionales.com/camisas-de-dotacion/",
+      "title": "Camisas de Dotación en Medellín | Dril, Oxford e Índigo",
+      "h1": 1,
+      "canonical": "https://agenciasnacionales.com/camisas-de-dotacion/",
+      "schemas": [
+        [
+          "Organization",
+          "LocalBusiness"
+        ],
+        "Service",
+        "FAQPage"
+      ]
+    }
+  ],
+  "dimensions": [
+    {
+      "text": "Atención empresarial desde Envigado",
+      "bottom": 138,
+      "containerBottom": 602.5,
+      "inside": true
+    },
+    {
+      "text": "Dotaciones empresariales en Medellín",
+      "bottom": 258.5,
+      "containerBottom": 602.5,
+      "inside": true
+    },
+    {
+      "text": "Uniformes de trabajo, calzado de seguridad y EPP para empresas de Medellín y el Valle de Aburrá. Te ayudamos a definir la dotación según el cargo, el entorno de trabajo y la cantidad que necesitas.",
+      "bottom": 404.5,
+      "containerBottom": 602.5,
+      "inside": true
+    },
+    {
+      "text": "Cotizar dotaciones por WhatsApp",
+      "bottom": 488.5,
+      "containerBottom": 602.5,
+      "inside": true
+    },
+    {
+      "text": "Enviar solicitud de cotización",
+      "bottom": 562.5,
+      "containerBottom": 602.5,
+      "inside": true
+    }
+  ],
+  "sequence": [
+    {
+      "page_location": "https://agenciasnacionales.com/",
+      "page_title": "Dotaciones Empresariales, Calzado y EPP | Agencias Nacionales",
+      "page_referrer": ""
+    },
+    {
+      "page_location": "https://agenciasnacionales.com/dotaciones-medellin/",
+      "page_title": "Dotaciones en Medellín para Empresas | Uniformes y EPP",
+      "page_referrer": "https://agenciasnacionales.com/"
+    },
+    {
+      "page_location": "https://agenciasnacionales.com/",
+      "page_title": "Dotaciones Empresariales, Calzado y EPP | Agencias Nacionales",
+      "page_referrer": "https://agenciasnacionales.com/dotaciones-medellin/"
+    },
+    {
+      "page_location": "https://agenciasnacionales.com/dotaciones-medellin/",
+      "page_title": "Dotaciones en Medellín para Empresas | Uniformes y EPP",
+      "page_referrer": "https://agenciasnacionales.com/"
+    }
+  ],
+  "reload": [
+    {
+      "page_location": "https://agenciasnacionales.com/dotaciones-medellin/",
+      "page_title": "Dotaciones en Medellín para Empresas | Uniformes y EPP",
+      "page_referrer": ""
+    }
+  ],
+  "contact": [
+    {
+      "method": "whatsapp"
+    }
+  ],
+  "networkPageViews": [
+    {
+      "event": "page_view",
+      "url": "https://agenciasnacionales.com/",
+      "title": "Dotaciones Empresariales, Calzado y EPP | Agencias Nacionales",
+      "referrer": ""
+    },
+    {
+      "event": "page_view",
+      "url": "https://agenciasnacionales.com/",
+      "title": "Dotaciones Empresariales, Calzado y EPP | Agencias Nacionales",
+      "referrer": ""
+    },
+    {
+      "event": "page_view",
+      "url": "https://agenciasnacionales.com/dotaciones-medellin/",
+      "title": "Dotaciones en Medellín para Empresas | Uniformes y EPP",
+      "referrer": "https://agenciasnacionales.com/"
+    },
+    {
+      "event": "page_view",
+      "url": "https://agenciasnacionales.com/",
+      "title": "Dotaciones Empresariales, Calzado y EPP | Agencias Nacionales",
+      "referrer": "https://agenciasnacionales.com/dotaciones-medellin/"
+    },
+    {
+      "event": "page_view",
+      "url": "https://agenciasnacionales.com/dotaciones-medellin/",
+      "title": "Dotaciones en Medellín para Empresas | Uniformes y EPP",
+      "referrer": "https://agenciasnacionales.com/"
+    },
+    {
+      "event": "page_view",
+      "url": "https://agenciasnacionales.com/dotaciones-medellin/",
+      "title": "Dotaciones en Medellín para Empresas | Uniformes y EPP",
+      "referrer": ""
+    }
+  ]
+}

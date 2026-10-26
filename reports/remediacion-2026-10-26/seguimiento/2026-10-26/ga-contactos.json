@@ -1,0 +1,189 @@
+{
+  "at": "2026-10-26T16:19:08.614Z",
+  "slug": "GOOGLE_ANALYTICS_RUN_REPORT",
+  "args": {
+    "property": "properties/527357451",
+    "dateRanges": [
+      {
+        "startDate": "2026-09-28",
+        "endDate": "2026-10-25"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "eventName"
+      },
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "eventCount"
+      }
+    ],
+    "dimensionFilter": {
+      "andGroup": {
+        "expressions": [
+          {
+            "filter": {
+              "fieldName": "hostName",
+              "stringFilter": {
+                "matchType": "EXACT",
+                "value": "agenciasnacionales.com"
+              }
+            }
+          },
+          {
+            "filter": {
+              "fieldName": "eventName",
+              "inListFilter": {
+                "values": [
+                  "generate_lead",
+                  "whatsapp_click",
+                  "contact_form_submit",
+                  "begin_quote"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "limit": 10000
+  },
+  "result": {
+    "successful": true,
+    "data": {
+      "dimensionHeaders": [
+        {
+          "name": "eventName"
+        },
+        {
+          "name": "sessionDefaultChannelGroup"
+        }
+      ],
+      "kind": "analyticsData#runReport",
+      "metadata": {
+        "currencyCode": "COP",
+        "timeZone": "America/Bogota"
+      },
+      "metricHeaders": [
+        {
+          "name": "eventCount",
+          "type": "TYPE_INTEGER"
+        }
+      ],
+      "rowCount": 7,
+      "rows": [
+        {
+          "dimensionValues": [
+            {
+              "value": "generate_lead"
+            },
+            {
+              "value": "Organic Search"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "whatsapp_click"
+            },
+            {
+              "value": "Organic Search"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "generate_lead"
+            },
+            {
+              "value": "Direct"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "contact_form_submit"
+            },
+            {
+              "value": "Direct"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "generate_lead"
+            },
+            {
+              "value": "Referral"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "whatsapp_click"
+            },
+            {
+              "value": "Direct"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "whatsapp_click"
+            },
+            {
+              "value": "Referral"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "logId": "log_aVNm7KjkFT9z"
+  }
+}

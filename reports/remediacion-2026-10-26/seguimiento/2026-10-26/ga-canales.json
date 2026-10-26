@@ -1,0 +1,206 @@
+{
+  "at": "2026-10-26T16:19:08.614Z",
+  "slug": "GOOGLE_ANALYTICS_RUN_REPORT",
+  "args": {
+    "property": "properties/527357451",
+    "dateRanges": [
+      {
+        "startDate": "2026-09-28",
+        "endDate": "2026-10-25"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "keyEvents"
+      },
+      {
+        "name": "sessionKeyEventRate"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "EXACT",
+          "value": "agenciasnacionales.com"
+        }
+      }
+    },
+    "limit": 10000
+  },
+  "result": {
+    "successful": true,
+    "data": {
+      "dimensionHeaders": [
+        {
+          "name": "sessionDefaultChannelGroup"
+        }
+      ],
+      "kind": "analyticsData#runReport",
+      "metadata": {
+        "currencyCode": "COP",
+        "timeZone": "America/Bogota"
+      },
+      "metricHeaders": [
+        {
+          "name": "sessions",
+          "type": "TYPE_INTEGER"
+        },
+        {
+          "name": "engagedSessions",
+          "type": "TYPE_INTEGER"
+        },
+        {
+          "name": "keyEvents",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "sessionKeyEventRate",
+          "type": "TYPE_FLOAT"
+        }
+      ],
+      "rowCount": 6,
+      "rows": [
+        {
+          "dimensionValues": [
+            {
+              "value": "Organic Search"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "166"
+            },
+            {
+              "value": "106"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "0.12048192771084337"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "Direct"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "154"
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "0.012987012987012988"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "Referral"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "0.125"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "Organic Social"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "Unassigned"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "3"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "dimensionValues": [
+            {
+              "value": "AI Assistant"
+            }
+          ],
+          "metricValues": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    "error": null,
+    "logId": "log_EBqzXS6kzC3h"
+  }
+}
