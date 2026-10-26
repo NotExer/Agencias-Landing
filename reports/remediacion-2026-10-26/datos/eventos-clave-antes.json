@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-26T15:53:00.408Z",
+  "slug": "GOOGLE_ANALYTICS_LIST_KEY_EVENTS",
+  "args": {
+    "parent": "properties/527357451"
+  },
+  "result": {
+    "successful": true,
+    "data": {
+      "keyEvents": [
+        {
+          "countingMethod": "ONCE_PER_EVENT",
+          "createTime": "2026-03-05T21:11:16.768112Z",
+          "custom": true,
+          "deletable": true,
+          "eventName": "close_convert_lead",
+          "name": "properties/527357451/keyEvents/13766006220"
+        },
+        {
+          "countingMethod": "ONCE_PER_EVENT",
+          "createTime": "2026-03-05T21:11:16.768112Z",
+          "custom": true,
+          "deletable": true,
+          "eventName": "qualify_lead",
+          "name": "properties/527357451/keyEvents/13766006221"
+        },
+        {
+          "countingMethod": "ONCE_PER_EVENT",
+          "createTime": "2026-03-05T21:11:51.516705Z",
+          "eventName": "purchase",
+          "name": "properties/527357451/keyEvents/13766543858"
+        },
+        {
+          "countingMethod": "ONCE_PER_EVENT",
+          "createTime": "2026-08-31T19:05:33.291071Z",
+          "custom": true,
+          "deletable": true,
+          "eventName": "generate_lead",
+          "name": "properties/527357451/keyEvents/15534223587"
+        }
+      ]
+    },
+    "error": null,
+    "logId": "log_ZNAyoHzP7YKu"
+  }
+}

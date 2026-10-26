@@ -19,3 +19,7 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
+/* Allow text enlargement without forcing cards or flex rows wider than the page. */
+main, footer { overflow-wrap: anywhere; }
+main :where(.grid > *, .flex > *) { min-width: 0; }

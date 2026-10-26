@@ -1,0 +1,10 @@
+import {chromium} from '@playwright/test';
+import {writeFileSync} from 'node:fs';
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage();const events=[];
+await page.route(/(?:google-analytics\.com|analytics\.google\.com)\/g\/collect/,async route=>{const req=route.request();const params=new URLSearchParams(new URL(req.url()).search);const post=req.postData();events.push({url:req.url(),post});await route.fulfill({status:204});});
+await page.goto('https://agenciasnacionales.com/',{waitUntil:'networkidle'});
+await page.locator('main a[href="/dotaciones-medellin/"]').first().click();await page.waitForURL('**/dotaciones-medellin/');await page.waitForTimeout(1800);
+await page.goBack();await page.waitForTimeout(1200);await page.goForward();await page.waitForTimeout(1200);await page.reload({waitUntil:'networkidle'});
+writeFileSync('reports/remediacion-2026-10-26/datos/ga-navegacion-antes.json',JSON.stringify(events,null,2));console.log('requests',events.length);console.log(events.map(e=>{const p=new URL(e.url).searchParams;return {event:p.get('en'),url:p.get('dl'),title:p.get('dt'),ref:p.get('dr')}}));
+await browser.close();

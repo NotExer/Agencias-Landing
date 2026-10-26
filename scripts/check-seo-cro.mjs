@@ -68,7 +68,7 @@ if (medellinHeadings.length !== 1 || medellinHeadings[0] !== "Dotaciones empresa
   console.error("The dotaciones Medellín page must have one intent-matched H1.");
   process.exit(1);
 }
-if (!medellinLanding.includes("<title>Dotaciones en Medellín | Uniformes, Calzado y EPP</title>")) {
+if (!medellinLanding.includes("<title>Dotaciones en Medellín para Empresas | Uniformes y EPP</title>")) {
   console.error("The dotaciones Medellín page has the wrong title.");
   process.exit(1);
 }
@@ -105,7 +105,7 @@ if (colombiaHeadings.length !== 1 || colombiaHeadings[0] !== "Dotaciones empresa
   console.error("The dotaciones Colombia page must have one intent-matched H1.");
   process.exit(1);
 }
-if (!colombiaLanding.includes("<title>Dotaciones Empresariales en Colombia | Agencias Nacionales</title>")) {
+if (!colombiaLanding.includes("<title>Dotaciones para Empresas en Colombia | Uniformes y EPP</title>")) {
   console.error("The dotaciones Colombia page has the wrong title.");
   process.exit(1);
 }
@@ -161,7 +161,7 @@ await checkEppLanding({
 });
 await checkEppLanding({
   route: "epp-medellin",
-  title: "EPP Medellín | Elementos de Protección Personal",
+  title: "EPP en Medellín para Empresas | Agencias Nacionales",
   heading: "Elementos de protección personal en Medellín",
   area: "Medellín",
 });
@@ -202,16 +202,17 @@ for (const fieldId of ["quote-name", "quote-company", "quote-email", "quote-phon
     process.exit(1);
   }
 }
-if (!contactPage.includes("contact_form_whatsapp")) {
+const contactSource = await readFile(path.join(root, "src/pages/contacto.astro"), "utf8");
+if (!contactSource.includes("contact_form_whatsapp")) {
   console.error("The quote form is missing the GA4 generate_lead event.");
   process.exit(1);
 }
-if (!contactPage.includes('"contact_form_submit"')) {
+if (!contactSource.includes('"contact_form_submit"')) {
   console.error("The quote form is missing its dedicated GA4 contact_form_submit event.");
   process.exit(1);
 }
 
-const layoutSource = await readFile(path.join(root, "src/layouts/Layout.astro"), "utf8");
+const layoutSource = await readFile(path.join(root, "src/scripts/analytics.ts"), "utf8");
 for (const eventName of ["whatsapp_click", "phone_click", "email_click"]) {
   if (!layoutSource.includes(`"${eventName}"`)) {
     console.error(`Global conversion tracking is missing the ${eventName} event.`);

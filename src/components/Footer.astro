@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import logo from "../img/Icono footer.png";
 import { categories, categorySlug } from "../data/catalog";
 import { waHref } from "../data/contact";
@@ -37,9 +38,12 @@ import { waHref } from "../data/contact";
       <!-- Logo & Description (takes 2 columns on lg) -->
       <div class="lg:col-span-2">
         <!-- Logo en escala de grises con brillo para parecer blanco (si el original es oscuro) o normal -->
-        <img
-          src={logo.src}
+        <Image
+          src={logo}
           alt="Agencias Nacionales S.A.S"
+          widths={[120, 240]}
+          sizes="120px"
+          format="webp"
           width={logo.width}
           height={logo.height}
           loading="lazy"

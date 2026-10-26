@@ -17,6 +17,8 @@ if (config.trailingSlash !== true) {
   process.exit(1);
 }
 const required = new Map([
+  ["/preguntas-frecuentes", "/faq/"],
+  ["/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-met", "/producto/bota-inyectada-p-p-ref-hibrida-100-libre-de-metal/"],
   ["/articulos-del-blog", "/articulos/"],
   ["/pol%C3%ADtica-de-privacidad", "/politica_privacidad/"],
   ["/dotacion-empresarial-medellin", "/dotaciones-medellin/"],

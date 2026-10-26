@@ -91,6 +91,11 @@ const CLUSTERS = {
     anchor: "elementos de protección personal en Medellín",
     href: "/epp-medellin/",
   },
+  camisas: {
+    lead: "Para definir telas y personalización de las prendas, consulta nuestras",
+    anchor: "camisas de dotación en dril, oxford e índigo",
+    href: "/camisas-de-dotacion/",
+  },
   hospitalaria: {
     lead: "Puedes ver nuestras referencias de",
     anchor: "uniformes antifluidos y ropa hospitalaria",
@@ -110,7 +115,7 @@ const ARTICLE_CLUSTER: Record<string, keyof typeof CLUSTERS> = {
   "planear-compra-dotacion-diciembre": "compras",
   "como-armar-pliego-dotacion-epp-licitacion-privada": "compras",
   "como-crear-ficha-tecnica-dotacion-por-cargo": "compras",
-  "como-estandarizar-dotaciones-por-cargo-y-area": "compras",
+  "como-estandarizar-dotaciones-por-cargo-y-area": "camisas",
   "dotacion-para-empresas-de-alimentos-uniformes-calzado-epp": "compras",
   "dotacion-para-empresas-logistica-bodegas-por-cargo": "compras",
   "dotacion-personal-aseo-servicios-generales": "compras",

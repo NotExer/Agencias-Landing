@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-26T15:53:04.920Z",
+  "slug": "GOOGLE_SEARCH_CONSOLE_LIST_SITEMAPS",
+  "args": {
+    "site_url": "sc-domain:agenciasnacionales.com"
+  },
+  "result": {
+    "successful": true,
+    "data": {
+      "sitemap": [
+        {
+          "contents": [
+            {
+              "indexed": "0",
+              "submitted": "195",
+              "type": "web"
+            }
+          ],
+          "errors": "0",
+          "isPending": false,
+          "isSitemapsIndex": true,
+          "lastDownloaded": "2026-10-15T15:46:35.789Z",
+          "lastSubmitted": "2026-09-09T21:08:38.659Z",
+          "path": "https://agenciasnacionales.com/sitemap-index.xml",
+          "warnings": "0"
+        },
+        {
+          "contents": [
+            {
+              "indexed": "1",
+              "submitted": "19",
+              "type": "web"
+            }
+          ],
+          "errors": "0",
+          "isPending": false,
+          "isSitemapsIndex": false,
+          "lastDownloaded": "2018-04-06T18:24:05.226Z",
+          "lastSubmitted": "2014-01-15T17:42:22.179Z",
+          "path": "http://agenciasnacionales.com/sitemap.xml",
+          "type": "sitemap",
+          "warnings": "41"
+        },
+        {
+          "contents": [
+            {
+              "indexed": "1",
+              "submitted": "19",
+              "type": "web"
+            }
+          ],
+          "errors": "0",
+          "isPending": false,
+          "isSitemapsIndex": false,
+          "lastDownloaded": "2018-04-09T22:27:20.971Z",
+          "lastSubmitted": "2014-01-14T19:52:51.434Z",
+          "path": "http://www.agenciasnacionales.com/sitemap.xml",
+          "type": "sitemap",
+          "warnings": "37"
+        }
+      ]
+    },
+    "error": null,
+    "logId": "log_Mx42JV0r3ciW"
+  }
+}

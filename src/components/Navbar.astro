@@ -105,22 +105,22 @@ const searchIndex = [
   class="fixed top-0 z-50 w-full border-b border-gray-100 bg-white backdrop-blur"
 >
   <nav
-    class="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8"
+    class="mx-auto flex min-h-[73px] max-w-7xl flex-wrap items-center justify-between gap-x-[12px] gap-y-[8px] px-[16px] py-[8px] sm:px-6 lg:px-8"
   >
     <a href="/" class="flex shrink-0 items-center" aria-label="Agencias Nacionales, inicio">
       <Image
         src={logo}
         alt="Agencias Nacionales S.A.S"
         widths={[216, 432]}
-        sizes="216px"
+        sizes="(min-width: 1024px) 216px, 175px"
         format="avif"
         loading="eager"
         decoding="async"
-        class="h-14 w-auto"
+        class="h-auto max-h-[56px] w-auto max-w-[40vw] lg:max-w-[216px]"
       />
     </a>
 
-    <ul class="hidden items-center gap-8 lg:flex">
+    <ul class="hidden flex-wrap items-center gap-4 lg:flex">
       {
         links.map((link) => (
           <li>
@@ -134,7 +134,7 @@ const searchIndex = [
         ))
       }
     </ul>
-    <div class="flex items-center gap-2">
+    <div class="flex shrink-0 items-center gap-[8px]">
       <button
         type="button"
         data-search-open
@@ -143,7 +143,7 @@ const searchIndex = [
         aria-haspopup="dialog"
       >
         <svg
-          class="h-5 w-5"
+          class="h-[20px] w-[20px]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -169,12 +169,12 @@ const searchIndex = [
       <button
         type="button"
         data-search-open
-        class="inline-flex items-center justify-center rounded-full border border-gray-200 bg-gray-200 p-2.5 text-gray-600 transition hover:border-gray-300 hover:bg-gray-100 lg:hidden"
+        class="inline-flex items-center justify-center rounded-full border border-gray-200 bg-gray-200 p-[10px] text-gray-600 transition hover:border-gray-300 hover:bg-gray-100 lg:hidden"
         aria-label="Abrir búsqueda"
         aria-haspopup="dialog"
       >
         <svg
-          class="h-5 w-5"
+          class="h-[20px] w-[20px]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -190,9 +190,9 @@ const searchIndex = [
       <a
         href="/carrito/"
         aria-label="Ver carrito de cotizaciones"
-        class="relative inline-flex items-center justify-center rounded-full border border-gray-200 bg-white p-2.5 text-gray-600 transition hover:border-gray-300 hover:bg-gray-100"
+        class="relative inline-flex items-center justify-center rounded-full border border-gray-200 bg-white p-[10px] text-gray-600 transition hover:border-gray-300 hover:bg-gray-100"
       >
-        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <svg class="h-[20px] w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.962-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
         </svg>
         <span
@@ -204,13 +204,13 @@ const searchIndex = [
       <button
         type="button"
         id="menu-toggle"
-        class="inline-flex items-center justify-center rounded-md p-2 text-gray-600 lg:hidden"
+        class="inline-flex items-center justify-center rounded-md p-[8px] text-gray-600 lg:hidden"
         aria-label="Abrir menú"
         aria-controls="mobile-menu"
         aria-expanded="false"
       >
         <svg
-          class="h-6 w-6"
+          class="h-[24px] w-[24px]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

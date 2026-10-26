@@ -1,0 +1,12 @@
+{
+  "name": "properties/527357451/dataStreams/13766543859/enhancedMeasurementSettings",
+  "streamEnabled": true,
+  "scrollsEnabled": true,
+  "outboundClicksEnabled": true,
+  "siteSearchEnabled": true,
+  "videoEngagementEnabled": true,
+  "fileDownloadsEnabled": true,
+  "pageChangesEnabled": true,
+  "formInteractionsEnabled": true,
+  "searchQueryParameter": "q,s,search,query,keyword"
+}
