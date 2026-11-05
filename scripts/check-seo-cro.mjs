@@ -68,7 +68,7 @@ if (medellinHeadings.length !== 1 || medellinHeadings[0] !== "Dotaciones empresa
   console.error("The dotaciones Medellín page must have one intent-matched H1.");
   process.exit(1);
 }
-if (!medellinLanding.includes("<title>Dotaciones en Medellín para Empresas | Uniformes y EPP</title>")) {
+if (!medellinLanding.includes("<title>Dotaciones en Medellín para Empresas | Fábrica desde 1969</title>")) {
   console.error("The dotaciones Medellín page has the wrong title.");
   process.exit(1);
 }
@@ -268,6 +268,39 @@ for (const href of ["/dotaciones-empresariales-colombia/", "/categoria/calzado-d
     console.error(`Article pages are missing the commercial internal link ${href}.`);
     process.exit(1);
   }
+}
+
+const lawArticle = await readFile(
+  path.join(root, "dist/articulos-del-blog/ley-dotacion-colombia-quien-tiene-derecho-fechas-entrega/index.html"),
+  "utf8",
+);
+if (!lawArticle.includes("<title>Ley de dotación 2026: quién tiene derecho, fechas y bonos</title>")) {
+  console.error("The ley de dotación article has the wrong title.");
+  process.exit(1);
+}
+const lawJsonLd = [...lawArticle.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+  .map((match) => JSON.parse(match[1]));
+const lawFaq = lawJsonLd.find((item) => item["@type"] === "FAQPage");
+if (!lawFaq || lawFaq.mainEntity.length < 3) {
+  console.error("The ley de dotación article is missing FAQPage structured data.");
+  process.exit(1);
+}
+const lawBody = stripTags(lawArticle.match(/<article\b[^>]*>(.*?)<\/article>/s)?.[1] ?? "");
+for (const question of lawFaq.mainEntity) {
+  if (!lawBody.includes(question.name)) {
+    console.error(`FAQ structured data must match a visible question: ${question.name}`);
+    process.exit(1);
+  }
+}
+const answerBoxIndex = lawArticle.indexOf("data-answer-box");
+const firstBodyHeading = lawArticle.indexOf("¿Qué es la dotación laboral?");
+if (answerBoxIndex === -1 || firstBodyHeading === -1 || answerBoxIndex > firstBodyHeading) {
+  console.error("The ley de dotación article needs the short answer above the body.");
+  process.exit(1);
+}
+if (!lawArticle.includes("data-seasonal-cta") || !lawArticle.includes("Cotiza la dotación de diciembre")) {
+  console.error("The ley de dotación article is missing the December quote CTA.");
+  process.exit(1);
 }
 
 console.log("Homepage and landing-page SEO/CRO checks passed.");

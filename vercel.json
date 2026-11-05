@@ -381,6 +381,126 @@
       "source": "/preguntas-frecuentes/",
       "destination": "/faq/",
       "permanent": true
+    },
+    {
+      "source": "/categorias/linea-calzado-en-eva-evacol/",
+      "destination": "/categoria/calzado-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/camisa-dril-epm-01/",
+      "destination": "/producto/camisa-epm/",
+      "permanent": true
+    },
+    {
+      "source": "/pol%C3%ADticas/pol%C3%ADtica-de-calidad/",
+      "destination": "/politica_calidad/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/botas-caucho-croydon/",
+      "destination": "/categoria/calzado-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/zapato-tipo-crocs-ref-149/",
+      "destination": "/categoria/calzado-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/promocionales/",
+      "destination": "/categoria/promocionales/",
+      "permanent": true
+    },
+    {
+      "source": "/bota-gallarda-acidos-grasos/",
+      "destination": "/categoria/calzado-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/camiseta-t-shirt-m-l/",
+      "destination": "/producto/camiseta-t-shirt-manga-larga/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/linea-pvc-croydon/",
+      "destination": "/categoria/calzado-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/0040-pantalon-dril-azul-osc/",
+      "destination": "/producto/pantalon-dril-azul-oscuro/",
+      "permanent": true
+    },
+    {
+      "source": "/categorias/uniformes-operativos/",
+      "destination": "/categoria/uniformes-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/pantal%C3%B3n-en-tela-lino-flex/",
+      "destination": "/categoria/uniformes-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/redecilla-velillo-cristal-blanca-ref-03/",
+      "destination": "/producto/redecilla-velillo-cristal-blanca-ref-03/",
+      "permanent": true
+    },
+    {
+      "source": "/pantalon-dril-strech-dama/",
+      "destination": "/categoria/uniformes-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/workman-safety-oil/",
+      "destination": "/categoria/calzado-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/bota-workman-supersafety-waterproof-negra/",
+      "destination": "/producto/bota-workman-safety-waterproof-p-seg-negra/",
+      "permanent": true
+    },
+    {
+      "source": "/sobres%C3%A1bana/",
+      "destination": "/categoria/hospitalaria/",
+      "permanent": true
+    },
+    {
+      "source": "/articulos-del-blog/dotacion-de-emergencias-brigada/",
+      "destination": "/articulos-del-blog/dotacion-para-brigada-de-emergencias/",
+      "permanent": true
+    },
+    {
+      "source": "/calzado.php",
+      "destination": "/categoria/calzado-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/com-pantalon.php",
+      "destination": "/categoria/uniformes-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/op-chaleco.php",
+      "destination": "/categoria/uniformes-de-trabajo/",
+      "permanent": true
+    },
+    {
+      "source": "/ali-gorros.php",
+      "destination": "/categoria/gorros-y-redecillas/",
+      "permanent": true
+    },
+    {
+      "source": "/epp.php",
+      "destination": "/categoria/epp/",
+      "permanent": true
+    },
+    {
+      "source": "/quienes-somos.php",
+      "destination": "/nosotros/",
+      "permanent": true
     }
   ]
 }
