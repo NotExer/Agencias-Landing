@@ -37,6 +37,11 @@ const required = new Map([
   ["/brazaletes-brigadistas", "/articulos-del-blog/dotacion-para-brigada-de-emergencias/"],
   ["/index.php", "/"],
   ["/hospitalaria.php", "/categoria/hospitalaria/"],
+  ["/camisa-dril-epm-01", "/producto/camisa-epm/"],
+  ["/categorias/linea-calzado-en-eva-evacol", "/categoria/calzado-de-trabajo/"],
+  ["/pol%C3%ADticas/pol%C3%ADtica-de-calidad", "/politica_calidad/"],
+  ["/categorias/promocionales", "/categoria/promocionales/"],
+  ["/calzado.php", "/categoria/calzado-de-trabajo/"],
 ]);
 
 // Vercel normalizes extensionless URLs before matching redirect sources strictly.

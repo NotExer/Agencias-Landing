@@ -1,8 +1,8 @@
 /** Reviewed SEO overrides. Visible product names and article headlines stay intact. */
 export const SEO_METADATA: Record<string, { title?: string; description?: string }> = {
   "/dotaciones-medellin/": {
-    "title": "Dotaciones en Medellín para Empresas | Uniformes y EPP",
-    "description": "Cotiza dotaciones para empresas en Medellín: uniformes, calzado y EPP. Personalización y atención desde Envigado. Envía productos, cantidades y tallas."
+    "title": "Dotaciones en Medellín para Empresas | Fábrica desde 1969",
+    "description": "Uniformes, calzado y EPP para empresas de Medellín y el Valle de Aburrá. Fabricamos en Envigado desde 1969. Cotiza por WhatsApp con cantidades y tallas."
   },
   "/epp-medellin/": {
     "title": "EPP en Medellín para Empresas | Agencias Nacionales",
@@ -105,8 +105,8 @@ export const SEO_METADATA: Record<string, { title?: string; description?: string
     "description": "Conoce Agencias Nacionales: su historia, fabricación de uniformes y suministro de calzado y EPP para empresas, con atención desde Envigado."
   },
   "/articulos-del-blog/ley-dotacion-colombia-quien-tiene-derecho-fechas-entrega/": {
-    "title": "Dotación laboral en Colombia: derecho y fechas de entrega",
-    "description": "Guía de dotación laboral en Colombia: quién tiene derecho, fechas de entrega y cómo organizar la compra de prendas y calzado para tu empresa."
+    "title": "Ley de dotación 2026: quién tiene derecho, fechas y bonos",
+    "description": "Quién tiene derecho a la dotación en Colombia, las tres fechas de entrega (30 de abril, 31 de agosto y 20 de diciembre) y cuándo es válido un bono."
   },
   "/articulos-del-blog/politica-interna-dotacion-reposicion-empresas-multisede/": {
     "title": "Política de dotación y reposición para empresas multisede",
