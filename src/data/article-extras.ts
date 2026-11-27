@@ -16,6 +16,8 @@ export interface ArticleExtras {
   summaryHeading?: string;
   summary?: string[];
   faqs?: ArticleFaq[];
+  /** Stable ids for body headings, keyed by heading text, so other pages can link to a section. */
+  headingIds?: Record<string, string>;
   cta?: {
     heading: string;
     text: string;
@@ -36,6 +38,11 @@ export const ARTICLE_EXTRAS: Record<string, ArticleExtras> = {
       "Se entrega tres veces al año: el 30 de abril, el 31 de agosto y el 20 de diciembre (artículo 232).",
       "No se puede pagar en dinero (artículo 234). El Ministerio del Trabajo acepta el bono de dotación si es intransferible, no se cambia por dinero y solo sirve para comprar calzado y vestido de labor.",
     ],
+    headingIds: {
+      "¿Quién tiene derecho a la dotación?": "quien-tiene-derecho",
+      "¿Cuándo se entrega la dotación?": "fechas-de-entrega",
+      "Bono de dotación o dotación física: qué ha dicho el Ministerio del Trabajo": "bono-de-dotacion",
+    },
     faqs: [
       {
         question: "¿Quién tiene derecho a la dotación en Colombia?",

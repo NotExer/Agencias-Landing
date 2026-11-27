@@ -1,7 +1,7 @@
 /** Reviewed SEO overrides. Visible product names and article headlines stay intact. */
 export const SEO_METADATA: Record<string, { title?: string; description?: string }> = {
   "/dotaciones-medellin/": {
-    "title": "Dotaciones en Medellín para Empresas | Fábrica desde 1969",
+    "title": "Dotaciones en Medellín: Uniformes, Calzado y EPP | Desde 1969",
     "description": "Uniformes, calzado y EPP para empresas de Medellín y el Valle de Aburrá. Fabricamos en Envigado desde 1969. Cotiza por WhatsApp con cantidades y tallas."
   },
   "/epp-medellin/": {

@@ -82,7 +82,8 @@ const breadcrumbLd = {
 <Layout
   title={copy.seoTitle ?? `${copy.title} | Agencias Nacionales S.A.S`}
   description={copy.description}
-  image={catProducts[0]?.images[0]?.src}
+  image={catProducts[0]?.images[0]}
+  imageFit="contain"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />

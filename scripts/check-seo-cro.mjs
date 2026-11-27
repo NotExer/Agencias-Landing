@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
@@ -68,7 +68,7 @@ if (medellinHeadings.length !== 1 || medellinHeadings[0] !== "Dotaciones empresa
   console.error("The dotaciones Medellín page must have one intent-matched H1.");
   process.exit(1);
 }
-if (!medellinLanding.includes("<title>Dotaciones en Medellín para Empresas | Fábrica desde 1969</title>")) {
+if (!medellinLanding.includes("<title>Dotaciones en Medellín: Uniformes, Calzado y EPP | Desde 1969</title>")) {
   console.error("The dotaciones Medellín page has the wrong title.");
   process.exit(1);
 }
@@ -300,6 +300,110 @@ if (answerBoxIndex === -1 || firstBodyHeading === -1 || answerBoxIndex > firstBo
 }
 if (!lawArticle.includes("data-seasonal-cta") || !lawArticle.includes("Cotiza la dotación de diciembre")) {
   console.error("The ley de dotación article is missing the December quote CTA.");
+  process.exit(1);
+}
+
+const lawPath = "/articulos-del-blog/ley-dotacion-colombia-quien-tiene-derecho-fechas-entrega/";
+const decemberPath = "/articulos-del-blog/planear-compra-dotacion-diciembre/";
+if (!lawArticle.includes('id="bono-de-dotacion"')) {
+  console.error("The ley de dotación article is missing the #bono-de-dotacion section anchor.");
+  process.exit(1);
+}
+const earlyCtaIndex = lawArticle.indexOf("data-early-cta");
+if (earlyCtaIndex === -1 || earlyCtaIndex > firstBodyHeading || !lawArticle.slice(earlyCtaIndex, earlyCtaIndex + 2000).includes("https://wa.me/573042351036")) {
+  console.error("The ley de dotación article needs a WhatsApp quote CTA above the body.");
+  process.exit(1);
+}
+
+const builtHtml = (route) => readFile(path.join(root, "dist", route, "index.html"), "utf8");
+const hasBuiltPage = async (href) => builtHtml(href.split("#")[0]).then(() => true, () => false);
+const relatedBlock = (html) => html.match(/<nav\b[^>]*data-related-links[^>]*>(.*?)<\/nav>/s)?.[1] ?? "";
+const hrefsWith = (html, marker) =>
+  [...html.matchAll(new RegExp(`<a\\b[^>]*href="([^"]+)"[^>]*${marker}`, "g"))].map((match) => match[1]);
+
+const articleSlugs = await readdir(path.join(root, "dist/articulos-del-blog"));
+for (const slug of articleSlugs) {
+  const block = relatedBlock(await builtHtml(`articulos-del-blog/${slug}`));
+  const relatedArticles = hrefsWith(block, "data-related-article");
+  const relatedProducts = hrefsWith(block, "data-related-product");
+  if (relatedArticles.length < 2 || relatedArticles.length > 4 || relatedProducts.length < 2 || relatedProducts.length > 3) {
+    console.error(`Article ${slug} needs 2–4 related articles and 2–3 product links (has ${relatedArticles.length} and ${relatedProducts.length}).`);
+    process.exit(1);
+  }
+  if (relatedArticles.includes(`/articulos-del-blog/${slug}/`)) {
+    console.error(`Article ${slug} links to itself in its related block.`);
+    process.exit(1);
+  }
+  for (const href of [...relatedArticles, ...relatedProducts]) {
+    if (!(await hasBuiltPage(href))) {
+      console.error(`Article ${slug} has a related link to a page that was not built: ${href}`);
+      process.exit(1);
+    }
+  }
+}
+
+const homepageFeatured = homepage.match(/<section id="blog"[^>]*>(.*?)<\/section>/s)?.[1] ?? "";
+for (const href of [lawPath, decemberPath]) {
+  if (!homepageFeatured.includes(`href="${href}"`)) {
+    console.error(`Homepage "Artículos destacados" is missing ${href}.`);
+    process.exit(1);
+  }
+}
+for (const route of [
+  "dotaciones-medellin",
+  "dotaciones-empresariales-colombia",
+  "calzado-de-dotacion",
+  "camisas-de-dotacion",
+  "epp-medellin",
+  "epp-colombia",
+]) {
+  const html = await builtHtml(route);
+  const legalLinks = html.match(/<p\b[^>]*data-ley-links[^>]*>(.*?)<\/p>/s)?.[1] ?? "";
+  for (const href of [`${lawPath}#bono-de-dotacion`, decemberPath]) {
+    if (!legalLinks.includes(`href="${href}"`)) {
+      console.error(`/${route}/ is missing the pre-quote link to ${href}.`);
+      process.exit(1);
+    }
+  }
+}
+for (const slug of [
+  "acta-entrega-dotacion-epp-empresa",
+  "planear-compra-dotacion-diciembre",
+  "cada-cuanto-renovar-uniformes-calzado-epp-empresa",
+  "checklist-dotacion-nuevos-ingresos-empresa",
+]) {
+  const related = hrefsWith(relatedBlock(await builtHtml(`articulos-del-blog/${slug}`)), "data-related-article");
+  if (!related.includes(lawPath)) {
+    console.error(`Article ${slug} must link to the ley de dotación article.`);
+    process.exit(1);
+  }
+}
+
+const ogPages = ["", "dotaciones-medellin", "camisas-de-dotacion", "epp-medellin", "categoria/epp", "producto/zapato-tipo-crocs-ref-219", "articulos-del-blog/acta-entrega-dotacion-epp-empresa", "404.html"];
+for (const route of ogPages) {
+  const html = route.endsWith(".html")
+    ? await readFile(path.join(root, "dist", route), "utf8")
+    : await builtHtml(route);
+  const ogImage = html.match(/<meta property="og:image" content="([^"]+)"/)?.[1] ?? "";
+  if (!/\.(jpe?g|png)$/i.test(ogImage)) {
+    console.error(`/${route} needs a JPG or PNG og:image for link previews (has "${ogImage}").`);
+    process.exit(1);
+  }
+}
+if (!jsonLdBlocks.some((item) => item.logo?.endsWith(".png") && item.image?.endsWith(".jpg"))) {
+  console.error("Organization structured data needs a PNG logo and a JPG image.");
+  process.exit(1);
+}
+
+const lawLastmod = sitemap.match(new RegExp(`<loc>https://agenciasnacionales.com${lawPath}</loc><lastmod>([^<]+)</lastmod>`))?.[1];
+if (!lawLastmod) {
+  console.error("The sitemap needs lastmod for articles.");
+  process.exit(1);
+}
+
+const indexNowKeys = (await readdir(path.join(root, "public"))).filter((name) => /^[a-f0-9]{32}\.txt$/.test(name));
+if (indexNowKeys.length !== 1 || (await readFile(path.join(root, "public", indexNowKeys[0]), "utf8")).trim() !== indexNowKeys[0].slice(0, -4)) {
+  console.error("public/ needs exactly one IndexNow key file whose content matches its name.");
   process.exit(1);
 }
 
