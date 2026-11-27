@@ -96,6 +96,22 @@ npm run preview
 | `npm run check:redirects` | Verifica las redirecciones permanentes y URLs canónicas |
 | `npm run check:seo` | Comprueba metadatos y páginas comerciales clave |
 | `npm run verify` | Ejecuta todas las comprobaciones y la compilación de producción |
+| `npm run indexnow -- <rutas>` | Avisa a IndexNow (Bing y otros) de URLs cambiadas en producción |
+
+## IndexNow (Bing)
+
+La clave pública de IndexNow está en `public/<clave>.txt` y se publica en la raíz del sitio. No es un secreto: IndexNow la valida leyendo ese archivo. El sitemap incluye `lastmod` en los artículos (fecha de `updatedISO` en `src/data/article-extras.ts` o, si no existe, la de publicación).
+
+Cuando el deploy de producción en Vercel ya esté publicado, avisa de las URLs que cambiaron:
+
+```bash
+npm run indexnow -- /dotaciones-medellin/ /articulos-del-blog/planear-compra-dotacion-diciembre/
+npm run indexnow -- --since 2026-11-27   # URLs del sitemap con lastmod desde esa fecha
+npm run indexnow -- --all                # todo el sitemap (por ejemplo, la primera vez)
+npm run indexnow -- --dry-run --all      # solo muestra la lista
+```
+
+El script comprueba que la clave responde en producción antes de enviar, así que falla si se ejecuta antes de que termine el deploy. No necesita tokens ni variables de entorno.
 
 ## Mantenimiento
 
